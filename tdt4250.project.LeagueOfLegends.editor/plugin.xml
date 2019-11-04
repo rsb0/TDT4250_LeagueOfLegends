@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated leagueOfLegends -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="leagueOfLegends.presentation.LeagueOfLegendsModelWizardID"
+            name="%_UI_LeagueOfLegendsModelWizard_label"
+            class="leagueOfLegends.presentation.LeagueOfLegendsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LeagueOfLegendsModelFile.gif">
+         <description>%_UI_LeagueOfLegendsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated leagueOfLegends -->
+      <editor
+            id="leagueOfLegends.presentation.LeagueOfLegendsEditorID"
+            name="%_UI_LeagueOfLegendsEditor_label"
+            icon="icons/full/obj16/LeagueOfLegendsModelFile.gif"
+            extensions="leagueoflegends"
+            class="leagueOfLegends.presentation.LeagueOfLegendsEditor"
+            contributorClass="leagueOfLegends.presentation.LeagueOfLegendsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

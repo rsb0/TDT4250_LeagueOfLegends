@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tdt4250.project.leagueOfLegends:LeagueOfLegends
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends"
+    xsi:schemaLocation="https://tdt4250/project/leagueOfLegends tdt4250.project.LeagueOfLegends.ecore">
+  <champions
+      name="mordor"/>
+  <champions
+      name="Boromir"/>
+  <leagues name="Middle Earth">
+    <teams name="team1">
+      <player
+          name="Frodo"
+          championPool="//@champions.1">
+        <playerStats/>
+      </player>
+    </teams>
+    <teams name="team2">
+      <player
+          name="Sam"
+          championPool="//@champions.0">
+        <playerStats/>
+      </player>
+    </teams>
+    <matches
+        teams="//@leagues.0/@teams.0 //@leagues.0/@teams.1">
+      <games
+          redTeam="//@leagues.0/@teams.1"
+          blueTeam="//@leagues.0/@teams.0">
+        <gameStats/>
+        <gameTeamStat
+            team="//@leagues.0/@teams.0"
+            name="2"/>
+        <gameTeamStat
+            team="//@leagues.0/@teams.1"
+            teamBaronKills="1"
+            name="1"/>
+        <gamePlayerStats
+            player="//@leagues.0/@teams.0/@player.0"/>
+      </games>
+    </matches>
+  </leagues>
+</tdt4250.project.leagueOfLegends:LeagueOfLegends>

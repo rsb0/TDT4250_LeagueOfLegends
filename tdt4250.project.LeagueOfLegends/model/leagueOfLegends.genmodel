@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/tdt4250.project.LeagueOfLegends/src" modelPluginID="tdt4250.project.LeagueOfLegends"
+    modelName="LeagueOfLegends" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>tdt4250.project.LeagueOfLegends.ecore</foreignModel>
+  <genPackages prefix="LeagueOfLegends" disposableProviderFactory="true" ecorePackage="tdt4250.project.LeagueOfLegends.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.project.LeagueOfLegends.ecore#//BestOf">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//BestOf/bestOfOne"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//BestOf/bestOfThree"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//BestOf/bestOfFive"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.project.LeagueOfLegends.ecore#//Position">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Position/middle"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Position/top"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Position/jungle"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Position/adc"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Position/support"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.project.LeagueOfLegends.ecore#//Side">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Side/red"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Side/blue"/>
+    </genEnums>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//LeagueOfLegends">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueOfLegends/champions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueOfLegends/leagues"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//League">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//League/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/teams"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/seasons"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/matches"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/leagueOfLegends"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Champion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Champion/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Champion/leagueOfLegends"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Team">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Team/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Team/league"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Team/player"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Team/winLossRatio"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Player">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Player/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Player/position"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Player/championPool"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Player/playerStats"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Player/team"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//PlayerStats">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/gamesPlayed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/careerKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/careerDeaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/careerAssist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/killDeathAssistRatio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/winLoseRatio"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//PlayerStats/player"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Match">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Match/games"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Match/matchID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Match/bestOF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Match/score"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Match/teams"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Game">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Game/gameID"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/gameStats"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/redTeam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/blueTeam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/gameTeamStat"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/gamePlayerStats"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Game/Winner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Game/gameLength"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/team"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalDeaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalAssist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalGolds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalWards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalWardsKilled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalVisionWards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalMinionKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/totalMonsterKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/teamBaronKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/teamSide"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/name"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/player"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/kills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/deaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/assist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/golds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/wards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/wardsKilled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/visionWards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/minionKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/monsterKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/baronKills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/champion"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Season"/>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameStats"/>
+  </genPackages>
+</genmodel:GenModel>
