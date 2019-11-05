@@ -18,6 +18,8 @@
         eType="#//Match" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="leagueOfLegends" eType="#//LeagueOfLegends"
         eOpposite="#//LeagueOfLegends/leagues"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="champions" upperBound="-1"
+        eType="#//Champion" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Champion">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

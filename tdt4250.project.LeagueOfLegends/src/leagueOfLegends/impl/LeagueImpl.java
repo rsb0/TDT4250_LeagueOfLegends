@@ -4,6 +4,7 @@ package leagueOfLegends.impl;
 
 import java.util.Collection;
 
+import leagueOfLegends.Champion;
 import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegends;
 import leagueOfLegends.LeagueOfLegendsPackage;
@@ -41,6 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getSeasons <em>Seasons</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getMatches <em>Matches</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getLeagueOfLegends <em>League Of Legends</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.LeagueImpl#getChampions <em>Champions</em>}</li>
  * </ul>
  *
  * @generated
@@ -95,6 +97,16 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	 * @ordered
 	 */
 	protected EList<Match> matches;
+
+	/**
+	 * The cached value of the '{@link #getChampions() <em>Champions</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getChampions()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Champion> champions;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,6 +237,19 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public EList<Champion> getChampions() {
+		if (champions == null) {
+			champions = new EObjectContainmentEList<Champion>(Champion.class, this, LeagueOfLegendsPackage.LEAGUE__CHAMPIONS);
+		}
+		return champions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -253,6 +278,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 				return ((InternalEList<?>)getMatches()).basicRemove(otherEnd, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_OF_LEGENDS:
 				return basicSetLeagueOfLegends(null, msgs);
+			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
+				return ((InternalEList<?>)getChampions()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -289,6 +316,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 				return getMatches();
 			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_OF_LEGENDS:
 				return getLeagueOfLegends();
+			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
+				return getChampions();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -320,6 +349,10 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_OF_LEGENDS:
 				setLeagueOfLegends((LeagueOfLegends)newValue);
 				return;
+			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
+				getChampions().clear();
+				getChampions().addAll((Collection<? extends Champion>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -347,6 +380,9 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_OF_LEGENDS:
 				setLeagueOfLegends((LeagueOfLegends)null);
 				return;
+			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
+				getChampions().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -369,6 +405,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 				return matches != null && !matches.isEmpty();
 			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_OF_LEGENDS:
 				return getLeagueOfLegends() != null;
+			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
+				return champions != null && !champions.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -91,6 +91,7 @@ public class GameStatsItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+		super.notifyChanged(notification);
 	}
 
 	/**

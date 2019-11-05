@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.League#getSeasons <em>Seasons</em>}</li>
  *   <li>{@link leagueOfLegends.League#getMatches <em>Matches</em>}</li>
  *   <li>{@link leagueOfLegends.League#getLeagueOfLegends <em>League Of Legends</em>}</li>
+ *   <li>{@link leagueOfLegends.League#getChampions <em>Champions</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague()
@@ -110,5 +111,17 @@ public interface League extends EObject {
 	 * @generated
 	 */
 	void setLeagueOfLegends(LeagueOfLegends value);
+
+	/**
+	 * Returns the value of the '<em><b>Champions</b></em>' containment reference list.
+	 * The list contents are of type {@link leagueOfLegends.Champion}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Champions</em>' containment reference list.
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague_Champions()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Champion> getChampions();
 
 } // League
