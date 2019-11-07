@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.List;
 
 import leagueOfLegends.Game;
+import leagueOfLegends.LeagueOfLegendsFactory;
 import leagueOfLegends.LeagueOfLegendsPackage;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
@@ -14,6 +15,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -61,11 +63,8 @@ public class GameItemProvider
 			super.getPropertyDescriptors(object);
 
 			addGameIDPropertyDescriptor(object);
-			addGameStatsPropertyDescriptor(object);
 			addRedTeamPropertyDescriptor(object);
 			addBlueTeamPropertyDescriptor(object);
-			addGameTeamStatPropertyDescriptor(object);
-			addGamePlayerStatsPropertyDescriptor(object);
 			addWinnerPropertyDescriptor(object);
 			addGameLengthPropertyDescriptor(object);
 		}
@@ -90,28 +89,6 @@ public class GameItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Game Stats feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGameStatsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Game_gameStats_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Game_gameStats_feature", "_UI_Game_type"),
-				 LeagueOfLegendsPackage.Literals.GAME__GAME_STATS,
-				 true,
-				 false,
-				 true,
-				 null,
 				 null,
 				 null));
 	}
@@ -152,50 +129,6 @@ public class GameItemProvider
 				 getString("_UI_Game_blueTeam_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Game_blueTeam_feature", "_UI_Game_type"),
 				 LeagueOfLegendsPackage.Literals.GAME__BLUE_TEAM,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Game Team Stat feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGameTeamStatPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Game_gameTeamStat_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Game_gameTeamStat_feature", "_UI_Game_type"),
-				 LeagueOfLegendsPackage.Literals.GAME__GAME_TEAM_STAT,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Game Player Stats feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGamePlayerStatsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Game_gamePlayerStats_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Game_gamePlayerStats_feature", "_UI_Game_type"),
-				 LeagueOfLegendsPackage.Literals.GAME__GAME_PLAYER_STATS,
 				 true,
 				 false,
 				 true,
@@ -249,6 +182,38 @@ public class GameItemProvider
 	}
 
 	/**
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(LeagueOfLegendsPackage.Literals.GAME__GAME_STATS);
+			childrenFeatures.add(LeagueOfLegendsPackage.Literals.GAME__GAME_TEAM_STAT);
+			childrenFeatures.add(LeagueOfLegendsPackage.Literals.GAME__GAME_PLAYER_STATS);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
+	}
+
+	/**
 	 * This returns Game.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -291,6 +256,11 @@ public class GameItemProvider
 			case LeagueOfLegendsPackage.GAME__GAME_LENGTH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case LeagueOfLegendsPackage.GAME__GAME_STATS:
+			case LeagueOfLegendsPackage.GAME__GAME_TEAM_STAT:
+			case LeagueOfLegendsPackage.GAME__GAME_PLAYER_STATS:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -305,6 +275,21 @@ public class GameItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LeagueOfLegendsPackage.Literals.GAME__GAME_STATS,
+				 LeagueOfLegendsFactory.eINSTANCE.createGameStats()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LeagueOfLegendsPackage.Literals.GAME__GAME_TEAM_STAT,
+				 LeagueOfLegendsFactory.eINSTANCE.createGameTeamStats()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LeagueOfLegendsPackage.Literals.GAME__GAME_PLAYER_STATS,
+				 LeagueOfLegendsFactory.eINSTANCE.createGamePlayerStats()));
 	}
 
 	/**

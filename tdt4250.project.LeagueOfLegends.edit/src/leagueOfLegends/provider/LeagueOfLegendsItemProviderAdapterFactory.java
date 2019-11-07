@@ -72,29 +72,6 @@ public class LeagueOfLegendsItemProviderAdapterFactory extends LeagueOfLegendsAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link leagueOfLegends.LeagueOfLegends} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LeagueOfLegendsItemProvider leagueOfLegendsItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link leagueOfLegends.LeagueOfLegends}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLeagueOfLegendsAdapter() {
-		if (leagueOfLegendsItemProvider == null) {
-			leagueOfLegendsItemProvider = new LeagueOfLegendsItemProvider(this);
-		}
-
-		return leagueOfLegendsItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link leagueOfLegends.League} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -452,7 +429,6 @@ public class LeagueOfLegendsItemProviderAdapterFactory extends LeagueOfLegendsAd
 	 */
 	@Override
 	public void dispose() {
-		if (leagueOfLegendsItemProvider != null) leagueOfLegendsItemProvider.dispose();
 		if (leagueItemProvider != null) leagueItemProvider.dispose();
 		if (championItemProvider != null) championItemProvider.dispose();
 		if (teamItemProvider != null) teamItemProvider.dispose();

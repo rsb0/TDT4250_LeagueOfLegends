@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.League#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.League#getSeasons <em>Seasons</em>}</li>
  *   <li>{@link leagueOfLegends.League#getMatches <em>Matches</em>}</li>
- *   <li>{@link leagueOfLegends.League#getLeagueOfLegends <em>League Of Legends</em>}</li>
+ *   <li>{@link leagueOfLegends.League#getChampions <em>Champions</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague()
@@ -88,27 +88,27 @@ public interface League extends EObject {
 	EList<Match> getMatches();
 
 	/**
-	 * Returns the value of the '<em><b>League Of Legends</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link leagueOfLegends.LeagueOfLegends#getLeagues <em>Leagues</em>}'.
+	 * Returns the value of the '<em><b>Champions</b></em>' containment reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Champion#getLeague <em>League</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>League Of Legends</em>' container reference.
-	 * @see #setLeagueOfLegends(LeagueOfLegends)
-	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague_LeagueOfLegends()
-	 * @see leagueOfLegends.LeagueOfLegends#getLeagues
-	 * @model opposite="leagues" transient="false"
+	 * @return the value of the '<em>Champions</em>' containment reference.
+	 * @see #setChampions(Champion)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague_Champions()
+	 * @see leagueOfLegends.Champion#getLeague
+	 * @model opposite="league" containment="true"
 	 * @generated
 	 */
-	LeagueOfLegends getLeagueOfLegends();
+	Champion getChampions();
 
 	/**
-	 * Sets the value of the '{@link leagueOfLegends.League#getLeagueOfLegends <em>League Of Legends</em>}' container reference.
+	 * Sets the value of the '{@link leagueOfLegends.League#getChampions <em>Champions</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>League Of Legends</em>' container reference.
-	 * @see #getLeagueOfLegends()
+	 * @param value the new value of the '<em>Champions</em>' containment reference.
+	 * @see #getChampions()
 	 * @generated
 	 */
-	void setLeagueOfLegends(LeagueOfLegends value);
+	void setChampions(Champion value);
 
 } // League

@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link leagueOfLegends.Champion#getName <em>Name</em>}</li>
- *   <li>{@link leagueOfLegends.Champion#getLeagueOfLegends <em>League Of Legends</em>}</li>
+ *   <li>{@link leagueOfLegends.Champion#getLeague <em>League</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getChampion()
@@ -45,27 +45,27 @@ public interface Champion extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>League Of Legends</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link leagueOfLegends.LeagueOfLegends#getChampions <em>Champions</em>}'.
+	 * Returns the value of the '<em><b>League</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.League#getChampions <em>Champions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>League Of Legends</em>' container reference.
-	 * @see #setLeagueOfLegends(LeagueOfLegends)
-	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampion_LeagueOfLegends()
-	 * @see leagueOfLegends.LeagueOfLegends#getChampions
+	 * @return the value of the '<em>League</em>' container reference.
+	 * @see #setLeague(League)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampion_League()
+	 * @see leagueOfLegends.League#getChampions
 	 * @model opposite="champions" transient="false"
 	 * @generated
 	 */
-	LeagueOfLegends getLeagueOfLegends();
+	League getLeague();
 
 	/**
-	 * Sets the value of the '{@link leagueOfLegends.Champion#getLeagueOfLegends <em>League Of Legends</em>}' container reference.
+	 * Sets the value of the '{@link leagueOfLegends.Champion#getLeague <em>League</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>League Of Legends</em>' container reference.
-	 * @see #getLeagueOfLegends()
+	 * @param value the new value of the '<em>League</em>' container reference.
+	 * @see #getLeague()
 	 * @generated
 	 */
-	void setLeagueOfLegends(LeagueOfLegends value);
+	void setLeague(League value);
 
 } // Champion

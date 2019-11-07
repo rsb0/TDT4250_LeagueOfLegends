@@ -58,52 +58,6 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	LeagueOfLegendsPackage eINSTANCE = leagueOfLegends.impl.LeagueOfLegendsPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link leagueOfLegends.impl.LeagueOfLegendsImpl <em>League Of Legends</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see leagueOfLegends.impl.LeagueOfLegendsImpl
-	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getLeagueOfLegends()
-	 * @generated
-	 */
-	int LEAGUE_OF_LEGENDS = 0;
-
-	/**
-	 * The feature id for the '<em><b>Champions</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAGUE_OF_LEGENDS__CHAMPIONS = 0;
-
-	/**
-	 * The feature id for the '<em><b>Leagues</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAGUE_OF_LEGENDS__LEAGUES = 1;
-
-	/**
-	 * The number of structural features of the '<em>League Of Legends</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAGUE_OF_LEGENDS_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>League Of Legends</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAGUE_OF_LEGENDS_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link leagueOfLegends.impl.LeagueImpl <em>League</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -111,7 +65,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getLeague()
 	 * @generated
 	 */
-	int LEAGUE = 1;
+	int LEAGUE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -150,13 +104,13 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int LEAGUE__MATCHES = 3;
 
 	/**
-	 * The feature id for the '<em><b>League Of Legends</b></em>' container reference.
+	 * The feature id for the '<em><b>Champions</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LEAGUE__LEAGUE_OF_LEGENDS = 4;
+	int LEAGUE__CHAMPIONS = 4;
 
 	/**
 	 * The number of structural features of the '<em>League</em>' class.
@@ -184,7 +138,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getTeam()
 	 * @generated
 	 */
-	int TEAM = 3;
+	int TEAM = 2;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.impl.PlayerImpl <em>Player</em>}' class.
@@ -194,7 +148,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getPlayer()
 	 * @generated
 	 */
-	int PLAYER = 4;
+	int PLAYER = 3;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.impl.PlayerStatsImpl <em>Player Stats</em>}' class.
@@ -204,7 +158,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getPlayerStats()
 	 * @generated
 	 */
-	int PLAYER_STATS = 5;
+	int PLAYER_STATS = 4;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.impl.ChampionImpl <em>Champion</em>}' class.
@@ -214,7 +168,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getChampion()
 	 * @generated
 	 */
-	int CHAMPION = 2;
+	int CHAMPION = 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -226,13 +180,13 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int CHAMPION__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>League Of Legends</b></em>' container reference.
+	 * The feature id for the '<em><b>League</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHAMPION__LEAGUE_OF_LEGENDS = 1;
+	int CHAMPION__LEAGUE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Champion</em>' class.
@@ -458,7 +412,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getMatch()
 	 * @generated
 	 */
-	int MATCH = 6;
+	int MATCH = 5;
 
 	/**
 	 * The feature id for the '<em><b>Games</b></em>' containment reference list.
@@ -531,7 +485,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getGame()
 	 * @generated
 	 */
-	int GAME = 7;
+	int GAME = 6;
 
 	/**
 	 * The feature id for the '<em><b>Game ID</b></em>' attribute.
@@ -631,7 +585,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getGameTeamStats()
 	 * @generated
 	 */
-	int GAME_TEAM_STATS = 8;
+	int GAME_TEAM_STATS = 7;
 
 	/**
 	 * The feature id for the '<em><b>Team</b></em>' reference.
@@ -776,7 +730,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getGamePlayerStats()
 	 * @generated
 	 */
-	int GAME_PLAYER_STATS = 9;
+	int GAME_PLAYER_STATS = 8;
 
 	/**
 	 * The feature id for the '<em><b>Player</b></em>' reference.
@@ -912,7 +866,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSeason()
 	 * @generated
 	 */
-	int SEASON = 10;
+	int SEASON = 9;
 
 	/**
 	 * The number of structural features of the '<em>Season</em>' class.
@@ -940,7 +894,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getGameStats()
 	 * @generated
 	 */
-	int GAME_STATS = 11;
+	int GAME_STATS = 10;
 
 	/**
 	 * The number of structural features of the '<em>Game Stats</em>' class.
@@ -968,7 +922,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getBestOf()
 	 * @generated
 	 */
-	int BEST_OF = 12;
+	int BEST_OF = 11;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Position <em>Position</em>}' enum.
@@ -978,7 +932,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getPosition()
 	 * @generated
 	 */
-	int POSITION = 13;
+	int POSITION = 12;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Side <em>Side</em>}' enum.
@@ -988,40 +942,8 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSide()
 	 * @generated
 	 */
-	int SIDE = 14;
+	int SIDE = 13;
 
-
-	/**
-	 * Returns the meta object for class '{@link leagueOfLegends.LeagueOfLegends <em>League Of Legends</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>League Of Legends</em>'.
-	 * @see leagueOfLegends.LeagueOfLegends
-	 * @generated
-	 */
-	EClass getLeagueOfLegends();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link leagueOfLegends.LeagueOfLegends#getChampions <em>Champions</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Champions</em>'.
-	 * @see leagueOfLegends.LeagueOfLegends#getChampions()
-	 * @see #getLeagueOfLegends()
-	 * @generated
-	 */
-	EReference getLeagueOfLegends_Champions();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link leagueOfLegends.LeagueOfLegends#getLeagues <em>Leagues</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Leagues</em>'.
-	 * @see leagueOfLegends.LeagueOfLegends#getLeagues()
-	 * @see #getLeagueOfLegends()
-	 * @generated
-	 */
-	EReference getLeagueOfLegends_Leagues();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.League <em>League</em>}'.
@@ -1078,15 +1000,15 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EReference getLeague_Matches();
 
 	/**
-	 * Returns the meta object for the container reference '{@link leagueOfLegends.League#getLeagueOfLegends <em>League Of Legends</em>}'.
+	 * Returns the meta object for the containment reference '{@link leagueOfLegends.League#getChampions <em>Champions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>League Of Legends</em>'.
-	 * @see leagueOfLegends.League#getLeagueOfLegends()
+	 * @return the meta object for the containment reference '<em>Champions</em>'.
+	 * @see leagueOfLegends.League#getChampions()
 	 * @see #getLeague()
 	 * @generated
 	 */
-	EReference getLeague_LeagueOfLegends();
+	EReference getLeague_Champions();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Team <em>Team</em>}'.
@@ -1316,15 +1238,15 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EAttribute getChampion_Name();
 
 	/**
-	 * Returns the meta object for the container reference '{@link leagueOfLegends.Champion#getLeagueOfLegends <em>League Of Legends</em>}'.
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.Champion#getLeague <em>League</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>League Of Legends</em>'.
-	 * @see leagueOfLegends.Champion#getLeagueOfLegends()
+	 * @return the meta object for the container reference '<em>League</em>'.
+	 * @see leagueOfLegends.Champion#getLeague()
 	 * @see #getChampion()
 	 * @generated
 	 */
-	EReference getChampion_LeagueOfLegends();
+	EReference getChampion_League();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Match <em>Match</em>}'.
@@ -1858,32 +1780,6 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link leagueOfLegends.impl.LeagueOfLegendsImpl <em>League Of Legends</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see leagueOfLegends.impl.LeagueOfLegendsImpl
-		 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getLeagueOfLegends()
-		 * @generated
-		 */
-		EClass LEAGUE_OF_LEGENDS = eINSTANCE.getLeagueOfLegends();
-
-		/**
-		 * The meta object literal for the '<em><b>Champions</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LEAGUE_OF_LEGENDS__CHAMPIONS = eINSTANCE.getLeagueOfLegends_Champions();
-
-		/**
-		 * The meta object literal for the '<em><b>Leagues</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LEAGUE_OF_LEGENDS__LEAGUES = eINSTANCE.getLeagueOfLegends_Leagues();
-
-		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.LeagueImpl <em>League</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1926,12 +1822,12 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EReference LEAGUE__MATCHES = eINSTANCE.getLeague_Matches();
 
 		/**
-		 * The meta object literal for the '<em><b>League Of Legends</b></em>' container reference feature.
+		 * The meta object literal for the '<em><b>Champions</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LEAGUE__LEAGUE_OF_LEGENDS = eINSTANCE.getLeague_LeagueOfLegends();
+		EReference LEAGUE__CHAMPIONS = eINSTANCE.getLeague_Champions();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.TeamImpl <em>Team</em>}' class.
@@ -2110,12 +2006,12 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EAttribute CHAMPION__NAME = eINSTANCE.getChampion_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>League Of Legends</b></em>' container reference feature.
+		 * The meta object literal for the '<em><b>League</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CHAMPION__LEAGUE_OF_LEGENDS = eINSTANCE.getChampion_LeagueOfLegends();
+		EReference CHAMPION__LEAGUE = eINSTANCE.getChampion_League();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.MatchImpl <em>Match</em>}' class.

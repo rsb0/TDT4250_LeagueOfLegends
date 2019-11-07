@@ -2,12 +2,6 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="leagueOfLegends" nsURI="https://tdt4250/project/leagueOfLegends"
     nsPrefix="tdt4250.project.leagueOfLegends">
-  <eClassifiers xsi:type="ecore:EClass" name="LeagueOfLegends">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="champions" upperBound="-1"
-        eType="#//Champion" containment="true" eOpposite="#//Champion/leagueOfLegends"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leagues" upperBound="-1"
-        eType="#//League" containment="true" eOpposite="#//League/leagueOfLegends"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="League">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="-1"
@@ -16,13 +10,13 @@
         eType="#//Season"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="matches" upperBound="-1"
         eType="#//Match" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leagueOfLegends" eType="#//LeagueOfLegends"
-        eOpposite="#//LeagueOfLegends/leagues"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="champions" eType="#//Champion"
+        containment="true" eOpposite="#//Champion/league"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Champion">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leagueOfLegends" eType="#//LeagueOfLegends"
-        eOpposite="#//LeagueOfLegends/champions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="league" eType="#//League"
+        eOpposite="#//League/champions"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Team">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

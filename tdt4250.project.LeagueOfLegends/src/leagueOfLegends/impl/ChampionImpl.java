@@ -3,7 +3,7 @@
 package leagueOfLegends.impl;
 
 import leagueOfLegends.Champion;
-import leagueOfLegends.LeagueOfLegends;
+import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * </p>
  * <ul>
  *   <li>{@link leagueOfLegends.impl.ChampionImpl#getName <em>Name</em>}</li>
- *   <li>{@link leagueOfLegends.impl.ChampionImpl#getLeagueOfLegends <em>League Of Legends</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.ChampionImpl#getLeague <em>League</em>}</li>
  * </ul>
  *
  * @generated
@@ -99,9 +99,9 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	 * @generated
 	 */
 	@Override
-	public LeagueOfLegends getLeagueOfLegends() {
-		if (eContainerFeatureID() != LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS) return null;
-		return (LeagueOfLegends)eInternalContainer();
+	public League getLeague() {
+		if (eContainerFeatureID() != LeagueOfLegendsPackage.CHAMPION__LEAGUE) return null;
+		return (League)eInternalContainer();
 	}
 
 	/**
@@ -109,8 +109,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLeagueOfLegends(LeagueOfLegends newLeagueOfLegends, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newLeagueOfLegends, LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS, msgs);
+	public NotificationChain basicSetLeague(League newLeague, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newLeague, LeagueOfLegendsPackage.CHAMPION__LEAGUE, msgs);
 		return msgs;
 	}
 
@@ -120,20 +120,20 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	 * @generated
 	 */
 	@Override
-	public void setLeagueOfLegends(LeagueOfLegends newLeagueOfLegends) {
-		if (newLeagueOfLegends != eInternalContainer() || (eContainerFeatureID() != LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS && newLeagueOfLegends != null)) {
-			if (EcoreUtil.isAncestor(this, newLeagueOfLegends))
+	public void setLeague(League newLeague) {
+		if (newLeague != eInternalContainer() || (eContainerFeatureID() != LeagueOfLegendsPackage.CHAMPION__LEAGUE && newLeague != null)) {
+			if (EcoreUtil.isAncestor(this, newLeague))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
-			if (newLeagueOfLegends != null)
-				msgs = ((InternalEObject)newLeagueOfLegends).eInverseAdd(this, LeagueOfLegendsPackage.LEAGUE_OF_LEGENDS__CHAMPIONS, LeagueOfLegends.class, msgs);
-			msgs = basicSetLeagueOfLegends(newLeagueOfLegends, msgs);
+			if (newLeague != null)
+				msgs = ((InternalEObject)newLeague).eInverseAdd(this, LeagueOfLegendsPackage.LEAGUE__CHAMPIONS, League.class, msgs);
+			msgs = basicSetLeague(newLeague, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS, newLeagueOfLegends, newLeagueOfLegends));
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.CHAMPION__LEAGUE, newLeague, newLeague));
 	}
 
 	/**
@@ -144,10 +144,10 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetLeagueOfLegends((LeagueOfLegends)otherEnd, msgs);
+				return basicSetLeague((League)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -160,8 +160,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				return basicSetLeagueOfLegends(null, msgs);
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				return basicSetLeague(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -174,8 +174,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				return eInternalContainer().eInverseRemove(this, LeagueOfLegendsPackage.LEAGUE_OF_LEGENDS__CHAMPIONS, LeagueOfLegends.class, msgs);
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				return eInternalContainer().eInverseRemove(this, LeagueOfLegendsPackage.LEAGUE__CHAMPIONS, League.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -190,8 +190,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 		switch (featureID) {
 			case LeagueOfLegendsPackage.CHAMPION__NAME:
 				return getName();
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				return getLeagueOfLegends();
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				return getLeague();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -207,8 +207,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 			case LeagueOfLegendsPackage.CHAMPION__NAME:
 				setName((String)newValue);
 				return;
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				setLeagueOfLegends((LeagueOfLegends)newValue);
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				setLeague((League)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -225,8 +225,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 			case LeagueOfLegendsPackage.CHAMPION__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				setLeagueOfLegends((LeagueOfLegends)null);
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				setLeague((League)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -242,8 +242,8 @@ public class ChampionImpl extends MinimalEObjectImpl.Container implements Champi
 		switch (featureID) {
 			case LeagueOfLegendsPackage.CHAMPION__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case LeagueOfLegendsPackage.CHAMPION__LEAGUE_OF_LEGENDS:
-				return getLeagueOfLegends() != null;
+			case LeagueOfLegendsPackage.CHAMPION__LEAGUE:
+				return getLeague() != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -4,10 +4,11 @@ package leagueOfLegends.tests;
 
 import java.io.File;
 import java.io.IOException;
-import leagueOfLegends.LeagueOfLegends;
+import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsFactory;
 import leagueOfLegends.LeagueOfLegendsPackage;
 
+import leagueOfLegends.util.LeagueOfLegendsResourceFactoryImpl;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
 
@@ -19,8 +20,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 
 import org.eclipse.emf.ecore.util.Diagnostician;
-
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +44,7 @@ public class LeagueOfLegendsExample {
 		//
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put
 			(Resource.Factory.Registry.DEFAULT_EXTENSION, 
-			 new XMIResourceFactoryImpl());
+			 new LeagueOfLegendsResourceFactoryImpl());
 
 		// Register the package to ensure it is available during loading.
 		//
@@ -59,7 +58,7 @@ public class LeagueOfLegendsExample {
 			System.out.println("Enter a list of file paths or URIs that have content like this:");
 			try {
 				Resource resource = resourceSet.createResource(URI.createURI("http:///My.leagueoflegends"));
-				LeagueOfLegends root = LeagueOfLegendsFactory.eINSTANCE.createLeagueOfLegends();
+				League root = LeagueOfLegendsFactory.eINSTANCE.createLeague();
 				resource.getContents().add(root);
 				resource.save(System.out, null);
 			}
