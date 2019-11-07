@@ -37,8 +37,13 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 			csvReader = new BufferedReader(new FileReader("assets\\EULCS-2018_split_2_small.csv"));
 			while ((rowString = csvReader.readLine()) != null) {
 				String[] rowData = rowString.split("\n");
-				for(String row : rowData) {
-					System.out.println(row);
+				for (String row: rowData) {
+					String str = "";
+					String[] cellData = row.split(",");
+					for (String cell : cellData) {
+						str += cell + "\t";
+					}
+					System.out.println(str);
 				}
 			}
 			csvReader.close();
