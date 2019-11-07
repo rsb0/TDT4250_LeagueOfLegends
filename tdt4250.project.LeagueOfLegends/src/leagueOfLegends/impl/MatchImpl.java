@@ -61,7 +61,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int MATCH_ID_EDEFAULT = 0;
+	protected static final String MATCH_ID_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getMatchID() <em>Match ID</em>}' attribute.
@@ -71,7 +71,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 * @ordered
 	 */
-	protected int matchID = MATCH_ID_EDEFAULT;
+	protected String matchID = MATCH_ID_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getBestOF() <em>Best OF</em>}' attribute.
@@ -161,7 +161,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public int getMatchID() {
+	public String getMatchID() {
 		return matchID;
 	}
 
@@ -171,8 +171,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
-	public void setMatchID(int newMatchID) {
-		int oldMatchID = matchID;
+	public void setMatchID(String newMatchID) {
+		String oldMatchID = matchID;
 		matchID = newMatchID;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.MATCH__MATCH_ID, oldMatchID, matchID));
@@ -287,7 +287,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				getGames().addAll((Collection<? extends Game>)newValue);
 				return;
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
-				setMatchID((Integer)newValue);
+				setMatchID((String)newValue);
 				return;
 			case LeagueOfLegendsPackage.MATCH__BEST_OF:
 				setBestOF((BestOf)newValue);
@@ -341,7 +341,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
 				return games != null && !games.isEmpty();
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
-				return matchID != MATCH_ID_EDEFAULT;
+				return MATCH_ID_EDEFAULT == null ? matchID != null : !MATCH_ID_EDEFAULT.equals(matchID);
 			case LeagueOfLegendsPackage.MATCH__BEST_OF:
 				return bestOF != BEST_OF_EDEFAULT;
 			case LeagueOfLegendsPackage.MATCH__SCORE:

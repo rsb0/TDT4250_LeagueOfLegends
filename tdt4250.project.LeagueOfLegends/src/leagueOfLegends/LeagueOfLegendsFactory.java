@@ -22,15 +22,6 @@ public interface LeagueOfLegendsFactory extends EFactory {
 	LeagueOfLegendsFactory eINSTANCE = leagueOfLegends.impl.LeagueOfLegendsFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>League Of Legends</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>League Of Legends</em>'.
-	 * @generated
-	 */
-	LeagueOfLegends createLeagueOfLegends();
-
-	/**
 	 * Returns a new object of class '<em>League</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

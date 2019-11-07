@@ -88,7 +88,7 @@ public class MatchItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -208,8 +208,10 @@ public class MatchItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Match match = (Match)object;
-		return getString("_UI_Match_type") + " " + match.getMatchID();
+		String label = ((Match)object).getMatchID();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Match_type") :
+			getString("_UI_Match_type") + " " + label;
 	}
 
 

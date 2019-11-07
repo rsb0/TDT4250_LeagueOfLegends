@@ -4,7 +4,7 @@ package leagueOfLegends.tests;
 
 import java.io.File;
 import java.io.IOException;
-import leagueOfLegends.LeagueOfLegends;
+import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsFactory;
 import leagueOfLegends.LeagueOfLegendsPackage;
 
@@ -58,7 +58,7 @@ public class LeagueOfLegendsExample {
 			System.out.println("Enter a list of file paths or URIs that have content like this:");
 			try {
 				Resource resource = resourceSet.createResource(URI.createURI("http:///My.leagueoflegends"));
-				LeagueOfLegends root = LeagueOfLegendsFactory.eINSTANCE.createLeagueOfLegends();
+				League root = LeagueOfLegendsFactory.eINSTANCE.createLeague();
 				resource.getContents().add(root);
 				resource.save(System.out, null);
 			}

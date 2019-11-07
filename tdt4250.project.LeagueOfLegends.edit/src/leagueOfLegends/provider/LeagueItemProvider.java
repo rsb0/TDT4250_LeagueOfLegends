@@ -126,7 +126,6 @@ public class LeagueItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__TEAMS);
-			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__MATCHES);
 			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__CHAMPIONS);
 		}
 		return childrenFeatures;
@@ -187,7 +186,6 @@ public class LeagueItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
-			case LeagueOfLegendsPackage.LEAGUE__MATCHES:
 			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -210,11 +208,6 @@ public class LeagueItemProvider
 			(createChildParameter
 				(LeagueOfLegendsPackage.Literals.LEAGUE__TEAMS,
 				 LeagueOfLegendsFactory.eINSTANCE.createTeam()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(LeagueOfLegendsPackage.Literals.LEAGUE__MATCHES,
-				 LeagueOfLegendsFactory.eINSTANCE.createMatch()));
 
 		newChildDescriptors.add
 			(createChildParameter

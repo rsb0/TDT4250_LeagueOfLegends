@@ -44,12 +44,12 @@ public interface Match extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Match ID</em>' attribute.
-	 * @see #setMatchID(int)
+	 * @see #setMatchID(String)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_MatchID()
 	 * @model
 	 * @generated
 	 */
-	int getMatchID();
+	String getMatchID();
 
 	/**
 	 * Sets the value of the '{@link leagueOfLegends.Match#getMatchID <em>Match ID</em>}' attribute.
@@ -59,7 +59,7 @@ public interface Match extends EObject {
 	 * @see #getMatchID()
 	 * @generated
 	 */
-	void setMatchID(int value);
+	void setMatchID(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Best OF</b></em>' attribute.

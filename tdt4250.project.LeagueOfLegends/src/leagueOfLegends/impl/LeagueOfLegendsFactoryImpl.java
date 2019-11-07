@@ -57,7 +57,6 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case LeagueOfLegendsPackage.LEAGUE_OF_LEGENDS: return createLeagueOfLegends();
 			case LeagueOfLegendsPackage.LEAGUE: return createLeague();
 			case LeagueOfLegendsPackage.CHAMPION: return createChampion();
 			case LeagueOfLegendsPackage.TEAM: return createTeam();
@@ -110,17 +109,6 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public LeagueOfLegends createLeagueOfLegends() {
-		LeagueOfLegendsImpl leagueOfLegends = new LeagueOfLegendsImpl();
-		return leagueOfLegends;
 	}
 
 	/**

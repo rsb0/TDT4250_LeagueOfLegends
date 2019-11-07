@@ -68,10 +68,6 @@ public class LeagueOfLegendsAdapterFactory extends AdapterFactoryImpl {
 	protected LeagueOfLegendsSwitch<Adapter> modelSwitch =
 		new LeagueOfLegendsSwitch<Adapter>() {
 			@Override
-			public Adapter caseLeagueOfLegends(LeagueOfLegends object) {
-				return createLeagueOfLegendsAdapter();
-			}
-			@Override
 			public Adapter caseLeague(League object) {
 				return createLeagueAdapter();
 			}
@@ -134,20 +130,6 @@ public class LeagueOfLegendsAdapterFactory extends AdapterFactoryImpl {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
-
-	/**
-	 * Creates a new adapter for an object of class '{@link leagueOfLegends.LeagueOfLegends <em>League Of Legends</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see leagueOfLegends.LeagueOfLegends
-	 * @generated
-	 */
-	public Adapter createLeagueOfLegendsAdapter() {
-		return null;
-	}
 
 	/**
 	 * Creates a new adapter for an object of class '{@link leagueOfLegends.League <em>League</em>}'.
