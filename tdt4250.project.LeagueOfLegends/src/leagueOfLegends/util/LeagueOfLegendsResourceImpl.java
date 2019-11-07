@@ -14,6 +14,8 @@ import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsFactory;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -67,10 +69,20 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
+		try {
+			File file = new File("assets\\league.xmi");
+			FileOutputStream fop = new FileOutputStream(file);
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			leagueResource.save(fop, null);
+			fop.flush();
+			fop.close();
+			
+		} catch (Exception e) {
+			System.out.println("Encountered error: " + e);
+		}
 		
-		
-		leagueResource.save(System.out, null);
 	}
 
 	
