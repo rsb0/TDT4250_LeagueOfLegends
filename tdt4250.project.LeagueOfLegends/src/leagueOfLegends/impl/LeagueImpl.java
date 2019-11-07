@@ -23,7 +23,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -74,7 +73,7 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	protected EList<Team> teams;
 
 	/**
-	 * The cached value of the '{@link #getSeasons() <em>Seasons</em>}' reference list.
+	 * The cached value of the '{@link #getSeasons() <em>Seasons</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSeasons()
@@ -156,7 +155,7 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	@Override
 	public EList<Season> getSeasons() {
 		if (seasons == null) {
-			seasons = new EObjectResolvingEList<Season>(Season.class, this, LeagueOfLegendsPackage.LEAGUE__SEASONS);
+			seasons = new EObjectContainmentWithInverseEList<Season>(Season.class, this, LeagueOfLegendsPackage.LEAGUE__SEASONS, LeagueOfLegendsPackage.SEASON__LEAGUE);
 		}
 		return seasons;
 	}
@@ -185,6 +184,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getTeams()).basicAdd(otherEnd, msgs);
+			case LeagueOfLegendsPackage.LEAGUE__SEASONS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSeasons()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -199,6 +200,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return ((InternalEList<?>)getTeams()).basicRemove(otherEnd, msgs);
+			case LeagueOfLegendsPackage.LEAGUE__SEASONS:
+				return ((InternalEList<?>)getSeasons()).basicRemove(otherEnd, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
 				return ((InternalEList<?>)getChampions()).basicRemove(otherEnd, msgs);
 		}

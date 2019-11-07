@@ -3,6 +3,7 @@
 package leagueOfLegends.impl;
 
 import java.util.Collection;
+import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsPackage;
 import leagueOfLegends.Match;
 import leagueOfLegends.Season;
@@ -16,6 +17,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -28,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link leagueOfLegends.impl.SeasonImpl#getSplitName <em>Split Name</em>}</li>
  *   <li>{@link leagueOfLegends.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.SeasonImpl#getLeague <em>League</em>}</li>
  * </ul>
  *
  * @generated
@@ -122,12 +125,87 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @generated
 	 */
 	@Override
+	public League getLeague() {
+		if (eContainerFeatureID() != LeagueOfLegendsPackage.SEASON__LEAGUE) return null;
+		return (League)eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetLeague(League newLeague, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newLeague, LeagueOfLegendsPackage.SEASON__LEAGUE, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLeague(League newLeague) {
+		if (newLeague != eInternalContainer() || (eContainerFeatureID() != LeagueOfLegendsPackage.SEASON__LEAGUE && newLeague != null)) {
+			if (EcoreUtil.isAncestor(this, newLeague))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newLeague != null)
+				msgs = ((InternalEObject)newLeague).eInverseAdd(this, LeagueOfLegendsPackage.LEAGUE__SEASONS, League.class, msgs);
+			msgs = basicSetLeague(newLeague, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.SEASON__LEAGUE, newLeague, newLeague));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetLeague((League)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.SEASON__MATCHES:
 				return ((InternalEList<?>)getMatches()).basicRemove(otherEnd, msgs);
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				return basicSetLeague(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				return eInternalContainer().eInverseRemove(this, LeagueOfLegendsPackage.LEAGUE__SEASONS, League.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -142,6 +220,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return getSplitName();
 			case LeagueOfLegendsPackage.SEASON__MATCHES:
 				return getMatches();
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				return getLeague();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -162,6 +242,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				getMatches().clear();
 				getMatches().addAll((Collection<? extends Match>)newValue);
 				return;
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				setLeague((League)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -180,6 +263,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case LeagueOfLegendsPackage.SEASON__MATCHES:
 				getMatches().clear();
 				return;
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				setLeague((League)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -196,6 +282,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return SPLIT_NAME_EDEFAULT == null ? splitName != null : !SPLIT_NAME_EDEFAULT.equals(splitName);
 			case LeagueOfLegendsPackage.SEASON__MATCHES:
 				return matches != null && !matches.isEmpty();
+			case LeagueOfLegendsPackage.SEASON__LEAGUE:
+				return getLeague() != null;
 		}
 		return super.eIsSet(featureID);
 	}

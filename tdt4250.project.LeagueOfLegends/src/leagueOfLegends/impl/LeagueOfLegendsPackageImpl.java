@@ -909,6 +909,16 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EReference getSeason_League() {
+		return (EReference)seasonEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGameStats() {
 		return gameStatsEClass;
 	}
@@ -1052,6 +1062,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		seasonEClass = createEClass(SEASON);
 		createEAttribute(seasonEClass, SEASON__SPLIT_NAME);
 		createEReference(seasonEClass, SEASON__MATCHES);
+		createEReference(seasonEClass, SEASON__LEAGUE);
 
 		gameStatsEClass = createEClass(GAME_STATS);
 
@@ -1094,7 +1105,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEClass(leagueEClass, League.class, "League", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLeague_Name(), ecorePackage.getEString(), "name", null, 0, 1, League.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLeague_Teams(), this.getTeam(), this.getTeam_League(), "teams", null, 0, -1, League.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLeague_Seasons(), this.getSeason(), null, "seasons", null, 0, -1, League.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLeague_Seasons(), this.getSeason(), this.getSeason_League(), "seasons", null, 0, -1, League.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLeague_Champions(), this.getChampion(), null, "champions", null, 0, -1, League.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(championEClass, Champion.class, "Champion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1171,6 +1182,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEClass(seasonEClass, Season.class, "Season", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSeason_SplitName(), ecorePackage.getEString(), "SplitName", null, 0, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSeason_Matches(), this.getMatch(), null, "matches", null, 0, -1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSeason_League(), this.getLeague(), this.getLeague_Seasons(), "league", null, 1, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameStatsEClass, GameStats.class, "GameStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

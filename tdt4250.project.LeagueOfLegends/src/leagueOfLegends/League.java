@@ -63,13 +63,15 @@ public interface League extends EObject {
 	EList<Team> getTeams();
 
 	/**
-	 * Returns the value of the '<em><b>Seasons</b></em>' reference list.
+	 * Returns the value of the '<em><b>Seasons</b></em>' containment reference list.
 	 * The list contents are of type {@link leagueOfLegends.Season}.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Season#getLeague <em>League</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Seasons</em>' reference list.
+	 * @return the value of the '<em>Seasons</em>' containment reference list.
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague_Seasons()
-	 * @model
+	 * @see leagueOfLegends.Season#getLeague
+	 * @model opposite="league" containment="true"
 	 * @generated
 	 */
 	EList<Season> getSeasons();

@@ -7,7 +7,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="-1"
         eType="#//Team" containment="true" eOpposite="#//Team/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="seasons" upperBound="-1"
-        eType="#//Season"/>
+        eType="#//Season" containment="true" eOpposite="#//Season/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="champions" upperBound="-1"
         eType="#//Champion" containment="true"/>
   </eClassifiers>
@@ -118,6 +118,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SplitName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="matches" upperBound="-1"
         eType="#//Match" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="league" lowerBound="1"
+        eType="#//League" eOpposite="#//League/seasons"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameStats"/>
 </ecore:EPackage>

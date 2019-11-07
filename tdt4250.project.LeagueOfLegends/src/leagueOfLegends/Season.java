@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link leagueOfLegends.Season#getSplitName <em>Split Name</em>}</li>
  *   <li>{@link leagueOfLegends.Season#getMatches <em>Matches</em>}</li>
+ *   <li>{@link leagueOfLegends.Season#getLeague <em>League</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason()
@@ -57,4 +58,28 @@ public interface Season extends EObject {
 	 * @generated
 	 */
 	EList<Match> getMatches();
+
+	/**
+	 * Returns the value of the '<em><b>League</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.League#getSeasons <em>Seasons</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>League</em>' container reference.
+	 * @see #setLeague(League)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason_League()
+	 * @see leagueOfLegends.League#getSeasons
+	 * @model opposite="seasons" required="true" transient="false"
+	 * @generated
+	 */
+	League getLeague();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Season#getLeague <em>League</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>League</em>' container reference.
+	 * @see #getLeague()
+	 * @generated
+	 */
+	void setLeague(League value);
 } // Season

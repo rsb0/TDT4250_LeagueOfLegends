@@ -10,9 +10,10 @@ public class LeagueOfLegendsCreationUtils {
 		return league;
 	}
 	
-	public static Season createSeason(String splitName) {
+	public static Season createSeason(String splitName, League league) {
 		Season season = LeagueOfLegendsFactory.eINSTANCE.createSeason();
 		season.setSplitName(splitName);
+		season.setLeague(league);
 		return season;
 	}
 	

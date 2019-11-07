@@ -15,7 +15,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -54,6 +53,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		Map<String, Game> games = new HashMap<String, Game>();
 		Map<String, Team> teams = new HashMap<String, Team>();
 		Map<String, Season> seasons = new HashMap<String, Season>();
+		Map<String, Match> matches = new HashMap<String, Match>();
 		
 		
 		//Season season = LeagueOfLegendsCreationUtils.createSeason(splitName)
@@ -75,7 +75,26 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					String[] cellData = row.split(",");
 					
 					//Handle season
+					String split = cellData[2];
+					boolean invalidConversionOfSplit = split.matches("^\\d{2}\\/");
+					if(invalidConversionOfSplit) {
+						split = cellData[2].substring(6) + "-" + cellData[2].substring(1, 1);
+					}
+					if(!seasons.containsKey(split)){
+						seasons.put(split, LeagueOfLegendsCreationUtils.createSeason(split, league));
+					}
 					
+					//Handle Match
+					
+					/*
+					 * 1. Check week -> How many games for the match (maximal, aka bestOf)
+					 * 2. MatchID -> Week + redTeam + blueTeam
+					 * 3. 
+					 */
+					String matchID = "FILL IN";
+					if(!matches.containsKey(matchID)) {
+						matches.put(matchID, LeagueOfLegendsCreationUtils.createMatch(matchID));
+					}
 					
 					//Handle game
 					if(!games.containsKey(cellData[0])) {

@@ -103,6 +103,7 @@
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Season">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Season/SplitName"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Season/matches"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Season/league"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameStats"/>
   </genPackages>
