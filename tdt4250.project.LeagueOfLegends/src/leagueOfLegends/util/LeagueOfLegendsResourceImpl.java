@@ -10,9 +10,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
-
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -38,30 +36,36 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		ResourceSet resSet = new ResourceSetImpl();
-		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ra", new LeagueOfLegendsResourceFactoryImpl());
-		Resource leagueResource = resSet.createResource(URI.createURI("test.ra"));
+		//ResourceSet resSet = new ResourceSetImpl();
+		//resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ra", new LeagueOfLegendsResourceFactoryImpl());
+		//Resource leagueResource = resSet.createResource(URI.createURI("test.ra"));
 		
 		//DO stuff
 		
-
-        String csvFile = "/Users/mkyong/csv/country3.csv";
-
-        CSVReader reader = null;
-        try {
-            reader = new CSVReader(new FileReader(csvFile));
-            String[] line;
-            while ((line = reader.readNext()) != null) {
-                System.out.println("Country [id= " + line[0] + ", code= " + line[1] + " , name=" + line[2] + "]");
-            }
-        } catch (CsvException e) {
-            e.printStackTrace();
-        }
-
-
+		String rowString;
+		BufferedReader csvReader;
+		try {
+			csvReader = new BufferedReader(new FileReader("assets\\EULCS-2018_split_2_small.csv"));
+			while ((rowString = csvReader.readLine()) != null) {
+				String[] rowData = rowString.split("\n");
+				for (String row: rowData) {
+					String str = "";
+					String[] cellData = row.split(",");
+					for (String cell : cellData) {
+						str += cell + "\t";
+					}
+					System.out.println(str);
+				}
+			}
+			csvReader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
 		
 		
-		leagueResource.save(System.out, null);
+		//leagueResource.save(System.out, null);
 	}
 
 	
