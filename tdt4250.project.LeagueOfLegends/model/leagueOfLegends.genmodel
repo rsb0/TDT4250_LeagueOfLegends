@@ -5,7 +5,8 @@
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>tdt4250.project.LeagueOfLegends.ecore</foreignModel>
-  <genPackages prefix="LeagueOfLegends" disposableProviderFactory="true" ecorePackage="tdt4250.project.LeagueOfLegends.ecore#/">
+  <genPackages prefix="LeagueOfLegends" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="tdt4250.project.LeagueOfLegends.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.project.LeagueOfLegends.ecore#//BestOf">
       <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//BestOf/bestOfOne"/>
       <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//BestOf/bestOfThree"/>

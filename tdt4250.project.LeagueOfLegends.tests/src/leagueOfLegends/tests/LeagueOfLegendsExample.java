@@ -8,6 +8,7 @@ import leagueOfLegends.LeagueOfLegends;
 import leagueOfLegends.LeagueOfLegendsFactory;
 import leagueOfLegends.LeagueOfLegendsPackage;
 
+import leagueOfLegends.util.LeagueOfLegendsResourceFactoryImpl;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
 
@@ -19,8 +20,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 
 import org.eclipse.emf.ecore.util.Diagnostician;
-
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +44,7 @@ public class LeagueOfLegendsExample {
 		//
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put
 			(Resource.Factory.Registry.DEFAULT_EXTENSION, 
-			 new XMIResourceFactoryImpl());
+			 new LeagueOfLegendsResourceFactoryImpl());
 
 		// Register the package to ensure it is available during loading.
 		//
