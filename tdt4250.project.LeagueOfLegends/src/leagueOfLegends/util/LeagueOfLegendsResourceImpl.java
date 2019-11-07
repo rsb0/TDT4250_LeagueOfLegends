@@ -10,6 +10,9 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
+import leagueOfLegends.League;
+import leagueOfLegends.LeagueOfLegendsFactory;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -36,10 +39,12 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		//ResourceSet resSet = new ResourceSetImpl();
-		//resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ra", new LeagueOfLegendsResourceFactoryImpl());
-		//Resource leagueResource = resSet.createResource(URI.createURI("test.ra"));
-		
+		ResourceSet resSet = new ResourceSetImpl();
+		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("LeagueOfLegends", new LeagueOfLegendsResourceFactoryImpl());
+		Resource leagueResource = resSet.createResource(URI.createURI("assets\\league.LeagueOfLegends"));
+		League league = LeagueOfLegendsFactory.eINSTANCE.createLeague();
+		league.setName("Testing league");
+		leagueResource.getContents().add(league);
 		//DO stuff
 		
 		String rowString;
@@ -65,7 +70,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 	
 		
 		
-		//leagueResource.save(System.out, null);
+		leagueResource.save(System.out, null);
 	}
 
 	
