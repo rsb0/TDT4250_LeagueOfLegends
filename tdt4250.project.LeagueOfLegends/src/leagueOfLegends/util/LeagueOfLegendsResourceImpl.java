@@ -54,7 +54,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		Map<String, Team> teams = new HashMap<String, Team>();
 		Map<String, Season> seasons = new HashMap<String, Season>();
 		Map<String, Match> matches = new HashMap<String, Match>();
-		
+		Map<String, Champion> champions = new HashMap<String, Champion>();
 		
 		//Season season = LeagueOfLegendsCreationUtils.createSeason(splitName)
 		
@@ -94,6 +94,13 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					
 					if(!seasons.containsKey(split)){
 						seasons.put(split, LeagueOfLegendsCreationUtils.createSeason(split, league, splitType));
+					}
+					
+					//Handle Champions
+					String champion = cellData[11];
+					if(!champions.containsKey(champion)) {
+						champions.put(champion, LeagueOfLegendsCreationUtils.createChampion(champion));
+						league.getChampions().add(champions.get(champion));
 					}
 					
 					//Handle Match
