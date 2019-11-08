@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_tDCVMAIwEeqt2oh3xnZ1Aw" selectedViews="_vZ9zgAI0EeqQaNZadnUrhA" version="14.1.0.201810161215">
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>league2.leagueoflegends</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_Oi268AIxEeqt2oh3xnZ1Aw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_vZ9zgAI0EeqQaNZadnUrhA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_y_mdcAI0EeqQaNZadnUrhA" name="league table 2" repPath="#_y9XBwAI0EeqQaNZadnUrhA">
+        <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']"/>
+        <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league2.leagueoflegends#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <table:DTable uid="_y9XBwAI0EeqQaNZadnUrhA" name="league table 2" headerColumnWidth="267">
+    <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league2.leagueoflegends#/"/>
+    <lines xmi:type="table:DLine" uid="_Lx2PEAI1EeqQaNZadnUrhA" label="Team Splyce">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.0"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.0"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMY7UAI1EeqQaNZadnUrhA" label="Splyce" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.0"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyAnIAI1EeqQaNZadnUrhA" label="Team Vitality">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.1"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.1"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMb-oAI1EeqQaNZadnUrhA" label="Vitality" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.1"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.1"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyCcUQI1EeqQaNZadnUrhA" label="Team Giants Gaming">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.2"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.2"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMclsQI1EeqQaNZadnUrhA" label="Giants Gaming" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.2"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.2"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyDDYAI1EeqQaNZadnUrhA" label="Team H2K">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.3"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.3"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMdMwQI1EeqQaNZadnUrhA" label="H2K" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.3"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.3"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyDDYgI1EeqQaNZadnUrhA" label="Team Schalke 04">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.4"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.4"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMdz0AI1EeqQaNZadnUrhA" label="Schalke 04" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.4"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.4"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyDqcQI1EeqQaNZadnUrhA" label="Team Unicorns of Love">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.5"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.5"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMdz0gI1EeqQaNZadnUrhA" label="Unicorns of Love" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.5"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.5"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyERgQI1EeqQaNZadnUrhA" label="Team G2 Esports">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.6"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.6"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMea4QI1EeqQaNZadnUrhA" label="G2 Esports" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.6"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.6"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyFfoQI1EeqQaNZadnUrhA" label="Team Roccat">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.7"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.7"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMfB8QI1EeqQaNZadnUrhA" label="Roccat" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.7"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.7"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyGGsQI1EeqQaNZadnUrhA" label="Team Fnatic">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.8"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.8"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMfpAQI1EeqQaNZadnUrhA" label="Fnatic" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.8"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.8"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_LyM0YQI1EeqQaNZadnUrhA" label="Team Misfits">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.9"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.9"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedLineMappings[name='']"/>
+      <cells xmi:type="table:DCell" uid="_WMgQEAI1EeqQaNZadnUrhA" label="Misfits" column="_WMQ_gAI1EeqQaNZadnUrhA">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.9"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league2.leagueoflegends#//@teams.9"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_WMQ_gAI1EeqQaNZadnUrhA" label="Name" cells="_WMY7UAI1EeqQaNZadnUrhA _WMb-oAI1EeqQaNZadnUrhA _WMclsQI1EeqQaNZadnUrhA _WMdMwQI1EeqQaNZadnUrhA _WMdz0AI1EeqQaNZadnUrhA _WMdz0gI1EeqQaNZadnUrhA _WMea4QI1EeqQaNZadnUrhA _WMfB8QI1EeqQaNZadnUrhA _WMfpAQI1EeqQaNZadnUrhA _WMgQEAI1EeqQaNZadnUrhA" width="178" featureName="name">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']/@ownedColumnMappings[name='']"/>
+    </columns>
+    <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='LeagueViewpoint']/@ownedRepresentations[name='leaguetable']"/>
+  </table:DTable>
+</xmi:XMI>

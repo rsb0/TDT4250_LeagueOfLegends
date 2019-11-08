@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="LeagueViewpoint" label="League Viewpoint" modelFileExtension="leagueoflegends">
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="leaguetable" label="league table" domainClass="leagueOfLegends::League">
+      <ownedLineMappings domainClass="leagueOfLegends::Team" semanticCandidatesExpression="feature:teams"/>
+      <ownedColumnMappings headerLabelExpression="Name" featureName="name"/>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
