@@ -23,6 +23,12 @@
       <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Side/red"/>
       <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//Side/blue"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.project.LeagueOfLegends.ecore#//SplitType">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//SplitType/regular"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//SplitType/playoff"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//SplitType/regionals"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.project.LeagueOfLegends.ecore#//SplitType/worlds"/>
+    </genEnums>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//League">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//League/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/teams"/>
@@ -104,6 +110,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Season/SplitName"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Season/matches"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Season/league"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Season/splitType"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameStats"/>
   </genPackages>

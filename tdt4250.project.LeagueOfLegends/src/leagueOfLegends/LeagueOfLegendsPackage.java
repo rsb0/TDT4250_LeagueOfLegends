@@ -878,13 +878,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int SEASON__LEAGUE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Split Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEASON__SPLIT_TYPE = 3;
+
+	/**
 	 * The number of structural features of the '<em>Season</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEASON_FEATURE_COUNT = 3;
+	int SEASON_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Season</em>' class.
@@ -952,6 +961,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	int SIDE = 13;
+
+
+	/**
+	 * The meta object id for the '{@link leagueOfLegends.SplitType <em>Split Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see leagueOfLegends.SplitType
+	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSplitType()
+	 * @generated
+	 */
+	int SPLIT_TYPE = 14;
 
 
 	/**
@@ -1737,6 +1757,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EReference getSeason_League();
 
 	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.Season#getSplitType <em>Split Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Split Type</em>'.
+	 * @see leagueOfLegends.Season#getSplitType()
+	 * @see #getSeason()
+	 * @generated
+	 */
+	EAttribute getSeason_SplitType();
+
+	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.GameStats <em>Game Stats</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1775,6 +1806,16 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getSide();
+
+	/**
+	 * Returns the meta object for enum '{@link leagueOfLegends.SplitType <em>Split Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Split Type</em>'.
+	 * @see leagueOfLegends.SplitType
+	 * @generated
+	 */
+	EEnum getSplitType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2396,6 +2437,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EReference SEASON__LEAGUE = eINSTANCE.getSeason_League();
 
 		/**
+		 * The meta object literal for the '<em><b>Split Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEASON__SPLIT_TYPE = eINSTANCE.getSeason_SplitType();
+
+		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameStatsImpl <em>Game Stats</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2434,6 +2483,16 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SIDE = eINSTANCE.getSide();
+
+		/**
+		 * The meta object literal for the '{@link leagueOfLegends.SplitType <em>Split Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see leagueOfLegends.SplitType
+		 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSplitType()
+		 * @generated
+		 */
+		EEnum SPLIT_TYPE = eINSTANCE.getSplitType();
 
 	}
 

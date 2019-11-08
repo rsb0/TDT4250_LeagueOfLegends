@@ -8,6 +8,7 @@ import leagueOfLegends.LeagueOfLegendsPackage;
 import leagueOfLegends.Match;
 import leagueOfLegends.Season;
 
+import leagueOfLegends.SplitType;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
@@ -31,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.SeasonImpl#getSplitName <em>Split Name</em>}</li>
  *   <li>{@link leagueOfLegends.impl.SeasonImpl#getMatches <em>Matches</em>}</li>
  *   <li>{@link leagueOfLegends.impl.SeasonImpl#getLeague <em>League</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.SeasonImpl#getSplitType <em>Split Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -63,6 +65,25 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @ordered
 	 */
 	protected EList<Match> matches;
+
+	/**
+	 * The default value of the '{@link #getSplitType() <em>Split Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSplitType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final SplitType SPLIT_TYPE_EDEFAULT = SplitType.REGULAR;
+	/**
+	 * The cached value of the '{@link #getSplitType() <em>Split Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSplitType()
+	 * @generated
+	 * @ordered
+	 */
+	protected SplitType splitType = SPLIT_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,6 +189,29 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * @generated
 	 */
 	@Override
+	public SplitType getSplitType() {
+		return splitType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSplitType(SplitType newSplitType) {
+		SplitType oldSplitType = splitType;
+		splitType = newSplitType == null ? SPLIT_TYPE_EDEFAULT : newSplitType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.SEASON__SPLIT_TYPE, oldSplitType, splitType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
@@ -222,6 +266,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return getMatches();
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
 				return getLeague();
+			case LeagueOfLegendsPackage.SEASON__SPLIT_TYPE:
+				return getSplitType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -245,6 +291,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
 				setLeague((League)newValue);
 				return;
+			case LeagueOfLegendsPackage.SEASON__SPLIT_TYPE:
+				setSplitType((SplitType)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -266,6 +315,9 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
 				setLeague((League)null);
 				return;
+			case LeagueOfLegendsPackage.SEASON__SPLIT_TYPE:
+				setSplitType(SPLIT_TYPE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -284,6 +336,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 				return matches != null && !matches.isEmpty();
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
 				return getLeague() != null;
+			case LeagueOfLegendsPackage.SEASON__SPLIT_TYPE:
+				return splitType != SPLIT_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -300,6 +354,8 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (SplitName: ");
 		result.append(splitName);
+		result.append(", splitType: ");
+		result.append(splitType);
 		result.append(')');
 		return result.toString();
 	}

@@ -76,4 +76,7 @@
     <player name="Sencux"/>
     <player name="Jesiz"/>
   </teams>
+  <seasons SplitName="2018-2"/>
+  <seasons SplitName="2018-2p" splitType="playoff"/>
+  <seasons SplitName="2018-2rq" splitType="regionals"/>
 </tdt4250.project.leagueOfLegends:League>

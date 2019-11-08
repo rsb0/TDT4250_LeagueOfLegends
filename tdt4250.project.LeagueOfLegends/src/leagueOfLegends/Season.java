@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Season#getSplitName <em>Split Name</em>}</li>
  *   <li>{@link leagueOfLegends.Season#getMatches <em>Matches</em>}</li>
  *   <li>{@link leagueOfLegends.Season#getLeague <em>League</em>}</li>
+ *   <li>{@link leagueOfLegends.Season#getSplitType <em>Split Type</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason()
@@ -82,4 +83,29 @@ public interface Season extends EObject {
 	 * @generated
 	 */
 	void setLeague(League value);
+
+	/**
+	 * Returns the value of the '<em><b>Split Type</b></em>' attribute.
+	 * The literals are from the enumeration {@link leagueOfLegends.SplitType}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Split Type</em>' attribute.
+	 * @see leagueOfLegends.SplitType
+	 * @see #setSplitType(SplitType)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason_SplitType()
+	 * @model
+	 * @generated
+	 */
+	SplitType getSplitType();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Season#getSplitType <em>Split Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Split Type</em>' attribute.
+	 * @see leagueOfLegends.SplitType
+	 * @see #getSplitType()
+	 * @generated
+	 */
+	void setSplitType(SplitType value);
 } // Season

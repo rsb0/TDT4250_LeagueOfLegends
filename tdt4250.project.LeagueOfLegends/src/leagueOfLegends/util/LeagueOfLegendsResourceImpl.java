@@ -76,12 +76,24 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					
 					//Handle season
 					String split = cellData[2];
-					boolean invalidConversionOfSplit = split.matches("^\\d{2}\\/");
+					boolean invalidConversionOfSplit = split.matches("\\d{2}\\/\\d{2}\\/\\d{4}");
 					if(invalidConversionOfSplit) {
-						split = cellData[2].substring(6) + "-" + cellData[2].substring(1, 1);
+						split = cellData[2].substring(6) + "-" + cellData[2].substring(1, 2);
+						System.out.println(split);
+						System.out.println(split.substring(split.length() - 1));
 					}
+					
+					//set split type
+					int splitType = 0;
+					if (split.substring(split.length() - 1).equals("p")){
+						splitType = 1;
+					} 
+					else  if (split.substring(split.length() - 1).equals("q")) {
+						splitType = 2;
+					}
+					
 					if(!seasons.containsKey(split)){
-						seasons.put(split, LeagueOfLegendsCreationUtils.createSeason(split, league));
+						seasons.put(split, LeagueOfLegendsCreationUtils.createSeason(split, league, splitType));
 					}
 					
 					//Handle Match

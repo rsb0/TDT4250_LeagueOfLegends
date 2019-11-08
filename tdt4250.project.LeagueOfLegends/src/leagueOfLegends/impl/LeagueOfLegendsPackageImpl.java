@@ -17,6 +17,7 @@ import leagueOfLegends.PlayerStats;
 import leagueOfLegends.Position;
 import leagueOfLegends.Season;
 import leagueOfLegends.Side;
+import leagueOfLegends.SplitType;
 import leagueOfLegends.Team;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -131,6 +132,13 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	private EEnum sideEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum splitTypeEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -919,6 +927,16 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EAttribute getSeason_SplitType() {
+		return (EAttribute)seasonEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGameStats() {
 		return gameStatsEClass;
 	}
@@ -951,6 +969,16 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	@Override
 	public EEnum getSide() {
 		return sideEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSplitType() {
+		return splitTypeEEnum;
 	}
 
 	/**
@@ -1063,6 +1091,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(seasonEClass, SEASON__SPLIT_NAME);
 		createEReference(seasonEClass, SEASON__MATCHES);
 		createEReference(seasonEClass, SEASON__LEAGUE);
+		createEAttribute(seasonEClass, SEASON__SPLIT_TYPE);
 
 		gameStatsEClass = createEClass(GAME_STATS);
 
@@ -1070,6 +1099,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		bestOfEEnum = createEEnum(BEST_OF);
 		positionEEnum = createEEnum(POSITION);
 		sideEEnum = createEEnum(SIDE);
+		splitTypeEEnum = createEEnum(SPLIT_TYPE);
 	}
 
 	/**
@@ -1183,6 +1213,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getSeason_SplitName(), ecorePackage.getEString(), "SplitName", null, 0, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSeason_Matches(), this.getMatch(), null, "matches", null, 0, -1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSeason_League(), this.getLeague(), this.getLeague_Seasons(), "league", null, 1, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSeason_SplitType(), this.getSplitType(), "splitType", null, 0, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameStatsEClass, GameStats.class, "GameStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1202,6 +1233,12 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEEnum(sideEEnum, Side.class, "Side");
 		addEEnumLiteral(sideEEnum, Side.RED);
 		addEEnumLiteral(sideEEnum, Side.BLUE);
+
+		initEEnum(splitTypeEEnum, SplitType.class, "SplitType");
+		addEEnumLiteral(splitTypeEEnum, SplitType.REGULAR);
+		addEEnumLiteral(splitTypeEEnum, SplitType.PLAYOFF);
+		addEEnumLiteral(splitTypeEEnum, SplitType.REGIONALS);
+		addEEnumLiteral(splitTypeEEnum, SplitType.WORLDS);
 
 		// Create resource
 		createResource(eNS_URI);

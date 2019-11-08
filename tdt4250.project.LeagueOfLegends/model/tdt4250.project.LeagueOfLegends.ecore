@@ -120,6 +120,13 @@
         eType="#//Match" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="league" lowerBound="1"
         eType="#//League" eOpposite="#//League/seasons"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="splitType" eType="#//SplitType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameStats"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="SplitType">
+    <eLiterals name="regular" literal="regular"/>
+    <eLiterals name="playoff" value="1"/>
+    <eLiterals name="regionals" value="2"/>
+    <eLiterals name="worlds" value="3"/>
+  </eClassifiers>
 </ecore:EPackage>

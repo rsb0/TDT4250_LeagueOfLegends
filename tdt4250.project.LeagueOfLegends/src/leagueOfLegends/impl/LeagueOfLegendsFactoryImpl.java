@@ -87,6 +87,8 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 				return createPositionFromString(eDataType, initialValue);
 			case LeagueOfLegendsPackage.SIDE:
 				return createSideFromString(eDataType, initialValue);
+			case LeagueOfLegendsPackage.SPLIT_TYPE:
+				return createSplitTypeFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -106,6 +108,8 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 				return convertPositionToString(eDataType, instanceValue);
 			case LeagueOfLegendsPackage.SIDE:
 				return convertSideToString(eDataType, instanceValue);
+			case LeagueOfLegendsPackage.SPLIT_TYPE:
+				return convertSplitTypeToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -289,6 +293,26 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	 * @generated
 	 */
 	public String convertSideToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SplitType createSplitTypeFromString(EDataType eDataType, String initialValue) {
+		SplitType result = SplitType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSplitTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

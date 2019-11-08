@@ -62,6 +62,7 @@ public class SeasonItemProvider
 			super.getPropertyDescriptors(object);
 
 			addSplitNamePropertyDescriptor(object);
+			addSplitTypePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -80,6 +81,28 @@ public class SeasonItemProvider
 				 getString("_UI_Season_SplitName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Season_SplitName_feature", "_UI_Season_type"),
 				 LeagueOfLegendsPackage.Literals.SEASON__SPLIT_NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Split Type feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSplitTypePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Season_splitType_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Season_splitType_feature", "_UI_Season_type"),
+				 LeagueOfLegendsPackage.Literals.SEASON__SPLIT_TYPE,
 				 true,
 				 false,
 				 false,
@@ -157,6 +180,7 @@ public class SeasonItemProvider
 
 		switch (notification.getFeatureID(Season.class)) {
 			case LeagueOfLegendsPackage.SEASON__SPLIT_NAME:
+			case LeagueOfLegendsPackage.SEASON__SPLIT_TYPE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case LeagueOfLegendsPackage.SEASON__MATCHES:
