@@ -171,13 +171,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int CHAMPION__NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>Champion Stat</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPION__CHAMPION_STAT = 1;
+
+	/**
 	 * The number of structural features of the '<em>Champion</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHAMPION_FEATURE_COUNT = 1;
+	int CHAMPION_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Champion</em>' class.
@@ -533,31 +542,13 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME__GAME_PLAYER_STATS = 5;
 
 	/**
-	 * The feature id for the '<em><b>Winner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GAME__WINNER = 6;
-
-	/**
-	 * The feature id for the '<em><b>Game Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GAME__GAME_LENGTH = 7;
-
-	/**
 	 * The number of structural features of the '<em>Game</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GAME_FEATURE_COUNT = 8;
+	int GAME_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Game</em>' class.
@@ -924,13 +915,130 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME_STATS = 10;
 
 	/**
+	 * The feature id for the '<em><b>Game</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__GAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__DURATION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Winner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__WINNER = 2;
+
+	/**
+	 * The feature id for the '<em><b>Total Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_KILLS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Total Deaths</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_DEATHS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Total Assist</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_ASSIST = 5;
+
+	/**
+	 * The feature id for the '<em><b>Total Golds</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_GOLDS = 6;
+
+	/**
+	 * The feature id for the '<em><b>Total Wards</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_WARDS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Total Wards Killed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_WARDS_KILLED = 8;
+
+	/**
+	 * The feature id for the '<em><b>Total Vision Wards</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_VISION_WARDS = 9;
+
+	/**
+	 * The feature id for the '<em><b>Total Minion Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_MINION_KILLS = 10;
+
+	/**
+	 * The feature id for the '<em><b>Total Monster Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TOTAL_MONSTER_KILLS = 11;
+
+	/**
+	 * The feature id for the '<em><b>Team Baron Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_STATS__TEAM_BARON_KILLS = 12;
+
+	/**
 	 * The number of structural features of the '<em>Game Stats</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GAME_STATS_FEATURE_COUNT = 0;
+	int GAME_STATS_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>Game Stats</em>' class.
@@ -942,6 +1050,88 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME_STATS_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link leagueOfLegends.impl.ChampionsStatsImpl <em>Champions Stats</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see leagueOfLegends.impl.ChampionsStatsImpl
+	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getChampionsStats()
+	 * @generated
+	 */
+	int CHAMPIONS_STATS = 11;
+
+	/**
+	 * The feature id for the '<em><b>Games Played</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__GAMES_PLAYED = 0;
+
+	/**
+	 * The feature id for the '<em><b>Total Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__TOTAL_KILLS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Total Deaths</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__TOTAL_DEATHS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Total Assist</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__TOTAL_ASSIST = 3;
+
+	/**
+	 * The feature id for the '<em><b>Kill Death Assist Ratio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO = 4;
+
+	/**
+	 * The feature id for the '<em><b>Champion</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__CHAMPION = 5;
+
+	/**
+	 * The number of structural features of the '<em>Champions Stats</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Champions Stats</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -949,7 +1139,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getBestOf()
 	 * @generated
 	 */
-	int BEST_OF = 11;
+	int BEST_OF = 12;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Position <em>Position</em>}' enum.
@@ -959,7 +1149,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getPosition()
 	 * @generated
 	 */
-	int POSITION = 12;
+	int POSITION = 13;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Side <em>Side</em>}' enum.
@@ -969,7 +1159,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSide()
 	 * @generated
 	 */
-	int SIDE = 13;
+	int SIDE = 14;
 
 
 	/**
@@ -980,7 +1170,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSplitType()
 	 * @generated
 	 */
-	int SPLIT_TYPE = 14;
+	int SPLIT_TYPE = 15;
 
 
 	/**
@@ -1265,6 +1455,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EAttribute getChampion_Name();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link leagueOfLegends.Champion#getChampionStat <em>Champion Stat</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Champion Stat</em>'.
+	 * @see leagueOfLegends.Champion#getChampionStat()
+	 * @see #getChampion()
+	 * @generated
+	 */
+	EReference getChampion_ChampionStat();
+
+	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Match <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1415,28 +1616,6 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGame_GamePlayerStats();
-
-	/**
-	 * Returns the meta object for the attribute '{@link leagueOfLegends.Game#getWinner <em>Winner</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Winner</em>'.
-	 * @see leagueOfLegends.Game#getWinner()
-	 * @see #getGame()
-	 * @generated
-	 */
-	EAttribute getGame_Winner();
-
-	/**
-	 * Returns the meta object for the attribute '{@link leagueOfLegends.Game#getGameLength <em>Game Length</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Game Length</em>'.
-	 * @see leagueOfLegends.Game#getGameLength()
-	 * @see #getGame()
-	 * @generated
-	 */
-	EAttribute getGame_GameLength();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.GameTeamStats <em>Game Team Stats</em>}'.
@@ -1798,6 +1977,225 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EClass getGameStats();
 
 	/**
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.GameStats#getGame <em>Game</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Game</em>'.
+	 * @see leagueOfLegends.GameStats#getGame()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EReference getGameStats_Game();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getDuration <em>Duration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Duration</em>'.
+	 * @see leagueOfLegends.GameStats#getDuration()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_Duration();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getWinner <em>Winner</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Winner</em>'.
+	 * @see leagueOfLegends.GameStats#getWinner()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_Winner();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalKills <em>Total Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Kills</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalKills()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalKills();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalDeaths <em>Total Deaths</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Deaths</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalDeaths()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalDeaths();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalAssist <em>Total Assist</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Assist</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalAssist()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalAssist();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalGolds <em>Total Golds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Golds</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalGolds()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalGolds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalWards <em>Total Wards</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Wards</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalWards()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalWards();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalWardsKilled <em>Total Wards Killed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Wards Killed</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalWardsKilled()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalWardsKilled();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalVisionWards <em>Total Vision Wards</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Vision Wards</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalVisionWards()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalVisionWards();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalMinionKills <em>Total Minion Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Minion Kills</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalMinionKills()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalMinionKills();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTotalMonsterKills <em>Total Monster Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Monster Kills</em>'.
+	 * @see leagueOfLegends.GameStats#getTotalMonsterKills()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TotalMonsterKills();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GameStats#getTeamBaronKills <em>Team Baron Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Team Baron Kills</em>'.
+	 * @see leagueOfLegends.GameStats#getTeamBaronKills()
+	 * @see #getGameStats()
+	 * @generated
+	 */
+	EAttribute getGameStats_TeamBaronKills();
+
+	/**
+	 * Returns the meta object for class '{@link leagueOfLegends.ChampionsStats <em>Champions Stats</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Champions Stats</em>'.
+	 * @see leagueOfLegends.ChampionsStats
+	 * @generated
+	 */
+	EClass getChampionsStats();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getGamesPlayed <em>Games Played</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Games Played</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getGamesPlayed()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_GamesPlayed();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getTotalKills <em>Total Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Kills</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getTotalKills()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_TotalKills();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getTotalDeaths <em>Total Deaths</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Deaths</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getTotalDeaths()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_TotalDeaths();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getTotalAssist <em>Total Assist</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Assist</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getTotalAssist()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_TotalAssist();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Kill Death Assist Ratio</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getKillDeathAssistRatio()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_KillDeathAssistRatio();
+
+	/**
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.ChampionsStats#getChampion <em>Champion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Champion</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getChampion()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EReference getChampionsStats_Champion();
+
+	/**
 	 * Returns the meta object for enum '{@link leagueOfLegends.BestOf <em>Best Of</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2079,6 +2477,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EAttribute CHAMPION__NAME = eINSTANCE.getChampion_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Champion Stat</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CHAMPION__CHAMPION_STAT = eINSTANCE.getChampion_ChampionStat();
+
+		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.MatchImpl <em>Match</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2193,22 +2599,6 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GAME__GAME_PLAYER_STATS = eINSTANCE.getGame_GamePlayerStats();
-
-		/**
-		 * The meta object literal for the '<em><b>Winner</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GAME__WINNER = eINSTANCE.getGame_Winner();
-
-		/**
-		 * The meta object literal for the '<em><b>Game Length</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GAME__GAME_LENGTH = eINSTANCE.getGame_GameLength();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameTeamStatsImpl <em>Game Team Stats</em>}' class.
@@ -2481,6 +2871,168 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EClass GAME_STATS = eINSTANCE.getGameStats();
+
+		/**
+		 * The meta object literal for the '<em><b>Game</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GAME_STATS__GAME = eINSTANCE.getGameStats_Game();
+
+		/**
+		 * The meta object literal for the '<em><b>Duration</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__DURATION = eINSTANCE.getGameStats_Duration();
+
+		/**
+		 * The meta object literal for the '<em><b>Winner</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__WINNER = eINSTANCE.getGameStats_Winner();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_KILLS = eINSTANCE.getGameStats_TotalKills();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Deaths</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_DEATHS = eINSTANCE.getGameStats_TotalDeaths();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Assist</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_ASSIST = eINSTANCE.getGameStats_TotalAssist();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Golds</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_GOLDS = eINSTANCE.getGameStats_TotalGolds();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Wards</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_WARDS = eINSTANCE.getGameStats_TotalWards();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Wards Killed</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_WARDS_KILLED = eINSTANCE.getGameStats_TotalWardsKilled();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Vision Wards</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_VISION_WARDS = eINSTANCE.getGameStats_TotalVisionWards();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Minion Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_MINION_KILLS = eINSTANCE.getGameStats_TotalMinionKills();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Monster Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TOTAL_MONSTER_KILLS = eINSTANCE.getGameStats_TotalMonsterKills();
+
+		/**
+		 * The meta object literal for the '<em><b>Team Baron Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_STATS__TEAM_BARON_KILLS = eINSTANCE.getGameStats_TeamBaronKills();
+
+		/**
+		 * The meta object literal for the '{@link leagueOfLegends.impl.ChampionsStatsImpl <em>Champions Stats</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see leagueOfLegends.impl.ChampionsStatsImpl
+		 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getChampionsStats()
+		 * @generated
+		 */
+		EClass CHAMPIONS_STATS = eINSTANCE.getChampionsStats();
+
+		/**
+		 * The meta object literal for the '<em><b>Games Played</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__GAMES_PLAYED = eINSTANCE.getChampionsStats_GamesPlayed();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__TOTAL_KILLS = eINSTANCE.getChampionsStats_TotalKills();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Deaths</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__TOTAL_DEATHS = eINSTANCE.getChampionsStats_TotalDeaths();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Assist</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__TOTAL_ASSIST = eINSTANCE.getChampionsStats_TotalAssist();
+
+		/**
+		 * The meta object literal for the '<em><b>Kill Death Assist Ratio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO = eINSTANCE.getChampionsStats_KillDeathAssistRatio();
+
+		/**
+		 * The meta object literal for the '<em><b>Champion</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CHAMPIONS_STATS__CHAMPION = eINSTANCE.getChampionsStats_Champion();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.

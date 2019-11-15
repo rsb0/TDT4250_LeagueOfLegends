@@ -70,8 +70,8 @@ public class GamePlayerStatsItemProvider
 			addVisionWardsPropertyDescriptor(object);
 			addMinionKillsPropertyDescriptor(object);
 			addMonsterKillsPropertyDescriptor(object);
-			addBaronKillsPropertyDescriptor(object);
 			addChampionPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -297,28 +297,6 @@ public class GamePlayerStatsItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Baron Kills feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addBaronKillsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_GamePlayerStats_baronKills_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_GamePlayerStats_baronKills_feature", "_UI_GamePlayerStats_type"),
-				 LeagueOfLegendsPackage.Literals.GAME_PLAYER_STATS__BARON_KILLS,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This adds a property descriptor for the Champion feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -336,6 +314,28 @@ public class GamePlayerStatsItemProvider
 				 false,
 				 true,
 				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_GamePlayerStats_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_GamePlayerStats_name_feature", "_UI_GamePlayerStats_type"),
+				 LeagueOfLegendsPackage.Literals.GAME_PLAYER_STATS__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -359,8 +359,10 @@ public class GamePlayerStatsItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		GamePlayerStats gamePlayerStats = (GamePlayerStats)object;
-		return getString("_UI_GamePlayerStats_type") + " " + gamePlayerStats.getKills();
+		String label = ((GamePlayerStats)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_GamePlayerStats_type") :
+			getString("_UI_GamePlayerStats_type") + " " + label;
 	}
 
 
@@ -385,7 +387,7 @@ public class GamePlayerStatsItemProvider
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__VISION_WARDS:
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MINION_KILLS:
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MONSTER_KILLS:
-			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS:
+			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

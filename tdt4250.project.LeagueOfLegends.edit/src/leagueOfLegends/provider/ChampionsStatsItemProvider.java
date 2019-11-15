@@ -6,16 +6,13 @@ package leagueOfLegends.provider;
 import java.util.Collection;
 import java.util.List;
 
-import leagueOfLegends.LeagueOfLegendsFactory;
+import leagueOfLegends.ChampionsStats;
 import leagueOfLegends.LeagueOfLegendsPackage;
-import leagueOfLegends.Match;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
-
-import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
@@ -29,12 +26,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link leagueOfLegends.Match} object.
+ * This is the item provider adapter for a {@link leagueOfLegends.ChampionsStats} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class MatchItemProvider 
+public class ChampionsStatsItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -48,7 +45,7 @@ public class MatchItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MatchItemProvider(AdapterFactory adapterFactory) {
+	public ChampionsStatsItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -63,164 +60,134 @@ public class MatchItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addMatchIDPropertyDescriptor(object);
-			addBestOFPropertyDescriptor(object);
-			addScorePropertyDescriptor(object);
-			addTeamsPropertyDescriptor(object);
-			addWeekPropertyDescriptor(object);
+			addGamesPlayedPropertyDescriptor(object);
+			addTotalKillsPropertyDescriptor(object);
+			addTotalDeathsPropertyDescriptor(object);
+			addTotalAssistPropertyDescriptor(object);
+			addKillDeathAssistRatioPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Match ID feature.
+	 * This adds a property descriptor for the Games Played feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addMatchIDPropertyDescriptor(Object object) {
+	protected void addGamesPlayedPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Match_matchID_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Match_matchID_feature", "_UI_Match_type"),
-				 LeagueOfLegendsPackage.Literals.MATCH__MATCH_ID,
+				 getString("_UI_ChampionsStats_gamesPlayed_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_gamesPlayed_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__GAMES_PLAYED,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Best OF feature.
+	 * This adds a property descriptor for the Total Kills feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addBestOFPropertyDescriptor(Object object) {
+	protected void addTotalKillsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Match_bestOF_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Match_bestOF_feature", "_UI_Match_type"),
-				 LeagueOfLegendsPackage.Literals.MATCH__BEST_OF,
+				 getString("_UI_ChampionsStats_totalKills_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_totalKills_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__TOTAL_KILLS,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Score feature.
+	 * This adds a property descriptor for the Total Deaths feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addScorePropertyDescriptor(Object object) {
+	protected void addTotalDeathsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Match_score_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Match_score_feature", "_UI_Match_type"),
-				 LeagueOfLegendsPackage.Literals.MATCH__SCORE,
+				 getString("_UI_ChampionsStats_totalDeaths_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_totalDeaths_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__TOTAL_DEATHS,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Teams feature.
+	 * This adds a property descriptor for the Total Assist feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTeamsPropertyDescriptor(Object object) {
+	protected void addTotalAssistPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Match_teams_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Match_teams_feature", "_UI_Match_type"),
-				 LeagueOfLegendsPackage.Literals.MATCH__TEAMS,
+				 getString("_UI_ChampionsStats_totalAssist_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_totalAssist_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__TOTAL_ASSIST,
 				 true,
 				 false,
-				 true,
-				 null,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Week feature.
+	 * This adds a property descriptor for the Kill Death Assist Ratio feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addWeekPropertyDescriptor(Object object) {
+	protected void addKillDeathAssistRatioPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Match_week_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Match_week_feature", "_UI_Match_type"),
-				 LeagueOfLegendsPackage.Literals.MATCH__WEEK,
+				 getString("_UI_ChampionsStats_killDeathAssistRatio_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_killDeathAssistRatio_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(LeagueOfLegendsPackage.Literals.MATCH__GAMES);
-		}
-		return childrenFeatures;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
-
-		return super.getChildFeature(object, child);
-	}
-
-	/**
-	 * This returns Match.gif.
+	 * This returns ChampionsStats.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Match"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/ChampionsStats"));
 	}
 
 	/**
@@ -231,10 +198,8 @@ public class MatchItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Match)object).getMatchID();
-		return label == null || label.length() == 0 ?
-			getString("_UI_Match_type") :
-			getString("_UI_Match_type") + " " + label;
+		ChampionsStats championsStats = (ChampionsStats)object;
+		return getString("_UI_ChampionsStats_type") + " " + championsStats.getGamesPlayed();
 	}
 
 
@@ -249,15 +214,13 @@ public class MatchItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Match.class)) {
-			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
-			case LeagueOfLegendsPackage.MATCH__BEST_OF:
-			case LeagueOfLegendsPackage.MATCH__SCORE:
-			case LeagueOfLegendsPackage.MATCH__WEEK:
+		switch (notification.getFeatureID(ChampionsStats.class)) {
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__GAMES_PLAYED:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__TOTAL_KILLS:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__TOTAL_DEATHS:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__TOTAL_ASSIST:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-			case LeagueOfLegendsPackage.MATCH__GAMES:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
 		super.notifyChanged(notification);
@@ -273,11 +236,6 @@ public class MatchItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(LeagueOfLegendsPackage.Literals.MATCH__GAMES,
-				 LeagueOfLegendsFactory.eINSTANCE.createGame()));
 	}
 
 	/**
