@@ -877,8 +877,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
-	public EAttribute getGamePlayerStats_BaronKills() {
-		return (EAttribute)gamePlayerStatsEClass.getEStructuralFeatures().get(10);
+	public EReference getGamePlayerStats_Champion() {
+		return (EReference)gamePlayerStatsEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -887,8 +887,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
-	public EReference getGamePlayerStats_Champion() {
-		return (EReference)gamePlayerStatsEClass.getEStructuralFeatures().get(11);
+	public EAttribute getGamePlayerStats_Name() {
+		return (EAttribute)gamePlayerStatsEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -1095,8 +1095,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(gamePlayerStatsEClass, GAME_PLAYER_STATS__VISION_WARDS);
 		createEAttribute(gamePlayerStatsEClass, GAME_PLAYER_STATS__MINION_KILLS);
 		createEAttribute(gamePlayerStatsEClass, GAME_PLAYER_STATS__MONSTER_KILLS);
-		createEAttribute(gamePlayerStatsEClass, GAME_PLAYER_STATS__BARON_KILLS);
 		createEReference(gamePlayerStatsEClass, GAME_PLAYER_STATS__CHAMPION);
+		createEAttribute(gamePlayerStatsEClass, GAME_PLAYER_STATS__NAME);
 
 		seasonEClass = createEClass(SEASON);
 		createEAttribute(seasonEClass, SEASON__SPLIT_NAME);
@@ -1218,8 +1218,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getGamePlayerStats_VisionWards(), ecorePackage.getEInt(), "visionWards", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGamePlayerStats_MinionKills(), ecorePackage.getEInt(), "minionKills", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGamePlayerStats_MonsterKills(), ecorePackage.getEInt(), "monsterKills", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGamePlayerStats_BaronKills(), ecorePackage.getEInt(), "baronKills", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGamePlayerStats_Champion(), this.getChampion(), null, "champion", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGamePlayerStats_Name(), ecorePackage.getEString(), "name", null, 0, 1, GamePlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(seasonEClass, Season.class, "Season", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSeason_SplitName(), ecorePackage.getEString(), "SplitName", null, 0, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

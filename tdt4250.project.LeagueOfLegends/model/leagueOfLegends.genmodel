@@ -108,8 +108,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/visionWards"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/minionKills"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/monsterKills"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/baronKills"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/champion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GamePlayerStats/name"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Season">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Season/SplitName"/>

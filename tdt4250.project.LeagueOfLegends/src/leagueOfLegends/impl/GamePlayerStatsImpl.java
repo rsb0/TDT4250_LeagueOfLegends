@@ -33,8 +33,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getVisionWards <em>Vision Wards</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getMinionKills <em>Minion Kills</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getMonsterKills <em>Monster Kills</em>}</li>
- *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getBaronKills <em>Baron Kills</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getChampion <em>Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.GamePlayerStatsImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -231,26 +231,6 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 	protected int monsterKills = MONSTER_KILLS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getBaronKills() <em>Baron Kills</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBaronKills()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int BARON_KILLS_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getBaronKills() <em>Baron Kills</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBaronKills()
-	 * @generated
-	 * @ordered
-	 */
-	protected int baronKills = BARON_KILLS_EDEFAULT;
-
-	/**
 	 * The cached value of the '{@link #getChampion() <em>Champion</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -259,6 +239,26 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected Champion champion;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -532,29 +532,6 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public int getBaronKills() {
-		return baronKills;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBaronKills(int newBaronKills) {
-		int oldBaronKills = baronKills;
-		baronKills = newBaronKills;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS, oldBaronKills, baronKills));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Champion getChampion() {
 		if (champion != null && champion.eIsProxy()) {
 			InternalEObject oldChampion = (InternalEObject)champion;
@@ -595,6 +572,29 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__PLAYER:
@@ -618,11 +618,11 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 				return getMinionKills();
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MONSTER_KILLS:
 				return getMonsterKills();
-			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS:
-				return getBaronKills();
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__CHAMPION:
 				if (resolve) return getChampion();
 				return basicGetChampion();
+			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -665,11 +665,11 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MONSTER_KILLS:
 				setMonsterKills((Integer)newValue);
 				return;
-			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS:
-				setBaronKills((Integer)newValue);
-				return;
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__CHAMPION:
 				setChampion((Champion)newValue);
+				return;
+			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -713,11 +713,11 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MONSTER_KILLS:
 				setMonsterKills(MONSTER_KILLS_EDEFAULT);
 				return;
-			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS:
-				setBaronKills(BARON_KILLS_EDEFAULT);
-				return;
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__CHAMPION:
 				setChampion((Champion)null);
+				return;
+			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -751,10 +751,10 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 				return minionKills != MINION_KILLS_EDEFAULT;
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__MONSTER_KILLS:
 				return monsterKills != MONSTER_KILLS_EDEFAULT;
-			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__BARON_KILLS:
-				return baronKills != BARON_KILLS_EDEFAULT;
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__CHAMPION:
 				return champion != null;
+			case LeagueOfLegendsPackage.GAME_PLAYER_STATS__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -787,8 +787,8 @@ public class GamePlayerStatsImpl extends MinimalEObjectImpl.Container implements
 		result.append(minionKills);
 		result.append(", monsterKills: ");
 		result.append(monsterKills);
-		result.append(", baronKills: ");
-		result.append(baronKills);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

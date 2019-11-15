@@ -9,7 +9,6 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
 import leagueOfLegends.*;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -105,7 +104,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0]));
 					}
 					Game game = games.get(cellData[0]);
-
+					
 					// Handle teams
 
 					if (!teams.containsKey(cellData[10])) {
@@ -125,16 +124,25 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						Optional<Player> result = team.getPlayer().stream().filter(x -> x.getName().equals(cellData[9]))
 								.findAny();
 						
+						Player player;
+						
 						if (!result.isPresent()) {
-							Player player = LeagueOfLegendsCreationUtils.createPlayer(cellData[9]);
-							player.getChampionPool().add(champions.get(champion));
+							player = LeagueOfLegendsCreationUtils.createPlayer(cellData[9]);
 							team.getPlayer().add(player);
 						}
 						else {
-							result.get().getChampionPool().add(champions.get(champion));
+							player = result.get();
 						}
+						player.getChampionPool().add(champions.get(champion));
 						
+						//Handle Game Player statistics
+						int cellDataIndex = 19;
+						GamePlayerStats gamePlayerStats = LeagueOfLegendsCreationUtils.createGamePlayerStats(player, champions.get(champion), Integer.parseInt(cellData[cellDataIndex]), Integer.parseInt(cellData[cellDataIndex + 1]), Integer.parseInt(cellData[cellDataIndex + 2]), Integer.parseInt(cellData[cellDataIndex + 18]), Integer.parseInt(cellData[cellDataIndex + 20]), Integer.parseInt(cellData[cellDataIndex + 22]), Integer.parseInt(cellData[cellDataIndex + 23]),Integer.parseInt(cellData[cellDataIndex + 25]),Integer.parseInt(cellData[cellDataIndex + 26]));
+						game.getGamePlayerStats().add(gamePlayerStats);
 					}
+					
+					
+
 					
 					
 

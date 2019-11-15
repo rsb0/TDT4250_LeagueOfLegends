@@ -56,6 +56,27 @@ public class LeagueOfLegendsCreationUtils {
 		return gameStats;
 	}
 	
+	public static GamePlayerStats createGamePlayerStats(Player player, Champion champion, int kills, int deaths, int assists,
+			int wards, int visionWards, int wardsKilled, int gold, int minionKills, int monsterKills) {
+		GamePlayerStats gamePlayerStats = LeagueOfLegendsFactory.eINSTANCE.createGamePlayerStats();
+		
+		gamePlayerStats.setPlayer(player);
+		gamePlayerStats.setName(player.getName());
+		gamePlayerStats.setChampion(champion);
+		gamePlayerStats.setKills(kills);
+		gamePlayerStats.setDeaths(deaths);
+		gamePlayerStats.setAssist(assists);
+		gamePlayerStats.setWards(wards);
+		gamePlayerStats.setVisionWards(visionWards);
+		gamePlayerStats.setWardsKilled(wardsKilled);
+		gamePlayerStats.setGolds(gold);
+		gamePlayerStats.setMinionKills(minionKills);
+		gamePlayerStats.setMonsterKills(monsterKills);
+		
+		return gamePlayerStats;
+	}
+	
+	
 	public static BestOf mapWeekToBestOf(String week) {
 		
 		for(BestOf bestOf: BestOf.VALUES) {

@@ -814,22 +814,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME_PLAYER_STATS__MONSTER_KILLS = 9;
 
 	/**
-	 * The feature id for the '<em><b>Baron Kills</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GAME_PLAYER_STATS__BARON_KILLS = 10;
-
-	/**
 	 * The feature id for the '<em><b>Champion</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GAME_PLAYER_STATS__CHAMPION = 11;
+	int GAME_PLAYER_STATS__CHAMPION = 10;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME_PLAYER_STATS__NAME = 11;
 
 	/**
 	 * The number of structural features of the '<em>Game Player Stats</em>' class.
@@ -1712,17 +1712,6 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EAttribute getGamePlayerStats_MonsterKills();
 
 	/**
-	 * Returns the meta object for the attribute '{@link leagueOfLegends.GamePlayerStats#getBaronKills <em>Baron Kills</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Baron Kills</em>'.
-	 * @see leagueOfLegends.GamePlayerStats#getBaronKills()
-	 * @see #getGamePlayerStats()
-	 * @generated
-	 */
-	EAttribute getGamePlayerStats_BaronKills();
-
-	/**
 	 * Returns the meta object for the reference '{@link leagueOfLegends.GamePlayerStats#getChampion <em>Champion</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1732,6 +1721,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGamePlayerStats_Champion();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.GamePlayerStats#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see leagueOfLegends.GamePlayerStats#getName()
+	 * @see #getGamePlayerStats()
+	 * @generated
+	 */
+	EAttribute getGamePlayerStats_Name();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Season <em>Season</em>}'.
@@ -2415,20 +2415,20 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EAttribute GAME_PLAYER_STATS__MONSTER_KILLS = eINSTANCE.getGamePlayerStats_MonsterKills();
 
 		/**
-		 * The meta object literal for the '<em><b>Baron Kills</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GAME_PLAYER_STATS__BARON_KILLS = eINSTANCE.getGamePlayerStats_BaronKills();
-
-		/**
 		 * The meta object literal for the '<em><b>Champion</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference GAME_PLAYER_STATS__CHAMPION = eINSTANCE.getGamePlayerStats_Champion();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME_PLAYER_STATS__NAME = eINSTANCE.getGamePlayerStats_Name();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.SeasonImpl <em>Season</em>}' class.
