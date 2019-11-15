@@ -325,6 +325,29 @@ public class LeagueOfLegendsItemProviderAdapterFactory extends LeagueOfLegendsAd
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link leagueOfLegends.ChampionsStats} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ChampionsStatsItemProvider championsStatsItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link leagueOfLegends.ChampionsStats}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createChampionsStatsAdapter() {
+		if (championsStatsItemProvider == null) {
+			championsStatsItemProvider = new ChampionsStatsItemProvider(this);
+		}
+
+		return championsStatsItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -440,6 +463,7 @@ public class LeagueOfLegendsItemProviderAdapterFactory extends LeagueOfLegendsAd
 		if (gamePlayerStatsItemProvider != null) gamePlayerStatsItemProvider.dispose();
 		if (seasonItemProvider != null) seasonItemProvider.dispose();
 		if (gameStatsItemProvider != null) gameStatsItemProvider.dispose();
+		if (championsStatsItemProvider != null) championsStatsItemProvider.dispose();
 	}
 
 }

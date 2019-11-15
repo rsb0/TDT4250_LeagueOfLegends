@@ -33,6 +33,7 @@ public class LeagueOfLegendsTests extends TestSuite {
 		TestSuite suite = new LeagueOfLegendsTests("leagueOfLegends Tests");
 		suite.addTestSuite(TeamTest.class);
 		suite.addTestSuite(PlayerStatsTest.class);
+		suite.addTestSuite(ChampionsStatsTest.class);
 		return suite;
 	}
 

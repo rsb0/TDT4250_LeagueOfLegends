@@ -68,6 +68,7 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 			case LeagueOfLegendsPackage.GAME_PLAYER_STATS: return createGamePlayerStats();
 			case LeagueOfLegendsPackage.SEASON: return createSeason();
 			case LeagueOfLegendsPackage.GAME_STATS: return createGameStats();
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS: return createChampionsStats();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -132,6 +133,17 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public Champion createChampion() {
+		ChampionImpl champion = new ChampionImpl();
+		return champion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Team createTeam() {
 		TeamImpl team = new TeamImpl();
 		return team;
@@ -157,17 +169,6 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	public PlayerStats createPlayerStats() {
 		PlayerStatsImpl playerStats = new PlayerStatsImpl();
 		return playerStats;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Champion createChampion() {
-		ChampionImpl champion = new ChampionImpl();
-		return champion;
 	}
 
 	/**
@@ -234,6 +235,17 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	public GameStats createGameStats() {
 		GameStatsImpl gameStats = new GameStatsImpl();
 		return gameStats;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ChampionsStats createChampionsStats() {
+		ChampionsStatsImpl championsStats = new ChampionsStatsImpl();
+		return championsStats;
 	}
 
 	/**

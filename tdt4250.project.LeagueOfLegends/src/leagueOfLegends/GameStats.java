@@ -326,6 +326,7 @@ public interface GameStats extends EObject {
 	 */
 	void setTeamBaronKills(int value);
 
+
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

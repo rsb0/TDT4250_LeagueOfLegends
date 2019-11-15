@@ -4,6 +4,7 @@ package leagueOfLegends.impl;
 
 import leagueOfLegends.BestOf;
 import leagueOfLegends.Champion;
+import leagueOfLegends.ChampionsStats;
 import leagueOfLegends.Game;
 import leagueOfLegends.GamePlayerStats;
 import leagueOfLegends.GameStats;
@@ -47,6 +48,13 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass championEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass teamEClass = null;
 
 	/**
@@ -62,13 +70,6 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	private EClass playerStatsEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass championEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,6 +112,13 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	private EClass gameStatsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass championsStatsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,6 +257,36 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	@Override
 	public EReference getLeague_Champions() {
 		return (EReference)leagueEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getChampion() {
+		return championEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampion_Name() {
+		return (EAttribute)championEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChampion_ChampionStat() {
+		return (EReference)championEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -439,26 +477,6 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	@Override
 	public EReference getPlayerStats_Player() {
 		return (EReference)playerStatsEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getChampion() {
-		return championEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getChampion_Name() {
-		return (EAttribute)championEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1077,6 +1095,76 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EClass getChampionsStats() {
+		return championsStatsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampionsStats_GamesPlayed() {
+		return (EAttribute)championsStatsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampionsStats_TotalKills() {
+		return (EAttribute)championsStatsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampionsStats_TotalDeaths() {
+		return (EAttribute)championsStatsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampionsStats_TotalAssist() {
+		return (EAttribute)championsStatsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChampionsStats_KillDeathAssistRatio() {
+		return (EAttribute)championsStatsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChampionsStats_Champion() {
+		return (EReference)championsStatsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getBestOf() {
 		return bestOfEEnum;
 	}
@@ -1148,6 +1236,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 
 		championEClass = createEClass(CHAMPION);
 		createEAttribute(championEClass, CHAMPION__NAME);
+		createEReference(championEClass, CHAMPION__CHAMPION_STAT);
 
 		teamEClass = createEClass(TEAM);
 		createEAttribute(teamEClass, TEAM__NAME);
@@ -1238,6 +1327,14 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(gameStatsEClass, GAME_STATS__TEAM_BARON_KILLS);
 		createEAttribute(gameStatsEClass, GAME_STATS__NAME);
 
+		championsStatsEClass = createEClass(CHAMPIONS_STATS);
+		createEAttribute(championsStatsEClass, CHAMPIONS_STATS__GAMES_PLAYED);
+		createEAttribute(championsStatsEClass, CHAMPIONS_STATS__TOTAL_KILLS);
+		createEAttribute(championsStatsEClass, CHAMPIONS_STATS__TOTAL_DEATHS);
+		createEAttribute(championsStatsEClass, CHAMPIONS_STATS__TOTAL_ASSIST);
+		createEAttribute(championsStatsEClass, CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO);
+		createEReference(championsStatsEClass, CHAMPIONS_STATS__CHAMPION);
+
 		// Create enums
 		bestOfEEnum = createEEnum(BEST_OF);
 		positionEEnum = createEEnum(POSITION);
@@ -1283,6 +1380,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 
 		initEClass(championEClass, Champion.class, "Champion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getChampion_Name(), ecorePackage.getEString(), "name", null, 0, 1, Champion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getChampion_ChampionStat(), this.getChampionsStats(), this.getChampionsStats_Champion(), "championStat", null, 0, 1, Champion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(teamEClass, Team.class, "Team", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTeam_Name(), ecorePackage.getEString(), "name", null, 0, 1, Team.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1372,6 +1470,14 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getGameStats_TotalMonsterKills(), ecorePackage.getEInt(), "totalMonsterKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGameStats_TeamBaronKills(), ecorePackage.getEInt(), "teamBaronKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGameStats_Name(), ecorePackage.getEString(), "name", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(championsStatsEClass, ChampionsStats.class, "ChampionsStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getChampionsStats_GamesPlayed(), ecorePackage.getEInt(), "gamesPlayed", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChampionsStats_TotalKills(), ecorePackage.getEInt(), "totalKills", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChampionsStats_TotalDeaths(), ecorePackage.getEInt(), "totalDeaths", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChampionsStats_TotalAssist(), ecorePackage.getEInt(), "totalAssist", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChampionsStats_KillDeathAssistRatio(), ecorePackage.getEFloat(), "killDeathAssistRatio", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getChampionsStats_Champion(), this.getChampion(), this.getChampion_ChampionStat(), "champion", null, 0, 1, ChampionsStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(bestOfEEnum, BestOf.class, "BestOf");

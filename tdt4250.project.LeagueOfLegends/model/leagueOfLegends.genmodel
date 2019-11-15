@@ -41,6 +41,7 @@
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Champion">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Champion/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Champion/championStat"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Team">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Team/name"/>
@@ -130,6 +131,14 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalMonsterKills"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/teamBaronKills"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/name"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/gamesPlayed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/totalKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/totalDeaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/totalAssist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/killDeathAssistRatio"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//ChampionsStats/champion"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

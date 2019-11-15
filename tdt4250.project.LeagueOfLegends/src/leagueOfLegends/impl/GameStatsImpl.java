@@ -5,15 +5,17 @@ package leagueOfLegends.impl;
 import leagueOfLegends.Game;
 import leagueOfLegends.GameStats;
 import leagueOfLegends.LeagueOfLegendsPackage;
-
 import leagueOfLegends.Side;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
@@ -52,6 +54,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int DURATION_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getDuration() <em>Duration</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,6 +64,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int duration = DURATION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getWinner() <em>Winner</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -70,6 +74,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final Side WINNER_EDEFAULT = Side.RED;
+
 	/**
 	 * The cached value of the '{@link #getWinner() <em>Winner</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -79,6 +84,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected Side winner = WINNER_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalKills() <em>Total Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -88,6 +94,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_KILLS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalKills() <em>Total Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -97,6 +104,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalKills = TOTAL_KILLS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalDeaths() <em>Total Deaths</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -106,6 +114,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_DEATHS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalDeaths() <em>Total Deaths</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -115,6 +124,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalDeaths = TOTAL_DEATHS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalAssist() <em>Total Assist</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -124,6 +134,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_ASSIST_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalAssist() <em>Total Assist</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -133,6 +144,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalAssist = TOTAL_ASSIST_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalGolds() <em>Total Golds</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -142,6 +154,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_GOLDS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalGolds() <em>Total Golds</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -151,6 +164,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalGolds = TOTAL_GOLDS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalWards() <em>Total Wards</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -160,6 +174,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_WARDS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalWards() <em>Total Wards</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -169,6 +184,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalWards = TOTAL_WARDS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalWardsKilled() <em>Total Wards Killed</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -178,6 +194,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_WARDS_KILLED_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalWardsKilled() <em>Total Wards Killed</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -187,6 +204,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalWardsKilled = TOTAL_WARDS_KILLED_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalVisionWards() <em>Total Vision Wards</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -196,6 +214,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_VISION_WARDS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalVisionWards() <em>Total Vision Wards</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -205,6 +224,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalVisionWards = TOTAL_VISION_WARDS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalMinionKills() <em>Total Minion Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -214,6 +234,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_MINION_KILLS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalMinionKills() <em>Total Minion Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -223,6 +244,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalMinionKills = TOTAL_MINION_KILLS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTotalMonsterKills() <em>Total Monster Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -232,6 +254,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TOTAL_MONSTER_KILLS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTotalMonsterKills() <em>Total Monster Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -241,6 +264,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected int totalMonsterKills = TOTAL_MONSTER_KILLS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTeamBaronKills() <em>Team Baron Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -250,6 +274,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final int TEAM_BARON_KILLS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getTeamBaronKills() <em>Team Baron Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -269,6 +294,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @ordered
 	 */
 	protected static final String NAME_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
