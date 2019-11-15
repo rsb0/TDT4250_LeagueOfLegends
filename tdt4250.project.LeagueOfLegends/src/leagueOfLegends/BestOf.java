@@ -19,67 +19,158 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum BestOf implements Enumerator {
 	/**
-	 * The '<em><b>Best Of One</b></em>' literal object.
+	 * The '<em><b>QF</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_ONE_VALUE
+	 * @see #QF_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	BEST_OF_ONE(0, "bestOfOne", "bestOfOne"),
+	QF(5, "QF", "QF"), /**
+	 * The '<em><b>F</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #F_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	F(5, "F", "F"), /**
+	 * The '<em><b>SF</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SF_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	SF(5, "SF", "SF"), /**
+	 * The '<em><b>Regular</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #REGULAR_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	REGULAR(1, "Regular", "Regular"), /**
+	 * The '<em><b>R1</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #R1_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	R1(5, "R1", "R1"), /**
+	 * The '<em><b>R2</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #R2_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	R2(5, "R2", "R2"), /**
+	 * The '<em><b>R3</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #R3_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	R3(5, "R3", "R3"), /**
+	 * The '<em><b>3p</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #_3P_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	_3P(5, "_3p", "_3p");
 
 	/**
-	 * The '<em><b>Best Of Three</b></em>' literal object.
+	 * The '<em><b>QF</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_THREE_VALUE
+	 * @see #QF
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	BEST_OF_THREE(3, "bestOfThree", "bestOfThree"),
+	public static final int QF_VALUE = 5;
 
 	/**
-	 * The '<em><b>Best Of Five</b></em>' literal object.
+	 * The '<em><b>F</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_FIVE_VALUE
+	 * @see #F
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	BEST_OF_FIVE(5, "bestOfFive", "bestOfFive");
+	public static final int F_VALUE = 5;
 
 	/**
-	 * The '<em><b>Best Of One</b></em>' literal value.
+	 * The '<em><b>SF</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_ONE
-	 * @model name="bestOfOne"
+	 * @see #SF
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BEST_OF_ONE_VALUE = 0;
+	public static final int SF_VALUE = 5;
 
 	/**
-	 * The '<em><b>Best Of Three</b></em>' literal value.
+	 * The '<em><b>Regular</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_THREE
-	 * @model name="bestOfThree"
+	 * @see #REGULAR
+	 * @model name="Regular"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BEST_OF_THREE_VALUE = 3;
+	public static final int REGULAR_VALUE = 1;
 
 	/**
-	 * The '<em><b>Best Of Five</b></em>' literal value.
+	 * The '<em><b>R1</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BEST_OF_FIVE
-	 * @model name="bestOfFive"
+	 * @see #R1
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BEST_OF_FIVE_VALUE = 5;
+	public static final int R1_VALUE = 5;
+
+	/**
+	 * The '<em><b>R2</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #R2
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int R2_VALUE = 5;
+
+	/**
+	 * The '<em><b>R3</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #R3
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int R3_VALUE = 5;
+
+	/**
+	 * The '<em><b>3p</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #_3P
+	 * @model name="_3p"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int _3P_VALUE = 5;
 
 	/**
 	 * An array of all the '<em><b>Best Of</b></em>' enumerators.
@@ -89,9 +180,14 @@ public enum BestOf implements Enumerator {
 	 */
 	private static final BestOf[] VALUES_ARRAY =
 		new BestOf[] {
-			BEST_OF_ONE,
-			BEST_OF_THREE,
-			BEST_OF_FIVE,
+			QF,
+			F,
+			SF,
+			REGULAR,
+			R1,
+			R2,
+			R3,
+			_3P,
 		};
 
 	/**
@@ -148,9 +244,8 @@ public enum BestOf implements Enumerator {
 	 */
 	public static BestOf get(int value) {
 		switch (value) {
-			case BEST_OF_ONE_VALUE: return BEST_OF_ONE;
-			case BEST_OF_THREE_VALUE: return BEST_OF_THREE;
-			case BEST_OF_FIVE_VALUE: return BEST_OF_FIVE;
+			case QF_VALUE: return QF;
+			case REGULAR_VALUE: return REGULAR;
 		}
 		return null;
 	}

@@ -1,84 +1,422 @@
 <?xml version="1.0" encoding="ASCII"?>
 <tdt4250.project.leagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" name="EULCS">
   <teams name="Splyce">
-    <player name="kaSing"/>
-    <player name="Kobbe"/>
-    <player name="Nisqy"/>
-    <player name="Odoamne"/>
-    <player name="Xerxe"/>
+    <player name="kaSing" championPool="//@champions.0 //@champions.9 //@champions.10 //@champions.22 //@champions.47 //@champions.27 //@champions.30 //@champions.14 //@champions.44 //@champions.78 //@champions.37 //@champions.32"/>
+    <player name="Kobbe" championPool="//@champions.1 //@champions.35 //@champions.6 //@champions.15 //@champions.21 //@champions.25 //@champions.75 //@champions.43 //@champions.81 //@champions.92 //@champions.95 //@champions.54"/>
+    <player name="Nisqy" championPool="//@champions.2 //@champions.53 //@champions.19 //@champions.10 //@champions.65 //@champions.59 //@champions.66 //@champions.82 //@champions.23 //@champions.93 //@champions.46 //@champions.100 //@champions.86"/>
+    <player name="Odoamne" championPool="//@champions.3 //@champions.18 //@champions.7 //@champions.67 //@champions.44 //@champions.24 //@champions.13 //@champions.70 //@champions.46 //@champions.94 //@champions.98"/>
+    <player name="Xerxe" championPool="//@champions.5 //@champions.17 //@champions.63 //@champions.19 //@champions.61 //@champions.57 //@champions.8 //@champions.44 //@champions.104 //@champions.91"/>
   </teams>
   <teams name="Vitality">
-    <player name="Attila"/>
-    <player name="Cabochard"/>
-    <player name="Gilius"/>
-    <player name="Jactroll"/>
-    <player name="Jiizuke"/>
-    <player name="Kikis"/>
+    <player name="Attila" championPool="//@champions.6 //@champions.41 //@champions.38 //@champions.59 //@champions.21 //@champions.15 //@champions.25 //@champions.88 //@champions.43 //@champions.31 //@champions.1"/>
+    <player name="Cabochard" championPool="//@champions.7 //@champions.18 //@champions.48 //@champions.52 //@champions.24 //@champions.67 //@champions.44 //@champions.76 //@champions.74 //@champions.94"/>
+    <player name="Gilius" championPool="//@champions.8 //@champions.12 //@champions.61 //@champions.17 //@champions.5"/>
+    <player name="Jactroll" championPool="//@champions.9 //@champions.37 //@champions.47 //@champions.30 //@champions.22 //@champions.14 //@champions.27 //@champions.89 //@champions.13 //@champions.64"/>
+    <player name="Jiizuke" championPool="//@champions.10 //@champions.42 //@champions.33 //@champions.2 //@champions.48 //@champions.73 //@champions.65 //@champions.46 //@champions.12 //@champions.82 //@champions.53 //@champions.78"/>
+    <player name="Kikis" championPool="//@champions.57 //@champions.5 //@champions.12 //@champions.13 //@champions.44 //@champions.91 //@champions.36"/>
   </teams>
   <teams name="Giants Gaming">
-    <player name="Betsy"/>
-    <player name="Djoko"/>
-    <player name="Ruin"/>
-    <player name="SirNukesAlot"/>
-    <player name="Steeelback"/>
+    <player name="Betsy" championPool="//@champions.11 //@champions.33 //@champions.38 //@champions.59 //@champions.10 //@champions.65 //@champions.2 //@champions.23 //@champions.42 //@champions.12 //@champions.66 //@champions.46 //@champions.86"/>
+    <player name="Djoko" championPool="//@champions.12 //@champions.39 //@champions.19 //@champions.5 //@champions.60 //@champions.61 //@champions.17 //@champions.44 //@champions.57 //@champions.91"/>
+    <player name="Ruin" championPool="//@champions.13 //@champions.40 //@champions.24 //@champions.18 //@champions.19 //@champions.56 //@champions.67 //@champions.70 //@champions.44"/>
+    <player name="SirNukesAlot" championPool="//@champions.14 //@champions.9 //@champions.22 //@champions.58 //@champions.27 //@champions.47 //@champions.32 //@champions.29"/>
+    <player name="Steeelback" championPool="//@champions.15 //@champions.21 //@champions.54 //@champions.25 //@champions.43 //@champions.75"/>
   </teams>
   <teams name="H2K">
-    <player name="promisq"/>
-    <player name="Selfie"/>
-    <player name="Sheriff"/>
-    <player name="Shook"/>
-    <player name="Smittyj"/>
-    <player name="Caedrel"/>
-    <player name="Larssen"/>
+    <player name="promisq" championPool="//@champions.0 //@champions.9 //@champions.32 //@champions.14 //@champions.27 //@champions.22 //@champions.47 //@champions.5 //@champions.33"/>
+    <player name="Selfie" championPool="//@champions.10 //@champions.33 //@champions.38 //@champions.23 //@champions.2 //@champions.66 //@champions.42 //@champions.46 //@champions.90 //@champions.86"/>
+    <player name="Sheriff" championPool="//@champions.16 //@champions.31 //@champions.1 //@champions.35 //@champions.25 //@champions.15 //@champions.46 //@champions.59 //@champions.92 //@champions.21"/>
+    <player name="Shook" championPool="//@champions.17 //@champions.55 //@champions.5 //@champions.61 //@champions.19 //@champions.57 //@champions.32 //@champions.44 //@champions.46"/>
+    <player name="Smittyj" championPool="//@champions.18 //@champions.3 //@champions.56 //@champions.62 //@champions.24 //@champions.48 //@champions.44 //@champions.7 //@champions.79 //@champions.70"/>
+    <player name="Caedrel" championPool="//@champions.57 //@champions.19 //@champions.36 //@champions.5 //@champions.61 //@champions.17"/>
+    <player name="Larssen" championPool="//@champions.38 //@champions.11"/>
   </teams>
   <teams name="Schalke 04">
-    <player name="Amazing"/>
-    <player name="Nukeduck"/>
-    <player name="Upset"/>
-    <player name="Vander"/>
-    <player name="Vizicsacsi"/>
+    <player name="Amazing" championPool="//@champions.19 //@champions.39 //@champions.5 //@champions.61 //@champions.22 //@champions.47 //@champions.44 //@champions.91 //@champions.17 //@champions.8 //@champions.13 //@champions.74 //@champions.104"/>
+    <player name="Nukeduck" championPool="//@champions.20 //@champions.51 //@champions.10 //@champions.33 //@champions.2 //@champions.23 //@champions.7 //@champions.1 //@champions.12 //@champions.80 //@champions.46 //@champions.85 //@champions.66 //@champions.86 //@champions.38 //@champions.82 //@champions.93 //@champions.53 //@champions.34 //@champions.72 //@champions.11"/>
+    <player name="Upset" championPool="//@champions.21 //@champions.43 //@champions.15 //@champions.38 //@champions.59 //@champions.32 //@champions.46 //@champions.81 //@champions.1 //@champions.75 //@champions.25"/>
+    <player name="Vander" championPool="//@champions.22 //@champions.30 //@champions.47 //@champions.37 //@champions.27 //@champions.9 //@champions.33"/>
+    <player name="Vizicsacsi" championPool="//@champions.3 //@champions.52 //@champions.24 //@champions.18 //@champions.13 //@champions.67 //@champions.70 //@champions.46 //@champions.98"/>
   </teams>
   <teams name="Unicorns of Love">
-    <player name="Exileh"/>
-    <player name="Kold"/>
-    <player name="Samux"/>
-    <player name="Totoro"/>
-    <player name="WhiteKnight"/>
-    <player name="Neon"/>
+    <player name="Exileh" championPool="//@champions.23 //@champions.46 //@champions.7 //@champions.2 //@champions.10 //@champions.1"/>
+    <player name="Kold" championPool="//@champions.5 //@champions.19 //@champions.61 //@champions.17 //@champions.57 //@champions.47 //@champions.12 //@champions.44"/>
+    <player name="Samux" championPool="//@champions.15 //@champions.33 //@champions.35 //@champions.1 //@champions.2 //@champions.21 //@champions.75"/>
+    <player name="Totoro" championPool="//@champions.14 //@champions.47 //@champions.37 //@champions.30 //@champions.32 //@champions.27 //@champions.22"/>
+    <player name="WhiteKnight" championPool="//@champions.7 //@champions.48 //@champions.24 //@champions.38 //@champions.74 //@champions.13 //@champions.67 //@champions.44 //@champions.84 //@champions.79"/>
+    <player name="Neon" championPool="//@champions.21 //@champions.6 //@champions.59 //@champions.25 //@champions.66"/>
   </teams>
   <teams name="G2 Esports">
-    <player name="Hjarnan"/>
-    <player name="Jankos"/>
-    <player name="Perkz"/>
-    <player name="Wadid"/>
-    <player name="Wunder"/>
+    <player name="Hjarnan" championPool="//@champions.6 //@champions.16 //@champions.32 //@champions.35 //@champions.69 //@champions.59 //@champions.38 //@champions.81 //@champions.43 //@champions.25 //@champions.21 //@champions.95 //@champions.75"/>
+    <player name="Jankos" championPool="//@champions.5 //@champions.22 //@champions.14 //@champions.30 //@champions.57 //@champions.12 //@champions.44 //@champions.17 //@champions.61 //@champions.104 //@champions.8 //@champions.91 //@champions.13"/>
+    <player name="Perkz" championPool="//@champions.10 //@champions.1 //@champions.15 //@champions.25 //@champions.7 //@champions.12 //@champions.46 //@champions.23 //@champions.82 //@champions.66 //@champions.86 //@champions.90 //@champions.101 //@champions.2 //@champions.97 //@champions.93"/>
+    <player name="Wadid" championPool="//@champions.9 //@champions.0 //@champions.14 //@champions.47 //@champions.27 //@champions.30 //@champions.37 //@champions.22 //@champions.32"/>
+    <player name="Wunder" championPool="//@champions.24 //@champions.7 //@champions.18 //@champions.44 //@champions.72 //@champions.40 //@champions.74 //@champions.70 //@champions.19 //@champions.3 //@champions.94 //@champions.46"/>
   </teams>
   <teams name="Roccat">
-    <player name="Blanc"/>
-    <player name="HeaQ"/>
-    <player name="Memento"/>
-    <player name="Norskeren"/>
-    <player name="Profit"/>
+    <player name="Blanc" championPool="//@champions.23 //@champions.34 //@champions.2 //@champions.10 //@champions.59 //@champions.66 //@champions.11 //@champions.7 //@champions.51"/>
+    <player name="HeaQ" championPool="//@champions.25 //@champions.35 //@champions.21 //@champions.38 //@champions.15 //@champions.43 //@champions.75 //@champions.1 //@champions.81"/>
+    <player name="Memento" championPool="//@champions.26 //@champions.36 //@champions.5 //@champions.19 //@champions.57 //@champions.61 //@champions.17 //@champions.44 //@champions.91"/>
+    <player name="Norskeren" championPool="//@champions.27 //@champions.37 //@champions.14 //@champions.64 //@champions.30 //@champions.22 //@champions.32"/>
+    <player name="Profit" championPool="//@champions.18 //@champions.38 //@champions.7 //@champions.19 //@champions.67 //@champions.24 //@champions.70"/>
   </teams>
   <teams name="Fnatic">
-    <player name="Broxah"/>
-    <player name="Caps"/>
-    <player name="Hylissang"/>
-    <player name="Rekkles"/>
-    <player name="sOAZ"/>
-    <player name="Bwipo"/>
+    <player name="Broxah" championPool="//@champions.28 //@champions.49 //@champions.57 //@champions.17 //@champions.5 //@champions.19 //@champions.61 //@champions.87 //@champions.8 //@champions.44 //@champions.104"/>
+    <player name="Caps" championPool="//@champions.1 //@champions.10 //@champions.2 //@champions.23 //@champions.71 //@champions.65 //@champions.66 //@champions.11 //@champions.86 //@champions.82 //@champions.90 //@champions.93 //@champions.101 //@champions.92 //@champions.97 //@champions.46"/>
+    <player name="Hylissang" championPool="//@champions.27 //@champions.32 //@champions.37 //@champions.47 //@champions.9 //@champions.14 //@champions.30 //@champions.22"/>
+    <player name="Rekkles" championPool="//@champions.29 //@champions.16 //@champions.21 //@champions.25 //@champions.54 //@champions.102 //@champions.1"/>
+    <player name="sOAZ" championPool="//@champions.3 //@champions.24 //@champions.44 //@champions.6 //@champions.13 //@champions.38 //@champions.18 //@champions.98 //@champions.94"/>
+    <player name="Bwipo" championPool="//@champions.50 //@champions.23 //@champions.46 //@champions.59 //@champions.68 //@champions.40 //@champions.74 //@champions.77 //@champions.65 //@champions.38 //@champions.18 //@champions.3 //@champions.94"/>
   </teams>
   <teams name="Misfits">
-    <player name="Alphari"/>
-    <player name="Hans Sama"/>
-    <player name="Maxlore"/>
-    <player name="Mikyx"/>
-    <player name="Sencux"/>
-    <player name="Jesiz"/>
+    <player name="Alphari" championPool="//@champions.30 //@champions.24 //@champions.18 //@champions.13 //@champions.40 //@champions.74 //@champions.19 //@champions.84 //@champions.3 //@champions.98 //@champions.94 //@champions.59"/>
+    <player name="Hans Sama" championPool="//@champions.31 //@champions.43 //@champions.15 //@champions.1 //@champions.25 //@champions.21 //@champions.38 //@champions.96 //@champions.54"/>
+    <player name="Maxlore" championPool="//@champions.19 //@champions.12 //@champions.5 //@champions.44 //@champions.61 //@champions.17 //@champions.36 //@champions.83 //@champions.8 //@champions.13 //@champions.99 //@champions.57 //@champions.91 //@champions.39 //@champions.103 //@champions.7"/>
+    <player name="Mikyx" championPool="//@champions.32 //@champions.44 //@champions.14 //@champions.22 //@champions.37 //@champions.47 //@champions.27 //@champions.30 //@champions.89"/>
+    <player name="Sencux" championPool="//@champions.33 //@champions.45 //@champions.23 //@champions.2 //@champions.59 //@champions.65 //@champions.66 //@champions.11 //@champions.46 //@champions.53 //@champions.86 //@champions.82 //@champions.51 //@champions.97 //@champions.72 //@champions.34"/>
+    <player name="Jesiz" championPool="//@champions.14 //@champions.22"/>
   </teams>
-  <seasons SplitName="2018-2"/>
-  <seasons SplitName="2018-2p" splitType="playoff"/>
-  <seasons SplitName="2018-2rq" splitType="regionals"/>
+  <seasons SplitName="2018-2">
+    <matches matchID="1" bestOF="Regular" week="1">
+      <games gameID="1002530085" redTeam="//@teams.1" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="2" bestOF="Regular" week="1">
+      <games gameID="1002530088" redTeam="//@teams.2" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="3" bestOF="Regular" week="1">
+      <games gameID="1002530090" redTeam="//@teams.5" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="4" bestOF="Regular" week="1">
+      <games gameID="1002530092" redTeam="//@teams.7" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="5" bestOF="Regular" week="1">
+      <games gameID="1002530095" redTeam="//@teams.9" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="6" bestOF="Regular" week="1">
+      <games gameID="1002530107" redTeam="//@teams.3" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="7" bestOF="Regular" week="1">
+      <games gameID="1002530128" redTeam="//@teams.2" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="8" bestOF="Regular" week="1">
+      <games gameID="1002540168" redTeam="//@teams.5" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="9" bestOF="Regular" week="1">
+      <games gameID="1002540191" redTeam="//@teams.4" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="10" bestOF="Regular" week="1">
+      <games gameID="1002540201" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="11" bestOF="Regular" week="2">
+      <games gameID="1002570036" redTeam="//@teams.4" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="12" bestOF="Regular" week="2">
+      <games gameID="1002570081" redTeam="//@teams.2" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="13" bestOF="Regular" week="2">
+      <games gameID="1002570087" redTeam="//@teams.3" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="14" bestOF="Regular" week="3">
+      <games gameID="1002570186" redTeam="//@teams.8" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="15" bestOF="Regular" week="2">
+      <games gameID="1002580017" redTeam="//@teams.5" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="16" bestOF="Regular" week="2">
+      <games gameID="1002580026" redTeam="//@teams.1" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="17" bestOF="Regular" week="2">
+      <games gameID="1002580040" redTeam="//@teams.3" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="18" bestOF="Regular" week="2">
+      <games gameID="1002580047" redTeam="//@teams.0" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="19" bestOF="Regular" week="2">
+      <games gameID="1002580061" redTeam="//@teams.4" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="20" bestOF="Regular" week="2">
+      <games gameID="1002580095" redTeam="//@teams.0" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="21" bestOF="Regular" week="2">
+      <games gameID="1002580100" redTeam="//@teams.1" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="22" bestOF="Regular" week="3">
+      <games gameID="1002580117" redTeam="//@teams.7" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="23" bestOF="Regular" week="3">
+      <games gameID="1002580127" redTeam="//@teams.4" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="24" bestOF="Regular" week="3">
+      <games gameID="1002580137" redTeam="//@teams.3" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="25" bestOF="Regular" week="3">
+      <games gameID="1002580151" redTeam="//@teams.1" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="26" bestOF="Regular" week="3">
+      <games gameID="1002580161" redTeam="//@teams.6" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="27" bestOF="Regular" week="3">
+      <games gameID="1002580183" redTeam="//@teams.3" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="28" bestOF="Regular" week="3">
+      <games gameID="1002580195" redTeam="//@teams.4" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="29" bestOF="Regular" week="3">
+      <games gameID="1002580214" redTeam="//@teams.7" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="30" bestOF="Regular" week="3">
+      <games gameID="1002580223" redTeam="//@teams.5" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="31" bestOF="Regular" week="4">
+      <games gameID="1002590056" redTeam="//@teams.3" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="32" bestOF="Regular" week="4">
+      <games gameID="1002590070" redTeam="//@teams.0" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="33" bestOF="Regular" week="4">
+      <games gameID="1002590076" redTeam="//@teams.2" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="34" bestOF="Regular" week="4">
+      <games gameID="1002590088" redTeam="//@teams.7" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="35" bestOF="Regular" week="4">
+      <games gameID="1002590098" redTeam="//@teams.1" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="36" bestOF="Regular" week="5">
+      <games gameID="1002590120" redTeam="//@teams.3" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="37" bestOF="Regular" week="5">
+      <games gameID="1002590126" redTeam="//@teams.9" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="38" bestOF="Regular" week="5">
+      <games gameID="1002590133" redTeam="//@teams.8" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="39" bestOF="Regular" week="5">
+      <games gameID="1002590140" redTeam="//@teams.1" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="40" bestOF="Regular" week="5">
+      <games gameID="1002590163" redTeam="//@teams.2" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="41" bestOF="Regular" week="5">
+      <games gameID="1002590175" redTeam="//@teams.8" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="42" bestOF="Regular" week="5">
+      <games gameID="1002590182" redTeam="//@teams.6" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="43" bestOF="Regular" week="4">
+      <games gameID="1002600014" redTeam="//@teams.1" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="44" bestOF="Regular" week="4">
+      <games gameID="1002600025" redTeam="//@teams.4" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="45" bestOF="Regular" week="4">
+      <games gameID="1002600033" redTeam="//@teams.5" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="46" bestOF="Regular" week="4">
+      <games gameID="1002600040" redTeam="//@teams.8" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="47" bestOF="Regular" week="4">
+      <games gameID="1002600047" redTeam="//@teams.6" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="48" bestOF="Regular" week="5">
+      <games gameID="1002600100" redTeam="//@teams.2" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="49" bestOF="Regular" week="5">
+      <games gameID="1002600146" redTeam="//@teams.5" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="50" bestOF="Regular" week="5">
+      <games gameID="1002600164" redTeam="//@teams.1" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="51" bestOF="Regular" week="6">
+      <games gameID="1002610011" redTeam="//@teams.5" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="52" bestOF="Regular" week="6">
+      <games gameID="1002610026" redTeam="//@teams.7" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="53" bestOF="Regular" week="6">
+      <games gameID="1002610035" redTeam="//@teams.2" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="54" bestOF="Regular" week="6">
+      <games gameID="1002610045" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="55" bestOF="Regular" week="6">
+      <games gameID="1002610053" redTeam="//@teams.4" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="56" bestOF="Regular" week="6">
+      <games gameID="1002610064" redTeam="//@teams.1" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="57" bestOF="Regular" week="6">
+      <games gameID="1002610074" redTeam="//@teams.5" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="58" bestOF="Regular" week="6">
+      <games gameID="1002610088" redTeam="//@teams.9" blueTeam="//@teams.0"/>
+    </matches>
+    <matches matchID="59" bestOF="Regular" week="6">
+      <games gameID="1002620077" redTeam="//@teams.3" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="60" bestOF="Regular" week="6">
+      <games gameID="1002620078" redTeam="//@teams.6" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="61" bestOF="Regular" week="7">
+      <games gameID="1002620101" redTeam="//@teams.0" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="62" bestOF="Regular" week="7">
+      <games gameID="1002620116" redTeam="//@teams.7" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="63" bestOF="Regular" week="7">
+      <games gameID="1002620127" redTeam="//@teams.3" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="64" bestOF="Regular" week="7">
+      <games gameID="1002620139" redTeam="//@teams.2" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="65" bestOF="Regular" week="7">
+      <games gameID="1002620150" redTeam="//@teams.8" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="66" bestOF="Regular" week="7">
+      <games gameID="1002620168" redTeam="//@teams.2" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="67" bestOF="Regular" week="7">
+      <games gameID="1002620178" redTeam="//@teams.0" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="68" bestOF="Regular" week="7">
+      <games gameID="1002620188" redTeam="//@teams.5" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="69" bestOF="Regular" week="7">
+      <games gameID="1002620195" redTeam="//@teams.8" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="70" bestOF="Regular" week="7">
+      <games gameID="1002620202" redTeam="//@teams.4" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="71" bestOF="Regular" week="8">
+      <games gameID="1002650013" redTeam="//@teams.0" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="72" bestOF="Regular" week="8">
+      <games gameID="1002650026" redTeam="//@teams.6" blueTeam="//@teams.5"/>
+    </matches>
+    <matches matchID="73" bestOF="Regular" week="8">
+      <games gameID="1002650034" redTeam="//@teams.2" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="74" bestOF="Regular" week="8">
+      <games gameID="1002650051" redTeam="//@teams.3" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="75" bestOF="Regular" week="8">
+      <games gameID="1002650062" redTeam="//@teams.5" blueTeam="//@teams.7"/>
+    </matches>
+    <matches matchID="76" bestOF="Regular" week="8">
+      <games gameID="1002650067" redTeam="//@teams.2" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="77" bestOF="Regular" week="8">
+      <games gameID="1002650071" redTeam="//@teams.9" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="78" bestOF="Regular" week="8">
+      <games gameID="1002650079" redTeam="//@teams.0" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="79" bestOF="Regular" week="T">
+      <games gameID="1002650194" redTeam="//@teams.1" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="80" bestOF="Regular" week="T">
+      <games gameID="1002650204" redTeam="//@teams.1" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="81" bestOF="Regular" week="T">
+      <games gameID="1002650209" redTeam="//@teams.4" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="82" bestOF="Regular" week="8">
+      <games gameID="1002660018" redTeam="//@teams.9" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="83" bestOF="Regular" week="8">
+      <games gameID="1002660041" redTeam="//@teams.1" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="84" bestOF="Regular" week="9">
+      <games gameID="1002660116" redTeam="//@teams.5" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="85" bestOF="Regular" week="9">
+      <games gameID="1002660125" redTeam="//@teams.0" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="86" bestOF="Regular" week="9">
+      <games gameID="1002660129" redTeam="//@teams.6" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="87" bestOF="Regular" week="9">
+      <games gameID="1002660133" redTeam="//@teams.7" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="88" bestOF="Regular" week="9">
+      <games gameID="1002660137" redTeam="//@teams.1" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="89" bestOF="Regular" week="9">
+      <games gameID="1002660144" redTeam="//@teams.0" blueTeam="//@teams.2"/>
+    </matches>
+    <matches matchID="90" bestOF="Regular" week="9">
+      <games gameID="1002660152" redTeam="//@teams.4" blueTeam="//@teams.3"/>
+    </matches>
+    <matches matchID="91" bestOF="Regular" week="9">
+      <games gameID="1002660163" redTeam="//@teams.7" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="92" bestOF="Regular" week="9">
+      <games gameID="1002660168" redTeam="//@teams.5" blueTeam="//@teams.8"/>
+    </matches>
+    <matches matchID="93" bestOF="Regular" week="9">
+      <games gameID="1002660174" redTeam="//@teams.6" blueTeam="//@teams.1"/>
+    </matches>
+  </seasons>
+  <seasons SplitName="2018-2p" splitType="playoff">
+    <matches matchID="94" week="QF">
+      <games gameID="1002670034" redTeam="//@teams.0" blueTeam="//@teams.4"/>
+      <games gameID="1002680004" redTeam="//@teams.4" blueTeam="//@teams.0"/>
+      <games gameID="1002680016" redTeam="//@teams.4" blueTeam="//@teams.0"/>
+      <games gameID="1002680017" redTeam="//@teams.0" blueTeam="//@teams.4"/>
+      <games gameID="1002680018" redTeam="//@teams.0" blueTeam="//@teams.4"/>
+    </matches>
+    <matches matchID="95" week="QF">
+      <games gameID="1002670036" redTeam="//@teams.6" blueTeam="//@teams.9"/>
+      <games gameID="1002670046" redTeam="//@teams.9" blueTeam="//@teams.6"/>
+      <games gameID="1002670047" redTeam="//@teams.9" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="96" bestOF="SF" week="SF">
+      <games gameID="1002670054" redTeam="//@teams.1" blueTeam="//@teams.4"/>
+      <games gameID="1002670067" redTeam="//@teams.1" blueTeam="//@teams.4"/>
+      <games gameID="1002670068" redTeam="//@teams.1" blueTeam="//@teams.4"/>
+      <games gameID="1002670069" redTeam="//@teams.4" blueTeam="//@teams.1"/>
+    </matches>
+    <matches matchID="97" bestOF="SF" week="SF">
+      <games gameID="1002670071" redTeam="//@teams.9" blueTeam="//@teams.8"/>
+      <games gameID="1002680065" redTeam="//@teams.9" blueTeam="//@teams.8"/>
+      <games gameID="1002680066" redTeam="//@teams.8" blueTeam="//@teams.9"/>
+      <games gameID="1002680067" redTeam="//@teams.8" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="98" bestOF="_3p" week="3p">
+      <games gameID="1002700022" redTeam="//@teams.1" blueTeam="//@teams.9"/>
+      <games gameID="1002700024" redTeam="//@teams.9" blueTeam="//@teams.1"/>
+      <games gameID="1002700025" redTeam="//@teams.1" blueTeam="//@teams.9"/>
+      <games gameID="1002700026" redTeam="//@teams.1" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="99" bestOF="F" week="F">
+      <games gameID="1002700040" redTeam="//@teams.4" blueTeam="//@teams.8"/>
+      <games gameID="1002700041" redTeam="//@teams.8" blueTeam="//@teams.4"/>
+      <games gameID="1002700044" redTeam="//@teams.4" blueTeam="//@teams.8"/>
+      <games gameID="1002700045" redTeam="//@teams.4" blueTeam="//@teams.8"/>
+    </matches>
+  </seasons>
+  <seasons SplitName="2018-2rq" splitType="regionals">
+    <matches matchID="100" bestOF="R2" week="R2">
+      <games gameID="1002710023" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+      <games gameID="1002710034" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+      <games gameID="1002710035" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+      <games gameID="1002710036" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+      <games gameID="1002710037" redTeam="//@teams.0" blueTeam="//@teams.6"/>
+    </matches>
+    <matches matchID="101" bestOF="R1" week="R1">
+      <games gameID="1002720002" redTeam="//@teams.0" blueTeam="//@teams.9"/>
+      <games gameID="1002720011" redTeam="//@teams.0" blueTeam="//@teams.9"/>
+      <games gameID="1002720014" redTeam="//@teams.0" blueTeam="//@teams.9"/>
+      <games gameID="1002720015" redTeam="//@teams.9" blueTeam="//@teams.0"/>
+      <games gameID="1002720016" redTeam="//@teams.0" blueTeam="//@teams.9"/>
+    </matches>
+    <matches matchID="102" bestOF="R3" week="R3">
+      <games gameID="1002720036" redTeam="//@teams.6" blueTeam="//@teams.4"/>
+      <games gameID="1002720046" redTeam="//@teams.6" blueTeam="//@teams.4"/>
+      <games gameID="1002720047" redTeam="//@teams.6" blueTeam="//@teams.4"/>
+      <games gameID="1002720048" redTeam="//@teams.4" blueTeam="//@teams.6"/>
+    </matches>
+  </seasons>
   <champions name="Soraka"/>
   <champions name="Kai'Sa"/>
   <champions name="Irelia"/>

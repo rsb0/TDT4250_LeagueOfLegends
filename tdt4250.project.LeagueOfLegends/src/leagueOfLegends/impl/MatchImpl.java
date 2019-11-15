@@ -38,6 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getBestOF <em>Best OF</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getScore <em>Score</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getTeams <em>Teams</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.MatchImpl#getWeek <em>Week</em>}</li>
  * </ul>
  *
  * @generated
@@ -81,7 +82,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BestOf BEST_OF_EDEFAULT = BestOf.BEST_OF_ONE;
+	protected static final BestOf BEST_OF_EDEFAULT = BestOf.QF;
 
 	/**
 	 * The cached value of the '{@link #getBestOF() <em>Best OF</em>}' attribute.
@@ -122,6 +123,26 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @ordered
 	 */
 	protected EList<Team> teams;
+
+	/**
+	 * The default value of the '{@link #getWeek() <em>Week</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWeek()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String WEEK_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getWeek() <em>Week</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWeek()
+	 * @generated
+	 * @ordered
+	 */
+	protected String week = WEEK_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,6 +264,29 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
+	public String getWeek() {
+		return week;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWeek(String newWeek) {
+		String oldWeek = week;
+		week = newWeek;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.MATCH__WEEK, oldWeek, week));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
@@ -269,6 +313,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return getScore();
 			case LeagueOfLegendsPackage.MATCH__TEAMS:
 				return getTeams();
+			case LeagueOfLegendsPackage.MATCH__WEEK:
+				return getWeek();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -299,6 +345,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				getTeams().clear();
 				getTeams().addAll((Collection<? extends Team>)newValue);
 				return;
+			case LeagueOfLegendsPackage.MATCH__WEEK:
+				setWeek((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -326,6 +375,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__TEAMS:
 				getTeams().clear();
 				return;
+			case LeagueOfLegendsPackage.MATCH__WEEK:
+				setWeek(WEEK_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -348,6 +400,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return SCORE_EDEFAULT == null ? score != null : !SCORE_EDEFAULT.equals(score);
 			case LeagueOfLegendsPackage.MATCH__TEAMS:
 				return teams != null && !teams.isEmpty();
+			case LeagueOfLegendsPackage.MATCH__WEEK:
+				return WEEK_EDEFAULT == null ? week != null : !WEEK_EDEFAULT.equals(week);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -368,6 +422,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		result.append(bestOF);
 		result.append(", score: ");
 		result.append(score);
+		result.append(", week: ");
+		result.append(week);
 		result.append(')');
 		return result.toString();
 	}

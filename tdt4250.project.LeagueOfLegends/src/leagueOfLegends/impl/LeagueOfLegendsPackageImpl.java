@@ -527,6 +527,16 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EAttribute getMatch_Week() {
+		return (EAttribute)matchEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGame() {
 		return gameEClass;
 	}
@@ -1047,6 +1057,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(matchEClass, MATCH__BEST_OF);
 		createEAttribute(matchEClass, MATCH__SCORE);
 		createEReference(matchEClass, MATCH__TEAMS);
+		createEAttribute(matchEClass, MATCH__WEEK);
 
 		gameEClass = createEClass(GAME);
 		createEAttribute(gameEClass, GAME__GAME_ID);
@@ -1150,7 +1161,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEClass(playerEClass, Player.class, "Player", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPlayer_Name(), ecorePackage.getEString(), "name", null, 1, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPlayer_Position(), this.getPosition(), "position", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPlayer_ChampionPool(), this.getChampion(), null, "championPool", null, 0, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPlayer_ChampionPool(), this.getChampion(), null, "championPool", null, 0, -1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlayer_PlayerStats(), this.getPlayerStats(), this.getPlayerStats_Player(), "playerStats", null, 1, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlayer_Team(), this.getTeam(), this.getTeam_Player(), "team", null, 1, 1, Player.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1169,6 +1180,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getMatch_BestOF(), this.getBestOf(), "bestOF", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMatch_Score(), ecorePackage.getEString(), "score", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMatch_Teams(), this.getTeam(), null, "teams", null, 2, 2, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMatch_Week(), ecorePackage.getEString(), "week", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameEClass, Game.class, "Game", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGame_GameID(), ecorePackage.getEString(), "gameID", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1219,9 +1231,14 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 
 		// Initialize enums and add enum literals
 		initEEnum(bestOfEEnum, BestOf.class, "BestOf");
-		addEEnumLiteral(bestOfEEnum, BestOf.BEST_OF_ONE);
-		addEEnumLiteral(bestOfEEnum, BestOf.BEST_OF_THREE);
-		addEEnumLiteral(bestOfEEnum, BestOf.BEST_OF_FIVE);
+		addEEnumLiteral(bestOfEEnum, BestOf.QF);
+		addEEnumLiteral(bestOfEEnum, BestOf.F);
+		addEEnumLiteral(bestOfEEnum, BestOf.SF);
+		addEEnumLiteral(bestOfEEnum, BestOf.REGULAR);
+		addEEnumLiteral(bestOfEEnum, BestOf.R1);
+		addEEnumLiteral(bestOfEEnum, BestOf.R2);
+		addEEnumLiteral(bestOfEEnum, BestOf.R3);
+		addEEnumLiteral(bestOfEEnum, BestOf._3P);
 
 		initEEnum(positionEEnum, Position.class, "Position");
 		addEEnumLiteral(positionEEnum, Position.MIDDLE);
@@ -1238,7 +1255,6 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		addEEnumLiteral(splitTypeEEnum, SplitType.REGULAR);
 		addEEnumLiteral(splitTypeEEnum, SplitType.PLAYOFF);
 		addEEnumLiteral(splitTypeEEnum, SplitType.REGIONALS);
-		addEEnumLiteral(splitTypeEEnum, SplitType.WORLDS);
 
 		// Create resource
 		createResource(eNS_URI);

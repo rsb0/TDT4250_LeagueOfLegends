@@ -37,9 +37,11 @@ public class LeagueOfLegendsCreationUtils {
 		return team;
 	}
 	
-	public static Match createMatch(String matchID) {
+	public static Match createMatch(String matchID, String week) {
 		Match match = LeagueOfLegendsFactory.eINSTANCE.createMatch();
 		match.setMatchID(matchID);
+		match.setWeek(week);
+		match.setBestOF(mapWeekToBestOf(week));
 		return match;
 	}
 	
@@ -47,6 +49,26 @@ public class LeagueOfLegendsCreationUtils {
 		Game game = LeagueOfLegendsFactory.eINSTANCE.createGame();
 		game.setGameID(gameID);
 		return game;
+	}
+	
+	public static GameStats createGameStats() {
+		GameStats gameStats = LeagueOfLegendsFactory.eINSTANCE.createGameStats();
+		return gameStats;
+	}
+	
+	public static BestOf mapWeekToBestOf(String week) {
+		
+		for(BestOf bestOf: BestOf.VALUES) {
+			if(bestOf.getLiteral().startsWith("_")) {
+				if(week.equals(bestOf.getLiteral().substring(1))){
+					return bestOf;
+				}
+			}
+			if (week.equals(bestOf.getLiteral())){
+				return bestOf;
+			}
+		}
+		return BestOf.REGULAR;
 	}
 	
 	

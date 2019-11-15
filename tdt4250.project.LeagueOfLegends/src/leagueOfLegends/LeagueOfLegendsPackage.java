@@ -261,7 +261,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int PLAYER__POSITION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Champion Pool</b></em>' reference.
+	 * The feature id for the '<em><b>Champion Pool</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -442,13 +442,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int MATCH__TEAMS = 4;
 
 	/**
+	 * The feature id for the '<em><b>Week</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCH__WEEK = 5;
+
+	/**
 	 * The number of structural features of the '<em>Match</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH_FEATURE_COUNT = 5;
+	int MATCH_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Match</em>' class.
@@ -1115,10 +1124,10 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EAttribute getPlayer_Position();
 
 	/**
-	 * Returns the meta object for the reference '{@link leagueOfLegends.Player#getChampionPool <em>Champion Pool</em>}'.
+	 * Returns the meta object for the reference list '{@link leagueOfLegends.Player#getChampionPool <em>Champion Pool</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Champion Pool</em>'.
+	 * @return the meta object for the reference list '<em>Champion Pool</em>'.
 	 * @see leagueOfLegends.Player#getChampionPool()
 	 * @see #getPlayer()
 	 * @generated
@@ -1319,6 +1328,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMatch_Teams();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.Match#getWeek <em>Week</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Week</em>'.
+	 * @see leagueOfLegends.Match#getWeek()
+	 * @see #getMatch()
+	 * @generated
+	 */
+	EAttribute getMatch_Week();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Game <em>Game</em>}'.
@@ -1951,7 +1971,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EAttribute PLAYER__POSITION = eINSTANCE.getPlayer_Position();
 
 		/**
-		 * The meta object literal for the '<em><b>Champion Pool</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Champion Pool</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2107,6 +2127,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MATCH__TEAMS = eINSTANCE.getMatch_Teams();
+
+		/**
+		 * The meta object literal for the '<em><b>Week</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MATCH__WEEK = eINSTANCE.getMatch_Week();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameImpl <em>Game</em>}' class.

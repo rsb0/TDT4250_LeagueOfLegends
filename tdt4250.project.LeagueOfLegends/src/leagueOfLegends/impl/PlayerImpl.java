@@ -2,6 +2,7 @@
  */
 package leagueOfLegends.impl;
 
+import java.util.Collection;
 import leagueOfLegends.Champion;
 import leagueOfLegends.LeagueOfLegendsPackage;
 import leagueOfLegends.Player;
@@ -12,12 +13,14 @@ import leagueOfLegends.Team;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
@@ -79,14 +82,14 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 	protected Position position = POSITION_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getChampionPool() <em>Champion Pool</em>}' reference.
+	 * The cached value of the '{@link #getChampionPool() <em>Champion Pool</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getChampionPool()
 	 * @generated
 	 * @ordered
 	 */
-	protected Champion championPool;
+	protected EList<Champion> championPool;
 
 	/**
 	 * The cached value of the '{@link #getPlayerStats() <em>Player Stats</em>}' containment reference.
@@ -169,38 +172,11 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 	 * @generated
 	 */
 	@Override
-	public Champion getChampionPool() {
-		if (championPool != null && championPool.eIsProxy()) {
-			InternalEObject oldChampionPool = (InternalEObject)championPool;
-			championPool = (Champion)eResolveProxy(oldChampionPool);
-			if (championPool != oldChampionPool) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL, oldChampionPool, championPool));
-			}
+	public EList<Champion> getChampionPool() {
+		if (championPool == null) {
+			championPool = new EObjectResolvingEList<Champion>(Champion.class, this, LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL);
 		}
 		return championPool;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Champion basicGetChampionPool() {
-		return championPool;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setChampionPool(Champion newChampionPool) {
-		Champion oldChampionPool = championPool;
-		championPool = newChampionPool;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL, oldChampionPool, championPool));
 	}
 
 	/**
@@ -354,8 +330,7 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 			case LeagueOfLegendsPackage.PLAYER__POSITION:
 				return getPosition();
 			case LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL:
-				if (resolve) return getChampionPool();
-				return basicGetChampionPool();
+				return getChampionPool();
 			case LeagueOfLegendsPackage.PLAYER__PLAYER_STATS:
 				return getPlayerStats();
 			case LeagueOfLegendsPackage.PLAYER__TEAM:
@@ -369,6 +344,7 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -379,7 +355,8 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 				setPosition((Position)newValue);
 				return;
 			case LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL:
-				setChampionPool((Champion)newValue);
+				getChampionPool().clear();
+				getChampionPool().addAll((Collection<? extends Champion>)newValue);
 				return;
 			case LeagueOfLegendsPackage.PLAYER__PLAYER_STATS:
 				setPlayerStats((PlayerStats)newValue);
@@ -406,7 +383,7 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 				setPosition(POSITION_EDEFAULT);
 				return;
 			case LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL:
-				setChampionPool((Champion)null);
+				getChampionPool().clear();
 				return;
 			case LeagueOfLegendsPackage.PLAYER__PLAYER_STATS:
 				setPlayerStats((PlayerStats)null);
@@ -431,7 +408,7 @@ public class PlayerImpl extends MinimalEObjectImpl.Container implements Player {
 			case LeagueOfLegendsPackage.PLAYER__POSITION:
 				return position != POSITION_EDEFAULT;
 			case LeagueOfLegendsPackage.PLAYER__CHAMPION_POOL:
-				return championPool != null;
+				return championPool != null && !championPool.isEmpty();
 			case LeagueOfLegendsPackage.PLAYER__PLAYER_STATS:
 				return playerStats != null;
 			case LeagueOfLegendsPackage.PLAYER__TEAM:
