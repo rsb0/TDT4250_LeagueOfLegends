@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Match#getBestOF <em>Best OF</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getScore <em>Score</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getTeams <em>Teams</em>}</li>
+ *   <li>{@link leagueOfLegends.Match#getWeek <em>Week</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch()
@@ -119,5 +120,27 @@ public interface Match extends EObject {
 	 * @generated
 	 */
 	EList<Team> getTeams();
+
+	/**
+	 * Returns the value of the '<em><b>Week</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Week</em>' attribute.
+	 * @see #setWeek(String)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Week()
+	 * @model
+	 * @generated
+	 */
+	String getWeek();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Match#getWeek <em>Week</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Week</em>' attribute.
+	 * @see #getWeek()
+	 * @generated
+	 */
+	void setWeek(String value);
 
 } // Match

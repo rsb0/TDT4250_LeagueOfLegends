@@ -2,6 +2,7 @@
  */
 package leagueOfLegends;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -73,26 +74,16 @@ public interface Player extends EObject {
 	void setPosition(Position value);
 
 	/**
-	 * Returns the value of the '<em><b>Champion Pool</b></em>' reference.
+	 * Returns the value of the '<em><b>Champion Pool</b></em>' reference list.
+	 * The list contents are of type {@link leagueOfLegends.Champion}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Champion Pool</em>' reference.
-	 * @see #setChampionPool(Champion)
+	 * @return the value of the '<em>Champion Pool</em>' reference list.
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayer_ChampionPool()
 	 * @model
 	 * @generated
 	 */
-	Champion getChampionPool();
-
-	/**
-	 * Sets the value of the '{@link leagueOfLegends.Player#getChampionPool <em>Champion Pool</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Champion Pool</em>' reference.
-	 * @see #getChampionPool()
-	 * @generated
-	 */
-	void setChampionPool(Champion value);
+	EList<Champion> getChampionPool();
 
 	/**
 	 * Returns the value of the '<em><b>Player Stats</b></em>' containment reference.

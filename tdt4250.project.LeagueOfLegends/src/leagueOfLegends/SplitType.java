@@ -26,7 +26,7 @@ public enum SplitType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	REGULAR(0, "regular", ""),
+	REGULAR(0, "regular", "regular"),
 
 	/**
 	 * The '<em><b>Playoff</b></em>' literal object.
@@ -46,24 +46,14 @@ public enum SplitType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	REGIONALS(2, "regionals", "regionals"),
-
-	/**
-	 * The '<em><b>Worlds</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #WORLDS_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	WORLDS(3, "worlds", "worlds");
+	REGIONALS(2, "regionals", "regionals");
 
 	/**
 	 * The '<em><b>Regular</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #REGULAR
-	 * @model name="regular" literal=""
+	 * @model name="regular"
 	 * @generated
 	 * @ordered
 	 */
@@ -92,17 +82,6 @@ public enum SplitType implements Enumerator {
 	public static final int REGIONALS_VALUE = 2;
 
 	/**
-	 * The '<em><b>Worlds</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #WORLDS
-	 * @model name="worlds"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int WORLDS_VALUE = 3;
-
-	/**
 	 * An array of all the '<em><b>Split Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,7 +92,6 @@ public enum SplitType implements Enumerator {
 			REGULAR,
 			PLAYOFF,
 			REGIONALS,
-			WORLDS,
 		};
 
 	/**
@@ -173,7 +151,6 @@ public enum SplitType implements Enumerator {
 			case REGULAR_VALUE: return REGULAR;
 			case PLAYOFF_VALUE: return PLAYOFF;
 			case REGIONALS_VALUE: return REGIONALS;
-			case WORLDS_VALUE: return WORLDS;
 		}
 		return null;
 	}

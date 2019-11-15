@@ -26,7 +26,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Player">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" eType="#//Position"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="championPool" eType="#//Champion"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championPool" upperBound="-1"
+        eType="#//Champion"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="playerStats" lowerBound="1"
         eType="#//PlayerStats" containment="true" eOpposite="#//PlayerStats/player"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="team" lowerBound="1" eType="#//Team"
@@ -51,6 +52,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" lowerBound="2" upperBound="2"
         eType="#//Team"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="week" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Game">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gameID" lowerBound="1"
@@ -99,9 +101,14 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="champion" eType="#//Champion"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BestOf">
-    <eLiterals name="bestOfOne"/>
-    <eLiterals name="bestOfThree" value="3"/>
-    <eLiterals name="bestOfFive" value="5"/>
+    <eLiterals name="QF" value="5" literal="QF"/>
+    <eLiterals name="F" value="5"/>
+    <eLiterals name="SF" value="5" literal="SF"/>
+    <eLiterals name="Regular" value="1" literal="Regular"/>
+    <eLiterals name="R1" value="5"/>
+    <eLiterals name="R2" value="5"/>
+    <eLiterals name="R3" value="5"/>
+    <eLiterals name="_3p" value="5" literal="_3p"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Position">
     <eLiterals name="middle"/>
@@ -127,6 +134,5 @@
     <eLiterals name="regular" literal="regular"/>
     <eLiterals name="playoff" value="1"/>
     <eLiterals name="regionals" value="2"/>
-    <eLiterals name="worlds" value="3"/>
   </eClassifiers>
 </ecore:EPackage>
