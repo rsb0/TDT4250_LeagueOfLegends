@@ -23,8 +23,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.GamePlayerStats#getVisionWards <em>Vision Wards</em>}</li>
  *   <li>{@link leagueOfLegends.GamePlayerStats#getMinionKills <em>Minion Kills</em>}</li>
  *   <li>{@link leagueOfLegends.GamePlayerStats#getMonsterKills <em>Monster Kills</em>}</li>
- *   <li>{@link leagueOfLegends.GamePlayerStats#getBaronKills <em>Baron Kills</em>}</li>
  *   <li>{@link leagueOfLegends.GamePlayerStats#getChampion <em>Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.GamePlayerStats#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getGamePlayerStats()
@@ -253,28 +253,6 @@ public interface GamePlayerStats extends EObject {
 	void setMonsterKills(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Baron Kills</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Baron Kills</em>' attribute.
-	 * @see #setBaronKills(int)
-	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGamePlayerStats_BaronKills()
-	 * @model
-	 * @generated
-	 */
-	int getBaronKills();
-
-	/**
-	 * Sets the value of the '{@link leagueOfLegends.GamePlayerStats#getBaronKills <em>Baron Kills</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Baron Kills</em>' attribute.
-	 * @see #getBaronKills()
-	 * @generated
-	 */
-	void setBaronKills(int value);
-
-	/**
 	 * Returns the value of the '<em><b>Champion</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -295,5 +273,27 @@ public interface GamePlayerStats extends EObject {
 	 * @generated
 	 */
 	void setChampion(Champion value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGamePlayerStats_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.GamePlayerStats#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // GamePlayerStats
