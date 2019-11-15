@@ -51,8 +51,20 @@ public class LeagueOfLegendsCreationUtils {
 		return game;
 	}
 	
-	public static GameStats createGameStats() {
+	public static GameStats createGameStats(Game game, int kills, int deaths, int assists,
+			int wards, int visionWards, int wardsKilled, int gold, int minionKills, int monsterKills) {
 		GameStats gameStats = LeagueOfLegendsFactory.eINSTANCE.createGameStats();
+		gameStats.setGame(game);
+		gameStats.setName(game.getGameID());
+		gameStats.setTotalKills(kills);
+		gameStats.setTotalDeaths(deaths);
+		gameStats.setTotalAssist(assists);
+		gameStats.setTotalWards(wards);
+		gameStats.setTotalVisionWards(visionWards);
+		gameStats.setTotalWardsKilled(wardsKilled);
+		gameStats.setTotalGolds(gold);
+		gameStats.setTotalMinionKills(minionKills);
+		gameStats.setTotalMonsterKills(monsterKills);
 		return gameStats;
 	}
 	
@@ -74,6 +86,23 @@ public class LeagueOfLegendsCreationUtils {
 		gamePlayerStats.setMonsterKills(monsterKills);
 		
 		return gamePlayerStats;
+	}
+	
+	public static GameTeamStats createGameTeamStats(Team team, int kills, int deaths, int assists,
+			int wards, int visionWards, int wardsKilled, int gold, int minionKills, int monsterKills) {
+		GameTeamStats gameTeamStats =  LeagueOfLegendsFactory.eINSTANCE.createGameTeamStats();
+		gameTeamStats.setTeam(team);
+		gameTeamStats.setName(team.getName());
+		gameTeamStats.setTotalKills(kills);
+		gameTeamStats.setTotalDeaths(deaths);
+		gameTeamStats.setTotalAssist(assists);
+		gameTeamStats.setTotalWards(wards);
+		gameTeamStats.setTotalVisionWards(visionWards);
+		gameTeamStats.setTotalWardsKilled(wardsKilled);
+		gameTeamStats.setTotalGolds(gold);
+		gameTeamStats.setTotalMinionKills(minionKills);
+		gameTeamStats.setTotalMonsterKills(monsterKills);
+		return gameTeamStats;
 	}
 	
 	

@@ -79,8 +79,6 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/blueTeam"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/gameTeamStat"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Game/gamePlayerStats"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Game/Winner"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Game/gameLength"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GameTeamStats/team"/>
@@ -117,6 +115,21 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//Season/league"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Season/splitType"/>
     </genClasses>
-    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameStats"/>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//GameStats">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//GameStats/game"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/duration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/winner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalDeaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalAssist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalGolds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalWards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalWardsKilled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalVisionWards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalMinionKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/totalMonsterKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/teamBaronKills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//GameStats/name"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -607,26 +607,6 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
-	public EAttribute getGame_Winner() {
-		return (EAttribute)gameEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getGame_GameLength() {
-		return (EAttribute)gameEClass.getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getGameTeamStats() {
 		return gameTeamStatsEClass;
 	}
@@ -957,6 +937,146 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EReference getGameStats_Game() {
+		return (EReference)gameStatsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_Duration() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_Winner() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalKills() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalDeaths() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalAssist() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalGolds() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalWards() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalWardsKilled() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalVisionWards() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalMinionKills() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TotalMonsterKills() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_TeamBaronKills() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGameStats_Name() {
+		return (EAttribute)gameStatsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getBestOf() {
 		return bestOfEEnum;
 	}
@@ -1066,8 +1186,6 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEReference(gameEClass, GAME__BLUE_TEAM);
 		createEReference(gameEClass, GAME__GAME_TEAM_STAT);
 		createEReference(gameEClass, GAME__GAME_PLAYER_STATS);
-		createEAttribute(gameEClass, GAME__WINNER);
-		createEAttribute(gameEClass, GAME__GAME_LENGTH);
 
 		gameTeamStatsEClass = createEClass(GAME_TEAM_STATS);
 		createEReference(gameTeamStatsEClass, GAME_TEAM_STATS__TEAM);
@@ -1105,6 +1223,20 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(seasonEClass, SEASON__SPLIT_TYPE);
 
 		gameStatsEClass = createEClass(GAME_STATS);
+		createEReference(gameStatsEClass, GAME_STATS__GAME);
+		createEAttribute(gameStatsEClass, GAME_STATS__DURATION);
+		createEAttribute(gameStatsEClass, GAME_STATS__WINNER);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_KILLS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_DEATHS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_ASSIST);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_GOLDS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_WARDS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_WARDS_KILLED);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_VISION_WARDS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_MINION_KILLS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TOTAL_MONSTER_KILLS);
+		createEAttribute(gameStatsEClass, GAME_STATS__TEAM_BARON_KILLS);
+		createEAttribute(gameStatsEClass, GAME_STATS__NAME);
 
 		// Create enums
 		bestOfEEnum = createEEnum(BEST_OF);
@@ -1184,13 +1316,11 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 
 		initEClass(gameEClass, Game.class, "Game", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGame_GameID(), ecorePackage.getEString(), "gameID", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGame_GameStats(), this.getGameStats(), null, "gameStats", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGame_GameStats(), this.getGameStats(), this.getGameStats_Game(), "gameStats", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_RedTeam(), this.getTeam(), null, "redTeam", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_BlueTeam(), this.getTeam(), null, "blueTeam", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_GameTeamStat(), this.getGameTeamStats(), null, "gameTeamStat", null, 2, 2, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_GamePlayerStats(), this.getGamePlayerStats(), null, "gamePlayerStats", null, 0, -1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGame_Winner(), this.getSide(), "Winner", null, 0, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGame_GameLength(), ecorePackage.getEFloat(), "gameLength", null, 0, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameTeamStatsEClass, GameTeamStats.class, "GameTeamStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGameTeamStats_Team(), this.getTeam(), null, "team", null, 1, 1, GameTeamStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1228,6 +1358,20 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getSeason_SplitType(), this.getSplitType(), "splitType", null, 0, 1, Season.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameStatsEClass, GameStats.class, "GameStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGameStats_Game(), this.getGame(), this.getGame_GameStats(), "game", null, 1, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_Duration(), ecorePackage.getEInt(), "duration", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_Winner(), this.getSide(), "winner", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalKills(), ecorePackage.getEInt(), "totalKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalDeaths(), ecorePackage.getEInt(), "totalDeaths", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalAssist(), ecorePackage.getEInt(), "totalAssist", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalGolds(), ecorePackage.getEInt(), "totalGolds", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalWards(), ecorePackage.getEInt(), "totalWards", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalWardsKilled(), ecorePackage.getEInt(), "totalWardsKilled", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalVisionWards(), ecorePackage.getEInt(), "totalVisionWards", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalMinionKills(), ecorePackage.getEInt(), "totalMinionKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TotalMonsterKills(), ecorePackage.getEInt(), "totalMonsterKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_TeamBaronKills(), ecorePackage.getEInt(), "teamBaronKills", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGameStats_Name(), ecorePackage.getEString(), "name", null, 0, 1, GameStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(bestOfEEnum, BestOf.class, "BestOf");

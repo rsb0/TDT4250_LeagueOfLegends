@@ -140,11 +140,6 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						GamePlayerStats gamePlayerStats = LeagueOfLegendsCreationUtils.createGamePlayerStats(player, champions.get(champion), Integer.parseInt(cellData[cellDataIndex]), Integer.parseInt(cellData[cellDataIndex + 1]), Integer.parseInt(cellData[cellDataIndex + 2]), Integer.parseInt(cellData[cellDataIndex + 18]), Integer.parseInt(cellData[cellDataIndex + 20]), Integer.parseInt(cellData[cellDataIndex + 22]), Integer.parseInt(cellData[cellDataIndex + 23]),Integer.parseInt(cellData[cellDataIndex + 25]),Integer.parseInt(cellData[cellDataIndex + 26]));
 						game.getGamePlayerStats().add(gamePlayerStats);
 					}
-					
-					
-
-					
-					
 
 					// Handle matches
 
@@ -205,6 +200,51 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		
+		//Handle gameTeamStats
+		
+		for (Season season: league.getSeasons()) {
+			for(Match match: season.getMatches()) {
+				for(Game game: match.getGames()) {
+					GameTeamStats gameTeamStatsRed;
+					Team redTeam = game.getRedTeam();
+					System.out.println(redTeam.getName());
+					int redTeamKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					System.out.println();
+					int redTeamDeaths = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getDeaths()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamAssists = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getAssist()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamWards = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getWards()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamVisionWards = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getVisionWards()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamWardsKilled = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getWardsKilled()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamGold = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getGolds()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamMinionKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getMinionKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int redTeamMonsterKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getMonsterKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					
+					gameTeamStatsRed = LeagueOfLegendsCreationUtils.createGameTeamStats(redTeam, redTeamKills, redTeamDeaths, redTeamAssists, redTeamWards, redTeamVisionWards, redTeamWardsKilled, redTeamGold, redTeamMinionKills, redTeamMonsterKills);
+					
+					GameTeamStats gameTeamStatsBlue;
+					Team blueTeam = game.getBlueTeam();
+					int blueTeamKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamDeaths = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getDeaths()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamAssists = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getAssist()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamWards = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getWards()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamVisionWards = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getVisionWards()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamWardsKilled = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getWardsKilled()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamGold = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getGolds()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamMinionKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getMinionKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					int blueTeamMonsterKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getBlueTeam()).map(gamePlayerStats -> gamePlayerStats.getMonsterKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+					
+					gameTeamStatsBlue = LeagueOfLegendsCreationUtils.createGameTeamStats(blueTeam, blueTeamKills, blueTeamDeaths, blueTeamAssists, blueTeamWards, blueTeamVisionWards, blueTeamWardsKilled, blueTeamGold, blueTeamMinionKills, blueTeamMonsterKills);
+					
+					game.getGameTeamStat().add(gameTeamStatsRed);
+					game.getGameTeamStat().add(gameTeamStatsBlue);
+					
+					
+					GameStats gameStats = LeagueOfLegendsCreationUtils.createGameStats(game, redTeamKills + blueTeamKills, redTeamDeaths + blueTeamDeaths, redTeamAssists + blueTeamAssists, redTeamWards + blueTeamWards, redTeamVisionWards + blueTeamVisionWards, redTeamWardsKilled + blueTeamWardsKilled, redTeamGold + blueTeamGold, redTeamMinionKills + blueTeamMinionKills, redTeamMonsterKills + blueTeamMonsterKills);
+					game.setGameStats(gameStats);
+				}
+			}
 		}
 
 		try {
