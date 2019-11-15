@@ -13,6 +13,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Champion">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championStat" eType="#//ChampionsStats"
+        containment="true" eOpposite="#//ChampionsStats/champion"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Team">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -147,5 +149,15 @@
     <eLiterals name="regular" literal="regular"/>
     <eLiterals name="playoff" value="1"/>
     <eLiterals name="regionals" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChampionsStats">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gamesPlayed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalKills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalDeaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalAssist" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="killDeathAssistRatio" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"
+        derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="champion" eType="#//Champion"
+        eOpposite="#//Champion/championStat"/>
   </eClassifiers>
 </ecore:EPackage>
