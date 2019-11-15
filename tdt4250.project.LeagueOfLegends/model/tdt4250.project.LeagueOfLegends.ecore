@@ -58,7 +58,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gameID" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gameStats" lowerBound="1"
-        eType="#//GameStats" containment="true"/>
+        eType="#//GameStats" containment="true" eOpposite="#//GameStats/game"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="redTeam" lowerBound="1"
         eType="#//Team"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="blueTeam" lowerBound="1"
@@ -67,8 +67,6 @@
         upperBound="2" eType="#//GameTeamStats" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gamePlayerStats" upperBound="-1"
         eType="#//GamePlayerStats" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Winner" eType="#//Side"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gameLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameTeamStats">
     <eStructuralFeatures xsi:type="ecore:EReference" name="team" lowerBound="1" eType="#//Team"/>
@@ -129,7 +127,22 @@
         eType="#//League" eOpposite="#//League/seasons"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="splitType" eType="#//SplitType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GameStats"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GameStats">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="game" lowerBound="1" eType="#//Game"
+        eOpposite="#//Game/gameStats"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="winner" eType="#//Side"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalKills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalDeaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalAssist" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalGolds" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalWards" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalWardsKilled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalVisionWards" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalMinionKills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalMonsterKills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="teamBaronKills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SplitType">
     <eLiterals name="regular" literal="regular"/>
     <eLiterals name="playoff" value="1"/>
