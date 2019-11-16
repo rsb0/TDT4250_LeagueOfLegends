@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Game#getBlueTeam <em>Blue Team</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getGameTeamStat <em>Game Team Stat</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getGamePlayerStats <em>Game Player Stats</em>}</li>
+ *   <li>{@link leagueOfLegends.Game#getWinner <em>Winner</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getGame()
@@ -141,5 +142,30 @@ public interface Game extends EObject {
 	 * @generated
 	 */
 	EList<GamePlayerStats> getGamePlayerStats();
+
+	/**
+	 * Returns the value of the '<em><b>Winner</b></em>' attribute.
+	 * The literals are from the enumeration {@link leagueOfLegends.Side}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Winner</em>' attribute.
+	 * @see leagueOfLegends.Side
+	 * @see #setWinner(Side)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGame_Winner()
+	 * @model
+	 * @generated
+	 */
+	Side getWinner();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Game#getWinner <em>Winner</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Winner</em>' attribute.
+	 * @see leagueOfLegends.Side
+	 * @see #getWinner()
+	 * @generated
+	 */
+	void setWinner(Side value);
 
 } // Game

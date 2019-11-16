@@ -9,6 +9,7 @@ import leagueOfLegends.GamePlayerStats;
 import leagueOfLegends.GameStats;
 import leagueOfLegends.GameTeamStats;
 import leagueOfLegends.LeagueOfLegendsPackage;
+import leagueOfLegends.Side;
 import leagueOfLegends.Team;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -39,6 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.GameImpl#getBlueTeam <em>Blue Team</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GameImpl#getGameTeamStat <em>Game Team Stat</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GameImpl#getGamePlayerStats <em>Game Player Stats</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.GameImpl#getWinner <em>Winner</em>}</li>
  * </ul>
  *
  * @generated
@@ -113,6 +115,26 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 	 * @ordered
 	 */
 	protected EList<GamePlayerStats> gamePlayerStats;
+
+	/**
+	 * The default value of the '{@link #getWinner() <em>Winner</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWinner()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Side WINNER_EDEFAULT = Side.RED;
+
+	/**
+	 * The cached value of the '{@link #getWinner() <em>Winner</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWinner()
+	 * @generated
+	 * @ordered
+	 */
+	protected Side winner = WINNER_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,6 +335,29 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 	 * @generated
 	 */
 	@Override
+	public Side getWinner() {
+		return winner;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWinner(Side newWinner) {
+		Side oldWinner = winner;
+		winner = newWinner == null ? WINNER_EDEFAULT : newWinner;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.GAME__WINNER, oldWinner, winner));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.GAME__GAME_STATS:
@@ -363,6 +408,8 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 				return getGameTeamStat();
 			case LeagueOfLegendsPackage.GAME__GAME_PLAYER_STATS:
 				return getGamePlayerStats();
+			case LeagueOfLegendsPackage.GAME__WINNER:
+				return getWinner();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -396,6 +443,9 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 				getGamePlayerStats().clear();
 				getGamePlayerStats().addAll((Collection<? extends GamePlayerStats>)newValue);
 				return;
+			case LeagueOfLegendsPackage.GAME__WINNER:
+				setWinner((Side)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -426,6 +476,9 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 			case LeagueOfLegendsPackage.GAME__GAME_PLAYER_STATS:
 				getGamePlayerStats().clear();
 				return;
+			case LeagueOfLegendsPackage.GAME__WINNER:
+				setWinner(WINNER_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -450,6 +503,8 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 				return gameTeamStat != null && !gameTeamStat.isEmpty();
 			case LeagueOfLegendsPackage.GAME__GAME_PLAYER_STATS:
 				return gamePlayerStats != null && !gamePlayerStats.isEmpty();
+			case LeagueOfLegendsPackage.GAME__WINNER:
+				return winner != WINNER_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -466,6 +521,8 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (gameID: ");
 		result.append(gameID);
+		result.append(", winner: ");
+		result.append(winner);
 		result.append(')');
 		return result.toString();
 	}

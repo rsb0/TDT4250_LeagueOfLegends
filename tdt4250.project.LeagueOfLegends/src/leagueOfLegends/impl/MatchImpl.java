@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getGames <em>Games</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.MatchImpl#getDisplayName <em>Display Name</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getMatchID <em>Match ID</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getBestOF <em>Best OF</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getScore <em>Score</em>}</li>
@@ -53,6 +54,26 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @ordered
 	 */
 	protected EList<Game> games;
+
+	/**
+	 * The default value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDisplayName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DISPLAY_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDisplayName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String displayName = DISPLAY_NAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getMatchID() <em>Match ID</em>}' attribute.
@@ -174,6 +195,29 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			games = new EObjectContainmentEList<Game>(Game.class, this, LeagueOfLegendsPackage.MATCH__GAMES);
 		}
 		return games;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDisplayName() {
+		return displayName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDisplayName(String newDisplayName) {
+		String oldDisplayName = displayName;
+		displayName = newDisplayName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.MATCH__DISPLAY_NAME, oldDisplayName, displayName));
 	}
 
 	/**
@@ -305,6 +349,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
 				return getGames();
+			case LeagueOfLegendsPackage.MATCH__DISPLAY_NAME:
+				return getDisplayName();
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
 				return getMatchID();
 			case LeagueOfLegendsPackage.MATCH__BEST_OF:
@@ -331,6 +377,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
 				getGames().clear();
 				getGames().addAll((Collection<? extends Game>)newValue);
+				return;
+			case LeagueOfLegendsPackage.MATCH__DISPLAY_NAME:
+				setDisplayName((String)newValue);
 				return;
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
 				setMatchID((String)newValue);
@@ -363,6 +412,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
 				getGames().clear();
 				return;
+			case LeagueOfLegendsPackage.MATCH__DISPLAY_NAME:
+				setDisplayName(DISPLAY_NAME_EDEFAULT);
+				return;
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
 				setMatchID(MATCH_ID_EDEFAULT);
 				return;
@@ -392,6 +444,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
 				return games != null && !games.isEmpty();
+			case LeagueOfLegendsPackage.MATCH__DISPLAY_NAME:
+				return DISPLAY_NAME_EDEFAULT == null ? displayName != null : !DISPLAY_NAME_EDEFAULT.equals(displayName);
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
 				return MATCH_ID_EDEFAULT == null ? matchID != null : !MATCH_ID_EDEFAULT.equals(matchID);
 			case LeagueOfLegendsPackage.MATCH__BEST_OF:
@@ -416,7 +470,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (matchID: ");
+		result.append(" (DisplayName: ");
+		result.append(displayName);
+		result.append(", matchID: ");
 		result.append(matchID);
 		result.append(", bestOF: ");
 		result.append(bestOF);

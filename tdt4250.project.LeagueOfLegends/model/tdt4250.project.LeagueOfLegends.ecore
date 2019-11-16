@@ -45,10 +45,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="winLoseRatio" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" lowerBound="1"
         eType="#//Player" eOpposite="#//Player/playerStats"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Match">
     <eStructuralFeatures xsi:type="ecore:EReference" name="games" upperBound="-1"
         eType="#//Game" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DisplayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="matchID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bestOF" eType="#//BestOf"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -69,6 +71,7 @@
         upperBound="2" eType="#//GameTeamStats" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gamePlayerStats" upperBound="-1"
         eType="#//GamePlayerStats" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="winner" eType="#//Side"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameTeamStats">
     <eStructuralFeatures xsi:type="ecore:EReference" name="team" lowerBound="1" eType="#//Team"/>
@@ -160,5 +163,8 @@
         derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="champion" eType="#//Champion"
         eOpposite="#//Champion/championStat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bans" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="winLoseRatio" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
 </ecore:EPackage>

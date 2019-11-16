@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getWinLoseRatio <em>Win Lose Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getPlayer <em>Player</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getWins <em>Wins</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,6 +157,26 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 	 * @ordered
 	 */
 	protected float winLoseRatio = WIN_LOSE_RATIO_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int WINS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected int wins = WINS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -363,6 +384,29 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 	 * @generated
 	 */
 	@Override
+	public int getWins() {
+		return wins;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWins(int newWins) {
+		int oldWins = wins;
+		wins = newWins;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.PLAYER_STATS__WINS, oldWins, wins));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
@@ -423,6 +467,8 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 				return getWinLoseRatio();
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				return getPlayer();
+			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
+				return getWins();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -455,6 +501,9 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 				return;
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				setPlayer((Player)newValue);
+				return;
+			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
+				setWins((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -489,6 +538,9 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				setPlayer((Player)null);
 				return;
+			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
+				setWins(WINS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -515,6 +567,8 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 				return winLoseRatio != WIN_LOSE_RATIO_EDEFAULT;
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				return getPlayer() != null;
+			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
+				return wins != WINS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -541,6 +595,8 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 		result.append(killDeathAssistRatio);
 		result.append(", winLoseRatio: ");
 		result.append(winLoseRatio);
+		result.append(", wins: ");
+		result.append(wins);
 		result.append(')');
 		return result.toString();
 	}

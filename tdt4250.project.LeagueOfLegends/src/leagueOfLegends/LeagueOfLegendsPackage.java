@@ -378,13 +378,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int PLAYER_STATS__PLAYER = 6;
 
 	/**
+	 * The feature id for the '<em><b>Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAYER_STATS__WINS = 7;
+
+	/**
 	 * The number of structural features of the '<em>Player Stats</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER_STATS_FEATURE_COUNT = 7;
+	int PLAYER_STATS_FEATURE_COUNT = 8;
 
 	/**
 	 * The number of operations of the '<em>Player Stats</em>' class.
@@ -415,13 +424,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int MATCH__GAMES = 0;
 
 	/**
+	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCH__DISPLAY_NAME = 1;
+
+	/**
 	 * The feature id for the '<em><b>Match ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__MATCH_ID = 1;
+	int MATCH__MATCH_ID = 2;
 
 	/**
 	 * The feature id for the '<em><b>Best OF</b></em>' attribute.
@@ -430,7 +448,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__BEST_OF = 2;
+	int MATCH__BEST_OF = 3;
 
 	/**
 	 * The feature id for the '<em><b>Score</b></em>' attribute.
@@ -439,7 +457,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__SCORE = 3;
+	int MATCH__SCORE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Teams</b></em>' reference list.
@@ -448,7 +466,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__TEAMS = 4;
+	int MATCH__TEAMS = 5;
 
 	/**
 	 * The feature id for the '<em><b>Week</b></em>' attribute.
@@ -457,7 +475,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH__WEEK = 5;
+	int MATCH__WEEK = 6;
 
 	/**
 	 * The number of structural features of the '<em>Match</em>' class.
@@ -466,7 +484,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH_FEATURE_COUNT = 6;
+	int MATCH_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Match</em>' class.
@@ -542,13 +560,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME__GAME_PLAYER_STATS = 5;
 
 	/**
+	 * The feature id for the '<em><b>Winner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME__WINNER = 6;
+
+	/**
 	 * The number of structural features of the '<em>Game</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GAME_FEATURE_COUNT = 6;
+	int GAME_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Game</em>' class.
@@ -1125,13 +1152,40 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int CHAMPIONS_STATS__CHAMPION = 5;
 
 	/**
+	 * The feature id for the '<em><b>Bans</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__BANS = 6;
+
+	/**
+	 * The feature id for the '<em><b>Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__WINS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Win Lose Ratio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHAMPIONS_STATS__WIN_LOSE_RATIO = 8;
+
+	/**
 	 * The number of structural features of the '<em>Champions Stats</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHAMPIONS_STATS_FEATURE_COUNT = 6;
+	int CHAMPIONS_STATS_FEATURE_COUNT = 9;
 
 	/**
 	 * The number of operations of the '<em>Champions Stats</em>' class.
@@ -1445,6 +1499,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EReference getPlayerStats_Player();
 
 	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.PlayerStats#getWins <em>Wins</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wins</em>'.
+	 * @see leagueOfLegends.PlayerStats#getWins()
+	 * @see #getPlayerStats()
+	 * @generated
+	 */
+	EAttribute getPlayerStats_Wins();
+
+	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Champion <em>Champion</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1496,6 +1561,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMatch_Games();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.Match#getDisplayName <em>Display Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Display Name</em>'.
+	 * @see leagueOfLegends.Match#getDisplayName()
+	 * @see #getMatch()
+	 * @generated
+	 */
+	EAttribute getMatch_DisplayName();
 
 	/**
 	 * Returns the meta object for the attribute '{@link leagueOfLegends.Match#getMatchID <em>Match ID</em>}'.
@@ -1627,6 +1703,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGame_GamePlayerStats();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.Game#getWinner <em>Winner</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Winner</em>'.
+	 * @see leagueOfLegends.Game#getWinner()
+	 * @see #getGame()
+	 * @generated
+	 */
+	EAttribute getGame_Winner();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.GameTeamStats <em>Game Team Stats</em>}'.
@@ -2218,6 +2305,39 @@ public interface LeagueOfLegendsPackage extends EPackage {
 
 
 	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getBans <em>Bans</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bans</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getBans()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_Bans();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getWins <em>Wins</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wins</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getWins()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_Wins();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.ChampionsStats#getWinLoseRatio <em>Win Lose Ratio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Win Lose Ratio</em>'.
+	 * @see leagueOfLegends.ChampionsStats#getWinLoseRatio()
+	 * @see #getChampionsStats()
+	 * @generated
+	 */
+	EAttribute getChampionsStats_WinLoseRatio();
+
+	/**
 	 * Returns the meta object for enum '{@link leagueOfLegends.BestOf <em>Best Of</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2481,6 +2601,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EReference PLAYER_STATS__PLAYER = eINSTANCE.getPlayerStats_Player();
 
 		/**
+		 * The meta object literal for the '<em><b>Wins</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PLAYER_STATS__WINS = eINSTANCE.getPlayerStats_Wins();
+
+		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.ChampionImpl <em>Champion</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2523,6 +2651,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MATCH__GAMES = eINSTANCE.getMatch_Games();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MATCH__DISPLAY_NAME = eINSTANCE.getMatch_DisplayName();
 
 		/**
 		 * The meta object literal for the '<em><b>Match ID</b></em>' attribute feature.
@@ -2621,6 +2757,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GAME__GAME_PLAYER_STATS = eINSTANCE.getGame_GamePlayerStats();
+
+		/**
+		 * The meta object literal for the '<em><b>Winner</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAME__WINNER = eINSTANCE.getGame_Winner();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameTeamStatsImpl <em>Game Team Stats</em>}' class.
@@ -3063,6 +3207,30 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 */
 		EReference CHAMPIONS_STATS__CHAMPION = eINSTANCE.getChampionsStats_Champion();
 
+
+		/**
+		 * The meta object literal for the '<em><b>Bans</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__BANS = eINSTANCE.getChampionsStats_Bans();
+
+		/**
+		 * The meta object literal for the '<em><b>Wins</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__WINS = eINSTANCE.getChampionsStats_Wins();
+
+		/**
+		 * The meta object literal for the '<em><b>Win Lose Ratio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHAMPIONS_STATS__WIN_LOSE_RATIO = eINSTANCE.getChampionsStats_WinLoseRatio();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.

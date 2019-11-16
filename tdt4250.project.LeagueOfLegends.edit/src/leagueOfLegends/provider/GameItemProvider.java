@@ -65,6 +65,7 @@ public class GameItemProvider
 			addGameIDPropertyDescriptor(object);
 			addRedTeamPropertyDescriptor(object);
 			addBlueTeamPropertyDescriptor(object);
+			addWinnerPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -131,6 +132,28 @@ public class GameItemProvider
 				 false,
 				 true,
 				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Winner feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addWinnerPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Game_winner_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Game_winner_feature", "_UI_Game_type"),
+				 LeagueOfLegendsPackage.Literals.GAME__WINNER,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -206,6 +229,7 @@ public class GameItemProvider
 
 		switch (notification.getFeatureID(Game.class)) {
 			case LeagueOfLegendsPackage.GAME__GAME_ID:
+			case LeagueOfLegendsPackage.GAME__WINNER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case LeagueOfLegendsPackage.GAME__GAME_STATS:

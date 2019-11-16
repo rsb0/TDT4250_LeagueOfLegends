@@ -63,6 +63,7 @@ public class MatchItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addDisplayNamePropertyDescriptor(object);
 			addMatchIDPropertyDescriptor(object);
 			addBestOFPropertyDescriptor(object);
 			addScorePropertyDescriptor(object);
@@ -70,6 +71,28 @@ public class MatchItemProvider
 			addWeekPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Display Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDisplayNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Match_DisplayName_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Match_DisplayName_feature", "_UI_Match_type"),
+				 LeagueOfLegendsPackage.Literals.MATCH__DISPLAY_NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -231,7 +254,7 @@ public class MatchItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Match)object).getMatchID();
+		String label = ((Match)object).getDisplayName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Match_type") :
 			getString("_UI_Match_type") + " " + label;
@@ -250,6 +273,7 @@ public class MatchItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Match.class)) {
+			case LeagueOfLegendsPackage.MATCH__DISPLAY_NAME:
 			case LeagueOfLegendsPackage.MATCH__MATCH_ID:
 			case LeagueOfLegendsPackage.MATCH__BEST_OF:
 			case LeagueOfLegendsPackage.MATCH__SCORE:

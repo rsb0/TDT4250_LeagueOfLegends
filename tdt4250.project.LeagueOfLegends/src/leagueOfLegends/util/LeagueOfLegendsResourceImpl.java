@@ -36,6 +36,14 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		super(uri);
 	}
 
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		ResourceSet resSet = new ResourceSetImpl();
 		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("LeagueOfLegends",
@@ -93,15 +101,62 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					}
 
 					// Handle Champions
-					String champion = cellData[11];
-					if (!champions.containsKey(champion)) {
-						champions.put(champion, LeagueOfLegendsCreationUtils.createChampion(champion));
-						league.getChampions().add(champions.get(champion));
+					/** If current row contains stats for the whole game (celldata[6] > 100) 
+					*&& If any of the banned champions in this game (cols 12-16) has not been created yet: create it
+					*/
+					if (Integer.parseInt(cellData[6]) > 10) {
+						System.out.println(cellData[6]);
+						for (int i = 12 ; i < 17 ; i++) {
+							System.out.println(i);
+							if (!champions.containsKey(cellData[i])) {
+								champions.put(cellData[i], LeagueOfLegendsCreationUtils.createChampion(cellData[i]));
+								champions.get(cellData[i]).setChampionStat(LeagueOfLegendsCreationUtils.createChampionsStats());
+								league.getChampions().add(champions.get(cellData[i]));
+							}
+							/**
+							 * Handle number of bans for champions
+							 */
+							champions.get(cellData[i]).getChampionStat().setBans(champions.get(cellData[i]).getChampionStat().getBans() + 1);
+						}
 					}
-
+					
+					Champion champion;
+					/**
+					 * If champion played by player in current row has not yet been created: create it
+					 */
+					if (!champions.containsKey(cellData[11])) {
+						champion = LeagueOfLegendsCreationUtils.createChampion(cellData[11]);
+						champions.put(cellData[11], champion);
+						ChampionsStats championsStats = LeagueOfLegendsCreationUtils.createChampionsStats();
+						champion.setChampionStat(championsStats);
+						league.getChampions().add(champion);
+					}
+					else {
+						champion = champions.get(cellData[11]);						
+					}
+					
+					
+					/**
+					 * Handle other champion statistics
+					 */
+					champion.getChampionStat().setGamesPlayed(champion.getChampionStat().getGamesPlayed() + 1);
+					champion.getChampionStat().setWins(champion.getChampionStat().getWins() + Integer.parseInt(cellData[18]));
+					champion.getChampionStat().setTotalKills(champion.getChampionStat().getTotalKills() + Integer.parseInt(cellData[19]));
+					champion.getChampionStat().setTotalDeaths(champion.getChampionStat().getTotalDeaths()+ Integer.parseInt(cellData[20]));
+					champion.getChampionStat().setTotalAssist(champion.getChampionStat().getTotalAssist() + Integer.parseInt(cellData[21]));
+					
+					
+					
 					// Handle game
 					if (!games.containsKey(cellData[0])) {
-						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0]));
+						Side winner;
+						if(cellData[18].equals("1")) {
+							winner = Side.get(cellData[7].toLowerCase());
+						}
+						else {
+							winner = Side.get((Side.get(cellData[7].toLowerCase()).getValue() + 1) % 2);
+						}
+						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0], Side.BLUE));
 					}
 					Game game = games.get(cellData[0]);
 					
@@ -127,17 +182,30 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						Player player;
 						
 						if (!result.isPresent()) {
+							// Create player
 							player = LeagueOfLegendsCreationUtils.createPlayer(cellData[9]);
+							// Create PlayerStats for player
+							PlayerStats playerStats = LeagueOfLegendsCreationUtils.createPlayerStats();
+							// Add playerstats to player
+							player.setPlayerStats(playerStats);
+							// add player to team
 							team.getPlayer().add(player);
 						}
 						else {
 							player = result.get();
 						}
-						player.getChampionPool().add(champions.get(champion));
+						player.getChampionPool().add(champion);
+						
+						//handle player statistics
+						player.getPlayerStats().setGamesPlayed(player.getPlayerStats().getGamesPlayed() + 1);
+						player.getPlayerStats().setWins(player.getPlayerStats().getWins() + Integer.parseInt(cellData[18]));
+						player.getPlayerStats().setCareerKills(player.getPlayerStats().getCareerKills() + Integer.parseInt(cellData[19]));
+						player.getPlayerStats().setCareerDeaths(player.getPlayerStats().getCareerDeaths() + Integer.parseInt(cellData[20]));
+						player.getPlayerStats().setCareerAssist(player.getPlayerStats().getCareerAssist() + Integer.parseInt(cellData[21]));
 						
 						//Handle Game Player statistics
 						int cellDataIndex = 19;
-						GamePlayerStats gamePlayerStats = LeagueOfLegendsCreationUtils.createGamePlayerStats(player, champions.get(champion), Integer.parseInt(cellData[cellDataIndex]), Integer.parseInt(cellData[cellDataIndex + 1]), Integer.parseInt(cellData[cellDataIndex + 2]), Integer.parseInt(cellData[cellDataIndex + 18]), Integer.parseInt(cellData[cellDataIndex + 20]), Integer.parseInt(cellData[cellDataIndex + 22]), Integer.parseInt(cellData[cellDataIndex + 23]),Integer.parseInt(cellData[cellDataIndex + 25]),Integer.parseInt(cellData[cellDataIndex + 26]));
+						GamePlayerStats gamePlayerStats = LeagueOfLegendsCreationUtils.createGamePlayerStats(player, champion, Integer.parseInt(cellData[cellDataIndex]), Integer.parseInt(cellData[cellDataIndex + 1]), Integer.parseInt(cellData[cellDataIndex + 2]), Integer.parseInt(cellData[cellDataIndex + 18]), Integer.parseInt(cellData[cellDataIndex + 20]), Integer.parseInt(cellData[cellDataIndex + 22]), Integer.parseInt(cellData[cellDataIndex + 23]),Integer.parseInt(cellData[cellDataIndex + 25]),Integer.parseInt(cellData[cellDataIndex + 26]));
 						game.getGamePlayerStats().add(gamePlayerStats);
 					}
 
@@ -153,7 +221,6 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 								} else if (oldGame.getRedTeam() == null && cellData[7].equals("Red")) {
 									oldGame.setRedTeam(game.getRedTeam());
 								}
-
 								foundGame = true;
 								break;
 
@@ -191,6 +258,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					if (!foundGame) {
 						String matchID = "" + ++autoIncrementorMatchId;
 						matches.put(matchID, LeagueOfLegendsCreationUtils.createMatch(matchID, cellData[4]));
+						matches.get(matchID).setDisplayName(matchID + " | " + cellData[4]);
 						matches.get(matchID).getGames().add(game);
 						seasons.get(split).getMatches().add(matches.get(matchID));
 					}
@@ -209,9 +277,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 				for(Game game: match.getGames()) {
 					GameTeamStats gameTeamStatsRed;
 					Team redTeam = game.getRedTeam();
-					System.out.println(redTeam.getName());
 					int redTeamKills = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
-					System.out.println();
 					int redTeamDeaths = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getDeaths()).reduce((0), (subtotal, increment)-> subtotal += increment);
 					int redTeamAssists = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getAssist()).reduce((0), (subtotal, increment)-> subtotal += increment);
 					int redTeamWards = game.getGamePlayerStats().stream().filter(gamePlayerStats -> gamePlayerStats.getPlayer().getTeam() == game.getRedTeam()).map(gamePlayerStats -> gamePlayerStats.getWards()).reduce((0), (subtotal, increment)-> subtotal += increment);
@@ -246,6 +312,38 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 				}
 			}
 		}
+		
+		// Update ChampionsStats with kill-Death-Assist-Ratio ((#kills + #assists) / #deaths) and winLoseRatio (#wins / #losses)
+		for (Champion champion : league.getChampions()) {
+				float wins = champion.getChampionStat().getWins();
+				float losses = champion.getChampionStat().getGamesPlayed() - champion.getChampionStat().getWins();
+				float kills = champion.getChampionStat().getTotalKills();
+				float assists = champion.getChampionStat().getTotalAssist();
+				float deaths = champion.getChampionStat().getTotalDeaths();
+				champion.getChampionStat().setWinLoseRatio(wins / losses);
+				champion.getChampionStat().setKillDeathAssistRatio((kills + assists) / deaths); 
+		}
+		
+		// Update PlayerStats with kill-Death-Assist-Ratio ((#kills + #assists) / #deaths) and winLoseRatio (#wins / #losses)
+		for (Team team : league.getTeams()) {
+			for (Player player : team.getPlayer()) {
+				float wins = player.getPlayerStats().getWins();
+				float losses = player.getPlayerStats().getGamesPlayed() - player.getPlayerStats().getWins();
+				float kills = player.getPlayerStats().getCareerKills();
+				float assists = player.getPlayerStats().getCareerAssist();
+				float deaths = player.getPlayerStats().getCareerDeaths();
+				player.getPlayerStats().setWinLoseRatio(wins / losses);
+				player.getPlayerStats().setKillDeathAssistRatio((kills + assists) / deaths); 
+			}
+		}
+		
+
+		
+		// Update match display name with team names
+		for(Match match : matches.values()) {
+			match.setDisplayName(match.getDisplayName() + " | " + match.getGames().get(0).getRedTeam().getName() + "   vs.   " + match.getGames().get(0).getBlueTeam().getName());
+		}
+		
 
 		try {
 			File file = new File("assets\\league.xmi");

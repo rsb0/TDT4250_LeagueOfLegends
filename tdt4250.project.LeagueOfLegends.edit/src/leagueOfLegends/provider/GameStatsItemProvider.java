@@ -71,6 +71,7 @@ public class GameStatsItemProvider
 			addTotalMinionKillsPropertyDescriptor(object);
 			addTotalMonsterKillsPropertyDescriptor(object);
 			addTeamBaronKillsPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -340,6 +341,28 @@ public class GameStatsItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_GameStats_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_GameStats_name_feature", "_UI_GameStats_type"),
+				 LeagueOfLegendsPackage.Literals.GAME_STATS__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns GameStats.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -358,8 +381,10 @@ public class GameStatsItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		GameStats gameStats = (GameStats)object;
-		return getString("_UI_GameStats_type") + " " + gameStats.getDuration();
+		String label = ((GameStats)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_GameStats_type") :
+			getString("_UI_GameStats_type") + " " + label;
 	}
 
 
@@ -387,6 +412,7 @@ public class GameStatsItemProvider
 			case LeagueOfLegendsPackage.GAME_STATS__TOTAL_MINION_KILLS:
 			case LeagueOfLegendsPackage.GAME_STATS__TOTAL_MONSTER_KILLS:
 			case LeagueOfLegendsPackage.GAME_STATS__TEAM_BARON_KILLS:
+			case LeagueOfLegendsPackage.GAME_STATS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

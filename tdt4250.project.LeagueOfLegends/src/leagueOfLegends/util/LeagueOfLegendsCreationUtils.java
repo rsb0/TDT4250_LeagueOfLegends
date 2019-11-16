@@ -45,10 +45,21 @@ public class LeagueOfLegendsCreationUtils {
 		return match;
 	}
 	
-	public static Game createGame(String gameID) {
+	public static Game createGame(String gameID, Side winner) {
 		Game game = LeagueOfLegendsFactory.eINSTANCE.createGame();
 		game.setGameID(gameID);
+		game.setWinner(winner);
 		return game;
+	}
+	
+	public static PlayerStats createPlayerStats() {
+		PlayerStats playerStats = LeagueOfLegendsFactory.eINSTANCE.createPlayerStats();
+		return playerStats;
+	}
+	
+	public static ChampionsStats createChampionsStats() {
+		ChampionsStats championsStats = LeagueOfLegendsFactory.eINSTANCE.createChampionsStats();
+		return championsStats;
 	}
 	
 	public static GameStats createGameStats(Game game, int kills, int deaths, int assists,

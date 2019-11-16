@@ -19,6 +19,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.ChampionsStats#getTotalAssist <em>Total Assist</em>}</li>
  *   <li>{@link leagueOfLegends.ChampionsStats#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.ChampionsStats#getChampion <em>Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.ChampionsStats#getBans <em>Bans</em>}</li>
+ *   <li>{@link leagueOfLegends.ChampionsStats#getWins <em>Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.ChampionsStats#getWinLoseRatio <em>Win Lose Ratio</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getChampionsStats()
@@ -159,5 +162,71 @@ public interface ChampionsStats extends EObject {
 	 * @generated
 	 */
 	void setChampion(Champion value);
+
+	/**
+	 * Returns the value of the '<em><b>Bans</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Bans</em>' attribute.
+	 * @see #setBans(int)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampionsStats_Bans()
+	 * @model
+	 * @generated
+	 */
+	int getBans();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.ChampionsStats#getBans <em>Bans</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Bans</em>' attribute.
+	 * @see #getBans()
+	 * @generated
+	 */
+	void setBans(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Wins</em>' attribute.
+	 * @see #setWins(int)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampionsStats_Wins()
+	 * @model
+	 * @generated
+	 */
+	int getWins();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.ChampionsStats#getWins <em>Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Wins</em>' attribute.
+	 * @see #getWins()
+	 * @generated
+	 */
+	void setWins(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Win Lose Ratio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Win Lose Ratio</em>' attribute.
+	 * @see #setWinLoseRatio(float)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampionsStats_WinLoseRatio()
+	 * @model
+	 * @generated
+	 */
+	float getWinLoseRatio();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.ChampionsStats#getWinLoseRatio <em>Win Lose Ratio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Win Lose Ratio</em>' attribute.
+	 * @see #getWinLoseRatio()
+	 * @generated
+	 */
+	void setWinLoseRatio(float value);
 
 } // ChampionsStats

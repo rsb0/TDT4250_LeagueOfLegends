@@ -31,6 +31,9 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getTotalAssist <em>Total Assist</em>}</li>
  *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getChampion <em>Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getBans <em>Bans</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getWins <em>Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.ChampionsStatsImpl#getWinLoseRatio <em>Win Lose Ratio</em>}</li>
  * </ul>
  *
  * @generated
@@ -135,6 +138,66 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 	 * @ordered
 	 */
 	protected float killDeathAssistRatio = KILL_DEATH_ASSIST_RATIO_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBans() <em>Bans</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBans()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int BANS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getBans() <em>Bans</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBans()
+	 * @generated
+	 * @ordered
+	 */
+	protected int bans = BANS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int WINS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected int wins = WINS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getWinLoseRatio() <em>Win Lose Ratio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWinLoseRatio()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final float WIN_LOSE_RATIO_EDEFAULT = 0.0F;
+
+	/**
+	 * The cached value of the '{@link #getWinLoseRatio() <em>Win Lose Ratio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWinLoseRatio()
+	 * @generated
+	 * @ordered
+	 */
+	protected float winLoseRatio = WIN_LOSE_RATIO_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -319,6 +382,75 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
+	public int getBans() {
+		return bans;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBans(int newBans) {
+		int oldBans = bans;
+		bans = newBans;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS, oldBans, bans));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getWins() {
+		return wins;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWins(int newWins) {
+		int oldWins = wins;
+		wins = newWins;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS, oldWins, wins));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public float getWinLoseRatio() {
+		return winLoseRatio;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWinLoseRatio(float newWinLoseRatio) {
+		float oldWinLoseRatio = winLoseRatio;
+		winLoseRatio = newWinLoseRatio;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO, oldWinLoseRatio, winLoseRatio));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__CHAMPION:
@@ -377,6 +509,12 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 				return getKillDeathAssistRatio();
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__CHAMPION:
 				return getChampion();
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS:
+				return getBans();
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS:
+				return getWins();
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO:
+				return getWinLoseRatio();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -406,6 +544,15 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 				return;
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__CHAMPION:
 				setChampion((Champion)newValue);
+				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS:
+				setBans((Integer)newValue);
+				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS:
+				setWins((Integer)newValue);
+				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO:
+				setWinLoseRatio((Float)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -437,6 +584,15 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__CHAMPION:
 				setChampion((Champion)null);
 				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS:
+				setBans(BANS_EDEFAULT);
+				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS:
+				setWins(WINS_EDEFAULT);
+				return;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO:
+				setWinLoseRatio(WIN_LOSE_RATIO_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -461,6 +617,12 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 				return killDeathAssistRatio != KILL_DEATH_ASSIST_RATIO_EDEFAULT;
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__CHAMPION:
 				return getChampion() != null;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS:
+				return bans != BANS_EDEFAULT;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS:
+				return wins != WINS_EDEFAULT;
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO:
+				return winLoseRatio != WIN_LOSE_RATIO_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -485,6 +647,12 @@ public class ChampionsStatsImpl extends MinimalEObjectImpl.Container implements 
 		result.append(totalAssist);
 		result.append(", killDeathAssistRatio: ");
 		result.append(killDeathAssistRatio);
+		result.append(", bans: ");
+		result.append(bans);
+		result.append(", wins: ");
+		result.append(wins);
+		result.append(", winLoseRatio: ");
+		result.append(winLoseRatio);
 		result.append(')');
 		return result.toString();
 	}

@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link leagueOfLegends.Match#getGames <em>Games</em>}</li>
+ *   <li>{@link leagueOfLegends.Match#getDisplayName <em>Display Name</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getMatchID <em>Match ID</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getBestOF <em>Best OF</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getScore <em>Score</em>}</li>
@@ -39,6 +40,28 @@ public interface Match extends EObject {
 	 * @generated
 	 */
 	EList<Game> getGames();
+
+	/**
+	 * Returns the value of the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Display Name</em>' attribute.
+	 * @see #setDisplayName(String)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_DisplayName()
+	 * @model
+	 * @generated
+	 */
+	String getDisplayName();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Match#getDisplayName <em>Display Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Display Name</em>' attribute.
+	 * @see #getDisplayName()
+	 * @generated
+	 */
+	void setDisplayName(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Match ID</b></em>' attribute.
