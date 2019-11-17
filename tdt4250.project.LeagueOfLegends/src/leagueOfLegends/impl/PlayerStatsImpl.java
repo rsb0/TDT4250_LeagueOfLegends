@@ -32,7 +32,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getWinLoseRatio <em>Win Lose Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getPlayer <em>Player</em>}</li>
- *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getWins <em>Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getCareerGameWins <em>Career Game Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.PlayerStatsImpl#getCareerMatchWins <em>Career Match Wins</em>}</li>
  * </ul>
  *
  * @generated
@@ -159,24 +160,44 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 	protected float winLoseRatio = WIN_LOSE_RATIO_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * The default value of the '{@link #getCareerGameWins() <em>Career Game Wins</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWins()
+	 * @see #getCareerGameWins()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int WINS_EDEFAULT = 0;
+	protected static final int CAREER_GAME_WINS_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getWins() <em>Wins</em>}' attribute.
+	 * The cached value of the '{@link #getCareerGameWins() <em>Career Game Wins</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWins()
+	 * @see #getCareerGameWins()
 	 * @generated
 	 * @ordered
 	 */
-	protected int wins = WINS_EDEFAULT;
+	protected int careerGameWins = CAREER_GAME_WINS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getCareerMatchWins() <em>Career Match Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCareerMatchWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int CAREER_MATCH_WINS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getCareerMatchWins() <em>Career Match Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCareerMatchWins()
+	 * @generated
+	 * @ordered
+	 */
+	protected int careerMatchWins = CAREER_MATCH_WINS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -384,8 +405,8 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 	 * @generated
 	 */
 	@Override
-	public int getWins() {
-		return wins;
+	public int getCareerGameWins() {
+		return careerGameWins;
 	}
 
 	/**
@@ -394,11 +415,34 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 	 * @generated
 	 */
 	@Override
-	public void setWins(int newWins) {
-		int oldWins = wins;
-		wins = newWins;
+	public void setCareerGameWins(int newCareerGameWins) {
+		int oldCareerGameWins = careerGameWins;
+		careerGameWins = newCareerGameWins;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.PLAYER_STATS__WINS, oldWins, wins));
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS, oldCareerGameWins, careerGameWins));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getCareerMatchWins() {
+		return careerMatchWins;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCareerMatchWins(int newCareerMatchWins) {
+		int oldCareerMatchWins = careerMatchWins;
+		careerMatchWins = newCareerMatchWins;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS, oldCareerMatchWins, careerMatchWins));
 	}
 
 	/**
@@ -467,8 +511,10 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 				return getWinLoseRatio();
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				return getPlayer();
-			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
-				return getWins();
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS:
+				return getCareerGameWins();
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS:
+				return getCareerMatchWins();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -502,8 +548,11 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				setPlayer((Player)newValue);
 				return;
-			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
-				setWins((Integer)newValue);
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS:
+				setCareerGameWins((Integer)newValue);
+				return;
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS:
+				setCareerMatchWins((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -538,8 +587,11 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				setPlayer((Player)null);
 				return;
-			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
-				setWins(WINS_EDEFAULT);
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS:
+				setCareerGameWins(CAREER_GAME_WINS_EDEFAULT);
+				return;
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS:
+				setCareerMatchWins(CAREER_MATCH_WINS_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -567,8 +619,10 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 				return winLoseRatio != WIN_LOSE_RATIO_EDEFAULT;
 			case LeagueOfLegendsPackage.PLAYER_STATS__PLAYER:
 				return getPlayer() != null;
-			case LeagueOfLegendsPackage.PLAYER_STATS__WINS:
-				return wins != WINS_EDEFAULT;
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS:
+				return careerGameWins != CAREER_GAME_WINS_EDEFAULT;
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS:
+				return careerMatchWins != CAREER_MATCH_WINS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -595,8 +649,10 @@ public class PlayerStatsImpl extends MinimalEObjectImpl.Container implements Pla
 		result.append(killDeathAssistRatio);
 		result.append(", winLoseRatio: ");
 		result.append(winLoseRatio);
-		result.append(", wins: ");
-		result.append(wins);
+		result.append(", careerGameWins: ");
+		result.append(careerGameWins);
+		result.append(", careerMatchWins: ");
+		result.append(careerMatchWins);
 		result.append(')');
 		return result.toString();
 	}

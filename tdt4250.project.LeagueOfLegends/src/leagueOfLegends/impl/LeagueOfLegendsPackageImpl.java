@@ -485,8 +485,18 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPlayerStats_Wins() {
+	public EAttribute getPlayerStats_CareerGameWins() {
 		return (EAttribute)playerStatsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPlayerStats_CareerMatchWins() {
+		return (EAttribute)playerStatsEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -575,6 +585,16 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
+	public EReference getMatch_Winner() {
+		return (EReference)matchEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGame() {
 		return gameEClass;
 	}
@@ -645,8 +665,18 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 	 * @generated
 	 */
 	@Override
-	public EAttribute getGame_Winner() {
+	public EAttribute getGame_WinningSide() {
 		return (EAttribute)gameEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGame_WinningTeam() {
+		return (EReference)gameEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -1319,7 +1349,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(playerStatsEClass, PLAYER_STATS__KILL_DEATH_ASSIST_RATIO);
 		createEAttribute(playerStatsEClass, PLAYER_STATS__WIN_LOSE_RATIO);
 		createEReference(playerStatsEClass, PLAYER_STATS__PLAYER);
-		createEAttribute(playerStatsEClass, PLAYER_STATS__WINS);
+		createEAttribute(playerStatsEClass, PLAYER_STATS__CAREER_GAME_WINS);
+		createEAttribute(playerStatsEClass, PLAYER_STATS__CAREER_MATCH_WINS);
 
 		matchEClass = createEClass(MATCH);
 		createEReference(matchEClass, MATCH__GAMES);
@@ -1329,6 +1360,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEAttribute(matchEClass, MATCH__SCORE);
 		createEReference(matchEClass, MATCH__TEAMS);
 		createEAttribute(matchEClass, MATCH__WEEK);
+		createEReference(matchEClass, MATCH__WINNER);
 
 		gameEClass = createEClass(GAME);
 		createEAttribute(gameEClass, GAME__GAME_ID);
@@ -1337,7 +1369,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		createEReference(gameEClass, GAME__BLUE_TEAM);
 		createEReference(gameEClass, GAME__GAME_TEAM_STAT);
 		createEReference(gameEClass, GAME__GAME_PLAYER_STATS);
-		createEAttribute(gameEClass, GAME__WINNER);
+		createEAttribute(gameEClass, GAME__WINNING_SIDE);
+		createEReference(gameEClass, GAME__WINNING_TEAM);
 
 		gameTeamStatsEClass = createEClass(GAME_TEAM_STATS);
 		createEReference(gameTeamStatsEClass, GAME_TEAM_STATS__TEAM);
@@ -1469,7 +1502,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getPlayerStats_KillDeathAssistRatio(), ecorePackage.getEFloat(), "killDeathAssistRatio", null, 0, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPlayerStats_WinLoseRatio(), ecorePackage.getEFloat(), "winLoseRatio", null, 0, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlayerStats_Player(), this.getPlayer(), this.getPlayer_PlayerStats(), "player", null, 1, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPlayerStats_Wins(), ecorePackage.getEInt(), "wins", null, 0, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPlayerStats_CareerGameWins(), ecorePackage.getEInt(), "careerGameWins", null, 0, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPlayerStats_CareerMatchWins(), ecorePackage.getEInt(), "careerMatchWins", null, 0, 1, PlayerStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(matchEClass, Match.class, "Match", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMatch_Games(), this.getGame(), null, "games", null, 0, -1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1477,8 +1511,9 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEAttribute(getMatch_MatchID(), ecorePackage.getEString(), "matchID", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMatch_BestOF(), this.getBestOf(), "bestOF", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMatch_Score(), ecorePackage.getEString(), "score", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMatch_Teams(), this.getTeam(), null, "teams", null, 2, 2, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMatch_Teams(), this.getTeam(), null, "teams", null, 0, 2, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMatch_Week(), ecorePackage.getEString(), "week", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMatch_Winner(), this.getTeam(), null, "winner", null, 1, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameEClass, Game.class, "Game", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGame_GameID(), ecorePackage.getEString(), "gameID", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1487,7 +1522,8 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		initEReference(getGame_BlueTeam(), this.getTeam(), null, "blueTeam", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_GameTeamStat(), this.getGameTeamStats(), null, "gameTeamStat", null, 2, 2, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGame_GamePlayerStats(), this.getGamePlayerStats(), null, "gamePlayerStats", null, 0, -1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGame_Winner(), this.getSide(), "winner", null, 0, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGame_WinningSide(), this.getSide(), "winningSide", null, 0, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGame_WinningTeam(), this.getTeam(), null, "winningTeam", null, 1, 1, Game.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameTeamStatsEClass, GameTeamStats.class, "GameTeamStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGameTeamStats_Team(), this.getTeam(), null, "team", null, 1, 1, GameTeamStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -21,7 +21,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Game#getBlueTeam <em>Blue Team</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getGameTeamStat <em>Game Team Stat</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getGamePlayerStats <em>Game Player Stats</em>}</li>
- *   <li>{@link leagueOfLegends.Game#getWinner <em>Winner</em>}</li>
+ *   <li>{@link leagueOfLegends.Game#getWinningSide <em>Winning Side</em>}</li>
+ *   <li>{@link leagueOfLegends.Game#getWinningTeam <em>Winning Team</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getGame()
@@ -144,28 +145,50 @@ public interface Game extends EObject {
 	EList<GamePlayerStats> getGamePlayerStats();
 
 	/**
-	 * Returns the value of the '<em><b>Winner</b></em>' attribute.
+	 * Returns the value of the '<em><b>Winning Side</b></em>' attribute.
 	 * The literals are from the enumeration {@link leagueOfLegends.Side}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Winner</em>' attribute.
+	 * @return the value of the '<em>Winning Side</em>' attribute.
 	 * @see leagueOfLegends.Side
-	 * @see #setWinner(Side)
-	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGame_Winner()
+	 * @see #setWinningSide(Side)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGame_WinningSide()
 	 * @model
 	 * @generated
 	 */
-	Side getWinner();
+	Side getWinningSide();
 
 	/**
-	 * Sets the value of the '{@link leagueOfLegends.Game#getWinner <em>Winner</em>}' attribute.
+	 * Sets the value of the '{@link leagueOfLegends.Game#getWinningSide <em>Winning Side</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Winner</em>' attribute.
+	 * @param value the new value of the '<em>Winning Side</em>' attribute.
 	 * @see leagueOfLegends.Side
-	 * @see #getWinner()
+	 * @see #getWinningSide()
 	 * @generated
 	 */
-	void setWinner(Side value);
+	void setWinningSide(Side value);
+
+	/**
+	 * Returns the value of the '<em><b>Winning Team</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Winning Team</em>' reference.
+	 * @see #setWinningTeam(Team)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGame_WinningTeam()
+	 * @model required="true"
+	 * @generated
+	 */
+	Team getWinningTeam();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Game#getWinningTeam <em>Winning Team</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Winning Team</em>' reference.
+	 * @see #getWinningTeam()
+	 * @generated
+	 */
+	void setWinningTeam(Team value);
 
 } // Game

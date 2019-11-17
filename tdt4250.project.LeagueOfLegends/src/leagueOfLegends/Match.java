@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Match#getScore <em>Score</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getWeek <em>Week</em>}</li>
+ *   <li>{@link leagueOfLegends.Match#getWinner <em>Winner</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch()
@@ -139,7 +140,7 @@ public interface Match extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Teams</em>' reference list.
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Teams()
-	 * @model lower="2" upper="2"
+	 * @model upper="2"
 	 * @generated
 	 */
 	EList<Team> getTeams();
@@ -165,5 +166,27 @@ public interface Match extends EObject {
 	 * @generated
 	 */
 	void setWeek(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Winner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Winner</em>' reference.
+	 * @see #setWinner(Team)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Winner()
+	 * @model required="true"
+	 * @generated
+	 */
+	Team getWinner();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Match#getWinner <em>Winner</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Winner</em>' reference.
+	 * @see #getWinner()
+	 * @generated
+	 */
+	void setWinner(Team value);
 
 } // Match

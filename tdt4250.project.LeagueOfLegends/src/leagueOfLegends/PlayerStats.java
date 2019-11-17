@@ -20,7 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.PlayerStats#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.PlayerStats#getWinLoseRatio <em>Win Lose Ratio</em>}</li>
  *   <li>{@link leagueOfLegends.PlayerStats#getPlayer <em>Player</em>}</li>
- *   <li>{@link leagueOfLegends.PlayerStats#getWins <em>Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.PlayerStats#getCareerGameWins <em>Career Game Wins</em>}</li>
+ *   <li>{@link leagueOfLegends.PlayerStats#getCareerMatchWins <em>Career Match Wins</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayerStats()
@@ -185,25 +186,47 @@ public interface PlayerStats extends EObject {
 	void setPlayer(Player value);
 
 	/**
-	 * Returns the value of the '<em><b>Wins</b></em>' attribute.
+	 * Returns the value of the '<em><b>Career Game Wins</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Wins</em>' attribute.
-	 * @see #setWins(int)
-	 * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayerStats_Wins()
+	 * @return the value of the '<em>Career Game Wins</em>' attribute.
+	 * @see #setCareerGameWins(int)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayerStats_CareerGameWins()
 	 * @model
 	 * @generated
 	 */
-	int getWins();
+	int getCareerGameWins();
 
 	/**
-	 * Sets the value of the '{@link leagueOfLegends.PlayerStats#getWins <em>Wins</em>}' attribute.
+	 * Sets the value of the '{@link leagueOfLegends.PlayerStats#getCareerGameWins <em>Career Game Wins</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Wins</em>' attribute.
-	 * @see #getWins()
+	 * @param value the new value of the '<em>Career Game Wins</em>' attribute.
+	 * @see #getCareerGameWins()
 	 * @generated
 	 */
-	void setWins(int value);
+	void setCareerGameWins(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Career Match Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Career Match Wins</em>' attribute.
+	 * @see #setCareerMatchWins(int)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayerStats_CareerMatchWins()
+	 * @model
+	 * @generated
+	 */
+	int getCareerMatchWins();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.PlayerStats#getCareerMatchWins <em>Career Match Wins</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Career Match Wins</em>' attribute.
+	 * @see #getCareerMatchWins()
+	 * @generated
+	 */
+	void setCareerMatchWins(int value);
 
 } // PlayerStats

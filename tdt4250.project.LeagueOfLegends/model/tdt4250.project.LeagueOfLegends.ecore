@@ -45,7 +45,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="winLoseRatio" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" lowerBound="1"
         eType="#//Player" eOpposite="#//Player/playerStats"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="careerGameWins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="careerMatchWins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Match">
     <eStructuralFeatures xsi:type="ecore:EReference" name="games" upperBound="-1"
@@ -54,9 +55,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="matchID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bestOF" eType="#//BestOf"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="teams" lowerBound="2" upperBound="2"
-        eType="#//Team"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="2" eType="#//Team"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="week" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="winner" lowerBound="1"
+        eType="#//Team"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Game">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gameID" lowerBound="1"
@@ -71,7 +73,9 @@
         upperBound="2" eType="#//GameTeamStats" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gamePlayerStats" upperBound="-1"
         eType="#//GamePlayerStats" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="winner" eType="#//Side"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="winningSide" eType="#//Side"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="winningTeam" lowerBound="1"
+        eType="#//Team"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameTeamStats">
     <eStructuralFeatures xsi:type="ecore:EReference" name="team" lowerBound="1" eType="#//Team"/>

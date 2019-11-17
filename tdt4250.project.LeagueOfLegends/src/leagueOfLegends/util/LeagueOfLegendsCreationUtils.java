@@ -48,7 +48,7 @@ public class LeagueOfLegendsCreationUtils {
 	public static Game createGame(String gameID, Side winner) {
 		Game game = LeagueOfLegendsFactory.eINSTANCE.createGame();
 		game.setGameID(gameID);
-		game.setWinner(winner);
+		game.setWinningSide(winner);
 		return game;
 	}
 	

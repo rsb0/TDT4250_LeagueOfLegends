@@ -105,9 +105,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					*&& If any of the banned champions in this game (cols 12-16) has not been created yet: create it
 					*/
 					if (Integer.parseInt(cellData[6]) > 10) {
-						System.out.println(cellData[6]);
 						for (int i = 12 ; i < 17 ; i++) {
-							System.out.println(i);
 							if (!champions.containsKey(cellData[i])) {
 								champions.put(cellData[i], LeagueOfLegendsCreationUtils.createChampion(cellData[i]));
 								champions.get(cellData[i]).setChampionStat(LeagueOfLegendsCreationUtils.createChampionsStats());
@@ -121,6 +119,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					}
 					
 					Champion champion;
+					
 					/**
 					 * If champion played by player in current row has not yet been created: create it
 					 */
@@ -150,13 +149,19 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					// Handle game
 					if (!games.containsKey(cellData[0])) {
 						Side winner;
-						if(cellData[18].equals("1")) {
+						if(Integer.parseInt(cellData[18]) == 1) {
 							winner = Side.get(cellData[7].toLowerCase());
+							if (cellData[4].equals("R2")) {
+								System.out.println(winner + "   " + cellData[10] + "   " + cellData[7] + "   " + cellData[0]);
+							}
 						}
 						else {
 							winner = Side.get((Side.get(cellData[7].toLowerCase()).getValue() + 1) % 2);
+							if (cellData[4].equals("R2")) {								
+								System.out.println(winner + "   " + cellData[10] + "   " + cellData[7] + "   " + cellData[0]);
+							}
 						}
-						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0], Side.BLUE));
+						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0], winner));
 					}
 					Game game = games.get(cellData[0]);
 					
@@ -198,7 +203,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						
 						//handle player statistics
 						player.getPlayerStats().setGamesPlayed(player.getPlayerStats().getGamesPlayed() + 1);
-						player.getPlayerStats().setWins(player.getPlayerStats().getWins() + Integer.parseInt(cellData[18]));
+						player.getPlayerStats().setCareerGameWins(player.getPlayerStats().getCareerGameWins() + Integer.parseInt(cellData[18]));
 						player.getPlayerStats().setCareerKills(player.getPlayerStats().getCareerKills() + Integer.parseInt(cellData[19]));
 						player.getPlayerStats().setCareerDeaths(player.getPlayerStats().getCareerDeaths() + Integer.parseInt(cellData[20]));
 						player.getPlayerStats().setCareerAssist(player.getPlayerStats().getCareerAssist() + Integer.parseInt(cellData[21]));
@@ -262,6 +267,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						matches.get(matchID).getGames().add(game);
 						seasons.get(split).getMatches().add(matches.get(matchID));
 					}
+					
 				}
 			}
 			csvReader.close();
@@ -327,8 +333,8 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		// Update PlayerStats with kill-Death-Assist-Ratio ((#kills + #assists) / #deaths) and winLoseRatio (#wins / #losses)
 		for (Team team : league.getTeams()) {
 			for (Player player : team.getPlayer()) {
-				float wins = player.getPlayerStats().getWins();
-				float losses = player.getPlayerStats().getGamesPlayed() - player.getPlayerStats().getWins();
+				float wins = player.getPlayerStats().getCareerGameWins();
+				float losses = player.getPlayerStats().getGamesPlayed() - player.getPlayerStats().getCareerGameWins();
 				float kills = player.getPlayerStats().getCareerKills();
 				float assists = player.getPlayerStats().getCareerAssist();
 				float deaths = player.getPlayerStats().getCareerDeaths();
@@ -338,10 +344,42 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		}
 		
 
+				
 		
-		// Update match display name with team names
-		for(Match match : matches.values()) {
-			match.setDisplayName(match.getDisplayName() + " | " + match.getGames().get(0).getRedTeam().getName() + "   vs.   " + match.getGames().get(0).getBlueTeam().getName());
+		// Update game and match with winning team, PlayerStats with careerGameWins,carrerMatchWins, and match displayName with team names
+		for (Match match : matches.values()) {
+			match.getTeams().add(match.getGames().get(0).getRedTeam());
+			match.getTeams().add(match.getGames().get(0).getBlueTeam());
+			Team teamOne = match.getGames().get(0).getBlueTeam();
+			Team teamTwo = match.getGames().get(0).getRedTeam();
+			int teamOneWins = 0;
+			int teamTwoWins = 0;
+			for (Game game : match.getGames()) {
+				Team gameWinner;
+				if (game.getWinningSide() == Side.BLUE) {
+					gameWinner = game.getBlueTeam();
+				}
+				else {
+					gameWinner = game.getRedTeam();
+				}
+				game.setWinningTeam(gameWinner);
+				if (gameWinner == teamOne) {
+					teamOneWins++;
+				}
+				else {
+					teamTwoWins++;
+				}
+				for (Player player : gameWinner.getPlayer()) {
+					player.getPlayerStats().setCareerGameWins(player.getPlayerStats().getCareerGameWins() + 1);
+				}
+			}
+			Team matchWinner = (teamOneWins > teamTwoWins) ? teamOne : teamTwo;
+			match.setWinner(matchWinner);
+			match.setDisplayName(match.getDisplayName() + " | " + match.getGames().get(0).getRedTeam().getName() + 
+					"   vs.   " + match.getGames().get(0).getBlueTeam().getName());
+			for (Player player : matchWinner.getPlayer()) {
+				player.getPlayerStats().setCareerMatchWins(player.getPlayerStats().getCareerMatchWins() + 1);
+			}
 		}
 		
 

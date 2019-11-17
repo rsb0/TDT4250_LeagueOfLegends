@@ -40,6 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getScore <em>Score</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.impl.MatchImpl#getWeek <em>Week</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.MatchImpl#getWinner <em>Winner</em>}</li>
  * </ul>
  *
  * @generated
@@ -164,6 +165,16 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @ordered
 	 */
 	protected String week = WEEK_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getWinner() <em>Winner</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWinner()
+	 * @generated
+	 * @ordered
+	 */
+	protected Team winner;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,6 +342,46 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 	 * @generated
 	 */
 	@Override
+	public Team getWinner() {
+		if (winner != null && winner.eIsProxy()) {
+			InternalEObject oldWinner = (InternalEObject)winner;
+			winner = (Team)eResolveProxy(oldWinner);
+			if (winner != oldWinner) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LeagueOfLegendsPackage.MATCH__WINNER, oldWinner, winner));
+			}
+		}
+		return winner;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Team basicGetWinner() {
+		return winner;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWinner(Team newWinner) {
+		Team oldWinner = winner;
+		winner = newWinner;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.MATCH__WINNER, oldWinner, winner));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.MATCH__GAMES:
@@ -361,6 +412,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return getTeams();
 			case LeagueOfLegendsPackage.MATCH__WEEK:
 				return getWeek();
+			case LeagueOfLegendsPackage.MATCH__WINNER:
+				if (resolve) return getWinner();
+				return basicGetWinner();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -397,6 +451,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__WEEK:
 				setWeek((String)newValue);
 				return;
+			case LeagueOfLegendsPackage.MATCH__WINNER:
+				setWinner((Team)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -430,6 +487,9 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 			case LeagueOfLegendsPackage.MATCH__WEEK:
 				setWeek(WEEK_EDEFAULT);
 				return;
+			case LeagueOfLegendsPackage.MATCH__WINNER:
+				setWinner((Team)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -456,6 +516,8 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match {
 				return teams != null && !teams.isEmpty();
 			case LeagueOfLegendsPackage.MATCH__WEEK:
 				return WEEK_EDEFAULT == null ? week != null : !WEEK_EDEFAULT.equals(week);
+			case LeagueOfLegendsPackage.MATCH__WINNER:
+				return winner != null;
 		}
 		return super.eIsSet(featureID);
 	}
