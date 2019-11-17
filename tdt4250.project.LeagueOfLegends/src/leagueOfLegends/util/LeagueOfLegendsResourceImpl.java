@@ -369,9 +369,6 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 				else {
 					teamTwoWins++;
 				}
-				for (Player player : gameWinner.getPlayer()) {
-					player.getPlayerStats().setCareerGameWins(player.getPlayerStats().getCareerGameWins() + 1);
-				}
 			}
 			Team matchWinner = (teamOneWins > teamTwoWins) ? teamOne : teamTwo;
 			match.setWinner(matchWinner);

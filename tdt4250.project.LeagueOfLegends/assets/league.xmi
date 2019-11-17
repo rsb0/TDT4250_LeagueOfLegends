@@ -2,190 +2,190 @@
 <tdt4250.project.leagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" name="EULCS">
   <teams name="Splyce">
     <player name="kaSing" championPool="//@champions.0 //@champions.14 //@champions.15 //@champions.34 //@champions.31 //@champions.32 //@champions.29 //@champions.23 //@champions.52 //@champions.63 //@champions.19 //@champions.41">
-      <playerStats gamesPlayed="33" careerKills="23" careerDeaths="76" careerAssist="222" killDeathAssistRatio="3.2236843" winLoseRatio="0.9411765" careerGameWins="32" careerMatchWins="10"/>
+      <playerStats gamesPlayed="33" careerKills="23" careerDeaths="76" careerAssist="222" killDeathAssistRatio="3.2236843" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
     </player>
     <player name="Kobbe" championPool="//@champions.1 //@champions.44 //@champions.11 //@champions.8 //@champions.33 //@champions.38 //@champions.85 //@champions.51 //@champions.91 //@champions.98 //@champions.7 //@champions.61">
-      <playerStats gamesPlayed="33" careerKills="130" careerDeaths="49" careerAssist="140" killDeathAssistRatio="5.5102043" winLoseRatio="0.9411765" careerGameWins="32" careerMatchWins="10"/>
+      <playerStats gamesPlayed="33" careerKills="130" careerDeaths="49" careerAssist="140" killDeathAssistRatio="5.5102043" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
     </player>
     <player name="Nisqy" championPool="//@champions.2 //@champions.60 //@champions.20 //@champions.15 //@champions.73 //@champions.62 //@champions.74 //@champions.86 //@champions.35 //@champions.59 //@champions.4 //@champions.107 //@champions.95">
-      <playerStats gamesPlayed="33" careerKills="103" careerDeaths="67" careerAssist="144" killDeathAssistRatio="3.686567" winLoseRatio="0.9411765" careerGameWins="32" careerMatchWins="10"/>
+      <playerStats gamesPlayed="33" careerKills="103" careerDeaths="67" careerAssist="144" killDeathAssistRatio="3.686567" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
     </player>
     <player name="Odoamne" championPool="//@champions.3 //@champions.18 //@champions.12 //@champions.75 //@champions.52 //@champions.37 //@champions.22 //@champions.80 //@champions.4 //@champions.101 //@champions.105">
-      <playerStats gamesPlayed="33" careerKills="53" careerDeaths="89" careerAssist="171" killDeathAssistRatio="2.516854" winLoseRatio="0.9411765" careerGameWins="32" careerMatchWins="10"/>
+      <playerStats gamesPlayed="33" careerKills="53" careerDeaths="89" careerAssist="171" killDeathAssistRatio="2.516854" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
     </player>
     <player name="Xerxe" championPool="//@champions.10 //@champions.27 //@champions.70 //@champions.20 //@champions.68 //@champions.66 //@champions.13 //@champions.52 //@champions.99 //@champions.97">
-      <playerStats gamesPlayed="33" careerKills="60" careerDeaths="46" careerAssist="209" killDeathAssistRatio="5.847826" winLoseRatio="0.9411765" careerGameWins="32" careerMatchWins="10"/>
+      <playerStats gamesPlayed="33" careerKills="60" careerDeaths="46" careerAssist="209" killDeathAssistRatio="5.847826" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
     </player>
   </teams>
   <teams name="Vitality">
     <player name="Attila" championPool="//@champions.11 //@champions.49 //@champions.6 //@champions.62 //@champions.33 //@champions.8 //@champions.38 //@champions.96 //@champions.51 //@champions.25 //@champions.1">
-      <playerStats gamesPlayed="28" careerKills="109" careerDeaths="51" careerAssist="145" killDeathAssistRatio="4.980392" winLoseRatio="1.8" careerGameWins="36" careerMatchWins="15"/>
+      <playerStats gamesPlayed="28" careerKills="109" careerDeaths="51" careerAssist="145" killDeathAssistRatio="4.980392" winLoseRatio="1.8" careerGameWins="18" careerMatchWins="15"/>
     </player>
     <player name="Cabochard" championPool="//@champions.12 //@champions.18 //@champions.45 //@champions.58 //@champions.37 //@champions.75 //@champions.52 //@champions.82 //@champions.77 //@champions.101">
-      <playerStats gamesPlayed="28" careerKills="89" careerDeaths="62" careerAssist="179" killDeathAssistRatio="4.322581" winLoseRatio="1.8" careerGameWins="36" careerMatchWins="15"/>
+      <playerStats gamesPlayed="28" careerKills="89" careerDeaths="62" careerAssist="179" killDeathAssistRatio="4.322581" winLoseRatio="1.8" careerGameWins="18" careerMatchWins="15"/>
     </player>
     <player name="Gilius" championPool="//@champions.13 //@champions.16 //@champions.68 //@champions.27 //@champions.10">
-      <playerStats gamesPlayed="10" careerKills="15" careerDeaths="22" careerAssist="62" killDeathAssistRatio="3.5" winLoseRatio="1.0" careerGameWins="23" careerMatchWins="15"/>
+      <playerStats gamesPlayed="10" careerKills="15" careerDeaths="22" careerAssist="62" killDeathAssistRatio="3.5" winLoseRatio="1.0" careerGameWins="5" careerMatchWins="15"/>
     </player>
     <player name="Jactroll" championPool="//@champions.14 //@champions.19 //@champions.31 //@champions.29 //@champions.34 //@champions.23 //@champions.32 //@champions.48 //@champions.22 //@champions.71">
-      <playerStats gamesPlayed="28" careerKills="28" careerDeaths="75" careerAssist="236" killDeathAssistRatio="3.52" winLoseRatio="1.8" careerGameWins="36" careerMatchWins="15"/>
+      <playerStats gamesPlayed="28" careerKills="28" careerDeaths="75" careerAssist="236" killDeathAssistRatio="3.52" winLoseRatio="1.8" careerGameWins="18" careerMatchWins="15"/>
     </player>
     <player name="Jiizuke" championPool="//@champions.15 //@champions.50 //@champions.17 //@champions.2 //@champions.45 //@champions.84 //@champions.73 //@champions.4 //@champions.16 //@champions.86 //@champions.60 //@champions.63">
-      <playerStats gamesPlayed="28" careerKills="99" careerDeaths="80" careerAssist="170" killDeathAssistRatio="3.3625" winLoseRatio="1.8" careerGameWins="36" careerMatchWins="15"/>
+      <playerStats gamesPlayed="28" careerKills="99" careerDeaths="80" careerAssist="170" killDeathAssistRatio="3.3625" winLoseRatio="1.8" careerGameWins="18" careerMatchWins="15"/>
     </player>
     <player name="Kikis" championPool="//@champions.66 //@champions.10 //@champions.16 //@champions.22 //@champions.52 //@champions.97 //@champions.28">
-      <playerStats gamesPlayed="18" careerKills="44" careerDeaths="42" careerAssist="158" killDeathAssistRatio="4.8095236" winLoseRatio="2.6" careerGameWins="31" careerMatchWins="15"/>
+      <playerStats gamesPlayed="18" careerKills="44" careerDeaths="42" careerAssist="158" killDeathAssistRatio="4.8095236" winLoseRatio="2.6" careerGameWins="13" careerMatchWins="15"/>
     </player>
   </teams>
   <teams name="Giants Gaming">
     <player name="Betsy" championPool="//@champions.21 //@champions.17 //@champions.6 //@champions.62 //@champions.15 //@champions.73 //@champions.2 //@champions.35 //@champions.50 //@champions.16 //@champions.74 //@champions.4 //@champions.95">
-      <playerStats gamesPlayed="18" careerKills="44" careerDeaths="58" careerAssist="69" killDeathAssistRatio="1.9482758" winLoseRatio="0.3846154" careerGameWins="10" careerMatchWins="5"/>
+      <playerStats gamesPlayed="18" careerKills="44" careerDeaths="58" careerAssist="69" killDeathAssistRatio="1.9482758" winLoseRatio="0.3846154" careerGameWins="5" careerMatchWins="5"/>
     </player>
     <player name="Djoko" championPool="//@champions.16 //@champions.46 //@champions.20 //@champions.10 //@champions.67 //@champions.68 //@champions.27 //@champions.52 //@champions.66 //@champions.97">
-      <playerStats gamesPlayed="18" careerKills="39" careerDeaths="48" careerAssist="73" killDeathAssistRatio="2.3333333" winLoseRatio="0.3846154" careerGameWins="10" careerMatchWins="5"/>
+      <playerStats gamesPlayed="18" careerKills="39" careerDeaths="48" careerAssist="73" killDeathAssistRatio="2.3333333" winLoseRatio="0.3846154" careerGameWins="5" careerMatchWins="5"/>
     </player>
     <player name="Ruin" championPool="//@champions.22 //@champions.47 //@champions.37 //@champions.18 //@champions.20 //@champions.65 //@champions.75 //@champions.80 //@champions.52">
-      <playerStats gamesPlayed="18" careerKills="31" careerDeaths="65" careerAssist="65" killDeathAssistRatio="1.4769231" winLoseRatio="0.3846154" careerGameWins="10" careerMatchWins="5"/>
+      <playerStats gamesPlayed="18" careerKills="31" careerDeaths="65" careerAssist="65" killDeathAssistRatio="1.4769231" winLoseRatio="0.3846154" careerGameWins="5" careerMatchWins="5"/>
     </player>
     <player name="SirNukesAlot" championPool="//@champions.23 //@champions.14 //@champions.34 //@champions.54 //@champions.32 //@champions.31 //@champions.41 //@champions.40">
-      <playerStats gamesPlayed="18" careerKills="5" careerDeaths="62" careerAssist="98" killDeathAssistRatio="1.6612903" winLoseRatio="0.3846154" careerGameWins="10" careerMatchWins="5"/>
+      <playerStats gamesPlayed="18" careerKills="5" careerDeaths="62" careerAssist="98" killDeathAssistRatio="1.6612903" winLoseRatio="0.3846154" careerGameWins="5" careerMatchWins="5"/>
     </player>
     <player name="Steeelback" championPool="//@champions.8 //@champions.33 //@champions.61 //@champions.38 //@champions.51 //@champions.85">
-      <playerStats gamesPlayed="18" careerKills="48" careerDeaths="34" careerAssist="68" killDeathAssistRatio="3.4117646" winLoseRatio="0.3846154" careerGameWins="10" careerMatchWins="5"/>
+      <playerStats gamesPlayed="18" careerKills="48" careerDeaths="34" careerAssist="68" killDeathAssistRatio="3.4117646" winLoseRatio="0.3846154" careerGameWins="5" careerMatchWins="5"/>
     </player>
   </teams>
   <teams name="H2K">
     <player name="promisq" championPool="//@champions.0 //@champions.14 //@champions.41 //@champions.23 //@champions.32 //@champions.34 //@champions.31 //@champions.10 //@champions.17">
-      <playerStats gamesPlayed="18" careerKills="7" careerDeaths="61" careerAssist="77" killDeathAssistRatio="1.3770492" winLoseRatio="0.125" careerGameWins="4" careerMatchWins="2"/>
+      <playerStats gamesPlayed="18" careerKills="7" careerDeaths="61" careerAssist="77" killDeathAssistRatio="1.3770492" winLoseRatio="0.125" careerGameWins="2" careerMatchWins="2"/>
     </player>
     <player name="Selfie" championPool="//@champions.15 //@champions.17 //@champions.6 //@champions.35 //@champions.2 //@champions.74 //@champions.50 //@champions.4 //@champions.36 //@champions.95">
-      <playerStats gamesPlayed="14" careerKills="31" careerDeaths="28" careerAssist="28" killDeathAssistRatio="2.107143" winLoseRatio="0.07692308" careerGameWins="3" careerMatchWins="2"/>
+      <playerStats gamesPlayed="14" careerKills="31" careerDeaths="28" careerAssist="28" killDeathAssistRatio="2.107143" winLoseRatio="0.07692308" careerGameWins="1" careerMatchWins="2"/>
     </player>
     <player name="Sheriff" championPool="//@champions.26 //@champions.25 //@champions.1 //@champions.44 //@champions.38 //@champions.8 //@champions.4 //@champions.62 //@champions.98 //@champions.33">
-      <playerStats gamesPlayed="17" careerKills="25" careerDeaths="47" careerAssist="52" killDeathAssistRatio="1.6382979" winLoseRatio="0.13333334" careerGameWins="4" careerMatchWins="2"/>
+      <playerStats gamesPlayed="17" careerKills="25" careerDeaths="47" careerAssist="52" killDeathAssistRatio="1.6382979" winLoseRatio="0.13333334" careerGameWins="2" careerMatchWins="2"/>
     </player>
     <player name="Shook" championPool="//@champions.27 //@champions.64 //@champions.10 //@champions.68 //@champions.20 //@champions.66 //@champions.41 //@champions.52 //@champions.4">
-      <playerStats gamesPlayed="13" careerKills="22" careerDeaths="41" careerAssist="35" killDeathAssistRatio="1.3902439" careerGameWins="2" careerMatchWins="2"/>
+      <playerStats gamesPlayed="13" careerKills="22" careerDeaths="41" careerAssist="35" killDeathAssistRatio="1.3902439" careerMatchWins="2"/>
     </player>
     <player name="Smittyj" championPool="//@champions.18 //@champions.3 //@champions.65 //@champions.69 //@champions.37 //@champions.45 //@champions.52 //@champions.12 //@champions.88 //@champions.80">
-      <playerStats gamesPlayed="18" careerKills="28" careerDeaths="66" careerAssist="49" killDeathAssistRatio="1.1666666" winLoseRatio="0.125" careerGameWins="4" careerMatchWins="2"/>
+      <playerStats gamesPlayed="18" careerKills="28" careerDeaths="66" careerAssist="49" killDeathAssistRatio="1.1666666" winLoseRatio="0.125" careerGameWins="2" careerMatchWins="2"/>
     </player>
     <player name="Caedrel" championPool="//@champions.66 //@champions.20 //@champions.28 //@champions.10 //@champions.68 //@champions.27">
-      <playerStats gamesPlayed="8" careerKills="14" careerDeaths="25" careerAssist="38" killDeathAssistRatio="2.08" winLoseRatio="0.33333334" careerGameWins="4" careerMatchWins="2"/>
+      <playerStats gamesPlayed="8" careerKills="14" careerDeaths="25" careerAssist="38" killDeathAssistRatio="2.08" winLoseRatio="0.33333334" careerGameWins="2" careerMatchWins="2"/>
     </player>
     <player name="Larssen" championPool="//@champions.6 //@champions.21">
-      <playerStats gamesPlayed="2" careerKills="9" careerDeaths="3" careerAssist="6" killDeathAssistRatio="5.0" winLoseRatio="1.0" careerGameWins="3" careerMatchWins="2"/>
+      <playerStats gamesPlayed="2" careerKills="9" careerDeaths="3" careerAssist="6" killDeathAssistRatio="5.0" winLoseRatio="1.0" careerGameWins="1" careerMatchWins="2"/>
     </player>
   </teams>
   <teams name="Schalke 04">
     <player name="Amazing" championPool="//@champions.20 //@champions.46 //@champions.10 //@champions.68 //@champions.34 //@champions.31 //@champions.52 //@champions.97 //@champions.27 //@champions.13 //@champions.22 //@champions.77 //@champions.99">
-      <playerStats gamesPlayed="37" careerKills="60" careerDeaths="93" careerAssist="214" killDeathAssistRatio="2.9462366" winLoseRatio="1.3125" careerGameWins="42" careerMatchWins="15"/>
+      <playerStats gamesPlayed="37" careerKills="60" careerDeaths="93" careerAssist="214" killDeathAssistRatio="2.9462366" winLoseRatio="1.3125" careerGameWins="21" careerMatchWins="15"/>
     </player>
     <player name="Nukeduck" championPool="//@champions.30 //@champions.57 //@champions.15 //@champions.17 //@champions.2 //@champions.35 //@champions.12 //@champions.1 //@champions.16 //@champions.89 //@champions.4 //@champions.94 //@champions.74 //@champions.95 //@champions.6 //@champions.86 //@champions.59 //@champions.60 //@champions.43 //@champions.83 //@champions.21">
-      <playerStats gamesPlayed="37" careerKills="131" careerDeaths="78" careerAssist="119" killDeathAssistRatio="3.2051282" winLoseRatio="1.3125" careerGameWins="42" careerMatchWins="15"/>
+      <playerStats gamesPlayed="37" careerKills="131" careerDeaths="78" careerAssist="119" killDeathAssistRatio="3.2051282" winLoseRatio="1.3125" careerGameWins="21" careerMatchWins="15"/>
     </player>
     <player name="Upset" championPool="//@champions.33 //@champions.51 //@champions.8 //@champions.6 //@champions.62 //@champions.41 //@champions.4 //@champions.91 //@champions.1 //@champions.85 //@champions.38">
-      <playerStats gamesPlayed="37" careerKills="131" careerDeaths="52" careerAssist="161" killDeathAssistRatio="5.6153846" winLoseRatio="1.3125" careerGameWins="42" careerMatchWins="15"/>
+      <playerStats gamesPlayed="37" careerKills="131" careerDeaths="52" careerAssist="161" killDeathAssistRatio="5.6153846" winLoseRatio="1.3125" careerGameWins="21" careerMatchWins="15"/>
     </player>
     <player name="Vander" championPool="//@champions.34 //@champions.29 //@champions.31 //@champions.19 //@champions.32 //@champions.14 //@champions.17">
-      <playerStats gamesPlayed="37" careerKills="23" careerDeaths="66" careerAssist="255" killDeathAssistRatio="4.212121" winLoseRatio="1.3125" careerGameWins="42" careerMatchWins="15"/>
+      <playerStats gamesPlayed="37" careerKills="23" careerDeaths="66" careerAssist="255" killDeathAssistRatio="4.212121" winLoseRatio="1.3125" careerGameWins="21" careerMatchWins="15"/>
     </player>
     <player name="Vizicsacsi" championPool="//@champions.3 //@champions.58 //@champions.37 //@champions.18 //@champions.22 //@champions.75 //@champions.80 //@champions.4 //@champions.105">
-      <playerStats gamesPlayed="37" careerKills="66" careerDeaths="104" careerAssist="176" killDeathAssistRatio="2.3269231" winLoseRatio="1.3125" careerGameWins="42" careerMatchWins="15"/>
+      <playerStats gamesPlayed="37" careerKills="66" careerDeaths="104" careerAssist="176" killDeathAssistRatio="2.3269231" winLoseRatio="1.3125" careerGameWins="21" careerMatchWins="15"/>
     </player>
   </teams>
   <teams name="Unicorns of Love">
     <player name="Exileh" championPool="//@champions.35 //@champions.4 //@champions.12 //@champions.2 //@champions.15 //@champions.1">
-      <playerStats gamesPlayed="18" careerKills="63" careerDeaths="63" careerAssist="54" killDeathAssistRatio="1.8571428" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="63" careerDeaths="63" careerAssist="54" killDeathAssistRatio="1.8571428" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Kold" championPool="//@champions.10 //@champions.20 //@champions.68 //@champions.27 //@champions.66 //@champions.31 //@champions.16 //@champions.52">
-      <playerStats gamesPlayed="18" careerKills="30" careerDeaths="43" careerAssist="97" killDeathAssistRatio="2.9534883" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="30" careerDeaths="43" careerAssist="97" killDeathAssistRatio="2.9534883" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Samux" championPool="//@champions.8 //@champions.17 //@champions.44 //@champions.1 //@champions.2 //@champions.33 //@champions.85">
-      <playerStats gamesPlayed="10" careerKills="26" careerDeaths="21" careerAssist="29" killDeathAssistRatio="2.6190476" winLoseRatio="1.0" careerGameWins="12" careerMatchWins="7"/>
+      <playerStats gamesPlayed="10" careerKills="26" careerDeaths="21" careerAssist="29" killDeathAssistRatio="2.6190476" winLoseRatio="1.0" careerGameWins="5" careerMatchWins="7"/>
     </player>
     <player name="Totoro" championPool="//@champions.23 //@champions.31 //@champions.19 //@champions.29 //@champions.41 //@champions.32 //@champions.34">
-      <playerStats gamesPlayed="18" careerKills="12" careerDeaths="64" careerAssist="97" killDeathAssistRatio="1.703125" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="12" careerDeaths="64" careerAssist="97" killDeathAssistRatio="1.703125" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="WhiteKnight" championPool="//@champions.12 //@champions.45 //@champions.37 //@champions.6 //@champions.77 //@champions.22 //@champions.75 //@champions.52 //@champions.90 //@champions.88">
-      <playerStats gamesPlayed="18" careerKills="26" careerDeaths="39" careerAssist="65" killDeathAssistRatio="2.3333333" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="26" careerDeaths="39" careerAssist="65" killDeathAssistRatio="2.3333333" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Neon" championPool="//@champions.33 //@champions.11 //@champions.62 //@champions.38 //@champions.74">
-      <playerStats gamesPlayed="8" careerKills="16" careerDeaths="19" careerAssist="32" killDeathAssistRatio="2.5263157" winLoseRatio="0.33333334" careerGameWins="9" careerMatchWins="7"/>
+      <playerStats gamesPlayed="8" careerKills="16" careerDeaths="19" careerAssist="32" killDeathAssistRatio="2.5263157" winLoseRatio="0.33333334" careerGameWins="2" careerMatchWins="7"/>
     </player>
   </teams>
   <teams name="G2 Esports">
     <player name="Hjarnan" championPool="//@champions.11 //@champions.26 //@champions.41 //@champions.44 //@champions.79 //@champions.62 //@champions.6 //@champions.91 //@champions.51 //@champions.38 //@champions.33 //@champions.7 //@champions.85">
-      <playerStats gamesPlayed="32" careerKills="91" careerDeaths="48" careerAssist="153" killDeathAssistRatio="5.0833335" winLoseRatio="1.2857143" careerGameWins="36" careerMatchWins="14"/>
+      <playerStats gamesPlayed="32" careerKills="91" careerDeaths="48" careerAssist="153" killDeathAssistRatio="5.0833335" winLoseRatio="1.2857143" careerGameWins="18" careerMatchWins="14"/>
     </player>
     <player name="Jankos" championPool="//@champions.10 //@champions.34 //@champions.23 //@champions.29 //@champions.66 //@champions.16 //@champions.52 //@champions.27 //@champions.68 //@champions.99 //@champions.13 //@champions.97 //@champions.22">
-      <playerStats gamesPlayed="32" careerKills="69" careerDeaths="61" careerAssist="204" killDeathAssistRatio="4.47541" winLoseRatio="1.2857143" careerGameWins="36" careerMatchWins="14"/>
+      <playerStats gamesPlayed="32" careerKills="69" careerDeaths="61" careerAssist="204" killDeathAssistRatio="4.47541" winLoseRatio="1.2857143" careerGameWins="18" careerMatchWins="14"/>
     </player>
     <player name="Perkz" championPool="//@champions.15 //@champions.1 //@champions.8 //@champions.38 //@champions.12 //@champions.16 //@champions.4 //@champions.35 //@champions.86 //@champions.74 //@champions.95 //@champions.36 //@champions.108 //@champions.2 //@champions.103 //@champions.59">
-      <playerStats gamesPlayed="32" careerKills="127" careerDeaths="52" careerAssist="137" killDeathAssistRatio="5.076923" winLoseRatio="1.2857143" careerGameWins="36" careerMatchWins="14"/>
+      <playerStats gamesPlayed="32" careerKills="127" careerDeaths="52" careerAssist="137" killDeathAssistRatio="5.076923" winLoseRatio="1.2857143" careerGameWins="18" careerMatchWins="14"/>
     </player>
     <player name="Wadid" championPool="//@champions.14 //@champions.0 //@champions.23 //@champions.31 //@champions.32 //@champions.29 //@champions.19 //@champions.34 //@champions.41">
-      <playerStats gamesPlayed="32" careerKills="22" careerDeaths="68" careerAssist="233" killDeathAssistRatio="3.75" winLoseRatio="1.2857143" careerGameWins="36" careerMatchWins="14"/>
+      <playerStats gamesPlayed="32" careerKills="22" careerDeaths="68" careerAssist="233" killDeathAssistRatio="3.75" winLoseRatio="1.2857143" careerGameWins="18" careerMatchWins="14"/>
     </player>
     <player name="Wunder" championPool="//@champions.37 //@champions.12 //@champions.18 //@champions.52 //@champions.83 //@champions.47 //@champions.77 //@champions.80 //@champions.20 //@champions.3 //@champions.101 //@champions.4">
-      <playerStats gamesPlayed="32" careerKills="56" careerDeaths="66" careerAssist="162" killDeathAssistRatio="3.3030303" winLoseRatio="1.2857143" careerGameWins="36" careerMatchWins="14"/>
+      <playerStats gamesPlayed="32" careerKills="56" careerDeaths="66" careerAssist="162" killDeathAssistRatio="3.3030303" winLoseRatio="1.2857143" careerGameWins="18" careerMatchWins="14"/>
     </player>
   </teams>
   <teams name="Roccat">
     <player name="Blanc" championPool="//@champions.35 //@champions.43 //@champions.2 //@champions.15 //@champions.62 //@champions.74 //@champions.21 //@champions.12 //@champions.57">
-      <playerStats gamesPlayed="18" careerKills="37" careerDeaths="43" careerAssist="106" killDeathAssistRatio="3.3255813" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="37" careerDeaths="43" careerAssist="106" killDeathAssistRatio="3.3255813" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="HeaQ" championPool="//@champions.38 //@champions.44 //@champions.33 //@champions.6 //@champions.8 //@champions.51 //@champions.85 //@champions.1 //@champions.91">
-      <playerStats gamesPlayed="18" careerKills="55" careerDeaths="29" careerAssist="86" killDeathAssistRatio="4.862069" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="55" careerDeaths="29" careerAssist="86" killDeathAssistRatio="4.862069" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Memento" championPool="//@champions.39 //@champions.28 //@champions.10 //@champions.20 //@champions.66 //@champions.68 //@champions.27 //@champions.52 //@champions.97">
-      <playerStats gamesPlayed="18" careerKills="60" careerDeaths="51" careerAssist="91" killDeathAssistRatio="2.9607842" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="60" careerDeaths="51" careerAssist="91" killDeathAssistRatio="2.9607842" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Norskeren" championPool="//@champions.32 //@champions.19 //@champions.23 //@champions.71 //@champions.29 //@champions.34 //@champions.41">
-      <playerStats gamesPlayed="18" careerKills="17" careerDeaths="53" careerAssist="113" killDeathAssistRatio="2.45283" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="17" careerDeaths="53" careerAssist="113" killDeathAssistRatio="2.45283" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
     <player name="Profit" championPool="//@champions.18 //@champions.6 //@champions.12 //@champions.20 //@champions.75 //@champions.37 //@champions.80">
-      <playerStats gamesPlayed="18" careerKills="40" careerDeaths="37" careerAssist="89" killDeathAssistRatio="3.4864864" winLoseRatio="0.6363636" careerGameWins="14" careerMatchWins="7"/>
+      <playerStats gamesPlayed="18" careerKills="40" careerDeaths="37" careerAssist="89" killDeathAssistRatio="3.4864864" winLoseRatio="0.6363636" careerGameWins="7" careerMatchWins="7"/>
     </player>
   </teams>
   <teams name="Fnatic">
     <player name="Broxah" championPool="//@champions.5 //@champions.55 //@champions.66 //@champions.27 //@champions.10 //@champions.20 //@champions.68 //@champions.93 //@champions.13 //@champions.52 //@champions.99">
-      <playerStats gamesPlayed="26" careerKills="63" careerDeaths="28" careerAssist="199" killDeathAssistRatio="9.357142" winLoseRatio="2.7142856" careerGameWins="38" careerMatchWins="15"/>
+      <playerStats gamesPlayed="26" careerKills="63" careerDeaths="28" careerAssist="199" killDeathAssistRatio="9.357142" winLoseRatio="2.7142856" careerGameWins="19" careerMatchWins="15"/>
     </player>
     <player name="Caps" championPool="//@champions.1 //@champions.15 //@champions.2 //@champions.35 //@champions.81 //@champions.73 //@champions.74 //@champions.21 //@champions.95 //@champions.86 //@champions.36 //@champions.59 //@champions.108 //@champions.98 //@champions.103 //@champions.4">
-      <playerStats gamesPlayed="26" careerKills="125" careerDeaths="70" careerAssist="136" killDeathAssistRatio="3.7285714" winLoseRatio="2.7142856" careerGameWins="38" careerMatchWins="15"/>
+      <playerStats gamesPlayed="26" careerKills="125" careerDeaths="70" careerAssist="136" killDeathAssistRatio="3.7285714" winLoseRatio="2.7142856" careerGameWins="19" careerMatchWins="15"/>
     </player>
     <player name="Hylissang" championPool="//@champions.32 //@champions.41 //@champions.19 //@champions.31 //@champions.14 //@champions.23 //@champions.29 //@champions.34">
-      <playerStats gamesPlayed="26" careerKills="37" careerDeaths="75" careerAssist="188" killDeathAssistRatio="3.0" winLoseRatio="2.7142856" careerGameWins="38" careerMatchWins="15"/>
+      <playerStats gamesPlayed="26" careerKills="37" careerDeaths="75" careerAssist="188" killDeathAssistRatio="3.0" winLoseRatio="2.7142856" careerGameWins="19" careerMatchWins="15"/>
     </player>
     <player name="Rekkles" championPool="//@champions.40 //@champions.26 //@champions.33 //@champions.38 //@champions.61 //@champions.109 //@champions.1">
-      <playerStats gamesPlayed="13" careerKills="42" careerDeaths="20" careerAssist="70" killDeathAssistRatio="5.6" winLoseRatio="2.25" careerGameWins="28" careerMatchWins="15"/>
+      <playerStats gamesPlayed="13" careerKills="42" careerDeaths="20" careerAssist="70" killDeathAssistRatio="5.6" winLoseRatio="2.25" careerGameWins="9" careerMatchWins="15"/>
     </player>
     <player name="sOAZ" championPool="//@champions.3 //@champions.37 //@champions.52 //@champions.11 //@champions.22 //@champions.6 //@champions.18 //@champions.105 //@champions.101">
-      <playerStats gamesPlayed="20" careerKills="35" careerDeaths="43" careerAssist="125" killDeathAssistRatio="3.7209303" winLoseRatio="4.0" careerGameWins="35" careerMatchWins="15"/>
+      <playerStats gamesPlayed="20" careerKills="35" careerDeaths="43" careerAssist="125" killDeathAssistRatio="3.7209303" winLoseRatio="4.0" careerGameWins="16" careerMatchWins="15"/>
     </player>
     <player name="Bwipo" championPool="//@champions.56 //@champions.35 //@champions.4 //@champions.62 //@champions.76 //@champions.47 //@champions.77 //@champions.87 //@champions.73 //@champions.6 //@champions.18 //@champions.3 //@champions.101">
-      <playerStats gamesPlayed="19" careerKills="70" careerDeaths="45" careerAssist="113" killDeathAssistRatio="4.0666666" winLoseRatio="2.1666667" careerGameWins="32" careerMatchWins="15"/>
+      <playerStats gamesPlayed="19" careerKills="70" careerDeaths="45" careerAssist="113" killDeathAssistRatio="4.0666666" winLoseRatio="2.1666667" careerGameWins="13" careerMatchWins="15"/>
     </player>
   </teams>
   <teams name="Misfits">
     <player name="Alphari" championPool="//@champions.29 //@champions.37 //@champions.18 //@champions.22 //@champions.47 //@champions.77 //@champions.20 //@champions.90 //@champions.3 //@champions.105 //@champions.101 //@champions.62">
-      <playerStats gamesPlayed="34" careerKills="69" careerDeaths="57" careerAssist="166" killDeathAssistRatio="4.122807" winLoseRatio="1.125" careerGameWins="36" careerMatchWins="12"/>
+      <playerStats gamesPlayed="34" careerKills="69" careerDeaths="57" careerAssist="166" killDeathAssistRatio="4.122807" winLoseRatio="1.125" careerGameWins="18" careerMatchWins="12"/>
     </player>
     <player name="Hans Sama" championPool="//@champions.25 //@champions.51 //@champions.8 //@champions.1 //@champions.38 //@champions.33 //@champions.6 //@champions.102 //@champions.61">
-      <playerStats gamesPlayed="34" careerKills="125" careerDeaths="62" careerAssist="158" killDeathAssistRatio="4.564516" winLoseRatio="1.125" careerGameWins="36" careerMatchWins="12"/>
+      <playerStats gamesPlayed="34" careerKills="125" careerDeaths="62" careerAssist="158" killDeathAssistRatio="4.564516" winLoseRatio="1.125" careerGameWins="18" careerMatchWins="12"/>
     </player>
     <player name="Maxlore" championPool="//@champions.20 //@champions.16 //@champions.10 //@champions.52 //@champions.68 //@champions.27 //@champions.28 //@champions.92 //@champions.13 //@champions.22 //@champions.106 //@champions.66 //@champions.97 //@champions.46 //@champions.110 //@champions.12">
-      <playerStats gamesPlayed="34" careerKills="89" careerDeaths="71" careerAssist="189" killDeathAssistRatio="3.915493" winLoseRatio="1.125" careerGameWins="36" careerMatchWins="12"/>
+      <playerStats gamesPlayed="34" careerKills="89" careerDeaths="71" careerAssist="189" killDeathAssistRatio="3.915493" winLoseRatio="1.125" careerGameWins="18" careerMatchWins="12"/>
     </player>
     <player name="Mikyx" championPool="//@champions.41 //@champions.52 //@champions.23 //@champions.34 //@champions.19 //@champions.31 //@champions.32 //@champions.29 //@champions.48">
-      <playerStats gamesPlayed="32" careerKills="24" careerDeaths="106" careerAssist="250" killDeathAssistRatio="2.5849056" winLoseRatio="1.1333333" careerGameWins="35" careerMatchWins="12"/>
+      <playerStats gamesPlayed="32" careerKills="24" careerDeaths="106" careerAssist="250" killDeathAssistRatio="2.5849056" winLoseRatio="1.1333333" careerGameWins="17" careerMatchWins="12"/>
     </player>
     <player name="Sencux" championPool="//@champions.17 //@champions.53 //@champions.35 //@champions.2 //@champions.62 //@champions.73 //@champions.74 //@champions.21 //@champions.4 //@champions.60 //@champions.95 //@champions.86 //@champions.57 //@champions.103 //@champions.83 //@champions.43">
-      <playerStats gamesPlayed="34" careerKills="86" careerDeaths="64" careerAssist="172" killDeathAssistRatio="4.03125" winLoseRatio="1.125" careerGameWins="36" careerMatchWins="12"/>
+      <playerStats gamesPlayed="34" careerKills="86" careerDeaths="64" careerAssist="172" killDeathAssistRatio="4.03125" winLoseRatio="1.125" careerGameWins="18" careerMatchWins="12"/>
     </player>
     <player name="Jesiz" championPool="//@champions.23 //@champions.34">
-      <playerStats gamesPlayed="2" careerDeaths="3" careerAssist="7" killDeathAssistRatio="2.3333333" winLoseRatio="1.0" careerGameWins="19" careerMatchWins="12"/>
+      <playerStats gamesPlayed="2" careerDeaths="3" careerAssist="7" killDeathAssistRatio="2.3333333" winLoseRatio="1.0" careerGameWins="1" careerMatchWins="12"/>
     </player>
   </teams>
   <seasons SplitName="2018-2">
