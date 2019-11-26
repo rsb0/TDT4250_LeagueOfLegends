@@ -65,6 +65,9 @@ public class ChampionsStatsItemProvider
 			addTotalDeathsPropertyDescriptor(object);
 			addTotalAssistPropertyDescriptor(object);
 			addKillDeathAssistRatioPropertyDescriptor(object);
+			addBansPropertyDescriptor(object);
+			addWinsPropertyDescriptor(object);
+			addWinLoseRatioPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -180,6 +183,72 @@ public class ChampionsStatsItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Bans feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBansPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ChampionsStats_bans_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_bans_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__BANS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Wins feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addWinsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ChampionsStats_wins_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_wins_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__WINS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Win Lose Ratio feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addWinLoseRatioPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ChampionsStats_winLoseRatio_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChampionsStats_winLoseRatio_feature", "_UI_ChampionsStats_type"),
+				 LeagueOfLegendsPackage.Literals.CHAMPIONS_STATS__WIN_LOSE_RATIO,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns ChampionsStats.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -220,6 +289,9 @@ public class ChampionsStatsItemProvider
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__TOTAL_DEATHS:
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__TOTAL_ASSIST:
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS__KILL_DEATH_ASSIST_RATIO:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__BANS:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WINS:
+			case LeagueOfLegendsPackage.CHAMPIONS_STATS__WIN_LOSE_RATIO:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
