@@ -66,6 +66,8 @@ public class PlayerStatsItemProvider
 			addCareerAssistPropertyDescriptor(object);
 			addKillDeathAssistRatioPropertyDescriptor(object);
 			addWinLoseRatioPropertyDescriptor(object);
+			addCareerGameWinsPropertyDescriptor(object);
+			addCareerMatchWinsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -203,6 +205,50 @@ public class PlayerStatsItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Career Game Wins feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCareerGameWinsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PlayerStats_careerGameWins_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PlayerStats_careerGameWins_feature", "_UI_PlayerStats_type"),
+				 LeagueOfLegendsPackage.Literals.PLAYER_STATS__CAREER_GAME_WINS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Career Match Wins feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCareerMatchWinsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PlayerStats_careerMatchWins_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PlayerStats_careerMatchWins_feature", "_UI_PlayerStats_type"),
+				 LeagueOfLegendsPackage.Literals.PLAYER_STATS__CAREER_MATCH_WINS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns PlayerStats.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -244,6 +290,8 @@ public class PlayerStatsItemProvider
 			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_ASSIST:
 			case LeagueOfLegendsPackage.PLAYER_STATS__KILL_DEATH_ASSIST_RATIO:
 			case LeagueOfLegendsPackage.PLAYER_STATS__WIN_LOSE_RATIO:
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_GAME_WINS:
+			case LeagueOfLegendsPackage.PLAYER_STATS__CAREER_MATCH_WINS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
