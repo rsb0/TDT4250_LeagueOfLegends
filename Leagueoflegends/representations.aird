@@ -58,6 +58,10 @@
         <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']"/>
         <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MXh28RFHEeqC3vmBoAmXmA" name="Giants Gaming" repPath="#_MXfasBFHEeqC3vmBoAmXmA">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']"/>
+        <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
   <table:DTable uid="_toblcAvtEeqoj-dVoEaEAA" name="testing02" headerColumnWidth="462">
@@ -5590,17 +5594,17 @@
             <children xmi:type="notation:Node" xmi:id="_zXWXBBFGEeqC3vmBoAmXmA" type="3009" element="_zXSsohFGEeqC3vmBoAmXmA">
               <children xmi:type="notation:Node" xmi:id="_zXW-EBFGEeqC3vmBoAmXmA" visible="false" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_zXW-ERFGEeqC3vmBoAmXmA" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_zXYMMBFGEeqC3vmBoAmXmA" type="3010" element="_zXSsphFGEeqC3vmBoAmXmA">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_zXYMMRFGEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zXYMMhFGEeqC3vmBoAmXmA"/>
+                <children xmi:type="notation:Node" xmi:id="_AsQioBFHEeqC3vmBoAmXmA" type="3010" element="_AnfXZBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_AsQioRFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_AsQiohFHEeqC3vmBoAmXmA"/>
                 </children>
-                <children xmi:type="notation:Node" xmi:id="_zXYMMxFGEeqC3vmBoAmXmA" type="3010" element="_zXSsqBFGEeqC3vmBoAmXmA">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_zXYMNBFGEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zXYMNRFGEeqC3vmBoAmXmA"/>
+                <children xmi:type="notation:Node" xmi:id="_CeacwBFHEeqC3vmBoAmXmA" type="3010" element="_CZqfoBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_CeacwRFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_CeacwhFHEeqC3vmBoAmXmA"/>
                 </children>
-                <children xmi:type="notation:Node" xmi:id="_zXYzQBFGEeqC3vmBoAmXmA" type="3010" element="_zXTTsRFGEeqC3vmBoAmXmA">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_zXYzQRFGEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zXYzQhFGEeqC3vmBoAmXmA"/>
+                <children xmi:type="notation:Node" xmi:id="_GQ_9kBFHEeqC3vmBoAmXmA" type="3010" element="_GMPZYBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_GQ_9kRFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_GQ_9khFHEeqC3vmBoAmXmA"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_zXW-EhFGEeqC3vmBoAmXmA"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_zXW-ExFGEeqC3vmBoAmXmA"/>
@@ -5619,6 +5623,38 @@
                 <children xmi:type="notation:Node" xmi:id="_zXZaUBFGEeqC3vmBoAmXmA" type="3010" element="_zXT6wBFGEeqC3vmBoAmXmA">
                   <styles xmi:type="notation:FontStyle" xmi:id="_zXZaURFGEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
                   <layoutConstraint xmi:type="notation:Location" xmi:id="_zXZaUhFGEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_rWis0BFHEeqC3vmBoAmXmA" type="3010" element="_rUF1xBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_rWis0RFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_rWis0hFHEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_rWis0xFHEeqC3vmBoAmXmA" type="3010" element="_rUGc0RFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_rWis1BFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_rWis1RFHEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_rWis1hFHEeqC3vmBoAmXmA" type="3010" element="_rUHD4RFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_rWis1xFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_rWis2BFHEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-xN80BFHEeqC3vmBoAmXmA" type="3010" element="_-scxlBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_-xN80RFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-xN80hFHEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-xN80xFHEeqC3vmBoAmXmA" type="3010" element="_-sdYoBFHEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_-xN81BFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-xN81RFHEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_EaM-kBFIEeqC3vmBoAmXmA" type="3010" element="_EX0Y8hFIEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_EaM-kRFIEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_EaM-khFIEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_JXUt8BFKEeqC3vmBoAmXmA" type="3010" element="_JU7hQRFKEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_JXUt8RFKEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_JXUt8hFKEeqC3vmBoAmXmA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_QQ5N0BFKEeqC3vmBoAmXmA" type="3010" element="_QMIpoRFKEeqC3vmBoAmXmA">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_QQ5N0RFKEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_QQ5N0hFKEeqC3vmBoAmXmA"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_zXXlIhFGEeqC3vmBoAmXmA"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_zXXlIxFGEeqC3vmBoAmXmA"/>
@@ -5653,26 +5689,26 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_zXSsphFGEeqC3vmBoAmXmA" name="Red team: Giants Gaming">
-          <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_zXSspxFGEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_AnfXZBFHEeqC3vmBoAmXmA" name="Red team: Giants Gaming">
+          <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_Anf-cBFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
             <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Red_Team']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Red_Team']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_zXSsqBFGEeqC3vmBoAmXmA" name="Blue team: H2K">
-          <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_zXTTsBFGEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_CZqfoBFHEeqC3vmBoAmXmA" name="Blue team: H2K">
+          <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_CZqfoRFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
             <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Blue_Team']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Blue_Team']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_zXTTsRFGEeqC3vmBoAmXmA" name="Winner: Giants Gaming">
-          <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_zXTTshFGEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_GMPZYBFHEeqC3vmBoAmXmA" name="Winner: Giants Gaming">
+          <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_GMPZYRFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
             <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Winner']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Winner']"/>
@@ -5702,11 +5738,167 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Kills']"/>
         </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_rUF1xBFHEeqC3vmBoAmXmA" name="Total Deaths: 23">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_rUGc0BFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Deaths']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Deaths']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_rUGc0RFHEeqC3vmBoAmXmA" name="Total Assists: 56">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_rUHD4BFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Assists']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Assists']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_rUHD4RFHEeqC3vmBoAmXmA" name="Total Gold aquired: 151639">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_rUHq8BFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Golds']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Golds']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_-scxlBFHEeqC3vmBoAmXmA" name="Total Wards: 297">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_-scxlRFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Wards']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Wards']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_-sdYoBFHEeqC3vmBoAmXmA" name="Total Wards Killed: 113">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_-sdYoRFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Wards_Killed']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Wards_Killed']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_EX0Y8hFIEeqC3vmBoAmXmA" name="Total Vision Wards: 117">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_EX1AABFIEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Vision_Wards']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Vision_Wards']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_JU7hQRFKEeqC3vmBoAmXmA" name="Total Monsters Killed: 510">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_JU7hQhFKEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Minions']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Minions']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_QMIpoRFKEeqC3vmBoAmXmA" name="Total Barons Killed: 0">
+          <target xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <semanticElements xmi:type="tdt4250.project.leagueOfLegends:GameStats" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0/@gameStats"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_QMJQsBFKEeqC3vmBoAmXmA" labelSize="12" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Barons']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='GameStats']/@subNodeMappings[name='GameStats_Total_Barons']"/>
+        </ownedElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
     <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_zXRegRFGEeqC3vmBoAmXmA"/>
     <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer"/>
     <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.1/@games.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_MXfasBFHEeqC3vmBoAmXmA" name="Giants Gaming">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MXhP5hFHEeqC3vmBoAmXmA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_MXhP5xFHEeqC3vmBoAmXmA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MX_J8BFHEeqC3vmBoAmXmA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_MX_J8RFHEeqC3vmBoAmXmA" type="Sirius" element="_MXfasBFHEeqC3vmBoAmXmA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_MX_xABFHEeqC3vmBoAmXmA" type="2003" element="_MXgo0BFHEeqC3vmBoAmXmA">
+          <children xmi:type="notation:Node" xmi:id="_MX_xAxFHEeqC3vmBoAmXmA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MYAYEBFHEeqC3vmBoAmXmA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_MYAYExFHEeqC3vmBoAmXmA" type="3010" element="_MXgo0xFHEeqC3vmBoAmXmA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MYAYFBFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYAYFRFHEeqC3vmBoAmXmA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MYA_IBFHEeqC3vmBoAmXmA" type="3010" element="_MXgo1RFHEeqC3vmBoAmXmA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MYA_IRFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYA_IhFHEeqC3vmBoAmXmA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MYA_IxFHEeqC3vmBoAmXmA" type="3010" element="_MXhP4BFHEeqC3vmBoAmXmA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MYA_JBFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYA_JRFHEeqC3vmBoAmXmA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MYA_JhFHEeqC3vmBoAmXmA" type="3010" element="_MXhP4hFHEeqC3vmBoAmXmA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MYA_JxFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYA_KBFHEeqC3vmBoAmXmA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MYA_KRFHEeqC3vmBoAmXmA" type="3010" element="_MXhP5BFHEeqC3vmBoAmXmA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MYA_KhFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYA_KxFHEeqC3vmBoAmXmA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MYAYERFHEeqC3vmBoAmXmA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MYAYEhFHEeqC3vmBoAmXmA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MX_xARFHEeqC3vmBoAmXmA" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MX_xAhFHEeqC3vmBoAmXmA"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_MX_J8hFHEeqC3vmBoAmXmA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MXgo0BFHEeqC3vmBoAmXmA" name="Giants Gaming">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MXgo0RFHEeqC3vmBoAmXmA" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MXgo0xFHEeqC3vmBoAmXmA" name="Betsy">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.0"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MXgo1BFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node" width="10" height="5">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MXgo1RFHEeqC3vmBoAmXmA" name="Djoko">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.1"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MXgo1hFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node" width="10" height="5">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MXhP4BFHEeqC3vmBoAmXmA" name="Ruin">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.2"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.2"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MXhP4RFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node" width="10" height="5">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MXhP4hFHEeqC3vmBoAmXmA" name="SirNukesAlot">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.3"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.3"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MXhP4xFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node" width="10" height="5">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MXhP5BFHEeqC3vmBoAmXmA" name="Steeelback">
+        <target xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.4"/>
+        <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Player" href="league.leagueoflegends#//@teams.2/@player.4"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MXhP5RFHEeqC3vmBoAmXmA" labelSize="12" labelPosition="node" width="10" height="5">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MXfasRFHEeqC3vmBoAmXmA"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer"/>
+    <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
