@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<tdt4250.project.leagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" name="EULCS">
+<tdt4250.project.LeagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.LeagueOfLegends="https://tdt4250/project/LeagueOfLegends" name="EULCS">
   <teams name="Splyce">
     <player name="kaSing" championPool="//@champions.0 //@champions.14 //@champions.15 //@champions.34 //@champions.31 //@champions.32 //@champions.29 //@champions.23 //@champions.52 //@champions.63 //@champions.19 //@champions.41">
       <playerStats gamesPlayed="33" careerKills="23" careerDeaths="76" careerAssist="222" killDeathAssistRatio="3.2236843" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
@@ -2696,4 +2696,4 @@
   <champions name="Evelynn">
     <championStat gamesPlayed="1" totalKills="1" totalDeaths="1" killDeathAssistRatio="1.0"/>
   </champions>
-</tdt4250.project.leagueOfLegends:League>
+</tdt4250.project.LeagueOfLegends:League>
