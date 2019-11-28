@@ -53,7 +53,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int DURATION_EDEFAULT = 0;
+	protected static final float DURATION_EDEFAULT = 0.0F;
 
 	/**
 	 * The cached value of the '{@link #getDuration() <em>Duration</em>}' attribute.
@@ -63,7 +63,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @generated
 	 * @ordered
 	 */
-	protected int duration = DURATION_EDEFAULT;
+	protected float duration = DURATION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getWinner() <em>Winner</em>}' attribute.
@@ -373,7 +373,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @generated
 	 */
 	@Override
-	public int getDuration() {
+	public float getDuration() {
 		return duration;
 	}
 
@@ -383,8 +383,8 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 	 * @generated
 	 */
 	@Override
-	public void setDuration(int newDuration) {
-		int oldDuration = duration;
+	public void setDuration(float newDuration) {
+		float oldDuration = duration;
 		duration = newDuration;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.GAME_STATS__DURATION, oldDuration, duration));
@@ -762,7 +762,7 @@ public class GameStatsImpl extends MinimalEObjectImpl.Container implements GameS
 				setGame((Game)newValue);
 				return;
 			case LeagueOfLegendsPackage.GAME_STATS__DURATION:
-				setDuration((Integer)newValue);
+				setDuration((Float)newValue);
 				return;
 			case LeagueOfLegendsPackage.GAME_STATS__WINNER:
 				setWinner((Side)newValue);

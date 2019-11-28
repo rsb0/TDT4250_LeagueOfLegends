@@ -64,12 +64,12 @@ public interface GameStats extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Duration</em>' attribute.
-	 * @see #setDuration(int)
+	 * @see #setDuration(float)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGameStats_Duration()
 	 * @model
 	 * @generated
 	 */
-	int getDuration();
+	float getDuration();
 
 	/**
 	 * Sets the value of the '{@link leagueOfLegends.GameStats#getDuration <em>Duration</em>}' attribute.
@@ -79,7 +79,7 @@ public interface GameStats extends EObject {
 	 * @see #getDuration()
 	 * @generated
 	 */
-	void setDuration(int value);
+	void setDuration(float value);
 
 	/**
 	 * Returns the value of the '<em><b>Winner</b></em>' attribute.

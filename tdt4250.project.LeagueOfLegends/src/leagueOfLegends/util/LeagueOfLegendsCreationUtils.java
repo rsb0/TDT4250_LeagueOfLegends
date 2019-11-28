@@ -62,20 +62,11 @@ public class LeagueOfLegendsCreationUtils {
 		return championsStats;
 	}
 	
-	public static GameStats createGameStats(Game game, int kills, int deaths, int assists,
-			int wards, int visionWards, int wardsKilled, int gold, int minionKills, int monsterKills) {
+	
+	public static GameStats createGameStats(Game game, float duration) {
 		GameStats gameStats = LeagueOfLegendsFactory.eINSTANCE.createGameStats();
 		gameStats.setGame(game);
-		gameStats.setName(game.getGameID());
-		gameStats.setTotalKills(kills);
-		gameStats.setTotalDeaths(deaths);
-		gameStats.setTotalAssist(assists);
-		gameStats.setTotalWards(wards);
-		gameStats.setTotalVisionWards(visionWards);
-		gameStats.setTotalWardsKilled(wardsKilled);
-		gameStats.setTotalGolds(gold);
-		gameStats.setTotalMinionKills(minionKills);
-		gameStats.setTotalMonsterKills(monsterKills);
+		gameStats.setDuration(duration);
 		return gameStats;
 	}
 	

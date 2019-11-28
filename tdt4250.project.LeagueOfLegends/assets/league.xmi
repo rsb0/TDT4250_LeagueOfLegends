@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<tdt4250.project.LeagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.LeagueOfLegends="https://tdt4250/project/LeagueOfLegends" name="EULCS">
+<tdt4250.project.leagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" name="EULCS">
   <teams name="Splyce">
     <player name="kaSing" championPool="//@champions.0 //@champions.14 //@champions.15 //@champions.34 //@champions.31 //@champions.32 //@champions.29 //@champions.23 //@champions.52 //@champions.63 //@champions.19 //@champions.41">
       <playerStats gamesPlayed="33" careerKills="23" careerDeaths="76" careerAssist="222" killDeathAssistRatio="3.2236843" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
@@ -191,7 +191,7 @@
   <seasons SplitName="2018-2">
     <matches DisplayName="1 | 1 | Vitality   vs.   Splyce" matchID="1" bestOF="Regular" teams="//@teams.1 //@teams.0" week="1" winner="//@teams.1">
       <games gameID="1002530085" redTeam="//@teams.1" blueTeam="//@teams.0" winningTeam="//@teams.1">
-        <gameStats totalKills="12" totalDeaths="12" totalAssist="23" totalGolds="86704" totalWards="158" totalWardsKilled="48" totalVisionWards="64" totalMinionKills="1359" totalMonsterKills="292" name="1002530085"/>
+        <gameStats duration="24.75" totalKills="12" totalDeaths="12" totalAssist="23" totalGolds="86704" totalWards="158" totalWardsKilled="48" totalVisionWards="64" totalMinionKills="1359" totalMonsterKills="292"/>
         <gameTeamStat team="//@teams.1" totalKills="10" totalDeaths="2" totalAssist="20" totalGolds="50457" totalWards="87" totalWardsKilled="24" totalVisionWards="37" totalMinionKills="685" totalMonsterKills="178" name="Vitality"/>
         <gameTeamStat team="//@teams.0" totalKills="2" totalDeaths="10" totalAssist="3" totalGolds="36247" totalWards="71" totalWardsKilled="24" totalVisionWards="27" totalMinionKills="674" totalMonsterKills="114" name="Splyce"/>
         <gamePlayerStats player="//@teams.0/@player.0" deaths="1" assist="1" golds="4637" wards="33" wardsKilled="8" visionWards="6" minionKills="8" champion="//@champions.0" name="kaSing"/>
@@ -208,7 +208,7 @@
     </matches>
     <matches DisplayName="2 | 1 | Giants Gaming   vs.   H2K" matchID="2" bestOF="Regular" teams="//@teams.2 //@teams.3" week="1" winner="//@teams.2">
       <games gameID="1002530088" redTeam="//@teams.2" blueTeam="//@teams.3" winningTeam="//@teams.2">
-        <gameStats totalKills="22" totalDeaths="23" totalAssist="56" totalGolds="151639" totalWards="297" totalWardsKilled="113" totalVisionWards="117" totalMinionKills="2193" totalMonsterKills="510" name="1002530088"/>
+        <gameStats duration="45.55" totalKills="22" totalDeaths="23" totalAssist="56" totalGolds="151639" totalWards="297" totalWardsKilled="113" totalVisionWards="117" totalMinionKills="2193" totalMonsterKills="510"/>
         <gameTeamStat team="//@teams.2" totalKills="9" totalDeaths="13" totalAssist="18" totalGolds="77995" totalWards="155" totalWardsKilled="56" totalVisionWards="55" totalMinionKills="1130" totalMonsterKills="265" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.3" totalKills="13" totalDeaths="10" totalAssist="38" totalGolds="73644" totalWards="142" totalWardsKilled="57" totalVisionWards="62" totalMinionKills="1063" totalMonsterKills="245" name="H2K"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="6" deaths="1" assist="1" golds="19326" wards="19" wardsKilled="3" visionWards="12" minionKills="371" monsterKills="28" champion="//@champions.21" name="Betsy"/>
@@ -225,7 +225,7 @@
     </matches>
     <matches DisplayName="3 | 1 | Unicorns of Love   vs.   Schalke 04" matchID="3" bestOF="Regular" teams="//@teams.5 //@teams.4" week="1" winner="//@teams.4">
       <games gameID="1002530090" redTeam="//@teams.5" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="31" totalGolds="123987" totalWards="204" totalWardsKilled="69" totalVisionWards="100" totalMinionKills="2129" totalMonsterKills="364" name="1002530090"/>
+        <gameStats duration="34.05" winner="blue" totalKills="15" totalDeaths="15" totalAssist="31" totalGolds="123987" totalWards="204" totalWardsKilled="69" totalVisionWards="100" totalMinionKills="2129" totalMonsterKills="364"/>
         <gameTeamStat team="//@teams.5" totalKills="6" totalDeaths="9" totalAssist="11" totalGolds="59970" totalWards="93" totalWardsKilled="31" totalVisionWards="53" totalMinionKills="1106" totalMonsterKills="176" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.4" totalKills="9" totalDeaths="6" totalAssist="20" totalGolds="64017" totalWards="111" totalWardsKilled="38" totalVisionWards="47" totalMinionKills="1023" totalMonsterKills="188" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="1" deaths="2" assist="3" golds="11245" wards="7" wardsKilled="7" visionWards="20" minionKills="38" monsterKills="118" champion="//@champions.20" name="Amazing"/>
@@ -242,7 +242,7 @@
     </matches>
     <matches DisplayName="4 | 1 | Roccat   vs.   G2 Esports" matchID="4" bestOF="Regular" teams="//@teams.7 //@teams.6" week="1" winner="//@teams.6">
       <games gameID="1002530092" redTeam="//@teams.7" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="45" totalGolds="81373" totalWards="142" totalWardsKilled="51" totalVisionWards="49" totalMinionKills="1260" totalMonsterKills="263" name="1002530092"/>
+        <gameStats duration="23.633333" winner="blue" totalKills="15" totalDeaths="15" totalAssist="45" totalGolds="81373" totalWards="142" totalWardsKilled="51" totalVisionWards="49" totalMinionKills="1260" totalMonsterKills="263"/>
         <gameTeamStat team="//@teams.7" totalKills="2" totalDeaths="13" totalAssist="6" totalGolds="31975" totalWards="75" totalWardsKilled="28" totalVisionWards="15" totalMinionKills="583" totalMonsterKills="78" name="Roccat"/>
         <gameTeamStat team="//@teams.6" totalKills="13" totalDeaths="2" totalAssist="39" totalGolds="49398" totalWards="67" totalWardsKilled="23" totalVisionWards="34" totalMinionKills="677" totalMonsterKills="185" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="1" deaths="1" assist="10" golds="10538" wards="8" wardsKilled="2" visionWards="4" minionKills="205" monsterKills="5" champion="//@champions.11" name="Hjarnan"/>
@@ -259,7 +259,7 @@
     </matches>
     <matches DisplayName="5 | 1 | Misfits   vs.   Fnatic" matchID="5" bestOF="Regular" teams="//@teams.9 //@teams.8" week="1" winner="//@teams.9">
       <games gameID="1002530095" redTeam="//@teams.9" blueTeam="//@teams.8" winningTeam="//@teams.9">
-        <gameStats totalKills="18" totalDeaths="18" totalAssist="47" totalGolds="92044" totalWards="152" totalWardsKilled="48" totalVisionWards="58" totalMinionKills="1301" totalMonsterKills="258" name="1002530095"/>
+        <gameStats duration="26.716667" totalKills="18" totalDeaths="18" totalAssist="47" totalGolds="92044" totalWards="152" totalWardsKilled="48" totalVisionWards="58" totalMinionKills="1301" totalMonsterKills="258"/>
         <gameTeamStat team="//@teams.9" totalKills="15" totalDeaths="3" totalAssist="39" totalGolds="54987" totalWards="81" totalWardsKilled="34" totalVisionWards="33" totalMinionKills="648" totalMonsterKills="163" name="Misfits"/>
         <gameTeamStat team="//@teams.8" totalKills="3" totalDeaths="15" totalAssist="8" totalGolds="37057" totalWards="71" totalWardsKilled="14" totalVisionWards="25" totalMinionKills="653" totalMonsterKills="95" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" deaths="4" assist="2" golds="4731" wards="20" wardsKilled="4" visionWards="3" minionKills="31" champion="//@champions.5" name="Broxah"/>
@@ -276,7 +276,7 @@
     </matches>
     <matches DisplayName="6 | 1 | H2K   vs.   Roccat" matchID="6" bestOF="Regular" teams="//@teams.3 //@teams.7" week="1" winner="//@teams.7">
       <games gameID="1002530107" redTeam="//@teams.3" blueTeam="//@teams.7" winningSide="blue" winningTeam="//@teams.7">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="45" totalGolds="97958" totalWards="174" totalWardsKilled="63" totalVisionWards="69" totalMinionKills="1557" totalMonsterKills="310" name="1002530107"/>
+        <gameStats duration="27.75" winner="blue" totalKills="20" totalDeaths="20" totalAssist="45" totalGolds="97958" totalWards="174" totalWardsKilled="63" totalVisionWards="69" totalMinionKills="1557" totalMonsterKills="310"/>
         <gameTeamStat team="//@teams.3" totalKills="2" totalDeaths="18" totalAssist="5" totalGolds="40370" totalWards="77" totalWardsKilled="27" totalVisionWards="35" totalMinionKills="761" totalMonsterKills="137" name="H2K"/>
         <gameTeamStat team="//@teams.7" totalKills="18" totalDeaths="2" totalAssist="40" totalGolds="57588" totalWards="97" totalWardsKilled="36" totalVisionWards="34" totalMinionKills="796" totalMonsterKills="173" name="Roccat"/>
         <gamePlayerStats player="//@teams.3/@player.0" deaths="4" assist="1" golds="5338" wards="33" wardsKilled="12" visionWards="19" minionKills="28" champion="//@champions.14" name="promisq"/>
@@ -293,7 +293,7 @@
     </matches>
     <matches DisplayName="7 | 1 | Giants Gaming   vs.   Vitality" matchID="7" bestOF="Regular" teams="//@teams.2 //@teams.1" week="1" winner="//@teams.1">
       <games gameID="1002530128" redTeam="//@teams.2" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="104274" totalWards="178" totalWardsKilled="55" totalVisionWards="63" totalMinionKills="1500" totalMonsterKills="324" name="1002530128"/>
+        <gameStats duration="28.05" winner="blue" totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="104274" totalWards="178" totalWardsKilled="55" totalVisionWards="63" totalMinionKills="1500" totalMonsterKills="324"/>
         <gameTeamStat team="//@teams.2" totalKills="7" totalDeaths="17" totalAssist="13" totalGolds="45518" totalWards="81" totalWardsKilled="29" totalVisionWards="30" totalMinionKills="730" totalMonsterKills="109" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.1" totalKills="17" totalDeaths="7" totalAssist="40" totalGolds="58756" totalWards="97" totalWardsKilled="26" totalVisionWards="33" totalMinionKills="770" totalMonsterKills="215" name="Vitality"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="4" deaths="3" assist="2" golds="10095" wards="9" wardsKilled="3" visionWards="2" minionKills="192" monsterKills="8" champion="//@champions.17" name="Betsy"/>
@@ -310,7 +310,7 @@
     </matches>
     <matches DisplayName="8 | 1 | Unicorns of Love   vs.   Misfits" matchID="8" bestOF="Regular" teams="//@teams.5 //@teams.9" week="1" winner="//@teams.9">
       <games gameID="1002540168" redTeam="//@teams.5" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="35" totalDeaths="35" totalAssist="85" totalGolds="87740" totalWards="140" totalWardsKilled="55" totalVisionWards="37" totalMinionKills="1194" totalMonsterKills="227" name="1002540168"/>
+        <gameStats duration="23.05" winner="blue" totalKills="35" totalDeaths="35" totalAssist="85" totalGolds="87740" totalWards="140" totalWardsKilled="55" totalVisionWards="37" totalMinionKills="1194" totalMonsterKills="227"/>
         <gameTeamStat team="//@teams.5" totalKills="7" totalDeaths="28" totalAssist="16" totalGolds="35359" totalWards="60" totalWardsKilled="22" totalVisionWards="20" totalMinionKills="624" totalMonsterKills="89" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.9" totalKills="28" totalDeaths="7" totalAssist="69" totalGolds="52381" totalWards="80" totalWardsKilled="33" totalVisionWards="17" totalMinionKills="570" totalMonsterKills="138" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="3" deaths="1" assist="10" golds="9228" wards="11" wardsKilled="3" visionWards="2" minionKills="164" champion="//@champions.37" name="Alphari"/>
@@ -327,7 +327,7 @@
     </matches>
     <matches DisplayName="9 | 1 | Schalke 04   vs.   Fnatic" matchID="9" bestOF="Regular" teams="//@teams.4 //@teams.8" week="1" winner="//@teams.8">
       <games gameID="1002540191" redTeam="//@teams.4" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="11" totalDeaths="11" totalAssist="25" totalGolds="89873" totalWards="137" totalWardsKilled="42" totalVisionWards="51" totalMinionKills="1493" totalMonsterKills="280" name="1002540191"/>
+        <gameStats duration="24.716667" winner="blue" totalKills="11" totalDeaths="11" totalAssist="25" totalGolds="89873" totalWards="137" totalWardsKilled="42" totalVisionWards="51" totalMinionKills="1493" totalMonsterKills="280"/>
         <gameTeamStat team="//@teams.4" totalKills="5" totalDeaths="6" totalAssist="7" totalGolds="45241" totalWards="75" totalWardsKilled="25" totalVisionWards="21" totalMinionKills="792" totalMonsterKills="148" name="Schalke 04"/>
         <gameTeamStat team="//@teams.8" totalKills="6" totalDeaths="5" totalAssist="18" totalGolds="44632" totalWards="62" totalWardsKilled="17" totalVisionWards="30" totalMinionKills="701" totalMonsterKills="132" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" assist="6" golds="6532" wards="20" wardsKilled="4" visionWards="5" minionKills="39" monsterKills="12" champion="//@champions.55" name="Broxah"/>
@@ -344,7 +344,7 @@
     </matches>
     <matches DisplayName="10 | 1 | Splyce   vs.   G2 Esports" matchID="10" bestOF="Regular" teams="//@teams.0 //@teams.6" week="1" winner="//@teams.6">
       <games gameID="1002540201" redTeam="//@teams.0" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="48" totalGolds="122672" totalWards="238" totalWardsKilled="85" totalVisionWards="97" totalMinionKills="1907" totalMonsterKills="387" name="1002540201"/>
+        <gameStats duration="33.65" winner="blue" totalKills="20" totalDeaths="20" totalAssist="48" totalGolds="122672" totalWards="238" totalWardsKilled="85" totalVisionWards="97" totalMinionKills="1907" totalMonsterKills="387"/>
         <gameTeamStat team="//@teams.0" totalKills="6" totalDeaths="14" totalAssist="11" totalGolds="54681" totalWards="107" totalWardsKilled="41" totalVisionWards="47" totalMinionKills="934" totalMonsterKills="169" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="14" totalDeaths="6" totalAssist="37" totalGolds="67991" totalWards="131" totalWardsKilled="44" totalVisionWards="50" totalMinionKills="973" totalMonsterKills="218" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="3" assist="5" golds="14834" wards="12" wardsKilled="2" visionWards="5" minionKills="310" monsterKills="12" champion="//@champions.11" name="Hjarnan"/>
@@ -361,7 +361,7 @@
     </matches>
     <matches DisplayName="11 | 2 | Schalke 04   vs.   G2 Esports" matchID="11" bestOF="Regular" teams="//@teams.4 //@teams.6" week="2" winner="//@teams.6">
       <games gameID="1002570036" redTeam="//@teams.4" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="58" totalGolds="97501" totalWards="168" totalWardsKilled="59" totalVisionWards="60" totalMinionKills="1530" totalMonsterKills="283" name="1002570036"/>
+        <gameStats duration="26.816668" winner="blue" totalKills="20" totalDeaths="20" totalAssist="58" totalGolds="97501" totalWards="168" totalWardsKilled="59" totalVisionWards="60" totalMinionKills="1530" totalMonsterKills="283"/>
         <gameTeamStat team="//@teams.4" totalKills="5" totalDeaths="15" totalAssist="14" totalGolds="42417" totalWards="73" totalWardsKilled="30" totalVisionWards="27" totalMinionKills="726" totalMonsterKills="151" name="Schalke 04"/>
         <gameTeamStat team="//@teams.6" totalKills="15" totalDeaths="5" totalAssist="44" totalGolds="55084" totalWards="95" totalWardsKilled="29" totalVisionWards="33" totalMinionKills="804" totalMonsterKills="132" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="1" deaths="1" assist="9" golds="10725" wards="8" wardsKilled="3" visionWards="6" minionKills="232" monsterKills="6" champion="//@champions.26" name="Hjarnan"/>
@@ -378,7 +378,7 @@
     </matches>
     <matches DisplayName="12 | 2 | Giants Gaming   vs.   Misfits" matchID="12" bestOF="Regular" teams="//@teams.2 //@teams.9" week="2" winner="//@teams.9">
       <games gameID="1002570081" redTeam="//@teams.2" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="30" totalDeaths="30" totalAssist="69" totalGolds="123544" totalWards="274" totalWardsKilled="95" totalVisionWards="98" totalMinionKills="1883" totalMonsterKills="386" name="1002570081"/>
+        <gameStats duration="33.75" winner="blue" totalKills="30" totalDeaths="30" totalAssist="69" totalGolds="123544" totalWards="274" totalWardsKilled="95" totalVisionWards="98" totalMinionKills="1883" totalMonsterKills="386"/>
         <gameTeamStat team="//@teams.2" totalKills="8" totalDeaths="22" totalAssist="16" totalGolds="54507" totalWards="121" totalWardsKilled="42" totalVisionWards="39" totalMinionKills="926" totalMonsterKills="160" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.9" totalKills="22" totalDeaths="8" totalAssist="53" totalGolds="69037" totalWards="153" totalWardsKilled="53" totalVisionWards="59" totalMinionKills="957" totalMonsterKills="226" name="Misfits"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="6" deaths="6" assist="2" golds="12672" wards="22" wardsKilled="6" visionWards="3" minionKills="264" monsterKills="4" champion="//@champions.6" name="Betsy"/>
@@ -395,7 +395,7 @@
     </matches>
     <matches DisplayName="13 | 2 | H2K   vs.   G2 Esports" matchID="13" bestOF="Regular" teams="//@teams.3 //@teams.6" week="2" winner="//@teams.6">
       <games gameID="1002570087" redTeam="//@teams.3" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="56" totalGolds="86371" totalWards="164" totalWardsKilled="49" totalVisionWards="47" totalMinionKills="1262" totalMonsterKills="247" name="1002570087"/>
+        <gameStats duration="23.483334" winner="blue" totalKills="22" totalDeaths="22" totalAssist="56" totalGolds="86371" totalWards="164" totalWardsKilled="49" totalVisionWards="47" totalMinionKills="1262" totalMonsterKills="247"/>
         <gameTeamStat team="//@teams.3" totalKills="5" totalDeaths="17" totalAssist="8" totalGolds="36341" totalWards="82" totalWardsKilled="26" totalVisionWards="25" totalMinionKills="598" totalMonsterKills="118" name="H2K"/>
         <gameTeamStat team="//@teams.6" totalKills="17" totalDeaths="5" totalAssist="48" totalGolds="50030" totalWards="82" totalWardsKilled="23" totalVisionWards="22" totalMinionKills="664" totalMonsterKills="129" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="2" deaths="2" assist="12" golds="9969" wards="8" wardsKilled="2" visionWards="2" minionKills="184" monsterKills="4" champion="//@champions.26" name="Hjarnan"/>
@@ -412,7 +412,7 @@
     </matches>
     <matches DisplayName="14 | 3 | Fnatic   vs.   Giants Gaming" matchID="14" bestOF="Regular" teams="//@teams.8 //@teams.2" week="3" winner="//@teams.8">
       <games gameID="1002570186" redTeam="//@teams.8" blueTeam="//@teams.2" winningTeam="//@teams.8">
-        <gameStats totalKills="21" totalDeaths="21" totalAssist="34" totalGolds="81599" totalWards="118" totalWardsKilled="42" totalVisionWards="30" totalMinionKills="1113" totalMonsterKills="240" name="1002570186"/>
+        <gameStats duration="22.633333" totalKills="21" totalDeaths="21" totalAssist="34" totalGolds="81599" totalWards="118" totalWardsKilled="42" totalVisionWards="30" totalMinionKills="1113" totalMonsterKills="240"/>
         <gameTeamStat team="//@teams.8" totalKills="16" totalDeaths="5" totalAssist="27" totalGolds="48562" totalWards="62" totalWardsKilled="18" totalVisionWards="18" totalMinionKills="622" totalMonsterKills="181" name="Fnatic"/>
         <gameTeamStat team="//@teams.2" totalKills="5" totalDeaths="16" totalAssist="7" totalGolds="33037" totalWards="56" totalWardsKilled="24" totalVisionWards="12" totalMinionKills="491" totalMonsterKills="59" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" assist="5" golds="9261" wards="10" wardsKilled="3" visionWards="5" minionKills="16" monsterKills="134" champion="//@champions.66" name="Broxah"/>
@@ -429,7 +429,7 @@
     </matches>
     <matches DisplayName="15 | 2 | Unicorns of Love   vs.   Giants Gaming" matchID="15" bestOF="Regular" teams="//@teams.5 //@teams.2" week="2" winner="//@teams.5">
       <games gameID="1002580017" redTeam="//@teams.5" blueTeam="//@teams.2" winningTeam="//@teams.5">
-        <gameStats totalKills="19" totalDeaths="19" totalAssist="45" totalGolds="95837" totalWards="167" totalWardsKilled="61" totalVisionWards="68" totalMinionKills="1569" totalMonsterKills="282" name="1002580017"/>
+        <gameStats duration="27.533333" totalKills="19" totalDeaths="19" totalAssist="45" totalGolds="95837" totalWards="167" totalWardsKilled="61" totalVisionWards="68" totalMinionKills="1569" totalMonsterKills="282"/>
         <gameTeamStat team="//@teams.5" totalKills="11" totalDeaths="8" totalAssist="23" totalGolds="52346" totalWards="97" totalWardsKilled="34" totalVisionWards="27" totalMinionKills="802" totalMonsterKills="146" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.2" totalKills="8" totalDeaths="11" totalAssist="22" totalGolds="43491" totalWards="70" totalWardsKilled="27" totalVisionWards="41" totalMinionKills="767" totalMonsterKills="136" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="2" deaths="3" assist="4" golds="8956" wards="7" wardsKilled="2" visionWards="3" minionKills="209" monsterKills="8" champion="//@champions.62" name="Betsy"/>
@@ -446,7 +446,7 @@
     </matches>
     <matches DisplayName="16 | 2 | Vitality   vs.   Roccat" matchID="16" bestOF="Regular" teams="//@teams.1 //@teams.7" week="2" winner="//@teams.7">
       <games gameID="1002580026" redTeam="//@teams.1" blueTeam="//@teams.7" winningSide="blue" winningTeam="//@teams.7">
-        <gameStats totalKills="32" totalDeaths="32" totalAssist="80" totalGolds="163776" totalWards="361" totalWardsKilled="107" totalVisionWards="156" totalMinionKills="2381" totalMonsterKills="477" name="1002580026"/>
+        <gameStats duration="46.516666" winner="blue" totalKills="32" totalDeaths="32" totalAssist="80" totalGolds="163776" totalWards="361" totalWardsKilled="107" totalVisionWards="156" totalMinionKills="2381" totalMonsterKills="477"/>
         <gameTeamStat team="//@teams.1" totalKills="13" totalDeaths="19" totalAssist="34" totalGolds="82917" totalWards="197" totalWardsKilled="44" totalVisionWards="83" totalMinionKills="1118" totalMonsterKills="275" name="Vitality"/>
         <gameTeamStat team="//@teams.7" totalKills="19" totalDeaths="13" totalAssist="46" totalGolds="80859" totalWards="164" totalWardsKilled="63" totalVisionWards="73" totalMinionKills="1263" totalMonsterKills="202" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="4" deaths="4" assist="11" golds="18510" wards="21" wardsKilled="8" visionWards="2" minionKills="371" monsterKills="33" champion="//@champions.2" name="Blanc"/>
@@ -463,7 +463,7 @@
     </matches>
     <matches DisplayName="17 | 2 | H2K   vs.   Fnatic" matchID="17" bestOF="Regular" teams="//@teams.3 //@teams.8" week="2" winner="//@teams.8">
       <games gameID="1002580040" redTeam="//@teams.3" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="32" totalDeaths="32" totalAssist="53" totalGolds="101024" totalWards="134" totalWardsKilled="39" totalVisionWards="37" totalMinionKills="1511" totalMonsterKills="319" name="1002580040"/>
+        <gameStats duration="27.083334" winner="blue" totalKills="32" totalDeaths="32" totalAssist="53" totalGolds="101024" totalWards="134" totalWardsKilled="39" totalVisionWards="37" totalMinionKills="1511" totalMonsterKills="319"/>
         <gameTeamStat team="//@teams.3" totalKills="5" totalDeaths="27" totalAssist="10" totalGolds="40570" totalWards="65" totalWardsKilled="22" totalVisionWards="16" totalMinionKills="711" totalMonsterKills="136" name="H2K"/>
         <gameTeamStat team="//@teams.8" totalKills="27" totalDeaths="5" totalAssist="43" totalGolds="60454" totalWards="69" totalWardsKilled="17" totalVisionWards="21" totalMinionKills="800" totalMonsterKills="183" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="5" assist="6" golds="12891" wards="9" wardsKilled="3" visionWards="5" minionKills="56" monsterKills="141" champion="//@champions.27" name="Broxah"/>
@@ -480,7 +480,7 @@
     </matches>
     <matches DisplayName="18 | 2 | Splyce   vs.   Misfits" matchID="18" bestOF="Regular" teams="//@teams.0 //@teams.9" week="2" winner="//@teams.9">
       <games gameID="1002580047" redTeam="//@teams.0" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="29" totalDeaths="29" totalAssist="64" totalGolds="137339" totalWards="259" totalWardsKilled="96" totalVisionWards="102" totalMinionKills="2087" totalMonsterKills="428" name="1002580047"/>
+        <gameStats duration="38.733334" winner="blue" totalKills="29" totalDeaths="29" totalAssist="64" totalGolds="137339" totalWards="259" totalWardsKilled="96" totalVisionWards="102" totalMinionKills="2087" totalMonsterKills="428"/>
         <gameTeamStat team="//@teams.0" totalKills="7" totalDeaths="22" totalAssist="11" totalGolds="61460" totalWards="124" totalWardsKilled="42" totalVisionWards="47" totalMinionKills="981" totalMonsterKills="222" name="Splyce"/>
         <gameTeamStat team="//@teams.9" totalKills="22" totalDeaths="7" totalAssist="53" totalGolds="75879" totalWards="135" totalWardsKilled="54" totalVisionWards="55" totalMinionKills="1106" totalMonsterKills="206" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="5" deaths="1" assist="12" golds="15306" wards="19" wardsKilled="5" visionWards="4" minionKills="272" monsterKills="16" champion="//@champions.37" name="Alphari"/>
@@ -497,7 +497,7 @@
     </matches>
     <matches DisplayName="19 | 2 | Schalke 04   vs.   Roccat" matchID="19" bestOF="Regular" teams="//@teams.4 //@teams.7" week="2" winner="//@teams.4">
       <games gameID="1002580061" redTeam="//@teams.4" blueTeam="//@teams.7" winningTeam="//@teams.4">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="50" totalGolds="142129" totalWards="302" totalWardsKilled="131" totalVisionWards="142" totalMinionKills="2426" totalMonsterKills="438" name="1002580061"/>
+        <gameStats duration="41.166668" totalKills="23" totalDeaths="23" totalAssist="50" totalGolds="142129" totalWards="302" totalWardsKilled="131" totalVisionWards="142" totalMinionKills="2426" totalMonsterKills="438"/>
         <gameTeamStat team="//@teams.4" totalKills="16" totalDeaths="7" totalAssist="36" totalGolds="78996" totalWards="160" totalWardsKilled="69" totalVisionWards="74" totalMinionKills="1264" totalMonsterKills="231" name="Schalke 04"/>
         <gameTeamStat team="//@teams.7" totalKills="7" totalDeaths="16" totalAssist="14" totalGolds="63133" totalWards="142" totalWardsKilled="62" totalVisionWards="68" totalMinionKills="1162" totalMonsterKills="207" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" deaths="4" assist="3" golds="12733" wards="19" wardsKilled="10" visionWards="16" minionKills="327" monsterKills="4" champion="//@champions.43" name="Blanc"/>
@@ -514,7 +514,7 @@
     </matches>
     <matches DisplayName="20 | 2 | Splyce   vs.   Unicorns of Love" matchID="20" bestOF="Regular" teams="//@teams.0 //@teams.5" week="2" winner="//@teams.5">
       <games gameID="1002580095" redTeam="//@teams.0" blueTeam="//@teams.5" winningSide="blue" winningTeam="//@teams.5">
-        <gameStats totalKills="14" totalDeaths="14" totalAssist="29" totalGolds="89913" totalWards="148" totalWardsKilled="56" totalVisionWards="56" totalMinionKills="1464" totalMonsterKills="278" name="1002580095"/>
+        <gameStats duration="26.433332" winner="blue" totalKills="14" totalDeaths="14" totalAssist="29" totalGolds="89913" totalWards="148" totalWardsKilled="56" totalVisionWards="56" totalMinionKills="1464" totalMonsterKills="278"/>
         <gameTeamStat team="//@teams.0" totalKills="3" totalDeaths="11" totalAssist="7" totalGolds="38190" totalWards="84" totalWardsKilled="35" totalVisionWards="19" totalMinionKills="659" totalMonsterKills="123" name="Splyce"/>
         <gameTeamStat team="//@teams.5" totalKills="11" totalDeaths="3" totalAssist="22" totalGolds="51723" totalWards="64" totalWardsKilled="21" totalVisionWards="37" totalMinionKills="805" totalMonsterKills="155" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.0/@player.0" kills="1" deaths="2" assist="1" golds="5109" wards="34" wardsKilled="10" visionWards="5" minionKills="11" champion="//@champions.14" name="kaSing"/>
@@ -531,7 +531,7 @@
     </matches>
     <matches DisplayName="21 | 2 | Vitality   vs.   Fnatic" matchID="21" bestOF="Regular" teams="//@teams.1 //@teams.8" week="2" winner="//@teams.8">
       <games gameID="1002580100" redTeam="//@teams.1" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="26" totalDeaths="26" totalAssist="61" totalGolds="91704" totalWards="139" totalWardsKilled="49" totalVisionWards="48" totalMinionKills="1311" totalMonsterKills="295" name="1002580100"/>
+        <gameStats duration="25.266666" winner="blue" totalKills="26" totalDeaths="26" totalAssist="61" totalGolds="91704" totalWards="139" totalWardsKilled="49" totalVisionWards="48" totalMinionKills="1311" totalMonsterKills="295"/>
         <gameTeamStat team="//@teams.1" totalKills="3" totalDeaths="23" totalAssist="4" totalGolds="35765" totalWards="74" totalWardsKilled="27" totalVisionWards="17" totalMinionKills="671" totalMonsterKills="99" name="Vitality"/>
         <gameTeamStat team="//@teams.8" totalKills="23" totalDeaths="3" totalAssist="57" totalGolds="55939" totalWards="65" totalWardsKilled="22" totalVisionWards="31" totalMinionKills="640" totalMonsterKills="196" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="3" assist="14" golds="11483" wards="13" wardsKilled="5" visionWards="6" minionKills="21" monsterKills="138" champion="//@champions.10" name="Broxah"/>
@@ -548,7 +548,7 @@
     </matches>
     <matches DisplayName="22 | 3 | Roccat   vs.   Giants Gaming" matchID="22" bestOF="Regular" teams="//@teams.7 //@teams.2" week="3" winner="//@teams.7">
       <games gameID="1002580117" redTeam="//@teams.7" blueTeam="//@teams.2" winningTeam="//@teams.7">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="48" totalGolds="125365" totalWards="275" totalWardsKilled="114" totalVisionWards="119" totalMinionKills="2018" totalMonsterKills="453" name="1002580117"/>
+        <gameStats duration="36.633335" totalKills="20" totalDeaths="20" totalAssist="48" totalGolds="125365" totalWards="275" totalWardsKilled="114" totalVisionWards="119" totalMinionKills="2018" totalMonsterKills="453"/>
         <gameTeamStat team="//@teams.7" totalKills="13" totalDeaths="7" totalAssist="32" totalGolds="64951" totalWards="148" totalWardsKilled="62" totalVisionWards="50" totalMinionKills="1065" totalMonsterKills="218" name="Roccat"/>
         <gameTeamStat team="//@teams.2" totalKills="7" totalDeaths="13" totalAssist="16" totalGolds="60414" totalWards="127" totalWardsKilled="52" totalVisionWards="69" totalMinionKills="953" totalMonsterKills="235" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="2" deaths="1" assist="3" golds="13759" wards="21" wardsKilled="10" visionWards="8" minionKills="320" monsterKills="17" champion="//@champions.15" name="Betsy"/>
@@ -565,7 +565,7 @@
     </matches>
     <matches DisplayName="23 | 3 | Schalke 04   vs.   Misfits" matchID="23" bestOF="Regular" teams="//@teams.4 //@teams.9" week="3" winner="//@teams.9">
       <games gameID="1002580127" redTeam="//@teams.4" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="19" totalDeaths="19" totalAssist="56" totalGolds="116012" totalWards="230" totalWardsKilled="84" totalVisionWards="88" totalMinionKills="1915" totalMonsterKills="348" name="1002580127"/>
+        <gameStats duration="33.366665" winner="blue" totalKills="19" totalDeaths="19" totalAssist="56" totalGolds="116012" totalWards="230" totalWardsKilled="84" totalVisionWards="88" totalMinionKills="1915" totalMonsterKills="348"/>
         <gameTeamStat team="//@teams.4" totalKills="3" totalDeaths="16" totalAssist="8" totalGolds="49936" totalWards="114" totalWardsKilled="37" totalVisionWards="36" totalMinionKills="988" totalMonsterKills="151" name="Schalke 04"/>
         <gameTeamStat team="//@teams.9" totalKills="16" totalDeaths="3" totalAssist="48" totalGolds="66076" totalWards="116" totalWardsKilled="47" totalVisionWards="52" totalMinionKills="927" totalMonsterKills="197" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="6" assist="5" golds="14519" wards="14" wardsKilled="2" visionWards="2" minionKills="267" monsterKills="6" champion="//@champions.37" name="Alphari"/>
@@ -582,7 +582,7 @@
     </matches>
     <matches DisplayName="24 | 3 | H2K   vs.   Splyce" matchID="24" bestOF="Regular" teams="//@teams.3 //@teams.0" week="3" winner="//@teams.0">
       <games gameID="1002580137" redTeam="//@teams.3" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="44" totalGolds="123623" totalWards="260" totalWardsKilled="112" totalVisionWards="124" totalMinionKills="2061" totalMonsterKills="390" name="1002580137"/>
+        <gameStats duration="36.35" winner="blue" totalKills="15" totalDeaths="15" totalAssist="44" totalGolds="123623" totalWards="260" totalWardsKilled="112" totalVisionWards="124" totalMinionKills="2061" totalMonsterKills="390"/>
         <gameTeamStat team="//@teams.3" totalKills="3" totalDeaths="12" totalAssist="7" totalGolds="55904" totalWards="122" totalWardsKilled="50" totalVisionWards="61" totalMinionKills="1051" totalMonsterKills="171" name="H2K"/>
         <gameTeamStat team="//@teams.0" totalKills="12" totalDeaths="3" totalAssist="37" totalGolds="67719" totalWards="138" totalWardsKilled="62" totalVisionWards="63" totalMinionKills="1010" totalMonsterKills="219" name="Splyce"/>
         <gamePlayerStats player="//@teams.3/@player.0" deaths="3" assist="2" golds="6895" wards="62" wardsKilled="24" visionWards="17" minionKills="21" champion="//@champions.32" name="promisq"/>
@@ -599,7 +599,7 @@
     </matches>
     <matches DisplayName="25 | 3 | Vitality   vs.   Unicorns of Love" matchID="25" bestOF="Regular" teams="//@teams.1 //@teams.5" week="3" winner="//@teams.1">
       <games gameID="1002580151" redTeam="//@teams.1" blueTeam="//@teams.5" winningTeam="//@teams.1">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="50" totalGolds="89206" totalWards="172" totalWardsKilled="56" totalVisionWards="54" totalMinionKills="1348" totalMonsterKills="271" name="1002580151"/>
+        <gameStats duration="24.866667" totalKills="22" totalDeaths="22" totalAssist="50" totalGolds="89206" totalWards="172" totalWardsKilled="56" totalVisionWards="54" totalMinionKills="1348" totalMonsterKills="271"/>
         <gameTeamStat team="//@teams.1" totalKills="20" totalDeaths="2" totalAssist="46" totalGolds="53391" totalWards="102" totalWardsKilled="24" totalVisionWards="33" totalMinionKills="680" totalMonsterKills="165" name="Vitality"/>
         <gameTeamStat team="//@teams.5" totalKills="2" totalDeaths="20" totalAssist="4" totalGolds="35815" totalWards="70" totalWardsKilled="32" totalVisionWards="21" totalMinionKills="668" totalMonsterKills="106" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.5/@player.0" kills="1" deaths="5" assist="1" golds="8247" wards="13" wardsKilled="5" visionWards="5" minionKills="183" monsterKills="8" champion="//@champions.4" name="Exileh"/>
@@ -616,7 +616,7 @@
     </matches>
     <matches DisplayName="26 | 3 | G2 Esports   vs.   Fnatic" matchID="26" bestOF="Regular" teams="//@teams.6 //@teams.8" week="3" winner="//@teams.6">
       <games gameID="1002580161" redTeam="//@teams.6" blueTeam="//@teams.8" winningTeam="//@teams.6">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="59" totalGolds="88004" totalWards="149" totalWardsKilled="44" totalVisionWards="45" totalMinionKills="1329" totalMonsterKills="248" name="1002580161"/>
+        <gameStats duration="24.6" totalKills="23" totalDeaths="23" totalAssist="59" totalGolds="88004" totalWards="149" totalWardsKilled="44" totalVisionWards="45" totalMinionKills="1329" totalMonsterKills="248"/>
         <gameTeamStat team="//@teams.6" totalKills="19" totalDeaths="4" totalAssist="55" totalGolds="50348" totalWards="91" totalWardsKilled="27" totalVisionWards="26" totalMinionKills="688" totalMonsterKills="104" name="G2 Esports"/>
         <gameTeamStat team="//@teams.8" totalKills="4" totalDeaths="19" totalAssist="4" totalGolds="37656" totalWards="58" totalWardsKilled="17" totalVisionWards="19" totalMinionKills="641" totalMonsterKills="144" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="1" deaths="3" assist="3" golds="8083" wards="13" wardsKilled="6" visionWards="7" minionKills="22" monsterKills="112" champion="//@champions.20" name="Broxah"/>
@@ -633,7 +633,7 @@
     </matches>
     <matches DisplayName="27 | 3 | H2K   vs.   Misfits" matchID="27" bestOF="Regular" teams="//@teams.3 //@teams.9" week="3" winner="//@teams.9">
       <games gameID="1002580183" redTeam="//@teams.3" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="16" totalDeaths="16" totalAssist="32" totalGolds="84953" totalWards="143" totalWardsKilled="51" totalVisionWards="42" totalMinionKills="1249" totalMonsterKills="250" name="1002580183"/>
+        <gameStats duration="23.466667" winner="blue" totalKills="16" totalDeaths="16" totalAssist="32" totalGolds="84953" totalWards="143" totalWardsKilled="51" totalVisionWards="42" totalMinionKills="1249" totalMonsterKills="250"/>
         <gameTeamStat team="//@teams.3" totalKills="1" totalDeaths="15" totalAssist="2" totalGolds="33768" totalWards="65" totalWardsKilled="20" totalVisionWards="19" totalMinionKills="623" totalMonsterKills="113" name="H2K"/>
         <gameTeamStat team="//@teams.9" totalKills="15" totalDeaths="1" totalAssist="30" totalGolds="51185" totalWards="78" totalWardsKilled="31" totalVisionWards="23" totalMinionKills="626" totalMonsterKills="137" name="Misfits"/>
         <gamePlayerStats player="//@teams.3/@player.0" deaths="3" assist="1" golds="4630" wards="22" wardsKilled="8" visionWards="7" minionKills="11" champion="//@champions.32" name="promisq"/>
@@ -650,7 +650,7 @@
     </matches>
     <matches DisplayName="28 | 3 | Schalke 04   vs.   Vitality" matchID="28" bestOF="Regular" teams="//@teams.4 //@teams.1" week="3" winner="//@teams.1">
       <games gameID="1002580195" redTeam="//@teams.4" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="23" totalDeaths="24" totalAssist="55" totalGolds="103196" totalWards="183" totalWardsKilled="61" totalVisionWards="74" totalMinionKills="1499" totalMonsterKills="331" name="1002580195"/>
+        <gameStats duration="30.35" winner="blue" totalKills="23" totalDeaths="24" totalAssist="55" totalGolds="103196" totalWards="183" totalWardsKilled="61" totalVisionWards="74" totalMinionKills="1499" totalMonsterKills="331"/>
         <gameTeamStat team="//@teams.4" totalKills="6" totalDeaths="17" totalAssist="11" totalGolds="43597" totalWards="88" totalWardsKilled="29" totalVisionWards="31" totalMinionKills="770" totalMonsterKills="114" name="Schalke 04"/>
         <gameTeamStat team="//@teams.1" totalKills="17" totalDeaths="7" totalAssist="44" totalGolds="59599" totalWards="95" totalWardsKilled="32" totalVisionWards="43" totalMinionKills="729" totalMonsterKills="217" name="Vitality"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="4" assist="1" golds="7744" wards="3" wardsKilled="3" visionWards="6" minionKills="32" monsterKills="103" champion="//@champions.20" name="Amazing"/>
@@ -667,7 +667,7 @@
     </matches>
     <matches DisplayName="29 | 3 | Roccat   vs.   Splyce" matchID="29" bestOF="Regular" teams="//@teams.7 //@teams.0" week="3" winner="//@teams.0">
       <games gameID="1002580214" redTeam="//@teams.7" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="63" totalGolds="162104" totalWards="341" totalWardsKilled="137" totalVisionWards="153" totalMinionKills="2632" totalMonsterKills="498" name="1002580214"/>
+        <gameStats duration="43.95" winner="blue" totalKills="23" totalDeaths="23" totalAssist="63" totalGolds="162104" totalWards="341" totalWardsKilled="137" totalVisionWards="153" totalMinionKills="2632" totalMonsterKills="498"/>
         <gameTeamStat team="//@teams.7" totalKills="5" totalDeaths="18" totalAssist="13" totalGolds="76228" totalWards="157" totalWardsKilled="55" totalVisionWards="77" totalMinionKills="1319" totalMonsterKills="258" name="Roccat"/>
         <gameTeamStat team="//@teams.0" totalKills="18" totalDeaths="5" totalAssist="50" totalGolds="85876" totalWards="184" totalWardsKilled="82" totalVisionWards="76" totalMinionKills="1313" totalMonsterKills="240" name="Splyce"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="1" deaths="4" assist="3" golds="15566" wards="24" wardsKilled="14" visionWards="3" minionKills="343" monsterKills="20" champion="//@champions.15" name="Blanc"/>
@@ -684,7 +684,7 @@
     </matches>
     <matches DisplayName="30 | 3 | Unicorns of Love   vs.   G2 Esports" matchID="30" bestOF="Regular" teams="//@teams.5 //@teams.6" week="3" winner="//@teams.6">
       <games gameID="1002580223" redTeam="//@teams.5" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="13" totalDeaths="13" totalAssist="25" totalGolds="88525" totalWards="134" totalWardsKilled="42" totalVisionWards="51" totalMinionKills="1517" totalMonsterKills="268" name="1002580223"/>
+        <gameStats duration="24.483334" winner="blue" totalKills="13" totalDeaths="13" totalAssist="25" totalGolds="88525" totalWards="134" totalWardsKilled="42" totalVisionWards="51" totalMinionKills="1517" totalMonsterKills="268"/>
         <gameTeamStat team="//@teams.5" totalKills="2" totalDeaths="11" totalAssist="4" totalGolds="37894" totalWards="64" totalWardsKilled="17" totalVisionWards="23" totalMinionKills="733" totalMonsterKills="108" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.6" totalKills="11" totalDeaths="2" totalAssist="21" totalGolds="50631" totalWards="70" totalWardsKilled="25" totalVisionWards="28" totalMinionKills="784" totalMonsterKills="160" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="5" assist="4" golds="11928" wards="10" wardsKilled="3" visionWards="2" minionKills="232" monsterKills="4" champion="//@champions.11" name="Hjarnan"/>
@@ -701,7 +701,7 @@
     </matches>
     <matches DisplayName="31 | 4 | H2K   vs.   Unicorns of Love" matchID="31" bestOF="Regular" teams="//@teams.3 //@teams.5" week="4" winner="//@teams.5">
       <games gameID="1002590056" redTeam="//@teams.3" blueTeam="//@teams.5" winningSide="blue" winningTeam="//@teams.5">
-        <gameStats totalKills="18" totalDeaths="18" totalAssist="40" totalGolds="118555" totalWards="219" totalWardsKilled="77" totalVisionWards="81" totalMinionKills="1864" totalMonsterKills="392" name="1002590056"/>
+        <gameStats duration="34.4" winner="blue" totalKills="18" totalDeaths="18" totalAssist="40" totalGolds="118555" totalWards="219" totalWardsKilled="77" totalVisionWards="81" totalMinionKills="1864" totalMonsterKills="392"/>
         <gameTeamStat team="//@teams.3" totalKills="7" totalDeaths="11" totalAssist="21" totalGolds="55332" totalWards="104" totalWardsKilled="43" totalVisionWards="42" totalMinionKills="973" totalMonsterKills="166" name="H2K"/>
         <gameTeamStat team="//@teams.5" totalKills="11" totalDeaths="7" totalAssist="19" totalGolds="63223" totalWards="115" totalWardsKilled="34" totalVisionWards="39" totalMinionKills="891" totalMonsterKills="226" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.3/@player.0" deaths="4" assist="7" golds="7037" wards="52" wardsKilled="19" visionWards="15" minionKills="16" champion="//@champions.32" name="promisq"/>
@@ -718,7 +718,7 @@
     </matches>
     <matches DisplayName="32 | 4 | Splyce   vs.   Schalke 04" matchID="32" bestOF="Regular" teams="//@teams.0 //@teams.4" week="4" winner="//@teams.4">
       <games gameID="1002590070" redTeam="//@teams.0" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="47" totalGolds="105297" totalWards="208" totalWardsKilled="88" totalVisionWards="88" totalMinionKills="1743" totalMonsterKills="353" name="1002590070"/>
+        <gameStats duration="29.833334" winner="blue" totalKills="17" totalDeaths="17" totalAssist="47" totalGolds="105297" totalWards="208" totalWardsKilled="88" totalVisionWards="88" totalMinionKills="1743" totalMonsterKills="353"/>
         <gameTeamStat team="//@teams.0" totalKills="4" totalDeaths="13" totalAssist="9" totalGolds="45178" totalWards="93" totalWardsKilled="49" totalVisionWards="47" totalMinionKills="835" totalMonsterKills="170" name="Splyce"/>
         <gameTeamStat team="//@teams.4" totalKills="13" totalDeaths="4" totalAssist="38" totalGolds="60119" totalWards="115" totalWardsKilled="39" totalVisionWards="41" totalMinionKills="908" totalMonsterKills="183" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="2" assist="8" golds="10201" wards="11" wardsKilled="8" visionWards="17" minionKills="31" monsterKills="107" champion="//@champions.68" name="Amazing"/>
@@ -735,7 +735,7 @@
     </matches>
     <matches DisplayName="33 | 4 | Giants Gaming   vs.   G2 Esports" matchID="33" bestOF="Regular" teams="//@teams.2 //@teams.6" week="4" winner="//@teams.2">
       <games gameID="1002590076" redTeam="//@teams.2" blueTeam="//@teams.6" winningTeam="//@teams.2">
-        <gameStats totalKills="37" totalDeaths="38" totalAssist="81" totalGolds="133255" totalWards="246" totalWardsKilled="97" totalVisionWards="105" totalMinionKills="2034" totalMonsterKills="456" name="1002590076"/>
+        <gameStats duration="37.75" totalKills="37" totalDeaths="38" totalAssist="81" totalGolds="133255" totalWards="246" totalWardsKilled="97" totalVisionWards="105" totalMinionKills="2034" totalMonsterKills="456"/>
         <gameTeamStat team="//@teams.2" totalKills="20" totalDeaths="18" totalAssist="46" totalGolds="67823" totalWards="138" totalWardsKilled="56" totalVisionWards="41" totalMinionKills="973" totalMonsterKills="214" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.6" totalKills="17" totalDeaths="20" totalAssist="35" totalGolds="65432" totalWards="108" totalWardsKilled="41" totalVisionWards="64" totalMinionKills="1061" totalMonsterKills="242" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="5" deaths="5" assist="8" golds="15374" wards="9" wardsKilled="3" visionWards="10" minionKills="353" monsterKills="9" champion="//@champions.44" name="Hjarnan"/>
@@ -752,7 +752,7 @@
     </matches>
     <matches DisplayName="34 | 4 | Roccat   vs.   Fnatic" matchID="34" bestOF="Regular" teams="//@teams.7 //@teams.8" week="4" winner="//@teams.8">
       <games gameID="1002590088" redTeam="//@teams.7" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="42" totalGolds="96175" totalWards="216" totalWardsKilled="73" totalVisionWards="68" totalMinionKills="1510" totalMonsterKills="330" name="1002590088"/>
+        <gameStats duration="27.433332" winner="blue" totalKills="17" totalDeaths="17" totalAssist="42" totalGolds="96175" totalWards="216" totalWardsKilled="73" totalVisionWards="68" totalMinionKills="1510" totalMonsterKills="330"/>
         <gameTeamStat team="//@teams.7" totalKills="6" totalDeaths="11" totalAssist="13" totalGolds="41115" totalWards="100" totalWardsKilled="38" totalVisionWards="30" totalMinionKills="734" totalMonsterKills="114" name="Roccat"/>
         <gameTeamStat team="//@teams.8" totalKills="11" totalDeaths="6" totalAssist="29" totalGolds="55060" totalWards="116" totalWardsKilled="35" totalVisionWards="38" totalMinionKills="776" totalMonsterKills="216" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="5" deaths="1" assist="4" golds="13045" wards="10" wardsKilled="6" visionWards="15" minionKills="24" monsterKills="186" champion="//@champions.66" name="Broxah"/>
@@ -769,7 +769,7 @@
     </matches>
     <matches DisplayName="35 | 4 | Vitality   vs.   Misfits" matchID="35" bestOF="Regular" teams="//@teams.1 //@teams.9" week="4" winner="//@teams.9">
       <games gameID="1002590098" redTeam="//@teams.1" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="29" totalDeaths="29" totalAssist="75" totalGolds="122640" totalWards="255" totalWardsKilled="86" totalVisionWards="97" totalMinionKills="1782" totalMonsterKills="401" name="1002590098"/>
+        <gameStats duration="35.983334" winner="blue" totalKills="29" totalDeaths="29" totalAssist="75" totalGolds="122640" totalWards="255" totalWardsKilled="86" totalVisionWards="97" totalMinionKills="1782" totalMonsterKills="401"/>
         <gameTeamStat team="//@teams.1" totalKills="11" totalDeaths="18" totalAssist="28" totalGolds="55317" totalWards="108" totalWardsKilled="39" totalVisionWards="60" totalMinionKills="895" totalMonsterKills="177" name="Vitality"/>
         <gameTeamStat team="//@teams.9" totalKills="18" totalDeaths="11" totalAssist="47" totalGolds="67323" totalWards="147" totalWardsKilled="47" totalVisionWards="37" totalMinionKills="887" totalMonsterKills="224" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="1" assist="11" golds="13234" wards="17" wardsKilled="4" visionWards="2" minionKills="262" monsterKills="1" champion="//@champions.22" name="Alphari"/>
@@ -786,7 +786,7 @@
     </matches>
     <matches DisplayName="36 | 5 | H2K   vs.   Schalke 04" matchID="36" bestOF="Regular" teams="//@teams.3 //@teams.4" week="5" winner="//@teams.4">
       <games gameID="1002590120" redTeam="//@teams.3" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="54" totalGolds="129874" totalWards="255" totalWardsKilled="97" totalVisionWards="121" totalMinionKills="2039" totalMonsterKills="432" name="1002590120"/>
+        <gameStats duration="37.916668" winner="blue" totalKills="23" totalDeaths="23" totalAssist="54" totalGolds="129874" totalWards="255" totalWardsKilled="97" totalVisionWards="121" totalMinionKills="2039" totalMonsterKills="432"/>
         <gameTeamStat team="//@teams.3" totalKills="9" totalDeaths="14" totalAssist="15" totalGolds="64715" totalWards="114" totalWardsKilled="42" totalVisionWards="67" totalMinionKills="1002" totalMonsterKills="269" name="H2K"/>
         <gameTeamStat team="//@teams.4" totalKills="14" totalDeaths="9" totalAssist="39" totalGolds="65159" totalWards="141" totalWardsKilled="55" totalVisionWards="54" totalMinionKills="1037" totalMonsterKills="163" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.3/@player.0" kills="1" deaths="2" assist="6" golds="9254" wards="60" wardsKilled="22" visionWards="19" minionKills="69" champion="//@champions.23" name="promisq"/>
@@ -803,7 +803,7 @@
     </matches>
     <matches DisplayName="37 | 5 | Misfits   vs.   Roccat" matchID="37" bestOF="Regular" teams="//@teams.9 //@teams.7" week="5" winner="//@teams.9">
       <games gameID="1002590126" redTeam="//@teams.9" blueTeam="//@teams.7" winningTeam="//@teams.9">
-        <gameStats totalKills="21" totalDeaths="21" totalAssist="58" totalGolds="130914" totalWards="289" totalWardsKilled="119" totalVisionWards="120" totalMinionKills="2193" totalMonsterKills="450" name="1002590126"/>
+        <gameStats duration="36.516666" totalKills="21" totalDeaths="21" totalAssist="58" totalGolds="130914" totalWards="289" totalWardsKilled="119" totalVisionWards="120" totalMinionKills="2193" totalMonsterKills="450"/>
         <gameTeamStat team="//@teams.9" totalKills="14" totalDeaths="7" totalAssist="41" totalGolds="71907" totalWards="153" totalWardsKilled="68" totalVisionWards="62" totalMinionKills="1110" totalMonsterKills="244" name="Misfits"/>
         <gameTeamStat team="//@teams.7" totalKills="7" totalDeaths="14" totalAssist="17" totalGolds="59007" totalWards="136" totalWardsKilled="51" totalVisionWards="58" totalMinionKills="1083" totalMonsterKills="206" name="Roccat"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="3" assist="7" golds="17723" wards="24" wardsKilled="7" visionWards="5" minionKills="340" monsterKills="40" champion="//@champions.47" name="Alphari"/>
@@ -820,7 +820,7 @@
     </matches>
     <matches DisplayName="38 | 5 | Fnatic   vs.   Unicorns of Love" matchID="38" bestOF="Regular" teams="//@teams.8 //@teams.5" week="5" winner="//@teams.8">
       <games gameID="1002590133" redTeam="//@teams.8" blueTeam="//@teams.5" winningTeam="//@teams.8">
-        <gameStats totalKills="33" totalDeaths="33" totalAssist="59" totalGolds="99123" totalWards="145" totalWardsKilled="50" totalVisionWards="48" totalMinionKills="1324" totalMonsterKills="285" name="1002590133"/>
+        <gameStats duration="26.416666" totalKills="33" totalDeaths="33" totalAssist="59" totalGolds="99123" totalWards="145" totalWardsKilled="50" totalVisionWards="48" totalMinionKills="1324" totalMonsterKills="285"/>
         <gameTeamStat team="//@teams.8" totalKills="23" totalDeaths="10" totalAssist="36" totalGolds="57357" totalWards="67" totalWardsKilled="28" totalVisionWards="18" totalMinionKills="693" totalMonsterKills="156" name="Fnatic"/>
         <gameTeamStat team="//@teams.5" totalKills="10" totalDeaths="23" totalAssist="23" totalGolds="41766" totalWards="78" totalWardsKilled="22" totalVisionWards="30" totalMinionKills="631" totalMonsterKills="129" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="1" deaths="1" assist="12" golds="10009" wards="11" wardsKilled="8" visionWards="5" minionKills="8" monsterKills="132" champion="//@champions.68" name="Broxah"/>
@@ -837,7 +837,7 @@
     </matches>
     <matches DisplayName="39 | 5 | Vitality   vs.   G2 Esports" matchID="39" bestOF="Regular" teams="//@teams.1 //@teams.6" week="5" winner="//@teams.6">
       <games gameID="1002590140" redTeam="//@teams.1" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="59" totalGolds="131126" totalWards="290" totalWardsKilled="99" totalVisionWards="101" totalMinionKills="2074" totalMonsterKills="402" name="1002590140"/>
+        <gameStats duration="38.4" winner="blue" totalKills="25" totalDeaths="25" totalAssist="59" totalGolds="131126" totalWards="290" totalWardsKilled="99" totalVisionWards="101" totalMinionKills="2074" totalMonsterKills="402"/>
         <gameTeamStat team="//@teams.1" totalKills="8" totalDeaths="17" totalAssist="12" totalGolds="59246" totalWards="118" totalWardsKilled="45" totalVisionWards="64" totalMinionKills="1044" totalMonsterKills="171" name="Vitality"/>
         <gameTeamStat team="//@teams.6" totalKills="17" totalDeaths="8" totalAssist="47" totalGolds="71880" totalWards="172" totalWardsKilled="54" totalVisionWards="37" totalMinionKills="1030" totalMonsterKills="231" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="8" deaths="2" assist="6" golds="16721" wards="15" wardsKilled="6" visionWards="4" minionKills="321" monsterKills="24" champion="//@champions.79" name="Hjarnan"/>
@@ -854,7 +854,7 @@
     </matches>
     <matches DisplayName="40 | 5 | Giants Gaming   vs.   H2K" matchID="40" bestOF="Regular" teams="//@teams.2 //@teams.3" week="5" winner="//@teams.2">
       <games gameID="1002590163" redTeam="//@teams.2" blueTeam="//@teams.3" winningTeam="//@teams.2">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="56" totalGolds="125677" totalWards="237" totalWardsKilled="85" totalVisionWards="78" totalMinionKills="1990" totalMonsterKills="410" name="1002590163"/>
+        <gameStats duration="35.116665" totalKills="23" totalDeaths="23" totalAssist="56" totalGolds="125677" totalWards="237" totalWardsKilled="85" totalVisionWards="78" totalMinionKills="1990" totalMonsterKills="410"/>
         <gameTeamStat team="//@teams.2" totalKills="14" totalDeaths="9" totalAssist="34" totalGolds="67197" totalWards="115" totalWardsKilled="42" totalVisionWards="46" totalMinionKills="1006" totalMonsterKills="201" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.3" totalKills="9" totalDeaths="14" totalAssist="22" totalGolds="58480" totalWards="122" totalWardsKilled="43" totalVisionWards="32" totalMinionKills="984" totalMonsterKills="209" name="H2K"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="6" deaths="2" assist="4" golds="15935" wards="12" wardsKilled="4" visionWards="5" minionKills="341" champion="//@champions.2" name="Betsy"/>
@@ -871,7 +871,7 @@
     </matches>
     <matches DisplayName="41 | 5 | Fnatic   vs.   Misfits" matchID="41" bestOF="Regular" teams="//@teams.8 //@teams.9" week="5" winner="//@teams.8">
       <games gameID="1002590175" redTeam="//@teams.8" blueTeam="//@teams.9" winningTeam="//@teams.8">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="31" totalGolds="99591" totalWards="175" totalWardsKilled="70" totalVisionWards="78" totalMinionKills="1706" totalMonsterKills="345" name="1002590175"/>
+        <gameStats duration="28.833334" totalKills="15" totalDeaths="15" totalAssist="31" totalGolds="99591" totalWards="175" totalWardsKilled="70" totalVisionWards="78" totalMinionKills="1706" totalMonsterKills="345"/>
         <gameTeamStat team="//@teams.8" totalKills="11" totalDeaths="4" totalAssist="26" totalGolds="56019" totalWards="76" totalWardsKilled="29" totalVisionWards="46" totalMinionKills="867" totalMonsterKills="206" name="Fnatic"/>
         <gameTeamStat team="//@teams.9" totalKills="4" totalDeaths="11" totalAssist="5" totalGolds="43572" totalWards="99" totalWardsKilled="41" totalVisionWards="32" totalMinionKills="839" totalMonsterKills="139" name="Misfits"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="4" assist="5" golds="11719" wards="8" wardsKilled="6" visionWards="12" minionKills="18" monsterKills="156" champion="//@champions.68" name="Broxah"/>
@@ -888,7 +888,7 @@
     </matches>
     <matches DisplayName="42 | 5 | G2 Esports   vs.   Roccat" matchID="42" bestOF="Regular" teams="//@teams.6 //@teams.7" week="5" winner="//@teams.7">
       <games gameID="1002590182" redTeam="//@teams.6" blueTeam="//@teams.7" winningSide="blue" winningTeam="//@teams.7">
-        <gameStats totalKills="11" totalDeaths="11" totalAssist="27" totalGolds="98899" totalWards="192" totalWardsKilled="84" totalVisionWards="82" totalMinionKills="1697" totalMonsterKills="347" name="1002590182"/>
+        <gameStats duration="28.733334" winner="blue" totalKills="11" totalDeaths="11" totalAssist="27" totalGolds="98899" totalWards="192" totalWardsKilled="84" totalVisionWards="82" totalMinionKills="1697" totalMonsterKills="347"/>
         <gameTeamStat team="//@teams.6" totalDeaths="11" totalGolds="42459" totalWards="80" totalWardsKilled="40" totalVisionWards="43" totalMinionKills="851" totalMonsterKills="134" name="G2 Esports"/>
         <gameTeamStat team="//@teams.7" totalKills="11" totalAssist="27" totalGolds="56440" totalWards="112" totalWardsKilled="44" totalVisionWards="39" totalMinionKills="846" totalMonsterKills="213" name="Roccat"/>
         <gamePlayerStats player="//@teams.6/@player.0" deaths="1" golds="9627" wards="10" wardsKilled="4" visionWards="4" minionKills="258" monsterKills="2" champion="//@champions.62" name="Hjarnan"/>
@@ -905,7 +905,7 @@
     </matches>
     <matches DisplayName="43 | 4 | Vitality   vs.   H2K" matchID="43" bestOF="Regular" teams="//@teams.1 //@teams.3" week="4" winner="//@teams.1">
       <games gameID="1002600014" redTeam="//@teams.1" blueTeam="//@teams.3" winningTeam="//@teams.1">
-        <gameStats totalKills="27" totalDeaths="27" totalAssist="60" totalGolds="97020" totalWards="135" totalWardsKilled="41" totalVisionWards="39" totalMinionKills="1345" totalMonsterKills="313" name="1002600014"/>
+        <gameStats duration="26.766666" totalKills="27" totalDeaths="27" totalAssist="60" totalGolds="97020" totalWards="135" totalWardsKilled="41" totalVisionWards="39" totalMinionKills="1345" totalMonsterKills="313"/>
         <gameTeamStat team="//@teams.1" totalKills="19" totalDeaths="8" totalAssist="46" totalGolds="54106" totalWards="67" totalWardsKilled="19" totalVisionWards="23" totalMinionKills="642" totalMonsterKills="174" name="Vitality"/>
         <gameTeamStat team="//@teams.3" totalKills="8" totalDeaths="19" totalAssist="14" totalGolds="42914" totalWards="68" totalWardsKilled="22" totalVisionWards="16" totalMinionKills="703" totalMonsterKills="139" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.0" deaths="6" assist="4" golds="5588" wards="35" wardsKilled="11" visionWards="7" minionKills="44" champion="//@champions.23" name="promisq"/>
@@ -922,7 +922,7 @@
     </matches>
     <matches DisplayName="44 | 4 | Schalke 04   vs.   Giants Gaming" matchID="44" bestOF="Regular" teams="//@teams.4 //@teams.2" week="4" winner="//@teams.4">
       <games gameID="1002600025" redTeam="//@teams.4" blueTeam="//@teams.2" winningTeam="//@teams.4">
-        <gameStats totalKills="26" totalDeaths="26" totalAssist="71" totalGolds="138856" totalWards="315" totalWardsKilled="117" totalVisionWards="134" totalMinionKills="2293" totalMonsterKills="408" name="1002600025"/>
+        <gameStats duration="39.333332" totalKills="26" totalDeaths="26" totalAssist="71" totalGolds="138856" totalWards="315" totalWardsKilled="117" totalVisionWards="134" totalMinionKills="2293" totalMonsterKills="408"/>
         <gameTeamStat team="//@teams.4" totalKills="16" totalDeaths="10" totalAssist="43" totalGolds="73145" totalWards="171" totalWardsKilled="56" totalVisionWards="61" totalMinionKills="1174" totalMonsterKills="193" name="Schalke 04"/>
         <gameTeamStat team="//@teams.2" totalKills="10" totalDeaths="16" totalAssist="28" totalGolds="65711" totalWards="144" totalWardsKilled="61" totalVisionWards="73" totalMinionKills="1119" totalMonsterKills="215" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="1" deaths="3" assist="5" golds="13596" wards="20" wardsKilled="11" visionWards="14" minionKills="334" monsterKills="16" champion="//@champions.35" name="Betsy"/>
@@ -939,7 +939,7 @@
     </matches>
     <matches DisplayName="45 | 4 | Unicorns of Love   vs.   Roccat" matchID="45" bestOF="Regular" teams="//@teams.5 //@teams.7" week="4" winner="//@teams.7">
       <games gameID="1002600033" redTeam="//@teams.5" blueTeam="//@teams.7" winningSide="blue" winningTeam="//@teams.7">
-        <gameStats totalKills="28" totalDeaths="28" totalAssist="69" totalGolds="120018" totalWards="235" totalWardsKilled="73" totalVisionWards="96" totalMinionKills="1889" totalMonsterKills="331" name="1002600033"/>
+        <gameStats duration="33.35" winner="blue" totalKills="28" totalDeaths="28" totalAssist="69" totalGolds="120018" totalWards="235" totalWardsKilled="73" totalVisionWards="96" totalMinionKills="1889" totalMonsterKills="331"/>
         <gameTeamStat team="//@teams.5" totalKills="8" totalDeaths="20" totalAssist="21" totalGolds="53855" totalWards="113" totalWardsKilled="29" totalVisionWards="48" totalMinionKills="936" totalMonsterKills="125" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.7" totalKills="20" totalDeaths="8" totalAssist="48" totalGolds="66163" totalWards="122" totalWardsKilled="44" totalVisionWards="48" totalMinionKills="953" totalMonsterKills="206" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="4" deaths="1" assist="14" golds="14617" wards="17" wardsKilled="7" visionWards="4" minionKills="261" monsterKills="28" champion="//@champions.15" name="Blanc"/>
@@ -956,7 +956,7 @@
     </matches>
     <matches DisplayName="46 | 4 | Fnatic   vs.   Splyce" matchID="46" bestOF="Regular" teams="//@teams.8 //@teams.0" week="4" winner="//@teams.0">
       <games gameID="1002600040" redTeam="//@teams.8" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="31" totalDeaths="31" totalAssist="77" totalGolds="114392" totalWards="189" totalWardsKilled="74" totalVisionWards="58" totalMinionKills="1612" totalMonsterKills="386" name="1002600040"/>
+        <gameStats duration="32.4" winner="blue" totalKills="31" totalDeaths="31" totalAssist="77" totalGolds="114392" totalWards="189" totalWardsKilled="74" totalVisionWards="58" totalMinionKills="1612" totalMonsterKills="386"/>
         <gameTeamStat team="//@teams.8" totalKills="6" totalDeaths="25" totalAssist="15" totalGolds="51164" totalWards="87" totalWardsKilled="26" totalVisionWards="20" totalMinionKills="816" totalMonsterKills="202" name="Fnatic"/>
         <gameTeamStat team="//@teams.0" totalKills="25" totalDeaths="6" totalAssist="62" totalGolds="63228" totalWards="102" totalWardsKilled="48" totalVisionWards="38" totalMinionKills="796" totalMonsterKills="184" name="Splyce"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" deaths="3" assist="2" golds="11379" wards="16" wardsKilled="6" visionWards="6" minionKills="32" monsterKills="177" champion="//@champions.66" name="Broxah"/>
@@ -973,7 +973,7 @@
     </matches>
     <matches DisplayName="47 | 4 | G2 Esports   vs.   Misfits" matchID="47" bestOF="Regular" teams="//@teams.6 //@teams.9" week="4" winner="//@teams.9">
       <games gameID="1002600047" redTeam="//@teams.6" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="38" totalGolds="134843" totalWards="261" totalWardsKilled="107" totalVisionWards="115" totalMinionKills="2149" totalMonsterKills="442" name="1002600047"/>
+        <gameStats duration="38.65" winner="blue" totalKills="15" totalDeaths="15" totalAssist="38" totalGolds="134843" totalWards="261" totalWardsKilled="107" totalVisionWards="115" totalMinionKills="2149" totalMonsterKills="442"/>
         <gameTeamStat team="//@teams.6" totalKills="3" totalDeaths="12" totalAssist="9" totalGolds="64027" totalWards="128" totalWardsKilled="49" totalVisionWards="62" totalMinionKills="1128" totalMonsterKills="210" name="G2 Esports"/>
         <gameTeamStat team="//@teams.9" totalKills="12" totalDeaths="3" totalAssist="29" totalGolds="70816" totalWards="133" totalWardsKilled="58" totalVisionWards="53" totalMinionKills="1021" totalMonsterKills="232" name="Misfits"/>
         <gamePlayerStats player="//@teams.6/@player.0" deaths="2" assist="2" golds="13795" wards="11" wardsKilled="4" visionWards="9" minionKills="335" monsterKills="8" champion="//@champions.44" name="Hjarnan"/>
@@ -990,7 +990,7 @@
     </matches>
     <matches DisplayName="48 | 5 | Giants Gaming   vs.   Splyce" matchID="48" bestOF="Regular" teams="//@teams.2 //@teams.0" week="5" winner="//@teams.0">
       <games gameID="1002600100" redTeam="//@teams.2" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="36" totalDeaths="36" totalAssist="83" totalGolds="187873" totalWards="394" totalWardsKilled="138" totalVisionWards="177" totalMinionKills="2802" totalMonsterKills="626" name="1002600100"/>
+        <gameStats duration="53.6" winner="blue" totalKills="36" totalDeaths="36" totalAssist="83" totalGolds="187873" totalWards="394" totalWardsKilled="138" totalVisionWards="177" totalMinionKills="2802" totalMonsterKills="626"/>
         <gameTeamStat team="//@teams.2" totalKills="16" totalDeaths="20" totalAssist="45" totalGolds="91740" totalWards="204" totalWardsKilled="74" totalVisionWards="81" totalMinionKills="1377" totalMonsterKills="340" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.0" totalKills="20" totalDeaths="16" totalAssist="38" totalGolds="96133" totalWards="190" totalWardsKilled="64" totalVisionWards="96" totalMinionKills="1425" totalMonsterKills="286" name="Splyce"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="1" deaths="3" assist="12" golds="19347" wards="22" wardsKilled="9" visionWards="16" minionKills="410" monsterKills="58" champion="//@champions.50" name="Betsy"/>
@@ -1007,7 +1007,7 @@
     </matches>
     <matches DisplayName="49 | 5 | Unicorns of Love   vs.   Schalke 04" matchID="49" bestOF="Regular" teams="//@teams.5 //@teams.4" week="5" winner="//@teams.4">
       <games gameID="1002600146" redTeam="//@teams.5" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="27" totalGolds="122245" totalWards="272" totalWardsKilled="87" totalVisionWards="99" totalMinionKills="2084" totalMonsterKills="377" name="1002600146"/>
+        <gameStats duration="35.083332" winner="blue" totalKills="15" totalDeaths="15" totalAssist="27" totalGolds="122245" totalWards="272" totalWardsKilled="87" totalVisionWards="99" totalMinionKills="2084" totalMonsterKills="377"/>
         <gameTeamStat team="//@teams.5" totalKills="8" totalDeaths="7" totalAssist="13" totalGolds="60446" totalWards="113" totalWardsKilled="36" totalVisionWards="64" totalMinionKills="1044" totalMonsterKills="198" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.4" totalKills="7" totalDeaths="8" totalAssist="14" totalGolds="61799" totalWards="159" totalWardsKilled="51" totalVisionWards="35" totalMinionKills="1040" totalMonsterKills="179" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="1" assist="4" golds="8006" wards="50" wardsKilled="15" visionWards="8" minionKills="49" champion="//@champions.31" name="Amazing"/>
@@ -1024,7 +1024,7 @@
     </matches>
     <matches DisplayName="50 | 5 | Vitality   vs.   Splyce" matchID="50" bestOF="Regular" teams="//@teams.1 //@teams.0" week="5" winner="//@teams.0">
       <games gameID="1002600164" redTeam="//@teams.1" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="21" totalDeaths="21" totalAssist="43" totalGolds="105258" totalWards="196" totalWardsKilled="81" totalVisionWards="60" totalMinionKills="1672" totalMonsterKills="313" name="1002600164"/>
+        <gameStats duration="31.95" winner="blue" totalKills="21" totalDeaths="21" totalAssist="43" totalGolds="105258" totalWards="196" totalWardsKilled="81" totalVisionWards="60" totalMinionKills="1672" totalMonsterKills="313"/>
         <gameTeamStat team="//@teams.1" totalKills="2" totalDeaths="19" totalAssist="6" totalGolds="46500" totalWards="100" totalWardsKilled="38" totalVisionWards="27" totalMinionKills="877" totalMonsterKills="148" name="Vitality"/>
         <gameTeamStat team="//@teams.0" totalKills="19" totalDeaths="2" totalAssist="37" totalGolds="58758" totalWards="96" totalWardsKilled="43" totalVisionWards="33" totalMinionKills="795" totalMonsterKills="165" name="Splyce"/>
         <gamePlayerStats player="//@teams.0/@player.0" kills="3" deaths="1" assist="8" golds="8696" wards="38" wardsKilled="14" visionWards="9" minionKills="50" champion="//@champions.23" name="kaSing"/>
@@ -1041,7 +1041,7 @@
     </matches>
     <matches DisplayName="51 | 6 | Unicorns of Love   vs.   Misfits" matchID="51" bestOF="Regular" teams="//@teams.5 //@teams.9" week="6" winner="//@teams.9">
       <games gameID="1002610011" redTeam="//@teams.5" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="45" totalGolds="103578" totalWards="185" totalWardsKilled="70" totalVisionWards="72" totalMinionKills="1501" totalMonsterKills="319" name="1002610011"/>
+        <gameStats duration="29.05" winner="blue" totalKills="20" totalDeaths="20" totalAssist="45" totalGolds="103578" totalWards="185" totalWardsKilled="70" totalVisionWards="72" totalMinionKills="1501" totalMonsterKills="319"/>
         <gameTeamStat team="//@teams.5" totalKills="6" totalDeaths="14" totalAssist="18" totalGolds="45146" totalWards="97" totalWardsKilled="36" totalVisionWards="29" totalMinionKills="757" totalMonsterKills="147" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.9" totalKills="14" totalDeaths="6" totalAssist="27" totalGolds="58432" totalWards="88" totalWardsKilled="34" totalVisionWards="43" totalMinionKills="744" totalMonsterKills="172" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="4" assist="2" golds="12016" wards="14" wardsKilled="4" visionWards="3" minionKills="225" monsterKills="2" champion="//@champions.18" name="Alphari"/>
@@ -1058,7 +1058,7 @@
     </matches>
     <matches DisplayName="52 | 6 | Roccat   vs.   H2K" matchID="52" bestOF="Regular" teams="//@teams.7 //@teams.3" week="6" winner="//@teams.7">
       <games gameID="1002610026" redTeam="//@teams.7" blueTeam="//@teams.3" winningTeam="//@teams.7">
-        <gameStats totalKills="12" totalDeaths="13" totalAssist="28" totalGolds="86617" totalWards="151" totalWardsKilled="54" totalVisionWards="57" totalMinionKills="1451" totalMonsterKills="277" name="1002610026"/>
+        <gameStats duration="24.833334" totalKills="12" totalDeaths="13" totalAssist="28" totalGolds="86617" totalWards="151" totalWardsKilled="54" totalVisionWards="57" totalMinionKills="1451" totalMonsterKills="277"/>
         <gameTeamStat team="//@teams.7" totalKills="10" totalDeaths="3" totalAssist="25" totalGolds="49149" totalWards="80" totalWardsKilled="31" totalVisionWards="24" totalMinionKills="749" totalMonsterKills="138" name="Roccat"/>
         <gameTeamStat team="//@teams.3" totalKills="2" totalDeaths="10" totalAssist="3" totalGolds="37468" totalWards="71" totalWardsKilled="23" totalVisionWards="33" totalMinionKills="702" totalMonsterKills="139" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.5" kills="1" deaths="3" assist="1" golds="7947" wards="13" wardsKilled="4" visionWards="9" minionKills="22" monsterKills="128" champion="//@champions.66" name="Caedrel"/>
@@ -1075,7 +1075,7 @@
     </matches>
     <matches DisplayName="53 | 6 | Giants Gaming   vs.   Vitality" matchID="53" bestOF="Regular" teams="//@teams.2 //@teams.1" week="6" winner="//@teams.1">
       <games gameID="1002610035" redTeam="//@teams.2" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="134690" totalWards="274" totalWardsKilled="97" totalVisionWards="99" totalMinionKills="2042" totalMonsterKills="418" name="1002610035"/>
+        <gameStats duration="38.933334" winner="blue" totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="134690" totalWards="274" totalWardsKilled="97" totalVisionWards="99" totalMinionKills="2042" totalMonsterKills="418"/>
         <gameTeamStat team="//@teams.2" totalKills="12" totalDeaths="12" totalAssist="26" totalGolds="64824" totalWards="150" totalWardsKilled="53" totalVisionWards="40" totalMinionKills="981" totalMonsterKills="192" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.1" totalKills="12" totalDeaths="12" totalAssist="27" totalGolds="69866" totalWards="124" totalWardsKilled="44" totalVisionWards="59" totalMinionKills="1061" totalMonsterKills="226" name="Vitality"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="4" deaths="3" assist="6" golds="15611" wards="11" wardsKilled="2" visionWards="1" minionKills="292" monsterKills="50" champion="//@champions.16" name="Betsy"/>
@@ -1092,7 +1092,7 @@
     </matches>
     <matches DisplayName="54 | 6 | Splyce   vs.   G2 Esports" matchID="54" bestOF="Regular" teams="//@teams.0 //@teams.6" week="6" winner="//@teams.6">
       <games gameID="1002610045" redTeam="//@teams.0" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="33" totalGolds="90477" totalWards="147" totalWardsKilled="60" totalVisionWards="54" totalMinionKills="1500" totalMonsterKills="298" name="1002610045"/>
+        <gameStats duration="25.7" winner="blue" totalKills="15" totalDeaths="15" totalAssist="33" totalGolds="90477" totalWards="147" totalWardsKilled="60" totalVisionWards="54" totalMinionKills="1500" totalMonsterKills="298"/>
         <gameTeamStat team="//@teams.0" totalKills="2" totalDeaths="13" totalAssist="3" totalGolds="37003" totalWards="72" totalWardsKilled="28" totalVisionWards="25" totalMinionKills="731" totalMonsterKills="101" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="13" totalDeaths="2" totalAssist="30" totalGolds="53474" totalWards="75" totalWardsKilled="32" totalVisionWards="29" totalMinionKills="769" totalMonsterKills="197" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="4" assist="3" golds="11150" wards="9" wardsKilled="3" visionWards="7" minionKills="233" monsterKills="8" champion="//@champions.11" name="Hjarnan"/>
@@ -1109,7 +1109,7 @@
     </matches>
     <matches DisplayName="55 | 6 | Schalke 04   vs.   Fnatic" matchID="55" bestOF="Regular" teams="//@teams.4 //@teams.8" week="6" winner="//@teams.8">
       <games gameID="1002610053" redTeam="//@teams.4" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="52" totalGolds="96463" totalWards="175" totalWardsKilled="70" totalVisionWards="69" totalMinionKills="1440" totalMonsterKills="316" name="1002610053"/>
+        <gameStats duration="27.95" winner="blue" totalKills="25" totalDeaths="25" totalAssist="52" totalGolds="96463" totalWards="175" totalWardsKilled="70" totalVisionWards="69" totalMinionKills="1440" totalMonsterKills="316"/>
         <gameTeamStat team="//@teams.4" totalKills="6" totalDeaths="19" totalAssist="10" totalGolds="39156" totalWards="93" totalWardsKilled="42" totalVisionWards="25" totalMinionKills="678" totalMonsterKills="100" name="Schalke 04"/>
         <gameTeamStat team="//@teams.8" totalKills="19" totalDeaths="6" totalAssist="42" totalGolds="57307" totalWards="82" totalWardsKilled="28" totalVisionWards="44" totalMinionKills="762" totalMonsterKills="216" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="6" assist="9" golds="13645" wards="6" wardsKilled="3" visionWards="13" minionKills="59" monsterKills="169" champion="//@champions.27" name="Broxah"/>
@@ -1126,7 +1126,7 @@
     </matches>
     <matches DisplayName="56 | 6 | Vitality   vs.   Roccat" matchID="56" bestOF="Regular" teams="//@teams.1 //@teams.7" week="6" winner="//@teams.1">
       <games gameID="1002610064" redTeam="//@teams.1" blueTeam="//@teams.7" winningTeam="//@teams.1">
-        <gameStats totalKills="27" totalDeaths="27" totalAssist="81" totalGolds="121911" totalWards="240" totalWardsKilled="84" totalVisionWards="93" totalMinionKills="1850" totalMonsterKills="358" name="1002610064"/>
+        <gameStats duration="35.683334" totalKills="27" totalDeaths="27" totalAssist="81" totalGolds="121911" totalWards="240" totalWardsKilled="84" totalVisionWards="93" totalMinionKills="1850" totalMonsterKills="358"/>
         <gameTeamStat team="//@teams.1" totalKills="20" totalDeaths="7" totalAssist="62" totalGolds="67824" totalWards="123" totalWardsKilled="44" totalVisionWards="50" totalMinionKills="938" totalMonsterKills="194" name="Vitality"/>
         <gameTeamStat team="//@teams.7" totalKills="7" totalDeaths="20" totalAssist="19" totalGolds="54087" totalWards="117" totalWardsKilled="40" totalVisionWards="43" totalMinionKills="912" totalMonsterKills="164" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="3" deaths="3" assist="2" golds="13590" wards="18" wardsKilled="9" visionWards="7" minionKills="304" monsterKills="28" champion="//@champions.21" name="Blanc"/>
@@ -1143,7 +1143,7 @@
     </matches>
     <matches DisplayName="57 | 6 | Unicorns of Love   vs.   Giants Gaming" matchID="57" bestOF="Regular" teams="//@teams.5 //@teams.2" week="6" winner="//@teams.5">
       <games gameID="1002610074" redTeam="//@teams.5" blueTeam="//@teams.2" winningTeam="//@teams.5">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="128001" totalWards="230" totalWardsKilled="88" totalVisionWards="84" totalMinionKills="2030" totalMonsterKills="364" name="1002610074"/>
+        <gameStats duration="35.416668" totalKills="24" totalDeaths="24" totalAssist="53" totalGolds="128001" totalWards="230" totalWardsKilled="88" totalVisionWards="84" totalMinionKills="2030" totalMonsterKills="364"/>
         <gameTeamStat team="//@teams.5" totalKills="16" totalDeaths="8" totalAssist="39" totalGolds="67616" totalWards="103" totalWardsKilled="39" totalVisionWards="43" totalMinionKills="981" totalMonsterKills="193" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.2" totalKills="8" totalDeaths="16" totalAssist="14" totalGolds="60385" totalWards="127" totalWardsKilled="49" totalVisionWards="41" totalMinionKills="1049" totalMonsterKills="171" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="1" deaths="2" assist="3" golds="13666" wards="15" wardsKilled="7" visionWards="7" minionKills="326" monsterKills="25" champion="//@champions.74" name="Betsy"/>
@@ -1160,7 +1160,7 @@
     </matches>
     <matches DisplayName="58 | 6 | Misfits   vs.   Splyce" matchID="58" bestOF="Regular" teams="//@teams.9 //@teams.0" week="6" winner="//@teams.0">
       <games gameID="1002610088" redTeam="//@teams.9" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="10" totalDeaths="10" totalAssist="25" totalGolds="121742" totalWards="264" totalWardsKilled="110" totalVisionWards="135" totalMinionKills="2053" totalMonsterKills="438" name="1002610088"/>
+        <gameStats duration="39.133335" winner="blue" totalKills="10" totalDeaths="10" totalAssist="25" totalGolds="121742" totalWards="264" totalWardsKilled="110" totalVisionWards="135" totalMinionKills="2053" totalMonsterKills="438"/>
         <gameTeamStat team="//@teams.9" totalKills="3" totalDeaths="7" totalAssist="6" totalGolds="59310" totalWards="137" totalWardsKilled="59" totalVisionWards="65" totalMinionKills="1034" totalMonsterKills="217" name="Misfits"/>
         <gameTeamStat team="//@teams.0" totalKills="7" totalDeaths="3" totalAssist="19" totalGolds="62432" totalWards="127" totalWardsKilled="51" totalVisionWards="70" totalMinionKills="1019" totalMonsterKills="221" name="Splyce"/>
         <gamePlayerStats player="//@teams.9/@player.0" deaths="1" assist="2" golds="13481" wards="22" wardsKilled="8" visionWards="12" minionKills="341" monsterKills="8" champion="//@champions.77" name="Alphari"/>
@@ -1177,7 +1177,7 @@
     </matches>
     <matches DisplayName="59 | 6 | H2K   vs.   Fnatic" matchID="59" bestOF="Regular" teams="//@teams.3 //@teams.8" week="6" winner="//@teams.8">
       <games gameID="1002620077" redTeam="//@teams.3" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="40" totalDeaths="40" totalAssist="84" totalGolds="106604" totalWards="164" totalWardsKilled="62" totalVisionWards="59" totalMinionKills="1352" totalMonsterKills="327" name="1002620077"/>
+        <gameStats duration="29.45" winner="blue" totalKills="40" totalDeaths="40" totalAssist="84" totalGolds="106604" totalWards="164" totalWardsKilled="62" totalVisionWards="59" totalMinionKills="1352" totalMonsterKills="327"/>
         <gameTeamStat team="//@teams.3" totalKills="16" totalDeaths="24" totalAssist="31" totalGolds="46218" totalWards="89" totalWardsKilled="36" totalVisionWards="17" totalMinionKills="642" totalMonsterKills="155" name="H2K"/>
         <gameTeamStat team="//@teams.8" totalKills="24" totalDeaths="16" totalAssist="53" totalGolds="60386" totalWards="75" totalWardsKilled="26" totalVisionWards="42" totalMinionKills="710" totalMonsterKills="172" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" deaths="1" assist="18" golds="11784" wards="10" wardsKilled="7" visionWards="10" minionKills="28" monsterKills="133" champion="//@champions.10" name="Broxah"/>
@@ -1194,7 +1194,7 @@
     </matches>
     <matches DisplayName="60 | 6 | G2 Esports   vs.   Schalke 04" matchID="60" bestOF="Regular" teams="//@teams.6 //@teams.4" week="6" winner="//@teams.4">
       <games gameID="1002620078" redTeam="//@teams.6" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="18" totalDeaths="18" totalAssist="45" totalGolds="107103" totalWards="218" totalWardsKilled="87" totalVisionWards="100" totalMinionKills="1897" totalMonsterKills="338" name="1002620078"/>
+        <gameStats duration="31.5" winner="blue" totalKills="18" totalDeaths="18" totalAssist="45" totalGolds="107103" totalWards="218" totalWardsKilled="87" totalVisionWards="100" totalMinionKills="1897" totalMonsterKills="338"/>
         <gameTeamStat team="//@teams.6" totalKills="2" totalDeaths="16" totalAssist="4" totalGolds="47322" totalWards="101" totalWardsKilled="44" totalVisionWards="48" totalMinionKills="942" totalMonsterKills="157" name="G2 Esports"/>
         <gameTeamStat team="//@teams.4" totalKills="16" totalDeaths="2" totalAssist="41" totalGolds="59781" totalWards="117" totalWardsKilled="43" totalVisionWards="52" totalMinionKills="955" totalMonsterKills="181" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="1" deaths="3" golds="10676" wards="9" wardsKilled="4" visionWards="10" minionKills="274" monsterKills="11" champion="//@champions.6" name="Hjarnan"/>
@@ -1211,7 +1211,7 @@
     </matches>
     <matches DisplayName="61 | 7 | Splyce   vs.   Unicorns of Love" matchID="61" bestOF="Regular" teams="//@teams.0 //@teams.5" week="7" winner="//@teams.0">
       <games gameID="1002620101" redTeam="//@teams.0" blueTeam="//@teams.5" winningTeam="//@teams.0">
-        <gameStats totalKills="11" totalDeaths="11" totalAssist="24" totalGolds="138503" totalWards="309" totalWardsKilled="124" totalVisionWards="141" totalMinionKills="2485" totalMonsterKills="487" name="1002620101"/>
+        <gameStats duration="40.55" totalKills="11" totalDeaths="11" totalAssist="24" totalGolds="138503" totalWards="309" totalWardsKilled="124" totalVisionWards="141" totalMinionKills="2485" totalMonsterKills="487"/>
         <gameTeamStat team="//@teams.0" totalKills="11" totalAssist="24" totalGolds="75041" totalWards="153" totalWardsKilled="64" totalVisionWards="75" totalMinionKills="1251" totalMonsterKills="265" name="Splyce"/>
         <gameTeamStat team="//@teams.5" totalDeaths="11" totalGolds="63462" totalWards="156" totalWardsKilled="60" totalVisionWards="66" totalMinionKills="1234" totalMonsterKills="222" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.0/@player.0" kills="1" assist="4" golds="9966" wards="70" wardsKilled="21" visionWards="9" minionKills="78" champion="//@champions.23" name="kaSing"/>
@@ -1228,7 +1228,7 @@
     </matches>
     <matches DisplayName="62 | 7 | Roccat   vs.   Schalke 04" matchID="62" bestOF="Regular" teams="//@teams.7 //@teams.4" week="7" winner="//@teams.4">
       <games gameID="1002620116" redTeam="//@teams.7" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="13" totalDeaths="13" totalAssist="30" totalGolds="142129" totalWards="300" totalWardsKilled="111" totalVisionWards="145" totalMinionKills="2388" totalMonsterKills="451" name="1002620116"/>
+        <gameStats duration="40.183334" winner="blue" totalKills="13" totalDeaths="13" totalAssist="30" totalGolds="142129" totalWards="300" totalWardsKilled="111" totalVisionWards="145" totalMinionKills="2388" totalMonsterKills="451"/>
         <gameTeamStat team="//@teams.7" totalKills="5" totalDeaths="8" totalAssist="13" totalGolds="67417" totalWards="163" totalWardsKilled="57" totalVisionWards="64" totalMinionKills="1185" totalMonsterKills="204" name="Roccat"/>
         <gameTeamStat team="//@teams.4" totalKills="8" totalDeaths="5" totalAssist="17" totalGolds="74712" totalWards="137" totalWardsKilled="54" totalVisionWards="81" totalMinionKills="1203" totalMonsterKills="247" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="1" deaths="1" assist="3" golds="15124" wards="21" wardsKilled="11" visionWards="11" minionKills="338" monsterKills="20" champion="//@champions.74" name="Blanc"/>
@@ -1245,7 +1245,7 @@
     </matches>
     <matches DisplayName="63 | 7 | H2K   vs.   G2 Esports" matchID="63" bestOF="Regular" teams="//@teams.3 //@teams.6" week="7" winner="//@teams.6">
       <games gameID="1002620127" redTeam="//@teams.3" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="43" totalGolds="137403" totalWards="232" totalWardsKilled="95" totalVisionWards="96" totalMinionKills="2269" totalMonsterKills="464" name="1002620127"/>
+        <gameStats duration="38.65" winner="blue" totalKills="25" totalDeaths="25" totalAssist="43" totalGolds="137403" totalWards="232" totalWardsKilled="95" totalVisionWards="96" totalMinionKills="2269" totalMonsterKills="464"/>
         <gameTeamStat team="//@teams.3" totalKills="11" totalDeaths="14" totalAssist="23" totalGolds="64027" totalWards="120" totalWardsKilled="45" totalVisionWards="34" totalMinionKills="1143" totalMonsterKills="155" name="H2K"/>
         <gameTeamStat team="//@teams.6" totalKills="14" totalDeaths="11" totalAssist="20" totalGolds="73376" totalWards="112" totalWardsKilled="50" totalVisionWards="62" totalMinionKills="1126" totalMonsterKills="309" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" deaths="3" assist="6" golds="15808" wards="7" wardsKilled="2" visionWards="15" minionKills="351" monsterKills="39" champion="//@champions.91" name="Hjarnan"/>
@@ -1262,7 +1262,7 @@
     </matches>
     <matches DisplayName="64 | 7 | Giants Gaming   vs.   Misfits" matchID="64" bestOF="Regular" teams="//@teams.2 //@teams.9" week="7" winner="//@teams.2">
       <games gameID="1002620139" redTeam="//@teams.2" blueTeam="//@teams.9" winningTeam="//@teams.2">
-        <gameStats totalKills="14" totalDeaths="14" totalAssist="33" totalGolds="133388" totalWards="268" totalWardsKilled="105" totalVisionWards="126" totalMinionKills="2370" totalMonsterKills="489" name="1002620139"/>
+        <gameStats duration="37.966667" totalKills="14" totalDeaths="14" totalAssist="33" totalGolds="133388" totalWards="268" totalWardsKilled="105" totalVisionWards="126" totalMinionKills="2370" totalMonsterKills="489"/>
         <gameTeamStat team="//@teams.2" totalKills="12" totalDeaths="2" totalAssist="28" totalGolds="75258" totalWards="131" totalWardsKilled="47" totalVisionWards="59" totalMinionKills="1248" totalMonsterKills="290" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.9" totalKills="2" totalDeaths="12" totalAssist="5" totalGolds="58130" totalWards="137" totalWardsKilled="58" totalVisionWards="67" totalMinionKills="1122" totalMonsterKills="199" name="Misfits"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="2" assist="5" golds="17702" wards="18" wardsKilled="6" visionWards="5" minionKills="406" monsterKills="43" champion="//@champions.4" name="Betsy"/>
@@ -1279,7 +1279,7 @@
     </matches>
     <matches DisplayName="65 | 7 | Fnatic   vs.   Vitality" matchID="65" bestOF="Regular" teams="//@teams.8 //@teams.1" week="7" winner="//@teams.1">
       <games gameID="1002620150" redTeam="//@teams.8" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="31" totalDeaths="31" totalAssist="76" totalGolds="116428" totalWards="207" totalWardsKilled="76" totalVisionWards="81" totalMinionKills="1731" totalMonsterKills="352" name="1002620150"/>
+        <gameStats duration="32.75" winner="blue" totalKills="31" totalDeaths="31" totalAssist="76" totalGolds="116428" totalWards="207" totalWardsKilled="76" totalVisionWards="81" totalMinionKills="1731" totalMonsterKills="352"/>
         <gameTeamStat team="//@teams.8" totalKills="11" totalDeaths="20" totalAssist="22" totalGolds="51699" totalWards="95" totalWardsKilled="30" totalVisionWards="40" totalMinionKills="934" totalMonsterKills="137" name="Fnatic"/>
         <gameTeamStat team="//@teams.1" totalKills="20" totalDeaths="11" totalAssist="54" totalGolds="64729" totalWards="112" totalWardsKilled="46" totalVisionWards="41" totalMinionKills="797" totalMonsterKills="215" name="Vitality"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="4" deaths="3" assist="1" golds="9102" wards="11" wardsKilled="5" visionWards="10" minionKills="17" monsterKills="111" champion="//@champions.27" name="Broxah"/>
@@ -1296,7 +1296,7 @@
     </matches>
     <matches DisplayName="66 | 7 | Giants Gaming   vs.   Roccat" matchID="66" bestOF="Regular" teams="//@teams.2 //@teams.7" week="7" winner="//@teams.2">
       <games gameID="1002620168" redTeam="//@teams.2" blueTeam="//@teams.7" winningTeam="//@teams.2">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="48" totalGolds="143217" totalWards="312" totalWardsKilled="122" totalVisionWards="113" totalMinionKills="2351" totalMonsterKills="449" name="1002620168"/>
+        <gameStats duration="40.516666" totalKills="22" totalDeaths="22" totalAssist="48" totalGolds="143217" totalWards="312" totalWardsKilled="122" totalVisionWards="113" totalMinionKills="2351" totalMonsterKills="449"/>
         <gameTeamStat team="//@teams.2" totalKills="12" totalDeaths="10" totalAssist="26" totalGolds="73085" totalWards="158" totalWardsKilled="58" totalVisionWards="54" totalMinionKills="1235" totalMonsterKills="239" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.7" totalKills="10" totalDeaths="12" totalAssist="22" totalGolds="70132" totalWards="154" totalWardsKilled="64" totalVisionWards="59" totalMinionKills="1116" totalMonsterKills="210" name="Roccat"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="4" deaths="4" assist="2" golds="17162" wards="16" wardsKilled="5" visionWards="3" minionKills="388" monsterKills="26" champion="//@champions.35" name="Betsy"/>
@@ -1313,7 +1313,7 @@
     </matches>
     <matches DisplayName="67 | 7 | Splyce   vs.   H2K" matchID="67" bestOF="Regular" teams="//@teams.0 //@teams.3" week="7" winner="//@teams.3">
       <games gameID="1002620178" redTeam="//@teams.0" blueTeam="//@teams.3" winningSide="blue" winningTeam="//@teams.3">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="45" totalGolds="132129" totalWards="257" totalWardsKilled="97" totalVisionWards="111" totalMinionKills="2160" totalMonsterKills="432" name="1002620178"/>
+        <gameStats duration="36.516666" winner="blue" totalKills="24" totalDeaths="24" totalAssist="45" totalGolds="132129" totalWards="257" totalWardsKilled="97" totalVisionWards="111" totalMinionKills="2160" totalMonsterKills="432"/>
         <gameTeamStat team="//@teams.0" totalKills="10" totalDeaths="14" totalAssist="20" totalGolds="59066" totalWards="123" totalWardsKilled="43" totalVisionWards="56" totalMinionKills="1041" totalMonsterKills="155" name="Splyce"/>
         <gameTeamStat team="//@teams.3" totalKills="14" totalDeaths="10" totalAssist="25" totalGolds="73063" totalWards="134" totalWardsKilled="54" totalVisionWards="55" totalMinionKills="1119" totalMonsterKills="277" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.5" deaths="2" assist="9" golds="12301" wards="18" wardsKilled="13" visionWards="15" minionKills="35" monsterKills="158" champion="//@champions.10" name="Caedrel"/>
@@ -1330,7 +1330,7 @@
     </matches>
     <matches DisplayName="68 | 7 | Unicorns of Love   vs.   Vitality" matchID="68" bestOF="Regular" teams="//@teams.5 //@teams.1" week="7" winner="//@teams.1">
       <games gameID="1002620188" redTeam="//@teams.5" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="32" totalDeaths="33" totalAssist="87" totalGolds="125941" totalWards="225" totalWardsKilled="75" totalVisionWards="81" totalMinionKills="1819" totalMonsterKills="351" name="1002620188"/>
+        <gameStats duration="35.966667" winner="blue" totalKills="32" totalDeaths="33" totalAssist="87" totalGolds="125941" totalWards="225" totalWardsKilled="75" totalVisionWards="81" totalMinionKills="1819" totalMonsterKills="351"/>
         <gameTeamStat team="//@teams.5" totalKills="12" totalDeaths="21" totalAssist="29" totalGolds="57089" totalWards="105" totalWardsKilled="34" totalVisionWards="29" totalMinionKills="961" totalMonsterKills="137" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.1" totalKills="20" totalDeaths="12" totalAssist="58" totalGolds="68852" totalWards="120" totalWardsKilled="41" totalVisionWards="52" totalMinionKills="858" totalMonsterKills="214" name="Vitality"/>
         <gamePlayerStats player="//@teams.5/@player.0" kills="2" deaths="5" assist="7" golds="13311" wards="15" wardsKilled="5" minionKills="300" monsterKills="8" champion="//@champions.35" name="Exileh"/>
@@ -1347,7 +1347,7 @@
     </matches>
     <matches DisplayName="69 | 7 | Fnatic   vs.   G2 Esports" matchID="69" bestOF="Regular" teams="//@teams.8 //@teams.6" week="7" winner="//@teams.8">
       <games gameID="1002620195" redTeam="//@teams.8" blueTeam="//@teams.6" winningTeam="//@teams.8">
-        <gameStats totalKills="16" totalDeaths="18" totalAssist="34" totalGolds="97648" totalWards="152" totalWardsKilled="54" totalVisionWards="59" totalMinionKills="1515" totalMonsterKills="315" name="1002620195"/>
+        <gameStats duration="27.25" totalKills="16" totalDeaths="18" totalAssist="34" totalGolds="97648" totalWards="152" totalWardsKilled="54" totalVisionWards="59" totalMinionKills="1515" totalMonsterKills="315"/>
         <gameTeamStat team="//@teams.8" totalKills="12" totalDeaths="6" totalAssist="30" totalGolds="52478" totalWards="68" totalWardsKilled="23" totalVisionWards="36" totalMinionKills="701" totalMonsterKills="176" name="Fnatic"/>
         <gameTeamStat team="//@teams.6" totalKills="4" totalDeaths="12" totalAssist="4" totalGolds="45170" totalWards="84" totalWardsKilled="31" totalVisionWards="23" totalMinionKills="814" totalMonsterKills="139" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="1" assist="7" golds="9775" wards="6" wardsKilled="4" visionWards="7" minionKills="13" monsterKills="139" champion="//@champions.68" name="Broxah"/>
@@ -1364,7 +1364,7 @@
     </matches>
     <matches DisplayName="70 | 7 | Schalke 04   vs.   Misfits" matchID="70" bestOF="Regular" teams="//@teams.4 //@teams.9" week="7" winner="//@teams.4">
       <games gameID="1002620202" redTeam="//@teams.4" blueTeam="//@teams.9" winningTeam="//@teams.4">
-        <gameStats totalKills="27" totalDeaths="27" totalAssist="61" totalGolds="116900" totalWards="231" totalWardsKilled="100" totalVisionWards="102" totalMinionKills="1813" totalMonsterKills="343" name="1002620202"/>
+        <gameStats duration="33.116665" totalKills="27" totalDeaths="27" totalAssist="61" totalGolds="116900" totalWards="231" totalWardsKilled="100" totalVisionWards="102" totalMinionKills="1813" totalMonsterKills="343"/>
         <gameTeamStat team="//@teams.4" totalKills="18" totalDeaths="9" totalAssist="39" totalGolds="62723" totalWards="116" totalWardsKilled="50" totalVisionWards="52" totalMinionKills="890" totalMonsterKills="187" name="Schalke 04"/>
         <gameTeamStat team="//@teams.9" totalKills="9" totalDeaths="18" totalAssist="22" totalGolds="54177" totalWards="115" totalWardsKilled="50" totalVisionWards="50" totalMinionKills="923" totalMonsterKills="156" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" deaths="3" assist="6" golds="12117" wards="15" wardsKilled="4" visionWards="6" minionKills="272" monsterKills="28" champion="//@champions.20" name="Alphari"/>
@@ -1381,7 +1381,7 @@
     </matches>
     <matches DisplayName="71 | 8 | Splyce   vs.   Roccat" matchID="71" bestOF="Regular" teams="//@teams.0 //@teams.7" week="8" winner="//@teams.0">
       <games gameID="1002650013" redTeam="//@teams.0" blueTeam="//@teams.7" winningTeam="//@teams.0">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="57" totalGolds="163412" totalWards="343" totalWardsKilled="141" totalVisionWards="147" totalMinionKills="2758" totalMonsterKills="509" name="1002650013"/>
+        <gameStats duration="45.916668" totalKills="17" totalDeaths="17" totalAssist="57" totalGolds="163412" totalWards="343" totalWardsKilled="141" totalVisionWards="147" totalMinionKills="2758" totalMonsterKills="509"/>
         <gameTeamStat team="//@teams.0" totalKills="12" totalDeaths="5" totalAssist="42" totalGolds="88242" totalWards="169" totalWardsKilled="79" totalVisionWards="82" totalMinionKills="1364" totalMonsterKills="299" name="Splyce"/>
         <gameTeamStat team="//@teams.7" totalKills="5" totalDeaths="12" totalAssist="15" totalGolds="75170" totalWards="174" totalWardsKilled="62" totalVisionWards="65" totalMinionKills="1394" totalMonsterKills="210" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="1" deaths="2" assist="3" golds="18846" wards="28" wardsKilled="12" visionWards="17" minionKills="466" monsterKills="36" champion="//@champions.21" name="Blanc"/>
@@ -1398,7 +1398,7 @@
     </matches>
     <matches DisplayName="72 | 8 | G2 Esports   vs.   Unicorns of Love" matchID="72" bestOF="Regular" teams="//@teams.6 //@teams.5" week="8" winner="//@teams.6">
       <games gameID="1002650026" redTeam="//@teams.6" blueTeam="//@teams.5" winningTeam="//@teams.6">
-        <gameStats totalKills="31" totalDeaths="31" totalAssist="89" totalGolds="141410" totalWards="271" totalWardsKilled="100" totalVisionWards="95" totalMinionKills="2169" totalMonsterKills="428" name="1002650026"/>
+        <gameStats duration="39.466667" totalKills="31" totalDeaths="31" totalAssist="89" totalGolds="141410" totalWards="271" totalWardsKilled="100" totalVisionWards="95" totalMinionKills="2169" totalMonsterKills="428"/>
         <gameTeamStat team="//@teams.6" totalKills="20" totalDeaths="11" totalAssist="56" totalGolds="73945" totalWards="144" totalWardsKilled="56" totalVisionWards="59" totalMinionKills="1127" totalMonsterKills="224" name="G2 Esports"/>
         <gameTeamStat team="//@teams.5" totalKills="11" totalDeaths="20" totalAssist="33" totalGolds="67465" totalWards="127" totalWardsKilled="44" totalVisionWards="36" totalMinionKills="1042" totalMonsterKills="204" name="Unicorns of Love"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="8" assist="8" golds="18692" wards="9" wardsKilled="4" visionWards="25" minionKills="382" monsterKills="45" champion="//@champions.51" name="Hjarnan"/>
@@ -1415,7 +1415,7 @@
     </matches>
     <matches DisplayName="73 | 8 | Giants Gaming   vs.   Fnatic" matchID="73" bestOF="Regular" teams="//@teams.2 //@teams.8" week="8" winner="//@teams.8">
       <games gameID="1002650034" redTeam="//@teams.2" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="27" totalDeaths="27" totalAssist="58" totalGolds="108546" totalWards="178" totalWardsKilled="63" totalVisionWards="57" totalMinionKills="1652" totalMonsterKills="334" name="1002650034"/>
+        <gameStats duration="30.45" winner="blue" totalKills="27" totalDeaths="27" totalAssist="58" totalGolds="108546" totalWards="178" totalWardsKilled="63" totalVisionWards="57" totalMinionKills="1652" totalMonsterKills="334"/>
         <gameTeamStat team="//@teams.2" totalKills="7" totalDeaths="20" totalAssist="16" totalGolds="48349" totalWards="94" totalWardsKilled="31" totalVisionWards="22" totalMinionKills="839" totalMonsterKills="153" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.8" totalKills="20" totalDeaths="7" totalAssist="42" totalGolds="60197" totalWards="84" totalWardsKilled="32" totalVisionWards="35" totalMinionKills="813" totalMonsterKills="181" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="3" deaths="1" assist="10" golds="11724" wards="9" wardsKilled="7" visionWards="11" minionKills="24" monsterKills="144" champion="//@champions.93" name="Broxah"/>
@@ -1432,7 +1432,7 @@
     </matches>
     <matches DisplayName="74 | 8 | H2K   vs.   Vitality" matchID="74" bestOF="Regular" teams="//@teams.3 //@teams.1" week="8" winner="//@teams.1">
       <games gameID="1002650051" redTeam="//@teams.3" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="32" totalDeaths="32" totalAssist="75" totalGolds="111374" totalWards="185" totalWardsKilled="76" totalVisionWards="63" totalMinionKills="1620" totalMonsterKills="367" name="1002650051"/>
+        <gameStats duration="29.0" winner="blue" totalKills="32" totalDeaths="32" totalAssist="75" totalGolds="111374" totalWards="185" totalWardsKilled="76" totalVisionWards="63" totalMinionKills="1620" totalMonsterKills="367"/>
         <gameTeamStat team="//@teams.3" totalKills="12" totalDeaths="20" totalAssist="29" totalGolds="54001" totalWards="89" totalWardsKilled="37" totalVisionWards="25" totalMinionKills="837" totalMonsterKills="171" name="H2K"/>
         <gameTeamStat team="//@teams.1" totalKills="20" totalDeaths="12" totalAssist="46" totalGolds="57373" totalWards="96" totalWardsKilled="39" totalVisionWards="38" totalMinionKills="783" totalMonsterKills="196" name="Vitality"/>
         <gamePlayerStats player="//@teams.3/@player.5" kills="2" deaths="2" assist="6" golds="8834" wards="15" wardsKilled="11" visionWards="6" minionKills="32" monsterKills="99" champion="//@champions.68" name="Caedrel"/>
@@ -1449,7 +1449,7 @@
     </matches>
     <matches DisplayName="75 | 8 | Unicorns of Love   vs.   Roccat" matchID="75" bestOF="Regular" teams="//@teams.5 //@teams.7" week="8" winner="//@teams.5">
       <games gameID="1002650062" redTeam="//@teams.5" blueTeam="//@teams.7" winningTeam="//@teams.5">
-        <gameStats totalKills="40" totalDeaths="40" totalAssist="69" totalGolds="122853" totalWards="228" totalWardsKilled="84" totalVisionWards="90" totalMinionKills="1810" totalMonsterKills="323" name="1002650062"/>
+        <gameStats duration="34.333332" totalKills="40" totalDeaths="40" totalAssist="69" totalGolds="122853" totalWards="228" totalWardsKilled="84" totalVisionWards="90" totalMinionKills="1810" totalMonsterKills="323"/>
         <gameTeamStat team="//@teams.5" totalKills="16" totalDeaths="24" totalAssist="30" totalGolds="61875" totalWards="102" totalWardsKilled="38" totalVisionWards="42" totalMinionKills="975" totalMonsterKills="126" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.7" totalKills="24" totalDeaths="16" totalAssist="39" totalGolds="60978" totalWards="126" totalWardsKilled="46" totalVisionWards="48" totalMinionKills="835" totalMonsterKills="197" name="Roccat"/>
         <gamePlayerStats player="//@teams.7/@player.0" kills="2" deaths="5" assist="8" golds="11144" wards="17" wardsKilled="7" visionWards="8" minionKills="230" monsterKills="8" champion="//@champions.12" name="Blanc"/>
@@ -1466,7 +1466,7 @@
     </matches>
     <matches DisplayName="76 | 8 | Giants Gaming   vs.   Schalke 04" matchID="76" bestOF="Regular" teams="//@teams.2 //@teams.4" week="8" winner="//@teams.4">
       <games gameID="1002650067" redTeam="//@teams.2" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="32" totalGolds="118170" totalWards="229" totalWardsKilled="83" totalVisionWards="81" totalMinionKills="2092" totalMonsterKills="405" name="1002650067"/>
+        <gameStats duration="33.083332" winner="blue" totalKills="15" totalDeaths="15" totalAssist="32" totalGolds="118170" totalWards="229" totalWardsKilled="83" totalVisionWards="81" totalMinionKills="2092" totalMonsterKills="405"/>
         <gameTeamStat team="//@teams.2" totalDeaths="15" totalGolds="53030" totalWards="116" totalWardsKilled="40" totalVisionWards="39" totalMinionKills="1028" totalMonsterKills="217" name="Giants Gaming"/>
         <gameTeamStat team="//@teams.4" totalKills="15" totalAssist="32" totalGolds="65140" totalWards="113" totalWardsKilled="43" totalVisionWards="42" totalMinionKills="1064" totalMonsterKills="188" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.2/@player.0" deaths="3" golds="12720" wards="11" wardsKilled="3" visionWards="8" minionKills="323" monsterKills="35" champion="//@champions.21" name="Betsy"/>
@@ -1483,7 +1483,7 @@
     </matches>
     <matches DisplayName="77 | 8 | Misfits   vs.   G2 Esports" matchID="77" bestOF="Regular" teams="//@teams.9 //@teams.6" week="8" winner="//@teams.6">
       <games gameID="1002650071" redTeam="//@teams.9" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="41" totalGolds="109199" totalWards="209" totalWardsKilled="85" totalVisionWards="76" totalMinionKills="1772" totalMonsterKills="356" name="1002650071"/>
+        <gameStats duration="31.783333" winner="blue" totalKills="17" totalDeaths="17" totalAssist="41" totalGolds="109199" totalWards="209" totalWardsKilled="85" totalVisionWards="76" totalMinionKills="1772" totalMonsterKills="356"/>
         <gameTeamStat team="//@teams.9" totalKills="4" totalDeaths="13" totalAssist="10" totalGolds="48862" totalWards="103" totalWardsKilled="46" totalVisionWards="31" totalMinionKills="839" totalMonsterKills="147" name="Misfits"/>
         <gameTeamStat team="//@teams.6" totalKills="13" totalDeaths="4" totalAssist="31" totalGolds="60337" totalWards="106" totalWardsKilled="39" totalVisionWards="45" totalMinionKills="933" totalMonsterKills="209" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="3" assist="3" golds="14342" wards="9" wardsKilled="3" visionWards="9" minionKills="290" monsterKills="44" champion="//@champions.38" name="Hjarnan"/>
@@ -1500,7 +1500,7 @@
     </matches>
     <matches DisplayName="78 | 8 | Splyce   vs.   Fnatic" matchID="78" bestOF="Regular" teams="//@teams.0 //@teams.8" week="8" winner="//@teams.8">
       <games gameID="1002650079" redTeam="//@teams.0" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="37" totalDeaths="37" totalAssist="88" totalGolds="184696" totalWards="352" totalWardsKilled="126" totalVisionWards="138" totalMinionKills="2673" totalMonsterKills="606" name="1002650079"/>
+        <gameStats duration="53.616665" winner="blue" totalKills="37" totalDeaths="37" totalAssist="88" totalGolds="184696" totalWards="352" totalWardsKilled="126" totalVisionWards="138" totalMinionKills="2673" totalMonsterKills="606"/>
         <gameTeamStat team="//@teams.0" totalKills="16" totalDeaths="21" totalAssist="30" totalGolds="86282" totalWards="184" totalWardsKilled="73" totalVisionWards="59" totalMinionKills="1362" totalMonsterKills="208" name="Splyce"/>
         <gameTeamStat team="//@teams.8" totalKills="21" totalDeaths="16" totalAssist="58" totalGolds="98414" totalWards="168" totalWardsKilled="53" totalVisionWards="79" totalMinionKills="1311" totalMonsterKills="398" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" assist="16" golds="19364" wards="15" wardsKilled="12" visionWards="16" minionKills="84" monsterKills="234" champion="//@champions.68" name="Broxah"/>
@@ -1517,7 +1517,7 @@
     </matches>
     <matches DisplayName="79 | T | Vitality   vs.   Schalke 04" matchID="79" bestOF="Regular" teams="//@teams.1 //@teams.4" week="T" winner="//@teams.1">
       <games gameID="1002650194" redTeam="//@teams.1" blueTeam="//@teams.4" winningTeam="//@teams.1">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="44" totalGolds="159224" totalWards="310" totalWardsKilled="103" totalVisionWards="158" totalMinionKills="2693" totalMonsterKills="503" name="1002650194"/>
+        <gameStats duration="42.933334" totalKills="22" totalDeaths="22" totalAssist="44" totalGolds="159224" totalWards="310" totalWardsKilled="103" totalVisionWards="158" totalMinionKills="2693" totalMonsterKills="503"/>
         <gameTeamStat team="//@teams.1" totalKills="13" totalDeaths="9" totalAssist="28" totalGolds="87369" totalWards="131" totalWardsKilled="49" totalVisionWards="99" totalMinionKills="1378" totalMonsterKills="311" name="Vitality"/>
         <gameTeamStat team="//@teams.4" totalKills="9" totalDeaths="13" totalAssist="16" totalGolds="71855" totalWards="179" totalWardsKilled="54" totalVisionWards="59" totalMinionKills="1315" totalMonsterKills="192" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="5" assist="4" golds="11252" wards="38" wardsKilled="14" visionWards="12" minionKills="37" monsterKills="136" champion="//@champions.52" name="Amazing"/>
@@ -1534,7 +1534,7 @@
     </matches>
     <matches DisplayName="80 | T | Vitality   vs.   G2 Esports" matchID="80" bestOF="Regular" teams="//@teams.1 //@teams.6" week="T" winner="//@teams.1">
       <games gameID="1002650204" redTeam="//@teams.1" blueTeam="//@teams.6" winningTeam="//@teams.1">
-        <gameStats totalKills="33" totalDeaths="33" totalAssist="80" totalGolds="127273" totalWards="239" totalWardsKilled="96" totalVisionWards="86" totalMinionKills="1899" totalMonsterKills="394" name="1002650204"/>
+        <gameStats duration="34.8" totalKills="33" totalDeaths="33" totalAssist="80" totalGolds="127273" totalWards="239" totalWardsKilled="96" totalVisionWards="86" totalMinionKills="1899" totalMonsterKills="394"/>
         <gameTeamStat team="//@teams.1" totalKills="18" totalDeaths="15" totalAssist="42" totalGolds="68192" totalWards="124" totalWardsKilled="51" totalVisionWards="42" totalMinionKills="931" totalMonsterKills="226" name="Vitality"/>
         <gameTeamStat team="//@teams.6" totalKills="15" totalDeaths="18" totalAssist="38" totalGolds="59081" totalWards="115" totalWardsKilled="45" totalVisionWards="44" totalMinionKills="968" totalMonsterKills="168" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="2" deaths="4" assist="6" golds="15456" wards="9" wardsKilled="3" visionWards="10" minionKills="383" monsterKills="28" champion="//@champions.38" name="Hjarnan"/>
@@ -1551,7 +1551,7 @@
     </matches>
     <matches DisplayName="81 | T | Schalke 04   vs.   G2 Esports" matchID="81" bestOF="Regular" teams="//@teams.4 //@teams.6" week="T" winner="//@teams.4">
       <games gameID="1002650209" redTeam="//@teams.4" blueTeam="//@teams.6" winningTeam="//@teams.4">
-        <gameStats totalKills="34" totalDeaths="34" totalAssist="72" totalGolds="167861" totalWards="357" totalWardsKilled="125" totalVisionWards="145" totalMinionKills="2531" totalMonsterKills="557" name="1002650209"/>
+        <gameStats duration="48.166668" totalKills="34" totalDeaths="34" totalAssist="72" totalGolds="167861" totalWards="357" totalWardsKilled="125" totalVisionWards="145" totalMinionKills="2531" totalMonsterKills="557"/>
         <gameTeamStat team="//@teams.4" totalKills="19" totalDeaths="15" totalAssist="44" totalGolds="86032" totalWards="197" totalWardsKilled="66" totalVisionWards="63" totalMinionKills="1216" totalMonsterKills="262" name="Schalke 04"/>
         <gameTeamStat team="//@teams.6" totalKills="15" totalDeaths="19" totalAssist="28" totalGolds="81829" totalWards="160" totalWardsKilled="59" totalVisionWards="82" totalMinionKills="1315" totalMonsterKills="295" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="7" deaths="5" assist="1" golds="22278" wards="14" wardsKilled="4" visionWards="21" minionKills="438" monsterKills="50" champion="//@champions.51" name="Hjarnan"/>
@@ -1568,7 +1568,7 @@
     </matches>
     <matches DisplayName="82 | 8 | Misfits   vs.   H2K" matchID="82" bestOF="Regular" teams="//@teams.9 //@teams.3" week="8" winner="//@teams.9">
       <games gameID="1002660018" redTeam="//@teams.9" blueTeam="//@teams.3" winningTeam="//@teams.9">
-        <gameStats totalKills="14" totalDeaths="14" totalAssist="35" totalGolds="122255" totalWards="215" totalWardsKilled="81" totalVisionWards="95" totalMinionKills="2062" totalMonsterKills="432" name="1002660018"/>
+        <gameStats duration="34.716667" totalKills="14" totalDeaths="14" totalAssist="35" totalGolds="122255" totalWards="215" totalWardsKilled="81" totalVisionWards="95" totalMinionKills="2062" totalMonsterKills="432"/>
         <gameTeamStat team="//@teams.9" totalKills="9" totalDeaths="5" totalAssist="26" totalGolds="62896" totalWards="117" totalWardsKilled="46" totalVisionWards="44" totalMinionKills="1014" totalMonsterKills="196" name="Misfits"/>
         <gameTeamStat team="//@teams.3" totalKills="5" totalDeaths="9" totalAssist="9" totalGolds="59359" totalWards="98" totalWardsKilled="35" totalVisionWards="51" totalMinionKills="1048" totalMonsterKills="236" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.5" kills="1" deaths="1" assist="3" golds="10782" wards="16" wardsKilled="10" visionWards="13" minionKills="37" monsterKills="148" champion="//@champions.10" name="Caedrel"/>
@@ -1585,7 +1585,7 @@
     </matches>
     <matches DisplayName="83 | 8 | Vitality   vs.   Schalke 04" matchID="83" bestOF="Regular" teams="//@teams.1 //@teams.4" week="8" winner="//@teams.4">
       <games gameID="1002660041" redTeam="//@teams.1" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="30" totalDeaths="30" totalAssist="65" totalGolds="155619" totalWards="306" totalWardsKilled="115" totalVisionWards="121" totalMinionKills="2353" totalMonsterKills="477" name="1002660041"/>
+        <gameStats duration="43.2" winner="blue" totalKills="30" totalDeaths="30" totalAssist="65" totalGolds="155619" totalWards="306" totalWardsKilled="115" totalVisionWards="121" totalMinionKills="2353" totalMonsterKills="477"/>
         <gameTeamStat team="//@teams.1" totalKills="13" totalDeaths="17" totalAssist="27" totalGolds="72628" totalWards="146" totalWardsKilled="54" totalVisionWards="67" totalMinionKills="1209" totalMonsterKills="212" name="Vitality"/>
         <gameTeamStat team="//@teams.4" totalKills="17" totalDeaths="13" totalAssist="38" totalGolds="82991" totalWards="160" totalWardsKilled="61" totalVisionWards="54" totalMinionKills="1144" totalMonsterKills="265" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="3" deaths="4" assist="9" golds="15804" wards="24" wardsKilled="17" visionWards="10" minionKills="47" monsterKills="185" champion="//@champions.27" name="Amazing"/>
@@ -1602,7 +1602,7 @@
     </matches>
     <matches DisplayName="84 | 9 | Unicorns of Love   vs.   H2K" matchID="84" bestOF="Regular" teams="//@teams.5 //@teams.3" week="9" winner="//@teams.5">
       <games gameID="1002660116" redTeam="//@teams.5" blueTeam="//@teams.3" winningTeam="//@teams.5">
-        <gameStats totalKills="29" totalDeaths="30" totalAssist="50" totalGolds="95997" totalWards="143" totalWardsKilled="48" totalVisionWards="45" totalMinionKills="1452" totalMonsterKills="268" name="1002660116"/>
+        <gameStats duration="25.983334" totalKills="29" totalDeaths="30" totalAssist="50" totalGolds="95997" totalWards="143" totalWardsKilled="48" totalVisionWards="45" totalMinionKills="1452" totalMonsterKills="268"/>
         <gameTeamStat team="//@teams.5" totalKills="24" totalDeaths="6" totalAssist="40" totalGolds="54742" totalWards="80" totalWardsKilled="27" totalVisionWards="22" totalMinionKills="731" totalMonsterKills="139" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.3" totalKills="5" totalDeaths="24" totalAssist="10" totalGolds="41255" totalWards="63" totalWardsKilled="21" totalVisionWards="23" totalMinionKills="721" totalMonsterKills="129" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.5" kills="3" deaths="6" assist="2" golds="8618" wards="13" wardsKilled="5" visionWards="5" minionKills="26" monsterKills="111" champion="//@champions.27" name="Caedrel"/>
@@ -1619,7 +1619,7 @@
     </matches>
     <matches DisplayName="85 | 9 | Splyce   vs.   Schalke 04" matchID="85" bestOF="Regular" teams="//@teams.0 //@teams.4" week="9" winner="//@teams.4">
       <games gameID="1002660125" redTeam="//@teams.0" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="61" totalGolds="141883" totalWards="294" totalWardsKilled="110" totalVisionWards="131" totalMinionKills="2326" totalMonsterKills="455" name="1002660125"/>
+        <gameStats duration="40.483334" winner="blue" totalKills="25" totalDeaths="25" totalAssist="61" totalGolds="141883" totalWards="294" totalWardsKilled="110" totalVisionWards="131" totalMinionKills="2326" totalMonsterKills="455"/>
         <gameTeamStat team="//@teams.0" totalKills="9" totalDeaths="16" totalAssist="22" totalGolds="66712" totalWards="131" totalWardsKilled="53" totalVisionWards="74" totalMinionKills="1178" totalMonsterKills="221" name="Splyce"/>
         <gameTeamStat team="//@teams.4" totalKills="16" totalDeaths="9" totalAssist="39" totalGolds="75171" totalWards="163" totalWardsKilled="57" totalVisionWards="57" totalMinionKills="1148" totalMonsterKills="234" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="4" deaths="2" assist="8" golds="14114" wards="15" wardsKilled="12" visionWards="23" minionKills="55" monsterKills="153" champion="//@champions.68" name="Amazing"/>
@@ -1636,7 +1636,7 @@
     </matches>
     <matches DisplayName="86 | 9 | G2 Esports   vs.   Giants Gaming" matchID="86" bestOF="Regular" teams="//@teams.6 //@teams.2" week="9" winner="//@teams.6">
       <games gameID="1002660129" redTeam="//@teams.6" blueTeam="//@teams.2" winningTeam="//@teams.6">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="38" totalGolds="127791" totalWards="226" totalWardsKilled="86" totalVisionWards="94" totalMinionKills="2153" totalMonsterKills="415" name="1002660129"/>
+        <gameStats duration="34.366665" totalKills="24" totalDeaths="24" totalAssist="38" totalGolds="127791" totalWards="226" totalWardsKilled="86" totalVisionWards="94" totalMinionKills="2153" totalMonsterKills="415"/>
         <gameTeamStat team="//@teams.6" totalKills="16" totalDeaths="8" totalAssist="29" totalGolds="67408" totalWards="118" totalWardsKilled="43" totalVisionWards="56" totalMinionKills="1046" totalMonsterKills="198" name="G2 Esports"/>
         <gameTeamStat team="//@teams.2" totalKills="8" totalDeaths="16" totalAssist="9" totalGolds="60383" totalWards="108" totalWardsKilled="43" totalVisionWards="38" totalMinionKills="1107" totalMonsterKills="217" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="5" deaths="1" assist="3" golds="16498" wards="10" wardsKilled="2" visionWards="12" minionKills="342" monsterKills="37" champion="//@champions.91" name="Hjarnan"/>
@@ -1653,7 +1653,7 @@
     </matches>
     <matches DisplayName="87 | 9 | Roccat   vs.   Fnatic" matchID="87" bestOF="Regular" teams="//@teams.7 //@teams.8" week="9" winner="//@teams.8">
       <games gameID="1002660133" redTeam="//@teams.7" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="45" totalDeaths="45" totalAssist="101" totalGolds="134065" totalWards="233" totalWardsKilled="90" totalVisionWards="86" totalMinionKills="1892" totalMonsterKills="392" name="1002660133"/>
+        <gameStats duration="36.933334" winner="blue" totalKills="45" totalDeaths="45" totalAssist="101" totalGolds="134065" totalWards="233" totalWardsKilled="90" totalVisionWards="86" totalMinionKills="1892" totalMonsterKills="392"/>
         <gameTeamStat team="//@teams.7" totalKills="18" totalDeaths="27" totalAssist="46" totalGolds="63942" totalWards="123" totalWardsKilled="42" totalVisionWards="36" totalMinionKills="1011" totalMonsterKills="190" name="Roccat"/>
         <gameTeamStat team="//@teams.8" totalKills="27" totalDeaths="18" totalAssist="55" totalGolds="70123" totalWards="110" totalWardsKilled="48" totalVisionWards="50" totalMinionKills="881" totalMonsterKills="202" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="4" assist="14" golds="14239" wards="14" wardsKilled="12" visionWards="10" minionKills="33" monsterKills="157" champion="//@champions.68" name="Broxah"/>
@@ -1670,7 +1670,7 @@
     </matches>
     <matches DisplayName="88 | 9 | Vitality   vs.   Misfits" matchID="88" bestOF="Regular" teams="//@teams.1 //@teams.9" week="9" winner="//@teams.1">
       <games gameID="1002660137" redTeam="//@teams.1" blueTeam="//@teams.9" winningTeam="//@teams.1">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="73" totalGolds="99673" totalWards="166" totalWardsKilled="63" totalVisionWards="49" totalMinionKills="1475" totalMonsterKills="320" name="1002660137"/>
+        <gameStats duration="27.816668" totalKills="25" totalDeaths="25" totalAssist="73" totalGolds="99673" totalWards="166" totalWardsKilled="63" totalVisionWards="49" totalMinionKills="1475" totalMonsterKills="320"/>
         <gameTeamStat team="//@teams.1" totalKills="17" totalDeaths="8" totalAssist="50" totalGolds="56672" totalWards="79" totalWardsKilled="26" totalVisionWards="23" totalMinionKills="784" totalMonsterKills="178" name="Vitality"/>
         <gameTeamStat team="//@teams.9" totalKills="8" totalDeaths="17" totalAssist="23" totalGolds="43001" totalWards="87" totalWardsKilled="37" totalVisionWards="26" totalMinionKills="691" totalMonsterKills="142" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="2" deaths="2" assist="3" golds="9100" wards="14" wardsKilled="5" visionWards="3" minionKills="213" monsterKills="2" champion="//@champions.3" name="Alphari"/>
@@ -1687,7 +1687,7 @@
     </matches>
     <matches DisplayName="89 | 9 | Splyce   vs.   Giants Gaming" matchID="89" bestOF="Regular" teams="//@teams.0 //@teams.2" week="9" winner="//@teams.0">
       <games gameID="1002660144" redTeam="//@teams.0" blueTeam="//@teams.2" winningTeam="//@teams.0">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="46" totalGolds="97191" totalWards="135" totalWardsKilled="52" totalVisionWards="45" totalMinionKills="1512" totalMonsterKills="298" name="1002660144"/>
+        <gameStats duration="27.183332" totalKills="25" totalDeaths="25" totalAssist="46" totalGolds="97191" totalWards="135" totalWardsKilled="52" totalVisionWards="45" totalMinionKills="1512" totalMonsterKills="298"/>
         <gameTeamStat team="//@teams.0" totalKills="21" totalDeaths="4" totalAssist="37" totalGolds="56435" totalWards="73" totalWardsKilled="29" totalVisionWards="23" totalMinionKills="793" totalMonsterKills="180" name="Splyce"/>
         <gameTeamStat team="//@teams.2" totalKills="4" totalDeaths="21" totalAssist="9" totalGolds="40756" totalWards="62" totalWardsKilled="23" totalVisionWards="22" totalMinionKills="719" totalMonsterKills="118" name="Giants Gaming"/>
         <gamePlayerStats player="//@teams.2/@player.0" kills="2" deaths="7" assist="1" golds="8335" wards="11" wardsKilled="4" visionWards="1" minionKills="196" monsterKills="4" champion="//@champions.95" name="Betsy"/>
@@ -1704,7 +1704,7 @@
     </matches>
     <matches DisplayName="90 | 9 | Schalke 04   vs.   H2K" matchID="90" bestOF="Regular" teams="//@teams.4 //@teams.3" week="9" winner="//@teams.3">
       <games gameID="1002660152" redTeam="//@teams.4" blueTeam="//@teams.3" winningSide="blue" winningTeam="//@teams.3">
-        <gameStats totalKills="12" totalDeaths="12" totalAssist="18" totalGolds="111121" totalWards="224" totalWardsKilled="87" totalVisionWards="115" totalMinionKills="1921" totalMonsterKills="372" name="1002660152"/>
+        <gameStats duration="31.8" winner="blue" totalKills="12" totalDeaths="12" totalAssist="18" totalGolds="111121" totalWards="224" totalWardsKilled="87" totalVisionWards="115" totalMinionKills="1921" totalMonsterKills="372"/>
         <gameTeamStat team="//@teams.4" totalKills="3" totalDeaths="9" totalAssist="5" totalGolds="47718" totalWards="109" totalWardsKilled="44" totalVisionWards="56" totalMinionKills="902" totalMonsterKills="155" name="Schalke 04"/>
         <gameTeamStat team="//@teams.3" totalKills="9" totalDeaths="3" totalAssist="13" totalGolds="63403" totalWards="115" totalWardsKilled="43" totalVisionWards="59" totalMinionKills="1019" totalMonsterKills="217" name="H2K"/>
         <gamePlayerStats player="//@teams.3/@player.5" kills="2" assist="4" golds="11861" wards="19" wardsKilled="13" visionWards="20" minionKills="52" monsterKills="141" champion="//@champions.10" name="Caedrel"/>
@@ -1721,7 +1721,7 @@
     </matches>
     <matches DisplayName="91 | 9 | Roccat   vs.   Misfits" matchID="91" bestOF="Regular" teams="//@teams.7 //@teams.9" week="9" winner="//@teams.7">
       <games gameID="1002660163" redTeam="//@teams.7" blueTeam="//@teams.9" winningTeam="//@teams.7">
-        <gameStats totalKills="35" totalDeaths="35" totalAssist="85" totalGolds="143911" totalWards="269" totalWardsKilled="107" totalVisionWards="115" totalMinionKills="2217" totalMonsterKills="462" name="1002660163"/>
+        <gameStats duration="38.9" totalKills="35" totalDeaths="35" totalAssist="85" totalGolds="143911" totalWards="269" totalWardsKilled="107" totalVisionWards="115" totalMinionKills="2217" totalMonsterKills="462"/>
         <gameTeamStat team="//@teams.7" totalKills="22" totalDeaths="13" totalAssist="50" totalGolds="78434" totalWards="134" totalWardsKilled="55" totalVisionWards="50" totalMinionKills="1139" totalMonsterKills="228" name="Roccat"/>
         <gameTeamStat team="//@teams.9" totalKills="13" totalDeaths="22" totalAssist="35" totalGolds="65477" totalWards="135" totalWardsKilled="52" totalVisionWards="65" totalMinionKills="1078" totalMonsterKills="234" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="4" assist="6" golds="13146" wards="23" wardsKilled="9" visionWards="6" minionKills="316" monsterKills="16" champion="//@champions.3" name="Alphari"/>
@@ -1738,7 +1738,7 @@
     </matches>
     <matches DisplayName="92 | 9 | Unicorns of Love   vs.   Fnatic" matchID="92" bestOF="Regular" teams="//@teams.5 //@teams.8" week="9" winner="//@teams.5">
       <games gameID="1002660168" redTeam="//@teams.5" blueTeam="//@teams.8" winningTeam="//@teams.5">
-        <gameStats totalKills="21" totalDeaths="21" totalAssist="50" totalGolds="113342" totalWards="191" totalWardsKilled="68" totalVisionWards="63" totalMinionKills="1770" totalMonsterKills="394" name="1002660168"/>
+        <gameStats duration="31.966667" totalKills="21" totalDeaths="21" totalAssist="50" totalGolds="113342" totalWards="191" totalWardsKilled="68" totalVisionWards="63" totalMinionKills="1770" totalMonsterKills="394"/>
         <gameTeamStat team="//@teams.5" totalKills="12" totalDeaths="9" totalAssist="29" totalGolds="57206" totalWards="98" totalWardsKilled="31" totalVisionWards="28" totalMinionKills="920" totalMonsterKills="150" name="Unicorns of Love"/>
         <gameTeamStat team="//@teams.8" totalKills="9" totalDeaths="12" totalAssist="21" totalGolds="56136" totalWards="93" totalWardsKilled="37" totalVisionWards="35" totalMinionKills="850" totalMonsterKills="244" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" deaths="2" assist="5" golds="11706" wards="13" wardsKilled="8" visionWards="13" minionKills="32" monsterKills="183" champion="//@champions.66" name="Broxah"/>
@@ -1755,7 +1755,7 @@
     </matches>
     <matches DisplayName="93 | 9 | G2 Esports   vs.   Vitality" matchID="93" bestOF="Regular" teams="//@teams.6 //@teams.1" week="9" winner="//@teams.1">
       <games gameID="1002660174" redTeam="//@teams.6" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="10" totalDeaths="10" totalAssist="18" totalGolds="98756" totalWards="198" totalWardsKilled="69" totalVisionWards="80" totalMinionKills="1708" totalMonsterKills="346" name="1002660174"/>
+        <gameStats duration="28.6" winner="blue" totalKills="10" totalDeaths="10" totalAssist="18" totalGolds="98756" totalWards="198" totalWardsKilled="69" totalVisionWards="80" totalMinionKills="1708" totalMonsterKills="346"/>
         <gameTeamStat team="//@teams.6" totalDeaths="10" totalGolds="42397" totalWards="92" totalWardsKilled="35" totalVisionWards="44" totalMinionKills="865" totalMonsterKills="131" name="G2 Esports"/>
         <gameTeamStat team="//@teams.1" totalKills="10" totalAssist="18" totalGolds="56359" totalWards="106" totalWardsKilled="34" totalVisionWards="36" totalMinionKills="843" totalMonsterKills="215" name="Vitality"/>
         <gamePlayerStats player="//@teams.6/@player.0" golds="10968" wards="7" wardsKilled="1" visionWards="15" minionKills="304" monsterKills="8" champion="//@champions.33" name="Hjarnan"/>
@@ -1774,7 +1774,7 @@
   <seasons SplitName="2018-2p" splitType="playoff">
     <matches DisplayName="94 | QF | Splyce   vs.   Schalke 04" matchID="94" teams="//@teams.0 //@teams.4" week="QF" winner="//@teams.4">
       <games gameID="1002670034" redTeam="//@teams.0" blueTeam="//@teams.4" winningTeam="//@teams.0">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="63" totalGolds="133915" totalWards="298" totalWardsKilled="107" totalVisionWards="133" totalMinionKills="2109" totalMonsterKills="441" name="1002670034"/>
+        <gameStats duration="39.95" totalKills="25" totalDeaths="25" totalAssist="63" totalGolds="133915" totalWards="298" totalWardsKilled="107" totalVisionWards="133" totalMinionKills="2109" totalMonsterKills="441"/>
         <gameTeamStat team="//@teams.0" totalKills="17" totalDeaths="8" totalAssist="50" totalGolds="69733" totalWards="141" totalWardsKilled="64" totalVisionWards="78" totalMinionKills="1070" totalMonsterKills="204" name="Splyce"/>
         <gameTeamStat team="//@teams.4" totalKills="8" totalDeaths="17" totalAssist="13" totalGolds="64182" totalWards="157" totalWardsKilled="43" totalVisionWards="55" totalMinionKills="1039" totalMonsterKills="237" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="4" assist="3" golds="11085" wards="38" wardsKilled="11" visionWards="14" minionKills="27" monsterKills="158" champion="//@champions.52" name="Amazing"/>
@@ -1789,7 +1789,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="1" assist="9" golds="11684" wards="17" wardsKilled="14" visionWards="28" minionKills="41" monsterKills="141" champion="//@champions.10" name="Xerxe"/>
       </games>
       <games gameID="1002680004" redTeam="//@teams.4" blueTeam="//@teams.0" winningTeam="//@teams.4">
-        <gameStats totalKills="9" totalDeaths="9" totalAssist="12" totalGolds="130536" totalWards="294" totalWardsKilled="106" totalVisionWards="150" totalMinionKills="2312" totalMonsterKills="435" name="1002680004"/>
+        <gameStats duration="36.35" totalKills="9" totalDeaths="9" totalAssist="12" totalGolds="130536" totalWards="294" totalWardsKilled="106" totalVisionWards="150" totalMinionKills="2312" totalMonsterKills="435"/>
         <gameTeamStat team="//@teams.4" totalKills="5" totalDeaths="4" totalAssist="8" totalGolds="64981" totalWards="140" totalWardsKilled="51" totalVisionWards="77" totalMinionKills="1171" totalMonsterKills="222" name="Schalke 04"/>
         <gameTeamStat team="//@teams.0" totalKills="4" totalDeaths="5" totalAssist="4" totalGolds="65555" totalWards="154" totalWardsKilled="55" totalVisionWards="73" totalMinionKills="1141" totalMonsterKills="213" name="Splyce"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="1" assist="1" golds="11566" wards="16" wardsKilled="13" visionWards="27" minionKills="50" monsterKills="139" champion="//@champions.10" name="Amazing"/>
@@ -1804,7 +1804,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" assist="2" golds="11063" wards="43" wardsKilled="13" visionWards="12" minionKills="39" monsterKills="135" champion="//@champions.52" name="Xerxe"/>
       </games>
       <games gameID="1002680016" redTeam="//@teams.4" blueTeam="//@teams.0" winningSide="blue" winningTeam="//@teams.0">
-        <gameStats totalKills="28" totalDeaths="28" totalAssist="56" totalGolds="120209" totalWards="270" totalWardsKilled="94" totalVisionWards="99" totalMinionKills="1807" totalMonsterKills="389" name="1002680016"/>
+        <gameStats duration="32.55" winner="blue" totalKills="28" totalDeaths="28" totalAssist="56" totalGolds="120209" totalWards="270" totalWardsKilled="94" totalVisionWards="99" totalMinionKills="1807" totalMonsterKills="389"/>
         <gameTeamStat team="//@teams.4" totalKills="7" totalDeaths="21" totalAssist="15" totalGolds="53124" totalWards="138" totalWardsKilled="44" totalVisionWards="42" totalMinionKills="973" totalMonsterKills="128" name="Schalke 04"/>
         <gameTeamStat team="//@teams.0" totalKills="21" totalDeaths="7" totalAssist="41" totalGolds="67085" totalWards="132" totalWardsKilled="50" totalVisionWards="57" totalMinionKills="834" totalMonsterKills="261" name="Splyce"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="1" deaths="6" assist="5" golds="9152" wards="25" wardsKilled="9" visionWards="13" minionKills="45" monsterKills="102" champion="//@champions.97" name="Amazing"/>
@@ -1819,7 +1819,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="6" assist="8" golds="12635" wards="32" wardsKilled="11" visionWards="13" minionKills="34" monsterKills="145" champion="//@champions.52" name="Xerxe"/>
       </games>
       <games gameID="1002680017" redTeam="//@teams.0" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="26" totalDeaths="26" totalAssist="66" totalGolds="141187" totalWards="297" totalWardsKilled="100" totalVisionWards="147" totalMinionKills="2354" totalMonsterKills="426" name="1002680017"/>
+        <gameStats duration="39.383335" winner="blue" totalKills="26" totalDeaths="26" totalAssist="66" totalGolds="141187" totalWards="297" totalWardsKilled="100" totalVisionWards="147" totalMinionKills="2354" totalMonsterKills="426"/>
         <gameTeamStat team="//@teams.0" totalKills="11" totalDeaths="15" totalAssist="33" totalGolds="62843" totalWards="152" totalWardsKilled="47" totalVisionWards="59" totalMinionKills="1155" totalMonsterKills="142" name="Splyce"/>
         <gameTeamStat team="//@teams.4" totalKills="15" totalDeaths="11" totalAssist="33" totalGolds="78344" totalWards="145" totalWardsKilled="53" totalVisionWards="88" totalMinionKills="1199" totalMonsterKills="284" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="3" assist="9" golds="13636" wards="14" wardsKilled="11" visionWards="30" minionKills="66" monsterKills="165" champion="//@champions.10" name="Amazing"/>
@@ -1834,7 +1834,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="1" deaths="3" assist="10" golds="10186" wards="49" wardsKilled="15" visionWards="19" minionKills="51" monsterKills="91" champion="//@champions.52" name="Xerxe"/>
       </games>
       <games gameID="1002680018" redTeam="//@teams.0" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="21" totalGolds="155840" totalWards="372" totalWardsKilled="126" totalVisionWards="158" totalMinionKills="2749" totalMonsterKills="494" name="1002680018"/>
+        <gameStats duration="43.65" winner="blue" totalKills="15" totalDeaths="15" totalAssist="21" totalGolds="155840" totalWards="372" totalWardsKilled="126" totalVisionWards="158" totalMinionKills="2749" totalMonsterKills="494"/>
         <gameTeamStat team="//@teams.0" totalKills="5" totalDeaths="10" totalAssist="9" totalGolds="70655" totalWards="184" totalWardsKilled="67" totalVisionWards="80" totalMinionKills="1317" totalMonsterKills="217" name="Splyce"/>
         <gameTeamStat team="//@teams.4" totalKills="10" totalDeaths="5" totalAssist="12" totalGolds="85185" totalWards="188" totalWardsKilled="59" totalVisionWards="78" totalMinionKills="1432" totalMonsterKills="277" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="1" deaths="1" assist="3" golds="14309" wards="39" wardsKilled="9" visionWards="26" minionKills="66" monsterKills="161" champion="//@champions.77" name="Amazing"/>
@@ -1851,7 +1851,7 @@
     </matches>
     <matches DisplayName="95 | QF | G2 Esports   vs.   Misfits" matchID="95" teams="//@teams.6 //@teams.9" week="QF" winner="//@teams.9">
       <games gameID="1002670036" redTeam="//@teams.6" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="11" totalDeaths="11" totalAssist="20" totalGolds="122322" totalWards="285" totalWardsKilled="110" totalVisionWards="111" totalMinionKills="2129" totalMonsterKills="430" name="1002670036"/>
+        <gameStats duration="35.583332" winner="blue" totalKills="11" totalDeaths="11" totalAssist="20" totalGolds="122322" totalWards="285" totalWardsKilled="110" totalVisionWards="111" totalMinionKills="2129" totalMonsterKills="430"/>
         <gameTeamStat team="//@teams.6" totalKills="2" totalDeaths="9" totalAssist="5" totalGolds="55440" totalWards="151" totalWardsKilled="44" totalVisionWards="51" totalMinionKills="1065" totalMonsterKills="177" name="G2 Esports"/>
         <gameTeamStat team="//@teams.9" totalKills="9" totalDeaths="2" totalAssist="15" totalGolds="66882" totalWards="134" totalWardsKilled="66" totalVisionWards="60" totalMinionKills="1064" totalMonsterKills="253" name="Misfits"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="1" deaths="1" golds="14249" wards="8" wardsKilled="2" visionWards="15" minionKills="388" monsterKills="22" champion="//@champions.7" name="Hjarnan"/>
@@ -1866,7 +1866,7 @@
         <gamePlayerStats player="//@teams.9/@player.4" kills="2" assist="3" golds="15633" wards="15" wardsKilled="6" visionWards="6" minionKills="313" monsterKills="24" champion="//@champions.57" name="Sencux"/>
       </games>
       <games gameID="1002670046" redTeam="//@teams.9" blueTeam="//@teams.6" winningTeam="//@teams.9">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="60" totalGolds="131737" totalWards="280" totalWardsKilled="110" totalVisionWards="119" totalMinionKills="1948" totalMonsterKills="419" name="1002670046"/>
+        <gameStats duration="38.283333" totalKills="22" totalDeaths="22" totalAssist="60" totalGolds="131737" totalWards="280" totalWardsKilled="110" totalVisionWards="119" totalMinionKills="1948" totalMonsterKills="419"/>
         <gameTeamStat team="//@teams.9" totalKills="14" totalDeaths="8" totalAssist="37" totalGolds="68706" totalWards="148" totalWardsKilled="61" totalVisionWards="61" totalMinionKills="969" totalMonsterKills="193" name="Misfits"/>
         <gameTeamStat team="//@teams.6" totalKills="8" totalDeaths="14" totalAssist="23" totalGolds="63031" totalWards="132" totalWardsKilled="49" totalVisionWards="58" totalMinionKills="979" totalMonsterKills="226" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="5" deaths="3" assist="2" golds="16672" wards="9" wardsKilled="2" visionWards="10" minionKills="319" monsterKills="36" champion="//@champions.51" name="Hjarnan"/>
@@ -1881,7 +1881,7 @@
         <gamePlayerStats player="//@teams.9/@player.4" deaths="2" assist="6" golds="13508" wards="15" wardsKilled="6" visionWards="9" minionKills="269" monsterKills="35" champion="//@champions.103" name="Sencux"/>
       </games>
       <games gameID="1002670047" redTeam="//@teams.9" blueTeam="//@teams.6" winningTeam="//@teams.9">
-        <gameStats totalKills="34" totalDeaths="34" totalAssist="77" totalGolds="110518" totalWards="185" totalWardsKilled="75" totalVisionWards="59" totalMinionKills="1623" totalMonsterKills="325" name="1002670047"/>
+        <gameStats duration="29.5" totalKills="34" totalDeaths="34" totalAssist="77" totalGolds="110518" totalWards="185" totalWardsKilled="75" totalVisionWards="59" totalMinionKills="1623" totalMonsterKills="325"/>
         <gameTeamStat team="//@teams.9" totalKills="15" totalDeaths="19" totalAssist="31" totalGolds="59163" totalWards="100" totalWardsKilled="48" totalVisionWards="31" totalMinionKills="827" totalMonsterKills="180" name="Misfits"/>
         <gameTeamStat team="//@teams.6" totalKills="19" totalDeaths="15" totalAssist="46" totalGolds="51355" totalWards="85" totalWardsKilled="27" totalVisionWards="28" totalMinionKills="796" totalMonsterKills="145" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="4" deaths="3" assist="9" golds="11777" wards="6" wardsKilled="1" visionWards="11" minionKills="247" monsterKills="12" champion="//@champions.51" name="Hjarnan"/>
@@ -1898,7 +1898,7 @@
     </matches>
     <matches DisplayName="96 | SF | Vitality   vs.   Schalke 04" matchID="96" bestOF="SF" teams="//@teams.1 //@teams.4" week="SF" winner="//@teams.4">
       <games gameID="1002670054" redTeam="//@teams.1" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="40" totalDeaths="40" totalAssist="93" totalGolds="126754" totalWards="224" totalWardsKilled="75" totalVisionWards="86" totalMinionKills="1839" totalMonsterKills="353" name="1002670054"/>
+        <gameStats duration="33.666668" winner="blue" totalKills="40" totalDeaths="40" totalAssist="93" totalGolds="126754" totalWards="224" totalWardsKilled="75" totalVisionWards="86" totalMinionKills="1839" totalMonsterKills="353"/>
         <gameTeamStat team="//@teams.1" totalKills="15" totalDeaths="25" totalAssist="33" totalGolds="58064" totalWards="100" totalWardsKilled="39" totalVisionWards="54" totalMinionKills="928" totalMonsterKills="179" name="Vitality"/>
         <gameTeamStat team="//@teams.4" totalKills="25" totalDeaths="15" totalAssist="60" totalGolds="68690" totalWards="124" totalWardsKilled="36" totalVisionWards="32" totalMinionKills="911" totalMonsterKills="174" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="3" deaths="3" assist="15" golds="12594" wards="29" wardsKilled="12" visionWards="8" minionKills="43" monsterKills="120" champion="//@champions.13" name="Amazing"/>
@@ -1913,7 +1913,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" kills="3" deaths="5" assist="11" golds="11037" wards="16" wardsKilled="7" visionWards="7" minionKills="27" monsterKills="143" champion="//@champions.10" name="Kikis"/>
       </games>
       <games gameID="1002670067" redTeam="//@teams.1" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="29" totalDeaths="29" totalAssist="57" totalGolds="112376" totalWards="222" totalWardsKilled="81" totalVisionWards="90" totalMinionKills="1772" totalMonsterKills="379" name="1002670067"/>
+        <gameStats duration="30.883333" winner="blue" totalKills="29" totalDeaths="29" totalAssist="57" totalGolds="112376" totalWards="222" totalWardsKilled="81" totalVisionWards="90" totalMinionKills="1772" totalMonsterKills="379"/>
         <gameTeamStat team="//@teams.1" totalKills="6" totalDeaths="23" totalAssist="15" totalGolds="47244" totalWards="98" totalWardsKilled="41" totalVisionWards="50" totalMinionKills="848" totalMonsterKills="170" name="Vitality"/>
         <gameTeamStat team="//@teams.4" totalKills="23" totalDeaths="6" totalAssist="42" totalGolds="65132" totalWards="124" totalWardsKilled="40" totalVisionWards="40" totalMinionKills="924" totalMonsterKills="209" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="2" assist="11" golds="11695" wards="30" wardsKilled="8" visionWards="8" minionKills="31" monsterKills="153" champion="//@champions.13" name="Amazing"/>
@@ -1928,7 +1928,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" kills="2" deaths="5" assist="3" golds="8490" wards="17" wardsKilled="7" visionWards="17" minionKills="25" monsterKills="118" champion="//@champions.10" name="Kikis"/>
       </games>
       <games gameID="1002670068" redTeam="//@teams.1" blueTeam="//@teams.4" winningTeam="//@teams.1">
-        <gameStats totalKills="22" totalDeaths="23" totalAssist="49" totalGolds="96057" totalWards="177" totalWardsKilled="58" totalVisionWards="62" totalMinionKills="1461" totalMonsterKills="290" name="1002670068"/>
+        <gameStats duration="27.183332" totalKills="22" totalDeaths="23" totalAssist="49" totalGolds="96057" totalWards="177" totalWardsKilled="58" totalVisionWards="62" totalMinionKills="1461" totalMonsterKills="290"/>
         <gameTeamStat team="//@teams.1" totalKills="16" totalDeaths="7" totalAssist="47" totalGolds="54248" totalWards="80" totalWardsKilled="27" totalVisionWards="40" totalMinionKills="703" totalMonsterKills="166" name="Vitality"/>
         <gameTeamStat team="//@teams.4" totalKills="6" totalDeaths="16" totalAssist="2" totalGolds="41809" totalWards="97" totalWardsKilled="31" totalVisionWards="22" totalMinionKills="758" totalMonsterKills="124" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.4/@player.0" deaths="4" golds="7560" wards="23" wardsKilled="8" visionWards="9" minionKills="52" monsterKills="101" champion="//@champions.22" name="Amazing"/>
@@ -1943,7 +1943,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" kills="4" deaths="2" assist="11" golds="11661" wards="14" wardsKilled="5" visionWards="19" minionKills="30" monsterKills="145" champion="//@champions.66" name="Kikis"/>
       </games>
       <games gameID="1002670069" redTeam="//@teams.4" blueTeam="//@teams.1" winningTeam="//@teams.4">
-        <gameStats totalKills="30" totalDeaths="30" totalAssist="91" totalGolds="125377" totalWards="224" totalWardsKilled="81" totalVisionWards="99" totalMinionKills="1836" totalMonsterKills="346" name="1002670069"/>
+        <gameStats duration="36.033333" totalKills="30" totalDeaths="30" totalAssist="91" totalGolds="125377" totalWards="224" totalWardsKilled="81" totalVisionWards="99" totalMinionKills="1836" totalMonsterKills="346"/>
         <gameTeamStat team="//@teams.4" totalKills="18" totalDeaths="12" totalAssist="49" totalGolds="65965" totalWards="121" totalWardsKilled="47" totalVisionWards="47" totalMinionKills="931" totalMonsterKills="174" name="Schalke 04"/>
         <gameTeamStat team="//@teams.1" totalKills="12" totalDeaths="18" totalAssist="42" totalGolds="59412" totalWards="103" totalWardsKilled="34" totalVisionWards="52" totalMinionKills="905" totalMonsterKills="172" name="Vitality"/>
         <gamePlayerStats player="//@teams.4/@player.0" kills="2" deaths="5" assist="13" golds="11424" wards="14" wardsKilled="8" visionWards="10" minionKills="19" monsterKills="117" champion="//@champions.10" name="Amazing"/>
@@ -1960,7 +1960,7 @@
     </matches>
     <matches DisplayName="97 | SF | Misfits   vs.   Fnatic" matchID="97" bestOF="SF" teams="//@teams.9 //@teams.8" week="SF" winner="//@teams.8">
       <games gameID="1002670071" redTeam="//@teams.9" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="55" totalGolds="94397" totalWards="201" totalWardsKilled="67" totalVisionWards="76" totalMinionKills="1401" totalMonsterKills="305" name="1002670071"/>
+        <gameStats duration="27.583334" winner="blue" totalKills="24" totalDeaths="24" totalAssist="55" totalGolds="94397" totalWards="201" totalWardsKilled="67" totalVisionWards="76" totalMinionKills="1401" totalMonsterKills="305"/>
         <gameTeamStat team="//@teams.9" totalKills="6" totalDeaths="18" totalAssist="15" totalGolds="41538" totalWards="96" totalWardsKilled="41" totalVisionWards="41" totalMinionKills="650" totalMonsterKills="133" name="Misfits"/>
         <gameTeamStat team="//@teams.8" totalKills="18" totalDeaths="6" totalAssist="40" totalGolds="52859" totalWards="105" totalWardsKilled="26" totalVisionWards="35" totalMinionKills="751" totalMonsterKills="172" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="4" assist="8" golds="10044" wards="32" wardsKilled="5" visionWards="11" minionKills="15" monsterKills="119" champion="//@champions.13" name="Broxah"/>
@@ -1975,7 +1975,7 @@
         <gamePlayerStats player="//@teams.9/@player.4" kills="1" deaths="4" assist="3" golds="8785" wards="12" wardsKilled="6" visionWards="2" minionKills="204" monsterKills="4" champion="//@champions.74" name="Sencux"/>
       </games>
       <games gameID="1002680065" redTeam="//@teams.9" blueTeam="//@teams.8" winningTeam="//@teams.9">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="46" totalGolds="102740" totalWards="192" totalWardsKilled="67" totalVisionWards="67" totalMinionKills="1545" totalMonsterKills="307" name="1002680065"/>
+        <gameStats duration="29.316668" totalKills="25" totalDeaths="25" totalAssist="46" totalGolds="102740" totalWards="192" totalWardsKilled="67" totalVisionWards="67" totalMinionKills="1545" totalMonsterKills="307"/>
         <gameTeamStat team="//@teams.9" totalKills="19" totalDeaths="6" totalAssist="39" totalGolds="56844" totalWards="102" totalWardsKilled="47" totalVisionWards="37" totalMinionKills="714" totalMonsterKills="162" name="Misfits"/>
         <gameTeamStat team="//@teams.8" totalKills="6" totalDeaths="19" totalAssist="7" totalGolds="45896" totalWards="90" totalWardsKilled="20" totalVisionWards="30" totalMinionKills="831" totalMonsterKills="145" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" deaths="4" assist="2" golds="8677" wards="24" wardsKilled="6" visionWards="3" minionKills="19" monsterKills="120" champion="//@champions.52" name="Broxah"/>
@@ -1990,7 +1990,7 @@
         <gamePlayerStats player="//@teams.9/@player.4" deaths="1" assist="10" golds="10268" wards="11" wardsKilled="6" visionWards="2" minionKills="192" monsterKills="12" champion="//@champions.17" name="Sencux"/>
       </games>
       <games gameID="1002680066" redTeam="//@teams.8" blueTeam="//@teams.9" winningTeam="//@teams.8">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="51" totalGolds="106761" totalWards="190" totalWardsKilled="68" totalVisionWards="69" totalMinionKills="1599" totalMonsterKills="368" name="1002680066"/>
+        <gameStats duration="31.166666" totalKills="20" totalDeaths="20" totalAssist="51" totalGolds="106761" totalWards="190" totalWardsKilled="68" totalVisionWards="69" totalMinionKills="1599" totalMonsterKills="368"/>
         <gameTeamStat team="//@teams.8" totalKills="13" totalDeaths="7" totalAssist="39" totalGolds="55187" totalWards="86" totalWardsKilled="26" totalVisionWards="33" totalMinionKills="858" totalMonsterKills="155" name="Fnatic"/>
         <gameTeamStat team="//@teams.9" totalKills="7" totalDeaths="13" totalAssist="12" totalGolds="51574" totalWards="104" totalWardsKilled="42" totalVisionWards="36" totalMinionKills="741" totalMonsterKills="213" name="Misfits"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="1" assist="12" golds="10183" wards="10" wardsKilled="6" visionWards="7" minionKills="21" monsterKills="133" champion="//@champions.10" name="Broxah"/>
@@ -2005,7 +2005,7 @@
         <gamePlayerStats player="//@teams.9/@player.4" kills="1" deaths="3" assist="3" golds="10451" wards="13" wardsKilled="5" visionWards="4" minionKills="220" monsterKills="19" champion="//@champions.73" name="Sencux"/>
       </games>
       <games gameID="1002680067" redTeam="//@teams.8" blueTeam="//@teams.9" winningTeam="//@teams.8">
-        <gameStats totalKills="25" totalDeaths="25" totalAssist="65" totalGolds="107148" totalWards="215" totalWardsKilled="84" totalVisionWards="82" totalMinionKills="1599" totalMonsterKills="376" name="1002680067"/>
+        <gameStats duration="32.75" totalKills="25" totalDeaths="25" totalAssist="65" totalGolds="107148" totalWards="215" totalWardsKilled="84" totalVisionWards="82" totalMinionKills="1599" totalMonsterKills="376"/>
         <gameTeamStat team="//@teams.8" totalKills="16" totalDeaths="9" totalAssist="39" totalGolds="56559" totalWards="94" totalWardsKilled="28" totalVisionWards="52" totalMinionKills="844" totalMonsterKills="183" name="Fnatic"/>
         <gameTeamStat team="//@teams.9" totalKills="9" totalDeaths="16" totalAssist="26" totalGolds="50589" totalWards="121" totalWardsKilled="56" totalVisionWards="30" totalMinionKills="755" totalMonsterKills="193" name="Misfits"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" deaths="1" assist="8" golds="10284" wards="10" wardsKilled="6" visionWards="16" minionKills="16" monsterKills="133" champion="//@champions.10" name="Broxah"/>
@@ -2022,7 +2022,7 @@
     </matches>
     <matches DisplayName="98 | 3p | Vitality   vs.   Misfits" matchID="98" bestOF="_3p" teams="//@teams.1 //@teams.9" week="3p" winner="//@teams.1">
       <games gameID="1002700022" redTeam="//@teams.1" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="51" totalGolds="108842" totalWards="190" totalWardsKilled="70" totalVisionWards="77" totalMinionKills="1706" totalMonsterKills="350" name="1002700022"/>
+        <gameStats duration="30.6" winner="blue" totalKills="24" totalDeaths="24" totalAssist="51" totalGolds="108842" totalWards="190" totalWardsKilled="70" totalVisionWards="77" totalMinionKills="1706" totalMonsterKills="350"/>
         <gameTeamStat team="//@teams.1" totalKills="6" totalDeaths="18" totalAssist="15" totalGolds="48295" totalWards="91" totalWardsKilled="26" totalVisionWards="36" totalMinionKills="863" totalMonsterKills="158" name="Vitality"/>
         <gameTeamStat team="//@teams.9" totalKills="18" totalDeaths="6" totalAssist="36" totalGolds="60547" totalWards="99" totalWardsKilled="44" totalVisionWards="41" totalMinionKills="843" totalMonsterKills="192" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="3" deaths="1" assist="4" golds="12276" wards="18" wardsKilled="8" visionWards="4" minionKills="274" monsterKills="6" champion="//@champions.3" name="Alphari"/>
@@ -2037,7 +2037,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" deaths="4" assist="4" golds="8794" wards="13" wardsKilled="3" visionWards="14" minionKills="17" monsterKills="138" champion="//@champions.66" name="Kikis"/>
       </games>
       <games gameID="1002700024" redTeam="//@teams.9" blueTeam="//@teams.1" winningSide="blue" winningTeam="//@teams.1">
-        <gameStats totalKills="14" totalDeaths="16" totalAssist="34" totalGolds="74184" totalWards="139" totalWardsKilled="55" totalVisionWards="38" totalMinionKills="1188" totalMonsterKills="248" name="1002700024"/>
+        <gameStats duration="22.466667" winner="blue" totalKills="14" totalDeaths="16" totalAssist="34" totalGolds="74184" totalWards="139" totalWardsKilled="55" totalVisionWards="38" totalMinionKills="1188" totalMonsterKills="248"/>
         <gameTeamStat team="//@teams.9" totalKills="2" totalDeaths="12" totalAssist="1" totalGolds="31930" totalWards="75" totalWardsKilled="31" totalVisionWards="17" totalMinionKills="584" totalMonsterKills="113" name="Misfits"/>
         <gameTeamStat team="//@teams.1" totalKills="12" totalDeaths="4" totalAssist="33" totalGolds="42254" totalWards="64" totalWardsKilled="24" totalVisionWards="21" totalMinionKills="604" totalMonsterKills="135" name="Vitality"/>
         <gamePlayerStats player="//@teams.9/@player.0" deaths="3" golds="6581" wards="11" wardsKilled="4" minionKills="171" monsterKills="3" champion="//@champions.3" name="Alphari"/>
@@ -2052,7 +2052,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" kills="6" deaths="1" assist="4" golds="9461" wards="8" wardsKilled="3" visionWards="4" minionKills="14" monsterKills="113" champion="//@champions.66" name="Kikis"/>
       </games>
       <games gameID="1002700025" redTeam="//@teams.1" blueTeam="//@teams.9" winningTeam="//@teams.1">
-        <gameStats totalKills="22" totalDeaths="22" totalAssist="48" totalGolds="96450" totalWards="211" totalWardsKilled="88" totalVisionWards="72" totalMinionKills="1456" totalMonsterKills="304" name="1002700025"/>
+        <gameStats duration="27.783333" totalKills="22" totalDeaths="22" totalAssist="48" totalGolds="96450" totalWards="211" totalWardsKilled="88" totalVisionWards="72" totalMinionKills="1456" totalMonsterKills="304"/>
         <gameTeamStat team="//@teams.1" totalKills="17" totalDeaths="5" totalAssist="37" totalGolds="54219" totalWards="105" totalWardsKilled="33" totalVisionWards="36" totalMinionKills="715" totalMonsterKills="158" name="Vitality"/>
         <gameTeamStat team="//@teams.9" totalKills="5" totalDeaths="17" totalAssist="11" totalGolds="42231" totalWards="106" totalWardsKilled="55" totalVisionWards="36" totalMinionKills="741" totalMonsterKills="146" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="2" assist="1" golds="8231" wards="16" wardsKilled="7" visionWards="3" minionKills="200" champion="//@champions.3" name="Alphari"/>
@@ -2067,7 +2067,7 @@
         <gamePlayerStats player="//@teams.1/@player.5" deaths="4" assist="9" golds="9217" wards="18" wardsKilled="7" visionWards="8" minionKills="11" monsterKills="118" champion="//@champions.52" name="Kikis"/>
       </games>
       <games gameID="1002700026" redTeam="//@teams.1" blueTeam="//@teams.9" winningTeam="//@teams.1">
-        <gameStats totalKills="24" totalDeaths="24" totalAssist="58" totalGolds="120108" totalWards="267" totalWardsKilled="105" totalVisionWards="102" totalMinionKills="1870" totalMonsterKills="413" name="1002700026"/>
+        <gameStats duration="34.133335" totalKills="24" totalDeaths="24" totalAssist="58" totalGolds="120108" totalWards="267" totalWardsKilled="105" totalVisionWards="102" totalMinionKills="1870" totalMonsterKills="413"/>
         <gameTeamStat team="//@teams.1" totalKills="17" totalDeaths="7" totalAssist="36" totalGolds="66547" totalWards="137" totalWardsKilled="42" totalVisionWards="47" totalMinionKills="950" totalMonsterKills="234" name="Vitality"/>
         <gameTeamStat team="//@teams.9" totalKills="7" totalDeaths="17" totalAssist="22" totalGolds="53561" totalWards="130" totalWardsKilled="63" totalVisionWards="55" totalMinionKills="920" totalMonsterKills="179" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="3" assist="4" golds="9637" wards="17" wardsKilled="6" visionWards="4" minionKills="207" champion="//@champions.101" name="Alphari"/>
@@ -2084,7 +2084,7 @@
     </matches>
     <matches DisplayName="99 | F | Schalke 04   vs.   Fnatic" matchID="99" bestOF="F" teams="//@teams.4 //@teams.8" week="F" winner="//@teams.8">
       <games gameID="1002700040" redTeam="//@teams.4" blueTeam="//@teams.8" winningTeam="//@teams.4">
-        <gameStats totalKills="23" totalDeaths="24" totalAssist="61" totalGolds="108125" totalWards="183" totalWardsKilled="55" totalVisionWards="74" totalMinionKills="1715" totalMonsterKills="341" name="1002700040"/>
+        <gameStats duration="29.316668" totalKills="23" totalDeaths="24" totalAssist="61" totalGolds="108125" totalWards="183" totalWardsKilled="55" totalVisionWards="74" totalMinionKills="1715" totalMonsterKills="341"/>
         <gameTeamStat team="//@teams.4" totalKills="17" totalDeaths="6" totalAssist="49" totalGolds="58710" totalWards="107" totalWardsKilled="34" totalVisionWards="38" totalMinionKills="889" totalMonsterKills="163" name="Schalke 04"/>
         <gameTeamStat team="//@teams.8" totalKills="6" totalDeaths="18" totalAssist="12" totalGolds="49415" totalWards="76" totalWardsKilled="21" totalVisionWards="36" totalMinionKills="826" totalMonsterKills="178" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" deaths="3" assist="3" golds="7988" wards="11" wardsKilled="5" visionWards="8" minionKills="20" monsterKills="119" champion="//@champions.10" name="Broxah"/>
@@ -2099,7 +2099,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="5" deaths="2" assist="5" golds="12326" wards="12" wardsKilled="4" visionWards="4" minionKills="234" monsterKills="12" champion="//@champions.3" name="Vizicsacsi"/>
       </games>
       <games gameID="1002700041" redTeam="//@teams.8" blueTeam="//@teams.4" winningTeam="//@teams.8">
-        <gameStats totalKills="18" totalDeaths="18" totalAssist="42" totalGolds="97047" totalWards="153" totalWardsKilled="51" totalVisionWards="63" totalMinionKills="1593" totalMonsterKills="346" name="1002700041"/>
+        <gameStats duration="27.733334" totalKills="18" totalDeaths="18" totalAssist="42" totalGolds="97047" totalWards="153" totalWardsKilled="51" totalVisionWards="63" totalMinionKills="1593" totalMonsterKills="346"/>
         <gameTeamStat team="//@teams.8" totalKills="10" totalDeaths="8" totalAssist="27" totalGolds="51828" totalWards="71" totalWardsKilled="25" totalVisionWards="37" totalMinionKills="823" totalMonsterKills="168" name="Fnatic"/>
         <gameTeamStat team="//@teams.4" totalKills="8" totalDeaths="10" totalAssist="15" totalGolds="45219" totalWards="82" totalWardsKilled="26" totalVisionWards="26" totalMinionKills="770" totalMonsterKills="178" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" assist="7" golds="9370" wards="13" wardsKilled="9" visionWards="15" minionKills="25" monsterKills="110" champion="//@champions.10" name="Broxah"/>
@@ -2114,7 +2114,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="2" deaths="2" assist="2" golds="9031" wards="11" wardsKilled="3" visionWards="2" minionKills="206" monsterKills="10" champion="//@champions.3" name="Vizicsacsi"/>
       </games>
       <games gameID="1002700044" redTeam="//@teams.4" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="47" totalGolds="107614" totalWards="184" totalWardsKilled="57" totalVisionWards="73" totalMinionKills="1692" totalMonsterKills="365" name="1002700044"/>
+        <gameStats duration="30.883333" winner="blue" totalKills="20" totalDeaths="20" totalAssist="47" totalGolds="107614" totalWards="184" totalWardsKilled="57" totalVisionWards="73" totalMinionKills="1692" totalMonsterKills="365"/>
         <gameTeamStat team="//@teams.4" totalKills="6" totalDeaths="14" totalAssist="10" totalGolds="49540" totalWards="102" totalWardsKilled="31" totalVisionWards="36" totalMinionKills="874" totalMonsterKills="167" name="Schalke 04"/>
         <gameTeamStat team="//@teams.8" totalKills="14" totalDeaths="6" totalAssist="37" totalGolds="58074" totalWards="82" totalWardsKilled="26" totalVisionWards="37" totalMinionKills="818" totalMonsterKills="198" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="3" deaths="1" assist="10" golds="10858" wards="11" wardsKilled="7" visionWards="6" minionKills="11" monsterKills="127" champion="//@champions.10" name="Broxah"/>
@@ -2129,7 +2129,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="1" deaths="3" assist="1" golds="11059" wards="17" wardsKilled="7" visionWards="2" minionKills="262" monsterKills="19" champion="//@champions.80" name="Vizicsacsi"/>
       </games>
       <games gameID="1002700045" redTeam="//@teams.4" blueTeam="//@teams.8" winningSide="blue" winningTeam="//@teams.8">
-        <gameStats totalKills="26" totalDeaths="26" totalAssist="67" totalGolds="110367" totalWards="231" totalWardsKilled="75" totalVisionWards="89" totalMinionKills="1654" totalMonsterKills="362" name="1002700045"/>
+        <gameStats duration="32.616665" winner="blue" totalKills="26" totalDeaths="26" totalAssist="67" totalGolds="110367" totalWards="231" totalWardsKilled="75" totalVisionWards="89" totalMinionKills="1654" totalMonsterKills="362"/>
         <gameTeamStat team="//@teams.4" totalKills="10" totalDeaths="16" totalAssist="23" totalGolds="53234" totalWards="134" totalWardsKilled="38" totalVisionWards="38" totalMinionKills="872" totalMonsterKills="159" name="Schalke 04"/>
         <gameTeamStat team="//@teams.8" totalKills="16" totalDeaths="10" totalAssist="44" totalGolds="57133" totalWards="97" totalWardsKilled="37" totalVisionWards="51" totalMinionKills="782" totalMonsterKills="203" name="Fnatic"/>
         <gamePlayerStats player="//@teams.8/@player.0" kills="2" assist="10" golds="9822" wards="14" wardsKilled="10" visionWards="5" minionKills="24" monsterKills="100" champion="//@champions.99" name="Broxah"/>
@@ -2148,7 +2148,7 @@
   <seasons SplitName="2018-2rq" splitType="regionals">
     <matches DisplayName="100 | R2 | Splyce   vs.   G2 Esports" matchID="100" bestOF="R2" teams="//@teams.0 //@teams.6" week="R2" winner="//@teams.6">
       <games gameID="1002710023" redTeam="//@teams.0" blueTeam="//@teams.6" winningTeam="//@teams.0">
-        <gameStats totalKills="10" totalDeaths="10" totalAssist="29" totalGolds="116930" totalWards="243" totalWardsKilled="79" totalVisionWards="106" totalMinionKills="1971" totalMonsterKills="414" name="1002710023"/>
+        <gameStats duration="34.516666" totalKills="10" totalDeaths="10" totalAssist="29" totalGolds="116930" totalWards="243" totalWardsKilled="79" totalVisionWards="106" totalMinionKills="1971" totalMonsterKills="414"/>
         <gameTeamStat team="//@teams.0" totalKills="8" totalDeaths="2" totalAssist="26" totalGolds="63075" totalWards="130" totalWardsKilled="44" totalVisionWards="47" totalMinionKills="993" totalMonsterKills="216" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="2" totalDeaths="8" totalAssist="3" totalGolds="53855" totalWards="113" totalWardsKilled="35" totalVisionWards="59" totalMinionKills="978" totalMonsterKills="198" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" deaths="2" golds="12454" wards="10" wardsKilled="1" visionWards="6" minionKills="316" monsterKills="17" champion="//@champions.33" name="Hjarnan"/>
@@ -2163,7 +2163,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="1" assist="6" golds="12013" wards="27" wardsKilled="8" visionWards="15" minionKills="46" monsterKills="156" champion="//@champions.13" name="Xerxe"/>
       </games>
       <games gameID="1002710034" redTeam="//@teams.0" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="16" totalDeaths="16" totalAssist="35" totalGolds="111041" totalWards="211" totalWardsKilled="58" totalVisionWards="70" totalMinionKills="1898" totalMonsterKills="357" name="1002710034"/>
+        <gameStats duration="32.4" winner="blue" totalKills="16" totalDeaths="16" totalAssist="35" totalGolds="111041" totalWards="211" totalWardsKilled="58" totalVisionWards="70" totalMinionKills="1898" totalMonsterKills="357"/>
         <gameTeamStat team="//@teams.0" totalKills="4" totalDeaths="12" totalAssist="13" totalGolds="46618" totalWards="88" totalWardsKilled="29" totalVisionWards="35" totalMinionKills="840" totalMonsterKills="136" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="12" totalDeaths="4" totalAssist="22" totalGolds="64423" totalWards="123" totalWardsKilled="29" totalVisionWards="35" totalMinionKills="1058" totalMonsterKills="221" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" deaths="1" assist="5" golds="14565" wards="8" wardsKilled="1" visionWards="5" minionKills="318" monsterKills="29" champion="//@champions.85" name="Hjarnan"/>
@@ -2178,7 +2178,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" deaths="2" assist="4" golds="8230" wards="14" wardsKilled="10" visionWards="6" minionKills="21" monsterKills="108" champion="//@champions.99" name="Xerxe"/>
       </games>
       <games gameID="1002710035" redTeam="//@teams.0" blueTeam="//@teams.6" winningTeam="//@teams.0">
-        <gameStats totalKills="15" totalDeaths="15" totalAssist="43" totalGolds="134496" totalWards="304" totalWardsKilled="94" totalVisionWards="139" totalMinionKills="2326" totalMonsterKills="443" name="1002710035"/>
+        <gameStats duration="38.116665" totalKills="15" totalDeaths="15" totalAssist="43" totalGolds="134496" totalWards="304" totalWardsKilled="94" totalVisionWards="139" totalMinionKills="2326" totalMonsterKills="443"/>
         <gameTeamStat team="//@teams.0" totalKills="9" totalDeaths="6" totalAssist="28" totalGolds="70525" totalWards="143" totalWardsKilled="42" totalVisionWards="74" totalMinionKills="1135" totalMonsterKills="235" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="6" totalDeaths="9" totalAssist="15" totalGolds="63971" totalWards="161" totalWardsKilled="52" totalVisionWards="65" totalMinionKills="1191" totalMonsterKills="208" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="2" deaths="2" assist="3" golds="15699" wards="8" wardsKilled="2" visionWards="8" minionKills="377" monsterKills="30" champion="//@champions.85" name="Hjarnan"/>
@@ -2193,7 +2193,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" assist="9" golds="12367" wards="40" wardsKilled="13" visionWards="18" minionKills="34" monsterKills="160" champion="//@champions.97" name="Xerxe"/>
       </games>
       <games gameID="1002710036" redTeam="//@teams.0" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="16" totalDeaths="16" totalAssist="33" totalGolds="112016" totalWards="230" totalWardsKilled="64" totalVisionWards="95" totalMinionKills="1912" totalMonsterKills="351" name="1002710036"/>
+        <gameStats duration="31.866667" winner="blue" totalKills="16" totalDeaths="16" totalAssist="33" totalGolds="112016" totalWards="230" totalWardsKilled="64" totalVisionWards="95" totalMinionKills="1912" totalMonsterKills="351"/>
         <gameTeamStat team="//@teams.0" totalKills="6" totalDeaths="10" totalAssist="15" totalGolds="49350" totalWards="108" totalWardsKilled="32" totalVisionWards="47" totalMinionKills="907" totalMonsterKills="137" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="10" totalDeaths="6" totalAssist="18" totalGolds="62666" totalWards="122" totalWardsKilled="32" totalVisionWards="48" totalMinionKills="1005" totalMonsterKills="214" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="2" assist="4" golds="14905" wards="9" wardsKilled="1" visionWards="6" minionKills="318" monsterKills="20" champion="//@champions.11" name="Hjarnan"/>
@@ -2208,7 +2208,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="1" deaths="1" assist="5" golds="8678" wards="26" wardsKilled="8" visionWards="11" minionKills="46" monsterKills="101" champion="//@champions.52" name="Xerxe"/>
       </games>
       <games gameID="1002710037" redTeam="//@teams.0" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="32" totalDeaths="32" totalAssist="82" totalGolds="121136" totalWards="253" totalWardsKilled="85" totalVisionWards="100" totalMinionKills="1830" totalMonsterKills="386" name="1002710037"/>
+        <gameStats duration="33.516666" winner="blue" totalKills="32" totalDeaths="32" totalAssist="82" totalGolds="121136" totalWards="253" totalWardsKilled="85" totalVisionWards="100" totalMinionKills="1830" totalMonsterKills="386"/>
         <gameTeamStat team="//@teams.0" totalKills="12" totalDeaths="20" totalAssist="30" totalGolds="55034" totalWards="116" totalWardsKilled="37" totalVisionWards="46" totalMinionKills="890" totalMonsterKills="194" name="Splyce"/>
         <gameTeamStat team="//@teams.6" totalKills="20" totalDeaths="12" totalAssist="52" totalGolds="66102" totalWards="137" totalWardsKilled="48" totalVisionWards="54" totalMinionKills="940" totalMonsterKills="192" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="7" assist="9" golds="17322" wards="8" wardsKilled="3" visionWards="5" minionKills="319" monsterKills="21" champion="//@champions.11" name="Hjarnan"/>
@@ -2225,7 +2225,7 @@
     </matches>
     <matches DisplayName="101 | R1 | Splyce   vs.   Misfits" matchID="101" bestOF="R1" teams="//@teams.0 //@teams.9" week="R1" winner="//@teams.0">
       <games gameID="1002720002" redTeam="//@teams.0" blueTeam="//@teams.9" winningTeam="//@teams.0">
-        <gameStats totalKills="20" totalDeaths="20" totalAssist="54" totalGolds="161628" totalWards="347" totalWardsKilled="150" totalVisionWards="153" totalMinionKills="2640" totalMonsterKills="538" name="1002720002"/>
+        <gameStats duration="46.183334" totalKills="20" totalDeaths="20" totalAssist="54" totalGolds="161628" totalWards="347" totalWardsKilled="150" totalVisionWards="153" totalMinionKills="2640" totalMonsterKills="538"/>
         <gameTeamStat team="//@teams.0" totalKills="12" totalDeaths="8" totalAssist="32" totalGolds="81912" totalWards="165" totalWardsKilled="75" totalVisionWards="79" totalMinionKills="1301" totalMonsterKills="230" name="Splyce"/>
         <gameTeamStat team="//@teams.9" totalKills="8" totalDeaths="12" totalAssist="22" totalGolds="79716" totalWards="182" totalWardsKilled="75" totalVisionWards="74" totalMinionKills="1339" totalMonsterKills="308" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="2" deaths="2" assist="4" golds="17633" wards="29" wardsKilled="9" visionWards="6" minionKills="376" monsterKills="15" champion="//@champions.62" name="Alphari"/>
@@ -2240,7 +2240,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="3" assist="6" golds="14192" wards="26" wardsKilled="22" visionWards="25" minionKills="48" monsterKills="143" champion="//@champions.68" name="Xerxe"/>
       </games>
       <games gameID="1002720011" redTeam="//@teams.0" blueTeam="//@teams.9" winningSide="blue" winningTeam="//@teams.9">
-        <gameStats totalKills="34" totalDeaths="34" totalAssist="93" totalGolds="138841" totalWards="280" totalWardsKilled="114" totalVisionWards="99" totalMinionKills="2008" totalMonsterKills="415" name="1002720011"/>
+        <gameStats duration="39.133335" winner="blue" totalKills="34" totalDeaths="34" totalAssist="93" totalGolds="138841" totalWards="280" totalWardsKilled="114" totalVisionWards="99" totalMinionKills="2008" totalMonsterKills="415"/>
         <gameTeamStat team="//@teams.0" totalKills="19" totalDeaths="15" totalAssist="54" totalGolds="67809" totalWards="127" totalWardsKilled="46" totalVisionWards="53" totalMinionKills="1065" totalMonsterKills="155" name="Splyce"/>
         <gameTeamStat team="//@teams.9" totalKills="15" totalDeaths="19" totalAssist="39" totalGolds="71032" totalWards="153" totalWardsKilled="68" totalVisionWards="46" totalMinionKills="943" totalMonsterKills="260" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="2" deaths="3" assist="11" golds="14385" wards="27" wardsKilled="12" visionWards="6" minionKills="256" monsterKills="1" champion="//@champions.22" name="Alphari"/>
@@ -2255,7 +2255,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="2" deaths="1" assist="12" golds="10875" wards="20" wardsKilled="15" visionWards="10" minionKills="32" monsterKills="113" champion="//@champions.99" name="Xerxe"/>
       </games>
       <games gameID="1002720014" redTeam="//@teams.0" blueTeam="//@teams.9" winningTeam="//@teams.0">
-        <gameStats totalKills="23" totalDeaths="23" totalAssist="58" totalGolds="113112" totalWards="239" totalWardsKilled="94" totalVisionWards="93" totalMinionKills="1761" totalMonsterKills="389" name="1002720014"/>
+        <gameStats duration="31.85" totalKills="23" totalDeaths="23" totalAssist="58" totalGolds="113112" totalWards="239" totalWardsKilled="94" totalVisionWards="93" totalMinionKills="1761" totalMonsterKills="389"/>
         <gameTeamStat team="//@teams.0" totalKills="16" totalDeaths="7" totalAssist="39" totalGolds="62868" totalWards="120" totalWardsKilled="38" totalVisionWards="49" totalMinionKills="894" totalMonsterKills="243" name="Splyce"/>
         <gameTeamStat team="//@teams.9" totalKills="7" totalDeaths="16" totalAssist="19" totalGolds="50244" totalWards="119" totalWardsKilled="56" totalVisionWards="44" totalMinionKills="867" totalMonsterKills="146" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="2" deaths="1" assist="3" golds="10133" wards="16" wardsKilled="5" visionWards="5" minionKills="237" champion="//@champions.18" name="Alphari"/>
@@ -2270,7 +2270,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" deaths="1" assist="12" golds="11786" wards="26" wardsKilled="6" visionWards="11" minionKills="36" monsterKills="158" champion="//@champions.13" name="Xerxe"/>
       </games>
       <games gameID="1002720015" redTeam="//@teams.9" blueTeam="//@teams.0" winningTeam="//@teams.9">
-        <gameStats totalKills="28" totalDeaths="28" totalAssist="47" totalGolds="120947" totalWards="225" totalWardsKilled="99" totalVisionWards="101" totalMinionKills="1794" totalMonsterKills="401" name="1002720015"/>
+        <gameStats duration="34.216667" totalKills="28" totalDeaths="28" totalAssist="47" totalGolds="120947" totalWards="225" totalWardsKilled="99" totalVisionWards="101" totalMinionKills="1794" totalMonsterKills="401"/>
         <gameTeamStat team="//@teams.9" totalKills="19" totalDeaths="9" totalAssist="35" totalGolds="63920" totalWards="122" totalWardsKilled="56" totalVisionWards="49" totalMinionKills="925" totalMonsterKills="231" name="Misfits"/>
         <gameTeamStat team="//@teams.0" totalKills="9" totalDeaths="19" totalAssist="12" totalGolds="57027" totalWards="103" totalWardsKilled="43" totalVisionWards="52" totalMinionKills="869" totalMonsterKills="170" name="Splyce"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="1" assist="9" golds="11362" wards="20" wardsKilled="8" visionWards="2" minionKills="221" monsterKills="14" champion="//@champions.18" name="Alphari"/>
@@ -2285,7 +2285,7 @@
         <gamePlayerStats player="//@teams.0/@player.4" kills="5" deaths="2" assist="2" golds="13015" wards="10" wardsKilled="8" visionWards="20" minionKills="48" monsterKills="142" champion="//@champions.66" name="Xerxe"/>
       </games>
       <games gameID="1002720016" redTeam="//@teams.0" blueTeam="//@teams.9" winningTeam="//@teams.0">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="52" totalGolds="111094" totalWards="229" totalWardsKilled="94" totalVisionWards="92" totalMinionKills="1810" totalMonsterKills="372" name="1002720016"/>
+        <gameStats duration="32.133335" totalKills="17" totalDeaths="17" totalAssist="52" totalGolds="111094" totalWards="229" totalWardsKilled="94" totalVisionWards="92" totalMinionKills="1810" totalMonsterKills="372"/>
         <gameTeamStat team="//@teams.0" totalKills="12" totalDeaths="5" totalAssist="38" totalGolds="60672" totalWards="106" totalWardsKilled="39" totalVisionWards="51" totalMinionKills="911" totalMonsterKills="193" name="Splyce"/>
         <gameTeamStat team="//@teams.9" totalKills="5" totalDeaths="12" totalAssist="14" totalGolds="50422" totalWards="123" totalWardsKilled="55" totalVisionWards="41" totalMinionKills="899" totalMonsterKills="179" name="Misfits"/>
         <gamePlayerStats player="//@teams.9/@player.0" kills="1" deaths="2" assist="2" golds="8955" wards="17" wardsKilled="6" visionWards="1" minionKills="195" monsterKills="2" champion="//@champions.105" name="Alphari"/>
@@ -2302,7 +2302,7 @@
     </matches>
     <matches DisplayName="102 | R3 | G2 Esports   vs.   Schalke 04" matchID="102" bestOF="R3" teams="//@teams.6 //@teams.4" week="R3" winner="//@teams.6">
       <games gameID="1002720036" redTeam="//@teams.6" blueTeam="//@teams.4" winningTeam="//@teams.6">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="49" totalGolds="124959" totalWards="270" totalWardsKilled="108" totalVisionWards="118" totalMinionKills="2114" totalMonsterKills="413" name="1002720036"/>
+        <gameStats duration="35.866665" totalKills="17" totalDeaths="17" totalAssist="49" totalGolds="124959" totalWards="270" totalWardsKilled="108" totalVisionWards="118" totalMinionKills="2114" totalMonsterKills="413"/>
         <gameTeamStat team="//@teams.6" totalKills="14" totalDeaths="3" totalAssist="40" totalGolds="69962" totalWards="141" totalWardsKilled="61" totalVisionWards="61" totalMinionKills="1023" totalMonsterKills="258" name="G2 Esports"/>
         <gameTeamStat team="//@teams.4" totalKills="3" totalDeaths="14" totalAssist="9" totalGolds="54997" totalWards="129" totalWardsKilled="47" totalVisionWards="57" totalMinionKills="1091" totalMonsterKills="155" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="3" assist="4" golds="15914" wards="10" wardsKilled="2" visionWards="18" minionKills="330" monsterKills="28" champion="//@champions.91" name="Hjarnan"/>
@@ -2317,7 +2317,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="1" deaths="5" assist="1" golds="10721" wards="13" wardsKilled="3" visionWards="5" minionKills="246" monsterKills="8" champion="//@champions.22" name="Vizicsacsi"/>
       </games>
       <games gameID="1002720046" redTeam="//@teams.6" blueTeam="//@teams.4" winningSide="blue" winningTeam="//@teams.4">
-        <gameStats totalKills="28" totalDeaths="28" totalAssist="73" totalGolds="125128" totalWards="256" totalWardsKilled="76" totalVisionWards="97" totalMinionKills="1978" totalMonsterKills="394" name="1002720046"/>
+        <gameStats duration="35.9" winner="blue" totalKills="28" totalDeaths="28" totalAssist="73" totalGolds="125128" totalWards="256" totalWardsKilled="76" totalVisionWards="97" totalMinionKills="1978" totalMonsterKills="394"/>
         <gameTeamStat team="//@teams.6" totalKills="8" totalDeaths="20" totalAssist="19" totalGolds="60394" totalWards="140" totalWardsKilled="43" totalVisionWards="49" totalMinionKills="1089" totalMonsterKills="194" name="G2 Esports"/>
         <gameTeamStat team="//@teams.4" totalKills="20" totalDeaths="8" totalAssist="54" totalGolds="64734" totalWards="116" totalWardsKilled="33" totalVisionWards="48" totalMinionKills="889" totalMonsterKills="200" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="1" deaths="1" assist="6" golds="14451" wards="9" wardsKilled="2" visionWards="16" minionKills="364" monsterKills="18" champion="//@champions.51" name="Hjarnan"/>
@@ -2332,7 +2332,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="2" deaths="1" assist="13" golds="12421" wards="16" wardsKilled="4" visionWards="5" minionKills="247" monsterKills="4" champion="//@champions.105" name="Vizicsacsi"/>
       </games>
       <games gameID="1002720047" redTeam="//@teams.6" blueTeam="//@teams.4" winningTeam="//@teams.6">
-        <gameStats totalKills="18" totalDeaths="18" totalAssist="49" totalGolds="108618" totalWards="228" totalWardsKilled="69" totalVisionWards="80" totalMinionKills="1654" totalMonsterKills="377" name="1002720047"/>
+        <gameStats duration="32.5" totalKills="18" totalDeaths="18" totalAssist="49" totalGolds="108618" totalWards="228" totalWardsKilled="69" totalVisionWards="80" totalMinionKills="1654" totalMonsterKills="377"/>
         <gameTeamStat team="//@teams.6" totalKills="12" totalDeaths="6" totalAssist="33" totalGolds="59916" totalWards="123" totalWardsKilled="40" totalVisionWards="42" totalMinionKills="849" totalMonsterKills="233" name="G2 Esports"/>
         <gameTeamStat team="//@teams.4" totalKills="6" totalDeaths="12" totalAssist="16" totalGolds="48702" totalWards="105" totalWardsKilled="29" totalVisionWards="38" totalMinionKills="805" totalMonsterKills="144" name="Schalke 04"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="2" deaths="1" assist="7" golds="13901" wards="7" wardsKilled="1" visionWards="12" minionKills="292" monsterKills="25" champion="//@champions.51" name="Hjarnan"/>
@@ -2347,7 +2347,7 @@
         <gamePlayerStats player="//@teams.4/@player.4" kills="1" deaths="3" assist="4" golds="9727" wards="12" wardsKilled="2" visionWards="4" minionKills="199" monsterKills="4" champion="//@champions.18" name="Vizicsacsi"/>
       </games>
       <games gameID="1002720048" redTeam="//@teams.4" blueTeam="//@teams.6" winningSide="blue" winningTeam="//@teams.6">
-        <gameStats totalKills="17" totalDeaths="17" totalAssist="42" totalGolds="114618" totalWards="274" totalWardsKilled="86" totalVisionWards="114" totalMinionKills="1894" totalMonsterKills="397" name="1002720048"/>
+        <gameStats duration="32.0" winner="blue" totalKills="17" totalDeaths="17" totalAssist="42" totalGolds="114618" totalWards="274" totalWardsKilled="86" totalVisionWards="114" totalMinionKills="1894" totalMonsterKills="397"/>
         <gameTeamStat team="//@teams.4" totalKills="3" totalDeaths="14" totalAssist="4" totalGolds="49791" totalWards="129" totalWardsKilled="43" totalVisionWards="58" totalMinionKills="999" totalMonsterKills="152" name="Schalke 04"/>
         <gameTeamStat team="//@teams.6" totalKills="14" totalDeaths="3" totalAssist="38" totalGolds="64827" totalWards="145" totalWardsKilled="43" totalVisionWards="56" totalMinionKills="895" totalMonsterKills="245" name="G2 Esports"/>
         <gamePlayerStats player="//@teams.6/@player.0" kills="5" deaths="2" assist="4" golds="15546" wards="11" wardsKilled="3" visionWards="11" minionKills="297" monsterKills="40" champion="//@champions.38" name="Hjarnan"/>
@@ -2696,4 +2696,4 @@
   <champions name="Evelynn">
     <championStat gamesPlayed="1" totalKills="1" totalDeaths="1" killDeathAssistRatio="1.0"/>
   </champions>
-</tdt4250.project.LeagueOfLegends:League>
+</tdt4250.project.leagueOfLegends:League>

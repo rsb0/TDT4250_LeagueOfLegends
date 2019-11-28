@@ -62,6 +62,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		Map<String, Season> seasons = new HashMap<String, Season>();
 		Map<String, Match> matches = new HashMap<String, Match>();
 		Map<String, Champion> champions = new HashMap<String, Champion>();
+		Map<Game, GameStats> gameStatistics = new HashMap<Game, GameStats>();
 
 		// Season season = LeagueOfLegendsCreationUtils.createSeason(splitName)
 
@@ -136,7 +137,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					
 					
 					/**
-					 * Handle other champion statistics
+					 * Handle remaining champion statistics
 					 */
 					champion.getChampionStat().setGamesPlayed(champion.getChampionStat().getGamesPlayed() + 1);
 					champion.getChampionStat().setWins(champion.getChampionStat().getWins() + Integer.parseInt(cellData[18]));
@@ -164,6 +165,15 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0], winner));
 					}
 					Game game = games.get(cellData[0]);
+					
+					// Handle gameStats 
+					// Create gameStats object and populate with only game duration for now. 
+					// Remaining game statistics is populated outside of the loop reading from the csv file 
+					if(!gameStatistics.containsKey(game)) {
+						GameStats gameStats = LeagueOfLegendsCreationUtils.createGameStats(game, Float.parseFloat(cellData[17]));
+						gameStatistics.put(game, gameStats);
+						game.setGameStats(gameStats);
+					}
 					
 					// Handle teams
 
@@ -215,8 +225,9 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					}
 
 					// Handle matches
-
+					
 					// Loop through matches, looking for game with same gameID
+					// Adds opposing team to already existing games with only one team registered
 					boolean foundGame = false;
 					for (Match match : matches.values()) {
 						for (Game oldGame : match.getGames()) {
@@ -238,6 +249,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 
 					// See if there is a match, that contains teams, and is same week,
 					// and bestOf < match.games().length
+					// Adds a new game to an existing match
 
 					if (!foundGame) {
 						for (Match match : matches.values()) {
@@ -258,7 +270,8 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 
 					}
 
-					// if not foundGame, game
+					// If not foundGame, game
+					// Creates a new match and adds one game to that match
 
 					if (!foundGame) {
 						String matchID = "" + ++autoIncrementorMatchId;
@@ -311,10 +324,19 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					
 					game.getGameTeamStat().add(gameTeamStatsRed);
 					game.getGameTeamStat().add(gameTeamStatsBlue);
+
+					// Populate remaining game statistics
+					game.getGameStats().setTotalKills(redTeamKills + blueTeamKills);
+					game.getGameStats().setTotalDeaths(redTeamDeaths + blueTeamDeaths);
+					game.getGameStats().setTotalAssist(redTeamAssists + blueTeamAssists);
+					game.getGameStats().setTotalWards(redTeamWards + blueTeamWards);
+					game.getGameStats().setTotalVisionWards(redTeamVisionWards + blueTeamVisionWards);
+					game.getGameStats().setTotalWardsKilled(redTeamWardsKilled + blueTeamWardsKilled);
+					game.getGameStats().setTotalGolds(redTeamGold + blueTeamGold);
+					game.getGameStats().setTotalMinionKills(redTeamMinionKills + blueTeamMinionKills);
+					game.getGameStats().setTotalMonsterKills(redTeamMonsterKills + blueTeamMonsterKills);
+					game.getGameStats().setWinner(game.getWinningSide());
 					
-					
-					GameStats gameStats = LeagueOfLegendsCreationUtils.createGameStats(game, redTeamKills + blueTeamKills, redTeamDeaths + blueTeamDeaths, redTeamAssists + blueTeamAssists, redTeamWards + blueTeamWards, redTeamVisionWards + blueTeamVisionWards, redTeamWardsKilled + blueTeamWardsKilled, redTeamGold + blueTeamGold, redTeamMinionKills + blueTeamMinionKills, redTeamMonsterKills + blueTeamMonsterKills);
-					game.setGameStats(gameStats);
 				}
 			}
 		}
