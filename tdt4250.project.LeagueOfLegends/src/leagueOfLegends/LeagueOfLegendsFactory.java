@@ -130,6 +130,15 @@ public interface LeagueOfLegendsFactory extends EFactory {
 	ChampionsStats createChampionsStats();
 
 	/**
+	 * Returns a new object of class '<em>Team Stats</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Team Stats</em>'.
+	 * @generated
+	 */
+	TeamStats createTeamStats();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

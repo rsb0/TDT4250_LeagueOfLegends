@@ -234,13 +234,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int TEAM__WIN_LOSS_RATIO = 3;
 
 	/**
+	 * The feature id for the '<em><b>Team Stats</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM__TEAM_STATS = 4;
+
+	/**
 	 * The number of structural features of the '<em>Team</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEAM_FEATURE_COUNT = 4;
+	int TEAM_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Team</em>' class.
@@ -1224,6 +1233,178 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int CHAMPIONS_STATS_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link leagueOfLegends.impl.TeamStatsImpl <em>Team Stats</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see leagueOfLegends.impl.TeamStatsImpl
+	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getTeamStats()
+	 * @generated
+	 */
+	int TEAM_STATS = 12;
+
+	/**
+	 * The feature id for the '<em><b>Team</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__TEAM = 0;
+
+	/**
+	 * The feature id for the '<em><b>Games Played</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__GAMES_PLAYED = 1;
+
+	/**
+	 * The feature id for the '<em><b>Kills</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__KILLS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Deaths</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__DEATHS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Assists</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__ASSISTS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Kill Death Assist Ratio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__KILL_DEATH_ASSIST_RATIO = 5;
+
+	/**
+	 * The feature id for the '<em><b>Win Lose Ratio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__WIN_LOSE_RATIO = 6;
+
+	/**
+	 * The feature id for the '<em><b>Game Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__GAME_WINS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Match Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__MATCH_WINS = 8;
+
+	/**
+	 * The feature id for the '<em><b>Tournament Wins</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__TOURNAMENT_WINS = 9;
+
+	/**
+	 * The feature id for the '<em><b>Tournament Second Places</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__TOURNAMENT_SECOND_PLACES = 10;
+
+	/**
+	 * The feature id for the '<em><b>Tournament Thrid Places</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__TOURNAMENT_THRID_PLACES = 11;
+
+	/**
+	 * The feature id for the '<em><b>Player With Most Kills</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__PLAYER_WITH_MOST_KILLS = 12;
+
+	/**
+	 * The feature id for the '<em><b>Player With Most Deaths</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__PLAYER_WITH_MOST_DEATHS = 13;
+
+	/**
+	 * The feature id for the '<em><b>Player With Most Assists</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__PLAYER_WITH_MOST_ASSISTS = 14;
+
+	/**
+	 * The feature id for the '<em><b>Player With Highest Kda</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS__PLAYER_WITH_HIGHEST_KDA = 15;
+
+	/**
+	 * The number of structural features of the '<em>Team Stats</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS_FEATURE_COUNT = 16;
+
+	/**
+	 * The number of operations of the '<em>Team Stats</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_STATS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1231,7 +1412,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getBestOf()
 	 * @generated
 	 */
-	int BEST_OF = 12;
+	int BEST_OF = 13;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Position <em>Position</em>}' enum.
@@ -1241,7 +1422,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getPosition()
 	 * @generated
 	 */
-	int POSITION = 13;
+	int POSITION = 14;
 
 	/**
 	 * The meta object id for the '{@link leagueOfLegends.Side <em>Side</em>}' enum.
@@ -1251,7 +1432,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSide()
 	 * @generated
 	 */
-	int SIDE = 14;
+	int SIDE = 15;
 
 
 	/**
@@ -1262,7 +1443,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getSplitType()
 	 * @generated
 	 */
-	int SPLIT_TYPE = 15;
+	int SPLIT_TYPE = 16;
 
 
 	/**
@@ -1372,6 +1553,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTeam_WinLossRatio();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link leagueOfLegends.Team#getTeamStats <em>Team Stats</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Team Stats</em>'.
+	 * @see leagueOfLegends.Team#getTeamStats()
+	 * @see #getTeam()
+	 * @generated
+	 */
+	EReference getTeam_TeamStats();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Player <em>Player</em>}'.
@@ -2398,6 +2590,192 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EAttribute getChampionsStats_WinLoseRatio();
 
 	/**
+	 * Returns the meta object for class '{@link leagueOfLegends.TeamStats <em>Team Stats</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Team Stats</em>'.
+	 * @see leagueOfLegends.TeamStats
+	 * @generated
+	 */
+	EClass getTeamStats();
+
+	/**
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.TeamStats#getTeam <em>Team</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Team</em>'.
+	 * @see leagueOfLegends.TeamStats#getTeam()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EReference getTeamStats_Team();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getGamesPlayed <em>Games Played</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Games Played</em>'.
+	 * @see leagueOfLegends.TeamStats#getGamesPlayed()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_GamesPlayed();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getKills <em>Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Kills</em>'.
+	 * @see leagueOfLegends.TeamStats#getKills()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_Kills();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getDeaths <em>Deaths</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deaths</em>'.
+	 * @see leagueOfLegends.TeamStats#getDeaths()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_Deaths();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getAssists <em>Assists</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Assists</em>'.
+	 * @see leagueOfLegends.TeamStats#getAssists()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_Assists();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getKillDeathAssistRatio <em>Kill Death Assist Ratio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Kill Death Assist Ratio</em>'.
+	 * @see leagueOfLegends.TeamStats#getKillDeathAssistRatio()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_KillDeathAssistRatio();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getWinLoseRatio <em>Win Lose Ratio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Win Lose Ratio</em>'.
+	 * @see leagueOfLegends.TeamStats#getWinLoseRatio()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_WinLoseRatio();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getGameWins <em>Game Wins</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Game Wins</em>'.
+	 * @see leagueOfLegends.TeamStats#getGameWins()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_GameWins();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getMatchWins <em>Match Wins</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Match Wins</em>'.
+	 * @see leagueOfLegends.TeamStats#getMatchWins()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_MatchWins();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getTournamentWins <em>Tournament Wins</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tournament Wins</em>'.
+	 * @see leagueOfLegends.TeamStats#getTournamentWins()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_TournamentWins();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getTournamentSecondPlaces <em>Tournament Second Places</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tournament Second Places</em>'.
+	 * @see leagueOfLegends.TeamStats#getTournamentSecondPlaces()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_TournamentSecondPlaces();
+
+	/**
+	 * Returns the meta object for the attribute '{@link leagueOfLegends.TeamStats#getTournamentThridPlaces <em>Tournament Thrid Places</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tournament Thrid Places</em>'.
+	 * @see leagueOfLegends.TeamStats#getTournamentThridPlaces()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EAttribute getTeamStats_TournamentThridPlaces();
+
+	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.TeamStats#getPlayerWithMostKills <em>Player With Most Kills</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player With Most Kills</em>'.
+	 * @see leagueOfLegends.TeamStats#getPlayerWithMostKills()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EReference getTeamStats_PlayerWithMostKills();
+
+	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.TeamStats#getPlayerWithMostDeaths <em>Player With Most Deaths</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player With Most Deaths</em>'.
+	 * @see leagueOfLegends.TeamStats#getPlayerWithMostDeaths()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EReference getTeamStats_PlayerWithMostDeaths();
+
+	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.TeamStats#getPlayerWithMostAssists <em>Player With Most Assists</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player With Most Assists</em>'.
+	 * @see leagueOfLegends.TeamStats#getPlayerWithMostAssists()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EReference getTeamStats_PlayerWithMostAssists();
+
+	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.TeamStats#getPlayerWithHighestKda <em>Player With Highest Kda</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Player With Highest Kda</em>'.
+	 * @see leagueOfLegends.TeamStats#getPlayerWithHighestKda()
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	EReference getTeamStats_PlayerWithHighestKda();
+
+	/**
 	 * Returns the meta object for enum '{@link leagueOfLegends.BestOf <em>Best Of</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2543,6 +2921,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TEAM__WIN_LOSS_RATIO = eINSTANCE.getTeam_WinLossRatio();
+
+		/**
+		 * The meta object literal for the '<em><b>Team Stats</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM__TEAM_STATS = eINSTANCE.getTeam_TeamStats();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.PlayerImpl <em>Player</em>}' class.
@@ -3315,6 +3701,144 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CHAMPIONS_STATS__WIN_LOSE_RATIO = eINSTANCE.getChampionsStats_WinLoseRatio();
+
+		/**
+		 * The meta object literal for the '{@link leagueOfLegends.impl.TeamStatsImpl <em>Team Stats</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see leagueOfLegends.impl.TeamStatsImpl
+		 * @see leagueOfLegends.impl.LeagueOfLegendsPackageImpl#getTeamStats()
+		 * @generated
+		 */
+		EClass TEAM_STATS = eINSTANCE.getTeamStats();
+
+		/**
+		 * The meta object literal for the '<em><b>Team</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_STATS__TEAM = eINSTANCE.getTeamStats_Team();
+
+		/**
+		 * The meta object literal for the '<em><b>Games Played</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__GAMES_PLAYED = eINSTANCE.getTeamStats_GamesPlayed();
+
+		/**
+		 * The meta object literal for the '<em><b>Kills</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__KILLS = eINSTANCE.getTeamStats_Kills();
+
+		/**
+		 * The meta object literal for the '<em><b>Deaths</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__DEATHS = eINSTANCE.getTeamStats_Deaths();
+
+		/**
+		 * The meta object literal for the '<em><b>Assists</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__ASSISTS = eINSTANCE.getTeamStats_Assists();
+
+		/**
+		 * The meta object literal for the '<em><b>Kill Death Assist Ratio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__KILL_DEATH_ASSIST_RATIO = eINSTANCE.getTeamStats_KillDeathAssistRatio();
+
+		/**
+		 * The meta object literal for the '<em><b>Win Lose Ratio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__WIN_LOSE_RATIO = eINSTANCE.getTeamStats_WinLoseRatio();
+
+		/**
+		 * The meta object literal for the '<em><b>Game Wins</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__GAME_WINS = eINSTANCE.getTeamStats_GameWins();
+
+		/**
+		 * The meta object literal for the '<em><b>Match Wins</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__MATCH_WINS = eINSTANCE.getTeamStats_MatchWins();
+
+		/**
+		 * The meta object literal for the '<em><b>Tournament Wins</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__TOURNAMENT_WINS = eINSTANCE.getTeamStats_TournamentWins();
+
+		/**
+		 * The meta object literal for the '<em><b>Tournament Second Places</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__TOURNAMENT_SECOND_PLACES = eINSTANCE.getTeamStats_TournamentSecondPlaces();
+
+		/**
+		 * The meta object literal for the '<em><b>Tournament Thrid Places</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEAM_STATS__TOURNAMENT_THRID_PLACES = eINSTANCE.getTeamStats_TournamentThridPlaces();
+
+		/**
+		 * The meta object literal for the '<em><b>Player With Most Kills</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_STATS__PLAYER_WITH_MOST_KILLS = eINSTANCE.getTeamStats_PlayerWithMostKills();
+
+		/**
+		 * The meta object literal for the '<em><b>Player With Most Deaths</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_STATS__PLAYER_WITH_MOST_DEATHS = eINSTANCE.getTeamStats_PlayerWithMostDeaths();
+
+		/**
+		 * The meta object literal for the '<em><b>Player With Most Assists</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_STATS__PLAYER_WITH_MOST_ASSISTS = eINSTANCE.getTeamStats_PlayerWithMostAssists();
+
+		/**
+		 * The meta object literal for the '<em><b>Player With Highest Kda</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_STATS__PLAYER_WITH_HIGHEST_KDA = eINSTANCE.getTeamStats_PlayerWithHighestKda();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Team#getLeague <em>League</em>}</li>
  *   <li>{@link leagueOfLegends.Team#getPlayer <em>Player</em>}</li>
  *   <li>{@link leagueOfLegends.Team#getWinLossRatio <em>Win Loss Ratio</em>}</li>
+ *   <li>{@link leagueOfLegends.Team#getTeamStats <em>Team Stats</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getTeam()
@@ -107,5 +108,29 @@ public interface Team extends EObject {
 	 * @generated
 	 */
 	void setWinLossRatio(float value);
+
+	/**
+	 * Returns the value of the '<em><b>Team Stats</b></em>' containment reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.TeamStats#getTeam <em>Team</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Team Stats</em>' containment reference.
+	 * @see #setTeamStats(TeamStats)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getTeam_TeamStats()
+	 * @see leagueOfLegends.TeamStats#getTeam
+	 * @model opposite="team" containment="true"
+	 * @generated
+	 */
+	TeamStats getTeamStats();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Team#getTeamStats <em>Team Stats</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Team Stats</em>' containment reference.
+	 * @see #getTeamStats()
+	 * @generated
+	 */
+	void setTeamStats(TeamStats value);
 
 } // Team

@@ -9,6 +9,7 @@ import leagueOfLegends.LeagueOfLegendsPackage;
 import leagueOfLegends.Player;
 import leagueOfLegends.Team;
 
+import leagueOfLegends.TeamStats;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -36,6 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.TeamImpl#getLeague <em>League</em>}</li>
  *   <li>{@link leagueOfLegends.impl.TeamImpl#getPlayer <em>Player</em>}</li>
  *   <li>{@link leagueOfLegends.impl.TeamImpl#getWinLossRatio <em>Win Loss Ratio</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.TeamImpl#getTeamStats <em>Team Stats</em>}</li>
  * </ul>
  *
  * @generated
@@ -90,6 +92,16 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 	 * @ordered
 	 */
 	protected float winLossRatio = WIN_LOSS_RATIO_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getTeamStats() <em>Team Stats</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTeamStats()
+	 * @generated
+	 * @ordered
+	 */
+	protected TeamStats teamStats;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,6 +229,51 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public TeamStats getTeamStats() {
+		return teamStats;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTeamStats(TeamStats newTeamStats, NotificationChain msgs) {
+		TeamStats oldTeamStats = teamStats;
+		teamStats = newTeamStats;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.TEAM__TEAM_STATS, oldTeamStats, newTeamStats);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTeamStats(TeamStats newTeamStats) {
+		if (newTeamStats != teamStats) {
+			NotificationChain msgs = null;
+			if (teamStats != null)
+				msgs = ((InternalEObject)teamStats).eInverseRemove(this, LeagueOfLegendsPackage.TEAM_STATS__TEAM, TeamStats.class, msgs);
+			if (newTeamStats != null)
+				msgs = ((InternalEObject)newTeamStats).eInverseAdd(this, LeagueOfLegendsPackage.TEAM_STATS__TEAM, TeamStats.class, msgs);
+			msgs = basicSetTeamStats(newTeamStats, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.TEAM__TEAM_STATS, newTeamStats, newTeamStats));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -227,6 +284,10 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return basicSetLeague((League)otherEnd, msgs);
 			case LeagueOfLegendsPackage.TEAM__PLAYER:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPlayer()).basicAdd(otherEnd, msgs);
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				if (teamStats != null)
+					msgs = ((InternalEObject)teamStats).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LeagueOfLegendsPackage.TEAM__TEAM_STATS, null, msgs);
+				return basicSetTeamStats((TeamStats)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -243,6 +304,8 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return basicSetLeague(null, msgs);
 			case LeagueOfLegendsPackage.TEAM__PLAYER:
 				return ((InternalEList<?>)getPlayer()).basicRemove(otherEnd, msgs);
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				return basicSetTeamStats(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -277,6 +340,8 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return getPlayer();
 			case LeagueOfLegendsPackage.TEAM__WIN_LOSS_RATIO:
 				return getWinLossRatio();
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				return getTeamStats();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -303,6 +368,9 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 			case LeagueOfLegendsPackage.TEAM__WIN_LOSS_RATIO:
 				setWinLossRatio((Float)newValue);
 				return;
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				setTeamStats((TeamStats)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -327,6 +395,9 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 			case LeagueOfLegendsPackage.TEAM__WIN_LOSS_RATIO:
 				setWinLossRatio(WIN_LOSS_RATIO_EDEFAULT);
 				return;
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				setTeamStats((TeamStats)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -347,6 +418,8 @@ public class TeamImpl extends MinimalEObjectImpl.Container implements Team {
 				return player != null && !player.isEmpty();
 			case LeagueOfLegendsPackage.TEAM__WIN_LOSS_RATIO:
 				return winLossRatio != WIN_LOSS_RATIO_EDEFAULT;
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
+				return teamStats != null;
 		}
 		return super.eIsSet(featureID);
 	}

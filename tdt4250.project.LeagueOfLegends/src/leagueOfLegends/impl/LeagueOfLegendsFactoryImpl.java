@@ -69,6 +69,7 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 			case LeagueOfLegendsPackage.SEASON: return createSeason();
 			case LeagueOfLegendsPackage.GAME_STATS: return createGameStats();
 			case LeagueOfLegendsPackage.CHAMPIONS_STATS: return createChampionsStats();
+			case LeagueOfLegendsPackage.TEAM_STATS: return createTeamStats();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -246,6 +247,17 @@ public class LeagueOfLegendsFactoryImpl extends EFactoryImpl implements LeagueOf
 	public ChampionsStats createChampionsStats() {
 		ChampionsStatsImpl championsStats = new ChampionsStatsImpl();
 		return championsStats;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TeamStats createTeamStats() {
+		TeamStatsImpl teamStats = new TeamStatsImpl();
+		return teamStats;
 	}
 
 	/**

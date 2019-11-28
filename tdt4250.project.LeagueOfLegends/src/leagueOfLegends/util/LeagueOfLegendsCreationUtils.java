@@ -37,6 +37,12 @@ public class LeagueOfLegendsCreationUtils {
 		return team;
 	}
 	
+	public static TeamStats createTeamStats(Team team) {
+		TeamStats teamStats = LeagueOfLegendsFactory.eINSTANCE.createTeamStats();
+		teamStats.setTeam(team);
+		return teamStats;
+	}
+	
 	public static Match createMatch(String matchID, String week) {
 		Match match = LeagueOfLegendsFactory.eINSTANCE.createMatch();
 		match.setMatchID(matchID);

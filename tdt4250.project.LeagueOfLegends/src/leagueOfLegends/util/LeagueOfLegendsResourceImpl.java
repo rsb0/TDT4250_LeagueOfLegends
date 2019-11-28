@@ -63,6 +63,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		Map<String, Match> matches = new HashMap<String, Match>();
 		Map<String, Champion> champions = new HashMap<String, Champion>();
 		Map<Game, GameStats> gameStatistics = new HashMap<Game, GameStats>();
+		Map<Team, TeamStats> teamStatistics = new HashMap<Team, TeamStats>();
 
 		// Season season = LeagueOfLegendsCreationUtils.createSeason(splitName)
 
@@ -102,7 +103,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					}
 
 					// Handle Champions
-					/** If current row contains stats for the whole game (celldata[6] > 100) 
+					/** If current row contains stats for the whole game (celldata[6] > 10) 
 					*&& If any of the banned champions in this game (cols 12-16) has not been created yet: create it
 					*/
 					if (Integer.parseInt(cellData[6]) > 10) {
@@ -186,6 +187,24 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						game.setBlueTeam(teams.get(cellData[10]));
 					} else {
 						game.setRedTeam(teams.get(cellData[10]));
+					}
+					
+					
+					// Handle TeamStats
+					if (Integer.parseInt(cellData[6]) >= 100) {
+						// If teamStats has not yet been added for this team, add it to team
+						if (!teamStatistics.containsKey(team)) {
+							teamStatistics.put(team, LeagueOfLegendsCreationUtils.createTeamStats(team));
+						}
+						// Create TeamStats and populate with data that can be collected directly from current row
+						TeamStats teamStats = teamStatistics.get(team);
+						teamStats.setGamesPlayed(teamStats.getGamesPlayed() + 1);
+						teamStats.setKills(teamStats.getKills() + Integer.parseInt(cellData[19]));
+						teamStats.setDeaths(teamStats.getDeaths() + Integer.parseInt(cellData[20]));
+						teamStats.setAssists(teamStats.getAssists() + Integer.parseInt(cellData[21]));
+						if (cellData[18].trim().equals("1")) {
+							teamStats.setGameWins(teamStats.getGameWins() + 1);
+						}
 					}
 
 					// Handle player
@@ -289,7 +308,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 			e.printStackTrace();
 		}
 		
-		//Handle gameTeamStats
+		//Handle gameTeamStats and gameStats
 		
 		for (Season season: league.getSeasons()) {
 			for(Match match: season.getMatches()) {
@@ -325,7 +344,8 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					game.getGameTeamStat().add(gameTeamStatsRed);
 					game.getGameTeamStat().add(gameTeamStatsBlue);
 
-					// Populate remaining game statistics
+					// Handle gameStats
+					// Populate remaining game statistics for each game
 					game.getGameStats().setTotalKills(redTeamKills + blueTeamKills);
 					game.getGameStats().setTotalDeaths(redTeamDeaths + blueTeamDeaths);
 					game.getGameStats().setTotalAssist(redTeamAssists + blueTeamAssists);
@@ -398,6 +418,62 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 					"   vs.   " + match.getGames().get(0).getBlueTeam().getName());
 			for (Player player : matchWinner.getPlayer()) {
 				player.getPlayerStats().setCareerMatchWins(player.getPlayerStats().getCareerMatchWins() + 1);
+			}
+		}
+		
+		// Update teamStats with data that was not added upon instantiation
+		for (Team team : teams.values()) {
+			TeamStats teamStat = team.getTeamStats();
+			teamStat.setKillDeathAssistRatio((teamStat.getKills() + teamStat.getAssists()) / teamStat.getDeaths());
+			teamStat.setWinLoseRatio((float)teamStat.getGameWins() / ((float)teamStat.getGamesPlayed() - (float)teamStat.getGameWins()));
+			// Set team tournament wins, seconds and third places
+			// Set match wins
+			for (Match match : matches.values()) {
+				if (match.getTeams().contains(team)) {
+					if (match.getWinner() == team) {
+						teamStat.setMatchWins(teamStat.getMatchWins() + 1);
+					}
+					
+					if (match.getWeek().trim().equals("F")) {
+						if (match.getWinner() == team) {
+							teamStat.setTournamentWins(teamStat.getTournamentWins() + 1);
+						} else  {
+							teamStat.setTournamentSecondPlaces(teamStat.getTournamentSecondPlaces() + 1);
+						}
+					}
+					
+					if (match.getWeek().trim().equals("3p") && match.getWinner() == team) {
+						teamStat.setTournamentThridPlaces(teamStat.getTournamentThridPlaces() + 1);
+					}
+				}
+			}
+			
+			// Set team player with most kills, deaths, assisssts and highest KDA
+			int mostKills = 0;
+			int mostDeaths = 0;
+			int mostAssists = 0;
+			float highestKDA = 0;
+			for (Player player : team.getPlayer()) {
+				int kills = player.getPlayerStats().getCareerKills();
+				int deaths = player.getPlayerStats().getCareerDeaths();
+				int assists = player.getPlayerStats().getCareerAssist();
+				float kda = player.getPlayerStats().getKillDeathAssistRatio();
+				if (kills > mostKills) {
+					teamStat.setPlayerWithMostKills(player);
+					mostKills = kills;
+				}
+				if (deaths > mostDeaths) {
+					teamStat.setPlayerWithMostDeaths(player);
+					mostDeaths = deaths;
+				}
+				if (assists > mostAssists) {
+					teamStat.setPlayerWithMostAssists(player);
+					mostAssists = assists;
+				}
+				if (kda > highestKDA) {
+					teamStat.setPlayerWithHighestKda(player);
+					highestKDA = kda;
+				}
 			}
 		}
 		
