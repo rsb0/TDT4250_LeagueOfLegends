@@ -2092,7 +2092,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		  (playerEClass,
 		   source,
 		   new String[] {
-			   "constraints", "nameNotNull teamNotNull validPosition tester"
+			   "constraints", "nameNotNull teamNotNull validPosition"
 		   });
 		addAnnotation
 		  (matchEClass,

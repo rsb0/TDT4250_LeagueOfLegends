@@ -483,7 +483,6 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validatePlayer_nameNotNull(player, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePlayer_teamNotNull(player, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePlayer_validPosition(player, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePlayer_tester(player, diagnostics, context);
 		return result;
 	}
 
@@ -563,34 +562,6 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 						 0,
 						 "_UI_GenericConstraint_diagnostic",
 						 new Object[] { "validPosition", getObjectLabel(player, context) },
-						 new Object[] { player },
-						 context));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * Validates the tester constraint of '<em>Player</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	public boolean validatePlayer_tester(Player player, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO implement the constraint
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (true) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "tester", getObjectLabel(player, context) },
 						 new Object[] { player },
 						 context));
 			}
@@ -718,7 +689,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 	 * Validates the validNumberOfGames constraint of '<em>Match</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated Not
+	 * @generated NOT
 	 */
 	public boolean validateMatch_validNumberOfGames(Match match, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO implement the constraint
@@ -726,7 +697,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		// -> verify the diagnostic details, including severity, code, and message
 		// Ensure that you remove @generated or mark it @generated NOT
 		
-		if (!BestOf.VALUES.stream().map(bestOf -> bestOf.getValue()).anyMatch(bestOf -> bestOf == match.getGames().size())) {
+		if (!BestOf.VALUES.stream().map(bestOf -> bestOf.getValue()).anyMatch(bestOf -> bestOf >= match.getGames().size())) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(createDiagnostic

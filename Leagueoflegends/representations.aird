@@ -4,6 +4,7 @@
     <semanticResources>league.leagueoflegends</semanticResources>
     <semanticResources>file:/C:/Users/Bruker/git/TDT4250_LeagueOfLegends/tdt4250.project.LeagueOfLegends/model/tdt4250.project.LeagueOfLegends.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>My.leagueoflegends</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_-zR9UAvsEeqoj-dVoEaEAA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tpA0QAvtEeqoj-dVoEaEAA" name="testing02" repPath="#_toblcAvtEeqoj-dVoEaEAA">
