@@ -4,6 +4,23 @@ This is a project delivery for the NTNU course TDT4250, created by Henrik Knudse
 
 ## Installation guide
 
+The project can be installed and ran by following these instructions:
+
+1. Download the github repository.
+2. Install your choice of Eclipse IDE.
+3. Install any needed project dependencies:
+   1. EMF modelling tools
+   2. Sirius
+   3. Eclipse Developer tools
+4. Import the repository's content into your eclipse workspace.
+5. Create a new runtime configuration based on the project and launch a separate eclipse application with it.
+6. Import LeagueOfLegends and LeagueOfLegends.project projects into the eclipse application.
+
+The application should now be ready to be tried out:
+1. The provided model instance (leagueoflegends.leagueoflegends) can now be inspected within the LeagueOfLegends project.
+2. Any new representations can be created through using the Aird editor with representations.aird, within the LeagueOfLegends project (A representation of the League is already provided, found just under the top level League object in leagueoflegends.leagueoflegends, called "league").
+3. The ViewPoint specification can be inspected, through utilizing the ViewPoint Specification Editor on project.odesign, found in LeagueOfLegends.project/description.
+
 ## Description
 
 The group chose task 1 for the project assignment:
