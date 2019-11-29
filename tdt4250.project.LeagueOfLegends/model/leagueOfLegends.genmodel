@@ -38,6 +38,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/teams"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/seasons"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/champions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//League/leagueStats"/>
     </genClasses>
     <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//Champion">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//Champion/name"/>
@@ -167,6 +168,20 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//TeamStats/playerWithMostDeaths"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//TeamStats/playerWithMostAssists"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//TeamStats/playerWithHighestKda"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.project.LeagueOfLegends.ecore#//LeagueStats">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/league"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/kills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/deaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/assists"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/playerWithMostKills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/playerWithMostDeaths"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/playerWithMostAssists"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/playerWithHighestKda"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/championWithMostKills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/championWithMostDeaths"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/championWithMostAssists"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.project.LeagueOfLegends.ecore#//LeagueStats/championWithHighestKda"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

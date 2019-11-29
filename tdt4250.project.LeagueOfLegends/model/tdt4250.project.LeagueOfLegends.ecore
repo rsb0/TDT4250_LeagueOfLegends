@@ -10,6 +10,8 @@
         eType="#//Season" containment="true" eOpposite="#//Season/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="champions" upperBound="-1"
         eType="#//Champion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leagueStats" eType="#//LeagueStats"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Champion">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -194,5 +196,24 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithMostAssists"
         eType="#//Player"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithHighestKda" eType="#//Player"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LeagueStats">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="league" eType="#//League"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assists" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithMostKills" eType="#//Player"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithMostDeaths" eType="#//Player"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithMostAssists"
+        eType="#//Player"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithHighestKda" eType="#//Player"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championWithMostKills"
+        eType="#//Champion"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championWithMostDeaths"
+        eType="#//Champion"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championWithMostAssists"
+        eType="#//Champion"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="championWithHighestKda"
+        eType="#//Champion"/>
   </eClassifiers>
 </ecore:EPackage>

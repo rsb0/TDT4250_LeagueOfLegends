@@ -120,6 +120,10 @@ public class LeagueOfLegendsAdapterFactory extends AdapterFactoryImpl {
 				return createTeamStatsAdapter();
 			}
 			@Override
+			public Adapter caseLeagueStats(LeagueStats object) {
+				return createLeagueStatsAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -318,6 +322,20 @@ public class LeagueOfLegendsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTeamStatsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link leagueOfLegends.LeagueStats <em>League Stats</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see leagueOfLegends.LeagueStats
+	 * @generated
+	 */
+	public Adapter createLeagueStatsAdapter() {
 		return null;
 	}
 

@@ -217,7 +217,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						
 						if (!result.isPresent()) {
 							// Create player
-							player = LeagueOfLegendsCreationUtils.createPlayer(cellData[9]);
+							player = LeagueOfLegendsCreationUtils.createPlayer(cellData[9], cellData[8]);
 							// Create PlayerStats for player
 							PlayerStats playerStats = LeagueOfLegendsCreationUtils.createPlayerStats();
 							// Add playerstats to player
@@ -477,7 +477,32 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 			}
 		}
 		
-
+		//Set league Stats
+		
+		int leagueKills = league.getTeams().stream().map(team -> team.getTeamStats().getKills()).reduce((0), (subtotal, increment)-> subtotal += increment);
+		int leagueAssists = league.getTeams().stream().map(team -> team.getTeamStats().getDeaths()).reduce((0), (subtotal, increment)-> subtotal += increment);
+		int leagueDeaths = league.getTeams().stream().map(team -> team.getTeamStats().getAssists()).reduce((0), (subtotal, increment)-> subtotal += increment);
+		
+		Player playerWithMostKills = league.getTeams().stream().map(team -> team.getTeamStats().getPlayerWithMostKills()).max((a,b) -> a.getPlayerStats().getCareerKills() - b.getPlayerStats().getCareerKills()).get();
+		Player playerWithMostDeaths = league.getTeams().stream().map(team -> team.getTeamStats().getPlayerWithMostDeaths()).max((a,b) -> a.getPlayerStats().getCareerDeaths() - b.getPlayerStats().getCareerDeaths()).get();
+		Player playerWithMostAssists = league.getTeams().stream().map(team -> team.getTeamStats().getPlayerWithMostAssists()).max((a,b) -> a.getPlayerStats().getCareerAssist() - b.getPlayerStats().getCareerAssist()).get();
+		Player playerWithHighestKda = league.getTeams().stream().map(team -> team.getTeamStats().getPlayerWithHighestKda()).max((a,b) -> (int) (a.getPlayerStats().getKillDeathAssistRatio() - b.getPlayerStats().getKillDeathAssistRatio())).get();
+		
+		//remove "default" champion
+		
+		league.getChampions().removeIf(champion -> champion.getName().equals(""));
+		
+		
+		Champion championWithMostKills = league.getChampions().stream().max((a,b) -> a.getChampionStat().getTotalKills() - b.getChampionStat().getTotalKills()).get();
+		Champion championWithMostDeaths = league.getChampions().stream().max((a,b) -> a.getChampionStat().getTotalDeaths() - b.getChampionStat().getTotalDeaths()).get();
+		Champion championWithMostAssists = league.getChampions().stream().max((a,b) -> a.getChampionStat().getTotalAssist() - b.getChampionStat().getTotalAssist()).get();
+		Champion championWithHighestKda = league.getChampions().stream().max((a,b) -> (int) ( a.getChampionStat().getKillDeathAssistRatio() - b.getChampionStat().getKillDeathAssistRatio())).get();
+		
+		LeagueStats leagueStats = LeagueOfLegendsCreationUtils.createLeagueStats(leagueKills, leagueAssists, leagueDeaths, playerWithMostKills, playerWithMostDeaths, playerWithMostAssists, playerWithHighestKda, championWithMostKills, championWithMostDeaths, championWithMostAssists, championWithHighestKda);
+		leagueStats.setLeague(league);
+		league.setLeagueStats(leagueStats);
+		
+		
 		try {
 			File file = new File("assets\\league.xmi");
 			FileOutputStream fop = new FileOutputStream(file);

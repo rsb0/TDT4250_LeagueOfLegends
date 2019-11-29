@@ -24,9 +24,17 @@ public class LeagueOfLegendsCreationUtils {
 		return champion;
 	}
 	
-	public static Player createPlayer(String name) {
+	public static Player createPlayer(String name, String position) {
 		Player player = LeagueOfLegendsFactory.eINSTANCE.createPlayer();
 		player.setName(name);
+		System.out.println("Pos:" + position);
+		for(Position pos : Position.VALUES) {
+			System.out.println(pos.getLiteral());
+			if(pos.getLiteral().equals(position.toLowerCase())) {
+				player.setPosition(pos);
+				break;
+			}
+		}
 		return player;
 	}
 	
@@ -111,6 +119,28 @@ public class LeagueOfLegendsCreationUtils {
 		gameTeamStats.setTotalMinionKills(minionKills);
 		gameTeamStats.setTotalMonsterKills(monsterKills);
 		return gameTeamStats;
+	}
+	
+	public static LeagueStats createLeagueStats(int kills, int deaths, int assists, Player playerWithMostKills, Player playerWithMostDeaths,
+			Player playerWithMostAssists, Player playerHighestKda, Champion championWithMostKills, Champion championWithMostDeaths, Champion championWithMostAssists, Champion championWithHighestKda) {
+		LeagueStats leagueStats = LeagueOfLegendsFactory.eINSTANCE.createLeagueStats();
+		System.out.println(championWithMostKills.getName());
+		System.out.println(championWithMostDeaths.getName());
+		System.out.println(championWithMostAssists.getName());
+		System.out.println(championWithHighestKda.getName());
+		
+		leagueStats.setKills(kills);
+		leagueStats.setAssists(assists);
+		leagueStats.setDeaths(deaths);
+		leagueStats.setPlayerWithMostKills(playerWithMostKills);
+		leagueStats.setPlayerWithMostDeaths(playerWithMostDeaths);
+		leagueStats.setPlayerWithMostAssists(playerWithMostAssists);
+		leagueStats.setPlayerWithHighestKda(playerHighestKda);
+		leagueStats.setChampionWithMostKills(championWithMostKills);
+		leagueStats.setChampionWithMostDeaths(championWithMostDeaths);
+		leagueStats.setChampionWithMostAssists(championWithMostAssists);
+		leagueStats.setChampionWithHighestKda(championWithHighestKda);
+		return leagueStats;
 	}
 	
 	

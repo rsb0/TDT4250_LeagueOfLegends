@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.League#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.League#getSeasons <em>Seasons</em>}</li>
  *   <li>{@link leagueOfLegends.League#getChampions <em>Champions</em>}</li>
+ *   <li>{@link leagueOfLegends.League#getLeagueStats <em>League Stats</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague()
@@ -87,5 +88,27 @@ public interface League extends EObject {
 	 * @generated
 	 */
 	EList<Champion> getChampions();
+
+	/**
+	 * Returns the value of the '<em><b>League Stats</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>League Stats</em>' containment reference.
+	 * @see #setLeagueStats(LeagueStats)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague_LeagueStats()
+	 * @model containment="true"
+	 * @generated
+	 */
+	LeagueStats getLeagueStats();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.League#getLeagueStats <em>League Stats</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>League Stats</em>' containment reference.
+	 * @see #getLeagueStats()
+	 * @generated
+	 */
+	void setLeagueStats(LeagueStats value);
 
 } // League
