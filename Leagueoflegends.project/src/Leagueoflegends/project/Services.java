@@ -25,7 +25,7 @@ public class Services {
     /**
     * See http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.sirius.doc%2Fdoc%2Findex.html&cp=24 for documentation on how to write service methods.
     */
-	public String getImage(Team team) {
+	public String getTeamImage(Team team) {
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		String imageName = (team.getName().replaceAll(" ", "") + ".png").toLowerCase();
 		
@@ -42,23 +42,7 @@ public class Services {
 		}
 	}
 	
-	public String getPlayerImage(Player player) {
-		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
-		
-		String imageName = (player.getName().replaceAll(" ", "") + ".jpg").toLowerCase();
-		Path imagePath = new Path("/Players/" + imageName);
-		URL imageURL = FileLocator.find(bundle, imagePath, null);
-		
-		File f = new File("/Leagueoflegends.project/"+imagePath.toString());
-	
-		if (f.exists()) {
-			//return "/Leagueoflegends.project" + imagePath.toString();
-			return "/Leagueoflegends.project/Players/jankos.jpg";
-		}
-		return f.toString();
-	}
-	
-	public String getPossition(Player player) {
+	public String getPositionImage(Player player) {
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		
 		String imageName = (player.getPosition().toString()).replaceAll(" ", "") + ".png";
@@ -72,7 +56,7 @@ public class Services {
 		return "/Leagueoflegends.project/Possitiones/middle.png";
 	}
 	
-	public String getLeague(League league) {
+	public String getLeagueImage(League league) {
 		
 		// Note this is actually overkill, as we only have one league, but if expanded it could show more league, and the function is ready
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
@@ -88,7 +72,7 @@ public class Services {
 		return "/Leagueoflegends.project/Leagues/EULCS.png";
 	}
 	
-	public String trynrtwo(Player player) {
+	public String getPlayerImage(Player player) {
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		
 		String imageName = player.getName().replaceAll(" ", "") + ".jpg";
@@ -113,7 +97,7 @@ public class Services {
 		
 	}
 	
-	public String getChampionImages(Champion champion) {
+	public String getChampionImage(Champion champion) {
 		
 		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 	
