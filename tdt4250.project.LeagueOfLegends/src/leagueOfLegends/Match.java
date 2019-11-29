@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames'"
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames validWinnerTeam'"
  * @generated
  */
 public interface Match extends EObject {

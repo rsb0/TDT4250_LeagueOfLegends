@@ -598,6 +598,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validateMatch_validNumberOfTeams(match, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMatch_winnerNotNull(match, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMatch_validNumberOfGames(match, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMatch_validWinnerTeam(match, diagnostics, context);
 		return result;
 	}
 
@@ -697,7 +698,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		// -> verify the diagnostic details, including severity, code, and message
 		// Ensure that you remove @generated or mark it @generated NOT
 		
-		if (!BestOf.VALUES.stream().map(bestOf -> bestOf.getValue()).anyMatch(bestOf -> bestOf >= match.getGames().size())) {
+		if (!(match.getBestOF().getValue() >= match.getGames().size())) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(createDiagnostic
@@ -712,6 +713,43 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * Validates the validWinnerTeam constraint of '<em>Match</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean validateMatch_validWinnerTeam(Match match, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (!isValidWinnerTeam(match)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "validWinnerTeam", getObjectLabel(match, context) },
+						 new Object[] { match },
+						 context));
+			}
+			return false;
+		}
+		return true;
+	}
+	
+	private boolean isValidWinnerTeam(Match match) {
+		
+		//Loop through all games, check that winner has won more than 50%.
+		int limit = (int)Math.floor(match.getBestOF().getValue()/2) ;
+		int count = (int)match.getGames().stream().filter(game -> game.getWinningTeam() == match.getWinner()).count();
+		
+		return limit < count;
 	}
 
 	/**

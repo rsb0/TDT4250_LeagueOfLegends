@@ -2098,7 +2098,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		  (matchEClass,
 		   source,
 		   new String[] {
-			   "constraints", "seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames"
+			   "constraints", "seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames validWinnerTeam"
 		   });
 		addAnnotation
 		  (gameEClass,
