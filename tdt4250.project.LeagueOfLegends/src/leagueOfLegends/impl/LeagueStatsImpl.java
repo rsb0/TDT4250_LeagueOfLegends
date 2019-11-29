@@ -10,11 +10,13 @@ import leagueOfLegends.Player;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,16 +43,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * @generated
  */
 public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements LeagueStats {
-	/**
-	 * The cached value of the '{@link #getLeague() <em>League</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLeague()
-	 * @generated
-	 * @ordered
-	 */
-	protected League league;
-
 	/**
 	 * The default value of the '{@link #getKills() <em>Kills</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -217,15 +209,8 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 */
 	@Override
 	public League getLeague() {
-		if (league != null && league.eIsProxy()) {
-			InternalEObject oldLeague = (InternalEObject)league;
-			league = (League)eResolveProxy(oldLeague);
-			if (league != oldLeague) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, oldLeague, league));
-			}
-		}
-		return league;
+		if (eContainerFeatureID() != LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE) return null;
+		return (League)eInternalContainer();
 	}
 
 	/**
@@ -233,8 +218,9 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public League basicGetLeague() {
-		return league;
+	public NotificationChain basicSetLeague(League newLeague, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newLeague, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, msgs);
+		return msgs;
 	}
 
 	/**
@@ -244,10 +230,19 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 */
 	@Override
 	public void setLeague(League newLeague) {
-		League oldLeague = league;
-		league = newLeague;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, oldLeague, league));
+		if (newLeague != eInternalContainer() || (eContainerFeatureID() != LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE && newLeague != null)) {
+			if (EcoreUtil.isAncestor(this, newLeague))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newLeague != null)
+				msgs = ((InternalEObject)newLeague).eInverseAdd(this, LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS, League.class, msgs);
+			msgs = basicSetLeague(newLeague, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, newLeague, newLeague));
 	}
 
 	/**
@@ -645,11 +640,54 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetLeague((League)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
+				return basicSetLeague(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
+				return eInternalContainer().eInverseRemove(this, LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS, League.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
-				if (resolve) return getLeague();
-				return basicGetLeague();
+				return getLeague();
 			case LeagueOfLegendsPackage.LEAGUE_STATS__KILLS:
 				return getKills();
 			case LeagueOfLegendsPackage.LEAGUE_STATS__DEATHS:
@@ -789,7 +827,7 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
-				return league != null;
+				return getLeague() != null;
 			case LeagueOfLegendsPackage.LEAGUE_STATS__KILLS:
 				return kills != KILLS_EDEFAULT;
 			case LeagueOfLegendsPackage.LEAGUE_STATS__DEATHS:

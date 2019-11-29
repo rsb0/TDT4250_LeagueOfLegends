@@ -9,6 +9,7 @@ import leagueOfLegends.GamePlayerStats;
 import leagueOfLegends.GameStats;
 import leagueOfLegends.GameTeamStats;
 import leagueOfLegends.LeagueOfLegendsPackage;
+import leagueOfLegends.Match;
 import leagueOfLegends.Side;
 import leagueOfLegends.Team;
 
@@ -24,6 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -42,6 +44,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link leagueOfLegends.impl.GameImpl#getGamePlayerStats <em>Game Player Stats</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GameImpl#getWinningSide <em>Winning Side</em>}</li>
  *   <li>{@link leagueOfLegends.impl.GameImpl#getWinningTeam <em>Winning Team</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.GameImpl#getMatch <em>Match</em>}</li>
  * </ul>
  *
  * @generated
@@ -409,12 +412,59 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 	 * @generated
 	 */
 	@Override
+	public Match getMatch() {
+		if (eContainerFeatureID() != LeagueOfLegendsPackage.GAME__MATCH) return null;
+		return (Match)eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMatch(Match newMatch, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newMatch, LeagueOfLegendsPackage.GAME__MATCH, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMatch(Match newMatch) {
+		if (newMatch != eInternalContainer() || (eContainerFeatureID() != LeagueOfLegendsPackage.GAME__MATCH && newMatch != null)) {
+			if (EcoreUtil.isAncestor(this, newMatch))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newMatch != null)
+				msgs = ((InternalEObject)newMatch).eInverseAdd(this, LeagueOfLegendsPackage.MATCH__GAMES, Match.class, msgs);
+			msgs = basicSetMatch(newMatch, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.GAME__MATCH, newMatch, newMatch));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.GAME__GAME_STATS:
 				if (gameStats != null)
 					msgs = ((InternalEObject)gameStats).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LeagueOfLegendsPackage.GAME__GAME_STATS, null, msgs);
 				return basicSetGameStats((GameStats)otherEnd, msgs);
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetMatch((Match)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -433,8 +483,24 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 				return ((InternalEList<?>)getGameTeamStat()).basicRemove(otherEnd, msgs);
 			case LeagueOfLegendsPackage.GAME__GAME_PLAYER_STATS:
 				return ((InternalEList<?>)getGamePlayerStats()).basicRemove(otherEnd, msgs);
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				return basicSetMatch(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				return eInternalContainer().eInverseRemove(this, LeagueOfLegendsPackage.MATCH__GAMES, Match.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -464,6 +530,8 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 			case LeagueOfLegendsPackage.GAME__WINNING_TEAM:
 				if (resolve) return getWinningTeam();
 				return basicGetWinningTeam();
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				return getMatch();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -503,6 +571,9 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 			case LeagueOfLegendsPackage.GAME__WINNING_TEAM:
 				setWinningTeam((Team)newValue);
 				return;
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				setMatch((Match)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -539,6 +610,9 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 			case LeagueOfLegendsPackage.GAME__WINNING_TEAM:
 				setWinningTeam((Team)null);
 				return;
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				setMatch((Match)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -567,6 +641,8 @@ public class GameImpl extends MinimalEObjectImpl.Container implements Game {
 				return winningSide != WINNING_SIDE_EDEFAULT;
 			case LeagueOfLegendsPackage.GAME__WINNING_TEAM:
 				return winningTeam != null;
+			case LeagueOfLegendsPackage.GAME__MATCH:
+				return getMatch() != null;
 		}
 		return super.eIsSet(featureID);
 	}

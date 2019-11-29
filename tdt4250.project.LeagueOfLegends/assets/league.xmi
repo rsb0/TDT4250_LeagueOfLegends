@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <tdt4250.project.leagueOfLegends:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tdt4250.project.leagueOfLegends="https://tdt4250/project/leagueOfLegends" name="EULCS">
+  <leagueStats kills="2979" deaths="2991" assists="6940" playerWithMostKills="//@teams.4/@player.1" playerWithMostDeaths="//@teams.9/@player.3" playerWithMostAssists="//@teams.4/@player.3" playerWithHighestKda="//@teams.8/@player.0" championWithMostKills="//@champions.32" championWithMostDeaths="//@champions.22" championWithMostAssists="//@champions.33" championWithHighestKda="//@champions.48"/>
   <teams name="Splyce">
     <player name="kaSing" position="support" championPool="//@champions.0 //@champions.13 //@champions.14 //@champions.33 //@champions.30 //@champions.31 //@champions.28 //@champions.22 //@champions.51 //@champions.62 //@champions.18 //@champions.40">
       <playerStats gamesPlayed="33" careerKills="23" careerDeaths="76" careerAssist="222" killDeathAssistRatio="3.2236843" winLoseRatio="0.9411765" careerGameWins="16" careerMatchWins="10"/>
@@ -2703,5 +2704,4 @@
   <champions name="Evelynn">
     <championStat gamesPlayed="1" totalKills="1" totalDeaths="1" killDeathAssistRatio="1.0"/>
   </champions>
-  <leagueStats league="/" kills="2979" deaths="2991" assists="6940" playerWithMostKills="//@teams.4/@player.1" playerWithMostDeaths="//@teams.9/@player.3" playerWithMostAssists="//@teams.4/@player.3" playerWithHighestKda="//@teams.8/@player.0" championWithMostKills="//@champions.32" championWithMostDeaths="//@champions.22" championWithMostAssists="//@champions.33" championWithHighestKda="//@champions.48"/>
 </tdt4250.project.leagueOfLegends:League>

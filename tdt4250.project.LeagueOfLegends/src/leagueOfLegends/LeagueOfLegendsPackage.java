@@ -77,13 +77,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int LEAGUE__NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>League Stats</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEAGUE__LEAGUE_STATS = 1;
+
+	/**
 	 * The feature id for the '<em><b>Teams</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LEAGUE__TEAMS = 1;
+	int LEAGUE__TEAMS = 2;
 
 	/**
 	 * The feature id for the '<em><b>Seasons</b></em>' containment reference list.
@@ -92,7 +101,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEAGUE__SEASONS = 2;
+	int LEAGUE__SEASONS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Champions</b></em>' containment reference list.
@@ -101,16 +110,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEAGUE__CHAMPIONS = 3;
-
-	/**
-	 * The feature id for the '<em><b>League Stats</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAGUE__LEAGUE_STATS = 4;
+	int LEAGUE__CHAMPIONS = 4;
 
 	/**
 	 * The number of structural features of the '<em>League</em>' class.
@@ -514,13 +514,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int MATCH__WINNER = 7;
 
 	/**
+	 * The feature id for the '<em><b>Season</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATCH__SEASON = 8;
+
+	/**
 	 * The number of structural features of the '<em>Match</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATCH_FEATURE_COUNT = 8;
+	int MATCH_FEATURE_COUNT = 9;
 
 	/**
 	 * The number of operations of the '<em>Match</em>' class.
@@ -614,13 +623,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int GAME__WINNING_TEAM = 7;
 
 	/**
+	 * The feature id for the '<em><b>Match</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GAME__MATCH = 8;
+
+	/**
 	 * The number of structural features of the '<em>Game</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GAME_FEATURE_COUNT = 8;
+	int GAME_FEATURE_COUNT = 9;
 
 	/**
 	 * The number of operations of the '<em>Game</em>' class.
@@ -1424,7 +1442,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int LEAGUE_STATS = 13;
 
 	/**
-	 * The feature id for the '<em><b>League</b></em>' reference.
+	 * The feature id for the '<em><b>League</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2026,6 +2044,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EReference getMatch_Winner();
 
 	/**
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.Match#getSeason <em>Season</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Season</em>'.
+	 * @see leagueOfLegends.Match#getSeason()
+	 * @see #getMatch()
+	 * @generated
+	 */
+	EReference getMatch_Season();
+
+	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.Game <em>Game</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2122,6 +2151,17 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGame_WinningTeam();
+
+	/**
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.Game#getMatch <em>Match</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Match</em>'.
+	 * @see leagueOfLegends.Game#getMatch()
+	 * @see #getGame()
+	 * @generated
+	 */
+	EReference getGame_Match();
 
 	/**
 	 * Returns the meta object for class '{@link leagueOfLegends.GameTeamStats <em>Game Team Stats</em>}'.
@@ -2942,10 +2982,10 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EClass getLeagueStats();
 
 	/**
-	 * Returns the meta object for the reference '{@link leagueOfLegends.LeagueStats#getLeague <em>League</em>}'.
+	 * Returns the meta object for the container reference '{@link leagueOfLegends.LeagueStats#getLeague <em>League</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>League</em>'.
+	 * @return the meta object for the container reference '<em>League</em>'.
 	 * @see leagueOfLegends.LeagueStats#getLeague()
 	 * @see #getLeagueStats()
 	 * @generated
@@ -3469,6 +3509,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EReference MATCH__WINNER = eINSTANCE.getMatch_Winner();
 
 		/**
+		 * The meta object literal for the '<em><b>Season</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MATCH__SEASON = eINSTANCE.getMatch_Season();
+
+		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameImpl <em>Game</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3541,6 +3589,14 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GAME__WINNING_TEAM = eINSTANCE.getGame_WinningTeam();
+
+		/**
+		 * The meta object literal for the '<em><b>Match</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GAME__MATCH = eINSTANCE.getGame_Match();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.impl.GameTeamStatsImpl <em>Game Team Stats</em>}' class.
@@ -4157,7 +4213,7 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		EClass LEAGUE_STATS = eINSTANCE.getLeagueStats();
 
 		/**
-		 * The meta object literal for the '<em><b>League</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>League</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

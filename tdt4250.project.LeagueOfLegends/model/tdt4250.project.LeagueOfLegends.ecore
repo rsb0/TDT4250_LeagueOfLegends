@@ -3,22 +3,31 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="leagueOfLegends" nsURI="https://tdt4250/project/leagueOfLegends"
     nsPrefix="tdt4250.project.leagueOfLegends">
   <eClassifiers xsi:type="ecore:EClass" name="League">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leagueStats" eType="#//LeagueStats"
+        containment="true" eOpposite="#//LeagueStats/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="-1"
         eType="#//Team" containment="true" eOpposite="#//Team/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="seasons" upperBound="-1"
         eType="#//Season" containment="true" eOpposite="#//Season/league"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="champions" upperBound="-1"
         eType="#//Champion" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leagueStats" eType="#//LeagueStats"
-        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Champion">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameNotNull"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="championStat" eType="#//ChampionsStats"
         containment="true" eOpposite="#//ChampionsStats/champion"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Team">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="league" lowerBound="1"
         eType="#//League" eOpposite="#//League/teams"/>
@@ -30,6 +39,9 @@
         containment="true" eOpposite="#//TeamStats/team"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Player">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameNotNull teamNotNull validPosition tester"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" eType="#//Position"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="championPool" upperBound="-1"
@@ -53,8 +65,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="careerMatchWins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Match">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="games" upperBound="-1"
-        eType="#//Game" containment="true"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="games" lowerBound="1" upperBound="-1"
+        eType="#//Game" containment="true" eOpposite="#//Game/match"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DisplayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="matchID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bestOF" eType="#//BestOf"/>
@@ -63,8 +78,13 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="week" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="winner" lowerBound="1"
         eType="#//Team"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="season" eType="#//Season"
+        eOpposite="#//Season/matches"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Game">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="blueTeamNotNull redTeamNotNull validGameID validWinningSide winnerTeamNotNull"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gameID" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gameStats" lowerBound="1"
@@ -80,6 +100,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="winningSide" eType="#//Side"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="winningTeam" lowerBound="1"
         eType="#//Team"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="match" lowerBound="1" eType="#//Match"
+        eOpposite="#//Match/games"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameTeamStats">
     <eStructuralFeatures xsi:type="ecore:EReference" name="team" lowerBound="1" eType="#//Team"/>
@@ -133,9 +155,12 @@
     <eLiterals name="blue" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Season">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="validSplitName leagueNotNull atleastOneMatchPerSeason"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SplitName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="matches" upperBound="-1"
-        eType="#//Match" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="matches" lowerBound="1"
+        upperBound="-1" eType="#//Match" containment="true" eOpposite="#//Match/season"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="league" lowerBound="1"
         eType="#//League" eOpposite="#//League/seasons"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="splitType" eType="#//SplitType"/>
@@ -198,7 +223,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="playerWithHighestKda" eType="#//Player"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LeagueStats">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="league" eType="#//League"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="league" eType="#//League"
+        eOpposite="#//League/leagueStats"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kills" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="deaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="assists" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>

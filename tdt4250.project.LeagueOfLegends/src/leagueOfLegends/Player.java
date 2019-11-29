@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayer()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='nameNotNull teamNotNull validPosition tester'"
  * @generated
  */
 public interface Player extends EObject {

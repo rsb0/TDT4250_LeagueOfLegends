@@ -33,22 +33,24 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface LeagueStats extends EObject {
 	/**
-	 * Returns the value of the '<em><b>League</b></em>' reference.
+	 * Returns the value of the '<em><b>League</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.League#getLeagueStats <em>League Stats</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>League</em>' reference.
+	 * @return the value of the '<em>League</em>' container reference.
 	 * @see #setLeague(League)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeagueStats_League()
-	 * @model
+	 * @see leagueOfLegends.League#getLeagueStats
+	 * @model opposite="leagueStats" transient="false"
 	 * @generated
 	 */
 	League getLeague();
 
 	/**
-	 * Sets the value of the '{@link leagueOfLegends.LeagueStats#getLeague <em>League</em>}' reference.
+	 * Sets the value of the '{@link leagueOfLegends.LeagueStats#getLeague <em>League</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>League</em>' reference.
+	 * @param value the new value of the '<em>League</em>' container reference.
 	 * @see #getLeague()
 	 * @generated
 	 */
