@@ -8,9 +8,7 @@ This is a project delivery for the NTNU course TDT4250, created by Henrik Knudse
 
 The group chose task 1 for the project assignment:
 
-"""
-Find a public or easily available data source with some volume of data and interesting level of complexity. Model the data using Ecore and implement an transformation facility so you can import, view and process the data using EMF. Then create a viewer and editor for the data using (preferably) Sirius or EMF Forms, that can be installed into Eclipse.
-"""
+> Find a public or easily available data source with some volume of data and interesting level of complexity. Model the data using Ecore and implement an transformation facility so you can import, view and process the data using EMF. Then create a viewer and editor for the data using (preferably) Sirius or EMF Forms, that can be installed into Eclipse.
 
 We chose to model matchup data for the popular game League of Legends (LOL), utilizing EMF [[1]](https://www.eclipse.org/modeling/emf/). The game is a team-based game, pitting two 5 person teams against each other. The overall game objective is to earn gold, defeat your opponent's champions and destroy their homebase.
 
