@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -135,7 +135,7 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	@Override
 	public EList<Match> getMatches() {
 		if (matches == null) {
-			matches = new EObjectContainmentEList<Match>(Match.class, this, LeagueOfLegendsPackage.SEASON__MATCHES);
+			matches = new EObjectContainmentWithInverseEList<Match>(Match.class, this, LeagueOfLegendsPackage.SEASON__MATCHES, LeagueOfLegendsPackage.MATCH__SEASON);
 		}
 		return matches;
 	}
@@ -211,9 +211,12 @@ public class SeasonImpl extends MinimalEObjectImpl.Container implements Season {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case LeagueOfLegendsPackage.SEASON__MATCHES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMatches()).basicAdd(otherEnd, msgs);
 			case LeagueOfLegendsPackage.SEASON__LEAGUE:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);

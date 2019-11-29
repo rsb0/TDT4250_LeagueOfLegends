@@ -23,10 +23,11 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Game#getGamePlayerStats <em>Game Player Stats</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getWinningSide <em>Winning Side</em>}</li>
  *   <li>{@link leagueOfLegends.Game#getWinningTeam <em>Winning Team</em>}</li>
+ *   <li>{@link leagueOfLegends.Game#getMatch <em>Match</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getGame()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='blueTeamNotNull redTeamNotNull validGameID validWinningSide winnerTeamNotNull'"
  * @generated
  */
 public interface Game extends EObject {
@@ -190,5 +191,29 @@ public interface Game extends EObject {
 	 * @generated
 	 */
 	void setWinningTeam(Team value);
+
+	/**
+	 * Returns the value of the '<em><b>Match</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Match#getGames <em>Games</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Match</em>' container reference.
+	 * @see #setMatch(Match)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getGame_Match()
+	 * @see leagueOfLegends.Match#getGames
+	 * @model opposite="games" required="true" transient="false"
+	 * @generated
+	 */
+	Match getMatch();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Game#getMatch <em>Match</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Match</em>' container reference.
+	 * @see #getMatch()
+	 * @generated
+	 */
+	void setMatch(Match value);
 
 } // Game

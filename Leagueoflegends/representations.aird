@@ -4,6 +4,7 @@
     <semanticResources>league.leagueoflegends</semanticResources>
     <semanticResources>file:/C:/Users/Bruker/git/TDT4250_LeagueOfLegends/tdt4250.project.LeagueOfLegends/model/tdt4250.project.LeagueOfLegends.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>My.leagueoflegends</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_-zR9UAvsEeqoj-dVoEaEAA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tpA0QAvtEeqoj-dVoEaEAA" name="testing02" repPath="#_toblcAvtEeqoj-dVoEaEAA">
@@ -145,6 +146,14 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_an0KxhK9Eeq8IvIjzMNCIQ" name="The_Visual_Game" repPath="#_anvSQBK9Eeq8IvIjzMNCIQ">
         <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']"/>
         <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.9/@games.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hNCOQBKcEeqjxu0mt9d65A" name="new The_Visual_League" repPath="#_hIOmwBKcEeqjxu0mt9d65A">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']"/>
+        <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ERJ4UBKdEeqjxu0mt9d65A" name="new The_Visual_League2" repPath="#_EPqDgBKdEeqjxu0mt9d65A">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']"/>
+        <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -11117,5 +11126,941 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_anvSQRK9Eeq8IvIjzMNCIQ"/>
     <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer"/>
     <target xmi:type="tdt4250.project.leagueOfLegends:Game" href="league.leagueoflegends#//@seasons.0/@matches.9/@games.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_hIOmwBKcEeqjxu0mt9d65A" name="new The_Visual_League">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_hL_scBKcEeqjxu0mt9d65A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_hL_scRKcEeqjxu0mt9d65A">
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_hM_K8BKcEeqjxu0mt9d65A" labelSize="10" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="League_image">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_hM_yABKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="Teams_VisualLeague">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_hNrugBKcEeqjxu0mt9d65A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_hNsVkBKcEeqjxu0mt9d65A" type="Sirius" element="_hIOmwBKcEeqjxu0mt9d65A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_hOBFsBKcEeqjxu0mt9d65A" type="2001" element="_hL17cBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hOPIIBKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hOPIIRKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ720BKcEeqjxu0mt9d65A" type="3005" element="_hMATgBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ720RKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ720hKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hOBFsRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hOBFshKcEeqjxu0mt9d65A" x="522" width="100" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQyF0BKcEeqjxu0mt9d65A" type="2001" element="_hMGaIBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQyF0xKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQyF1BKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ8d4BKcEeqjxu0mt9d65A" type="3005" element="_hMI2YBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ8d4RKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ8d4hKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQyF0RKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQyF0hKcEeqjxu0mt9d65A" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQys4BKcEeqjxu0mt9d65A" type="2001" element="_hMJdcRKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQys4xKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQys5BKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ8d4xKcEeqjxu0mt9d65A" type="3005" element="_hMMgwBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ8d5BKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ8d5RKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQys4RKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQys4hKcEeqjxu0mt9d65A" x="1080" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQzT8BKcEeqjxu0mt9d65A" type="2001" element="_hMMgwhKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQz7ABKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQz7ARKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ9E8BKcEeqjxu0mt9d65A" type="3005" element="_hMQLIBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ9E8RKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ9E8hKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQzT8RKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQzT8hKcEeqjxu0mt9d65A" x="720" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ0iEBKcEeqjxu0mt9d65A" type="2001" element="_hMQLIhKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ0iExKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ0iFBKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ9sABKcEeqjxu0mt9d65A" type="3005" element="_hMTOcBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ9sARKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ9sAhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ0iERKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ0iEhKcEeqjxu0mt9d65A" x="480" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ1JIBKcEeqjxu0mt9d65A" type="2001" element="_hMT1gRKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ1wMBKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ1wMRKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ-6IBKcEeqjxu0mt9d65A" type="3005" element="_hMWRwBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ-6IRKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ-6IhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ1JIRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ1JIhKcEeqjxu0mt9d65A" x="840" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ2XQBKcEeqjxu0mt9d65A" type="2001" element="_hMW40RKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ2XQxKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ2XRBKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ_hMBKcEeqjxu0mt9d65A" type="3005" element="_hMZ8IBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ_hMRKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ_hMhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ2XQRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ2XQhKcEeqjxu0mt9d65A" x="120" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ2-UBKcEeqjxu0mt9d65A" type="2001" element="_hMZ8IhKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ3lYBKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ3lYRKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hQ_hMxKcEeqjxu0mt9d65A" type="3005" element="_hMc_cBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ_hNBKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ_hNRKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ2-URKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ2-UhKcEeqjxu0mt9d65A" x="960" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ4McBKcEeqjxu0mt9d65A" type="2001" element="_hMdmgRKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ4McxKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ4MdBKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRAIQBKcEeqjxu0mt9d65A" type="3005" element="_hMgCwBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hRAIQRKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRAIQhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ4McRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ4MchKcEeqjxu0mt9d65A" x="240" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ4zgBKcEeqjxu0mt9d65A" type="2001" element="_hMgp0RKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ5akBKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ5akRKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRAvUBKcEeqjxu0mt9d65A" type="3005" element="_hMjtIBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hRAvURKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRAvUhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ4zgRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ4zghKcEeqjxu0mt9d65A" x="600" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hQ6BoBKcEeqjxu0mt9d65A" type="2001" element="_hMjtIhKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hQ6BoxKcEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hQ6BpBKcEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRBWYBKcEeqjxu0mt9d65A" type="3005" element="_hMnXgBKcEeqjxu0mt9d65A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hRBWYRKcEeqjxu0mt9d65A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRBWYhKcEeqjxu0mt9d65A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hQ6BoRKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQ6BohKcEeqjxu0mt9d65A" x="360" y="132" width="60" height="42"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_hNsVkRKcEeqjxu0mt9d65A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_hRcNIBKcEeqjxu0mt9d65A" type="4001" element="_hMyWoBKcEeqjxu0mt9d65A" source="_hQyF0BKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hReCUBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hReCURKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRepYBKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRepYRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRfQcBKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRfQcRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRcNIRKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hRcNIhKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRcNIxKcEeqjxu0mt9d65A" points="[0, 0, -540, 60]$[540, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRvvIBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRvvIRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hRwWMBKcEeqjxu0mt9d65A" type="4001" element="_hM0y4hKcEeqjxu0mt9d65A" source="_hQys4BKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hRwWNBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRwWNRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRw9QBKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRw9QRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRw9QhKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRw9QxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRwWMRKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hRwWMhKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRwWMxKcEeqjxu0mt9d65A" points="[0, 0, 540, 60]$[-540, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRw9RBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRw9RRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hRxkUBKcEeqjxu0mt9d65A" type="4001" element="_hM1Z8BKcEeqjxu0mt9d65A" source="_hQzT8BKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hRxkVBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRxkVRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRxkVhKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRxkVxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRxkWBKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRxkWRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRxkURKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hRxkUhKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRxkUxKcEeqjxu0mt9d65A" points="[0, 0, 180, 60]$[-180, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRyLYBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRyLYRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hRyLYhKcEeqjxu0mt9d65A" type="4001" element="_hM1Z9RKcEeqjxu0mt9d65A" source="_hQ0iEBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hRyycBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRyycRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRyychKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRyycxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hRyydBKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRyydRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRyLYxKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hRyLZBKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRyLZRKcEeqjxu0mt9d65A" points="[0, 0, -60, 60]$[60, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRzZgBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRzZgRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hRzZghKcEeqjxu0mt9d65A" type="4001" element="_hM1Z-hKcEeqjxu0mt9d65A" source="_hQ1JIBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR0AkBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0AkRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR0AkhKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0AkxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR0AlBKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0AlRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRzZgxKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hRzZhBKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRzZhRKcEeqjxu0mt9d65A" points="[0, 0, 300, 60]$[-300, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR0noBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR0noRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hR0nohKcEeqjxu0mt9d65A" type="4001" element="_hM2BBBKcEeqjxu0mt9d65A" source="_hQ2XQBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR0nphKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0npxKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR0nqBKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0nqRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR0nqhKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR0nqxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hR0noxKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hR0npBKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hR0npRKcEeqjxu0mt9d65A" points="[0, 0, -420, 60]$[420, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR1OsBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR1OsRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hR1OshKcEeqjxu0mt9d65A" type="4001" element="_hM2BCRKcEeqjxu0mt9d65A" source="_hQ2-UBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR11wBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR11wRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR11whKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR11wxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR11xBKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR11xRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hR1OsxKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hR1OtBKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hR1OtRKcEeqjxu0mt9d65A" points="[0, 0, 420, 60]$[-420, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR11xhKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR11xxKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hR11yBKcEeqjxu0mt9d65A" type="4001" element="_hM2oEhKcEeqjxu0mt9d65A" source="_hQ4McBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR2c0BKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR2c0RKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR3D4BKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR3D4RKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR3D4hKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR3D4xKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hR11yRKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hR11yhKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hR11yxKcEeqjxu0mt9d65A" points="[0, 0, -300, 60]$[300, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR3D5BKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR3D5RKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hR3q8BKcEeqjxu0mt9d65A" type="4001" element="_hM3PJBKcEeqjxu0mt9d65A" source="_hQ4zgBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR3q9BKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR3q9RKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR3q9hKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR3q9xKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR3q-BKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR3q-RKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hR3q8RKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hR3q8hKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hR3q8xKcEeqjxu0mt9d65A" points="[0, 0, 60, 60]$[-60, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR4SABKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR4SARKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hR45EBKcEeqjxu0mt9d65A" type="4001" element="_hM32MhKcEeqjxu0mt9d65A" source="_hQ6BoBKcEeqjxu0mt9d65A" target="_hOBFsBKcEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_hR45FBKcEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR45FRKcEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR5gIBKcEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR5gIRKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hR5gIhKcEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hR5gIxKcEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hR45ERKcEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hR45EhKcEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hR45ExKcEeqjxu0mt9d65A" points="[0, 0, -180, 60]$[180, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR5gJBKcEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hR5gJRKcEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hL17cBKcEeqjxu0mt9d65A" incomingEdges="_hMyWoBKcEeqjxu0mt9d65A _hM0y4hKcEeqjxu0mt9d65A _hM1Z8BKcEeqjxu0mt9d65A _hM1Z9RKcEeqjxu0mt9d65A _hM1Z-hKcEeqjxu0mt9d65A _hM2BBBKcEeqjxu0mt9d65A _hM2BCRKcEeqjxu0mt9d65A _hM2oEhKcEeqjxu0mt9d65A _hM3PJBKcEeqjxu0mt9d65A _hM32MhKcEeqjxu0mt9d65A" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMATgBKcEeqjxu0mt9d65A" labelSize="10" showIcon="false" description="_hM_K8BKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="League_image"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMGaIBKcEeqjxu0mt9d65A" outgoingEdges="_hMyWoBKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMI2YBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMJdcRKcEeqjxu0mt9d65A" outgoingEdges="_hM0y4hKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMMgwBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMMgwhKcEeqjxu0mt9d65A" outgoingEdges="_hM1Z8BKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMQLIBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMQLIhKcEeqjxu0mt9d65A" outgoingEdges="_hM1Z9RKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMTOcBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMT1gRKcEeqjxu0mt9d65A" outgoingEdges="_hM1Z-hKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMWRwBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMW40RKcEeqjxu0mt9d65A" outgoingEdges="_hM2BBBKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMZ8IBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMZ8IhKcEeqjxu0mt9d65A" outgoingEdges="_hM2BCRKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMc_cBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMdmgRKcEeqjxu0mt9d65A" outgoingEdges="_hM2oEhKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMgCwBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMgp0RKcEeqjxu0mt9d65A" outgoingEdges="_hM3PJBKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMjtIBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hMjtIhKcEeqjxu0mt9d65A" outgoingEdges="_hM32MhKcEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_hMnXgBKcEeqjxu0mt9d65A" labelSize="6" showIcon="false" description="_hM_yABKcEeqjxu0mt9d65A" labelPosition="node" workspacePath="Teams_VisualLeague"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hMyWoBKcEeqjxu0mt9d65A" sourceNode="_hMGaIBKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM0L0BKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM0L0RKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM0y4hKcEeqjxu0mt9d65A" sourceNode="_hMJdcRKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM0y4xKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM0y5BKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM1Z8BKcEeqjxu0mt9d65A" sourceNode="_hMMgwhKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM1Z8RKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM1Z8hKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM1Z9RKcEeqjxu0mt9d65A" sourceNode="_hMQLIhKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM1Z9hKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM1Z9xKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM1Z-hKcEeqjxu0mt9d65A" sourceNode="_hMT1gRKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM2BABKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM2BARKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM2BBBKcEeqjxu0mt9d65A" sourceNode="_hMW40RKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM2BBRKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM2BBhKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM2BCRKcEeqjxu0mt9d65A" sourceNode="_hMZ8IhKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM2BChKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM2BCxKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM2oEhKcEeqjxu0mt9d65A" sourceNode="_hMdmgRKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM3PIBKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM3PIRKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM3PJBKcEeqjxu0mt9d65A" sourceNode="_hMgp0RKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM3PJRKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM3PJhKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hM32MhKcEeqjxu0mt9d65A" sourceNode="_hMjtIhKcEeqjxu0mt9d65A" targetNode="_hL17cBKcEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hM32MxKcEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hM32NBKcEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_hIaM8BKcEeqjxu0mt9d65A"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer"/>
+    <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_EPqDgBKdEeqjxu0mt9d65A" name="new The_Visual_League2">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_EP-MkBKdEeqjxu0mt9d65A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_EP-MkRKdEeqjxu0mt9d65A">
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SapoBKfEeqpQPxXhIXsLg" labelSize="10" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Leagues/EULCS.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3ShXUBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/splyce.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3Sh-YRKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/vitality.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SjMgBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/giantsgaming.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SkaoBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/h2k.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SlBsRKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/schalke04.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SmP0BKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/HELLO.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3Snd8BKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/g2esports.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SosEBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/roccat.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SpTIBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/fnatic.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_3SqhQBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="/Leagueoflegends.project/Teams/misfits.png">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_EROJwBKdEeqjxu0mt9d65A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_EROJwRKdEeqjxu0mt9d65A" type="Sirius" element="_EPqDgBKdEeqjxu0mt9d65A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ERPX4BKdEeqjxu0mt9d65A" type="2001" element="_EP5UEBKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERQmABKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERQmARKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TDi0BKfEeqpQPxXhIXsLg" type="3005" element="_3SdF4BKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TDi0RKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TDi0hKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERPX4RKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERPX4hKdEeqjxu0mt9d65A" x="522" width="100" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERR0IBKdEeqjxu0mt9d65A" type="2001" element="_EP-zoBKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERR0IxKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERR0JBKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TMswBKfEeqpQPxXhIXsLg" type="3005" element="_3ShXUhKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TMswRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TMswhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERR0IRKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERR0IhKdEeqjxu0mt9d65A" x="600" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERSbMBKdEeqjxu0mt9d65A" type="2001" element="_EQETMRKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERTCQBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERTCQRKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TN64BKfEeqpQPxXhIXsLg" type="3005" element="_3SilcBKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TN64RKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TN64hKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERSbMRKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERSbMhKdEeqjxu0mt9d65A" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERTpUBKdEeqjxu0mt9d65A" type="2001" element="_EQMPARKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERTpUxKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERTpVBKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TOh8BKfEeqpQPxXhIXsLg" type="3005" element="_3SjMghKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TOh8RKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TOh8hKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERTpURKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERTpUhKdEeqjxu0mt9d65A" x="1080" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERU3cBKdEeqjxu0mt9d65A" type="2001" element="_EQP5YhKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERWsoBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERWsoRKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TPwEBKfEeqpQPxXhIXsLg" type="3005" element="_3SkaohKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TPwERKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TPwEhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERU3cRKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERU3chKdEeqjxu0mt9d65A" x="840" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERX6wBKdEeqjxu0mt9d65A" type="2001" element="_EQVY8RKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERYh0BKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERYh0RKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TQ-MBKfEeqpQPxXhIXsLg" type="3005" element="_3SlowRKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TQ-MRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TQ-MhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERX6wRKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERX6whKdEeqjxu0mt9d65A" x="960" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERZI4BKdEeqjxu0mt9d65A" type="2001" element="_EQbfkhKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERa-EBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERa-ERKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TRlQBKfEeqpQPxXhIXsLg" type="3005" element="_3SmP0hKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TRlQRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TRlQhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERZv8BKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERZv8RKdEeqjxu0mt9d65A" x="240" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERjg8BKdEeqjxu0mt9d65A" type="2001" element="_EQg_IhKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERkIABKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERkIARKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TSMUBKfEeqpQPxXhIXsLg" type="3005" element="_3Snd8hKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TSMURKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TSMUhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERjg8RKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERjg8hKdEeqjxu0mt9d65A" x="120" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERkvEBKdEeqjxu0mt9d65A" type="2001" element="_EQo68hKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERl9MBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERl9MRKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TSzYBKfEeqpQPxXhIXsLg" type="3005" element="_3SosEhKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TSzYRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TSzYhKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERkvERKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERkvEhKdEeqjxu0mt9d65A" x="720" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERl9MhKdEeqjxu0mt9d65A" type="2001" element="_EQtMYRKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERmkQBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERmkQRKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TTacBKfEeqpQPxXhIXsLg" type="3005" element="_3SpTIhKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TTacRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TTachKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERl9MxKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERl9NBKdEeqjxu0mt9d65A" x="480" y="132" width="60" height="42"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ERnLUBKdEeqjxu0mt9d65A" type="2001" element="_EQ0hIRKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ERpAgBKdEeqjxu0mt9d65A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ERpAgRKdEeqjxu0mt9d65A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3TUBgBKfEeqpQPxXhIXsLg" type="3005" element="_3SqhQhKfEeqpQPxXhIXsLg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3TUBgRKfEeqpQPxXhIXsLg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3TUBghKfEeqpQPxXhIXsLg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ERnLURKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="6"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERnLUhKdEeqjxu0mt9d65A" x="360" y="132" width="60" height="42"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_EROJwhKdEeqjxu0mt9d65A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ER5fMBKdEeqjxu0mt9d65A" type="4001" element="_EQ7O0BKdEeqjxu0mt9d65A" source="_ERR0IBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ER6GQBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER6GQRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ER6GQhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER6GQxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ER6GRBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER6GRRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ER5fMRKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ER5fMhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ER5fMxKdEeqjxu0mt9d65A" points="[0, 0, 60, 60]$[-60, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ER6GRhKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ER6GRxKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ER6tUBKdEeqjxu0mt9d65A" type="4001" element="_EQ714hKdEeqjxu0mt9d65A" source="_ERSbMBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ER9JkBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER9JkRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ER9JkhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER9JkxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ER9JlBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ER9JlRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ER6tURKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ER6tUhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ER6tUxKdEeqjxu0mt9d65A" points="[0, 0, -540, 60]$[540, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ER9woBKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ER9woRKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESAM4BKdEeqjxu0mt9d65A" type="4001" element="_EQ8c8hKdEeqjxu0mt9d65A" source="_ERTpUBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESAz8BKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESAz8RKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESBbABKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESBbARKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESBbAhKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESBbAxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESAM4RKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESAM4hKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESAM4xKdEeqjxu0mt9d65A" points="[0, 0, 540, 60]$[-540, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESCCEBKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESCCERKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESCCEhKdEeqjxu0mt9d65A" type="4001" element="_EQ9EABKdEeqjxu0mt9d65A" source="_ERU3cBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESCCFhKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESCCFxKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESCCGBKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESCCGRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESCCGhKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESCCGxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESCCExKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESCCFBKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESCCFRKdEeqjxu0mt9d65A" points="[0, 0, 300, 60]$[-300, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESCpIBKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESCpIRKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESDQMBKdEeqjxu0mt9d65A" type="4001" element="_EQ9EBRKdEeqjxu0mt9d65A" source="_ERX6wBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESD3QBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESD3QRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESD3QhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESD3QxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESD3RBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESD3RRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESDQMRKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESDQMhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESDQMxKdEeqjxu0mt9d65A" points="[0, 0, 420, 60]$[-420, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESD3RhKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESD3RxKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESFFYBKdEeqjxu0mt9d65A" type="4001" element="_EQ9EChKdEeqjxu0mt9d65A" source="_ERZI4BKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESFscBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESFscRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESG6kBKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESG6kRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESIIsBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESIIsRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESFFYRKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESFFYhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESFFYxKdEeqjxu0mt9d65A" points="[0, 0, -300, 60]$[300, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESIIshKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESIIsxKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESIvwBKdEeqjxu0mt9d65A" type="4001" element="_EQ9rFBKdEeqjxu0mt9d65A" source="_ERjg8BKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESIvxBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESIvxRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESIvxhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESIvxxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESJW0BKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESJW0RKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESIvwRKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESIvwhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESIvwxKdEeqjxu0mt9d65A" points="[0, 0, -420, 60]$[420, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESJ94BKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESJ94RKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESJ94hKdEeqjxu0mt9d65A" type="4001" element="_EQ9rGRKdEeqjxu0mt9d65A" source="_ERkvEBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESJ95hKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESJ95xKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESJ96BKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESJ96RKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESKk8BKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESKk8RKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESJ94xKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESJ95BKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESJ95RKdEeqjxu0mt9d65A" points="[0, 0, 180, 60]$[-180, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESLMABKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESLMARKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESLzEBKdEeqjxu0mt9d65A" type="4001" element="_EQ-5MhKdEeqjxu0mt9d65A" source="_ERl9MhKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESMaIBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESMaIRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESMaIhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESMaIxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESNBMBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESNBMRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESLzERKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESLzEhKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESLzExKdEeqjxu0mt9d65A" points="[0, 0, -60, 60]$[60, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESOPUBKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESOPURKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ESOPUhKdEeqjxu0mt9d65A" type="4001" element="_EQ_gQBKdEeqjxu0mt9d65A" source="_ERnLUBKdEeqjxu0mt9d65A" target="_ERPX4BKdEeqjxu0mt9d65A">
+          <children xmi:type="notation:Node" xmi:id="_ESO2YBKdEeqjxu0mt9d65A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESO2YRKdEeqjxu0mt9d65A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESO2YhKdEeqjxu0mt9d65A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESO2YxKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ESO2ZBKdEeqjxu0mt9d65A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESO2ZRKdEeqjxu0mt9d65A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ESOPUxKdEeqjxu0mt9d65A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ESOPVBKdEeqjxu0mt9d65A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESOPVRKdEeqjxu0mt9d65A" points="[0, 0, -180, 60]$[180, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESPdcBKdEeqjxu0mt9d65A" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ESPdcRKdEeqjxu0mt9d65A" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EP5UEBKdEeqjxu0mt9d65A" incomingEdges="_EQ7O0BKdEeqjxu0mt9d65A _EQ714hKdEeqjxu0mt9d65A _EQ8c8hKdEeqjxu0mt9d65A _EQ9EABKdEeqjxu0mt9d65A _EQ9EBRKdEeqjxu0mt9d65A _EQ9EChKdEeqjxu0mt9d65A _EQ9rFBKdEeqjxu0mt9d65A _EQ9rGRKdEeqjxu0mt9d65A _EQ-5MhKdEeqjxu0mt9d65A _EQ_gQBKdEeqjxu0mt9d65A" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SdF4BKfEeqpQPxXhIXsLg" labelSize="10" showIcon="false" description="_3SapoBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Leagues/EULCS.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EP-zoBKdEeqjxu0mt9d65A" outgoingEdges="_EQ7O0BKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3ShXUhKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3ShXUBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/splyce.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQETMRKdEeqjxu0mt9d65A" outgoingEdges="_EQ714hKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SilcBKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3Sh-YRKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/vitality.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQMPARKdEeqjxu0mt9d65A" outgoingEdges="_EQ8c8hKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SjMghKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SjMgBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/giantsgaming.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQP5YhKdEeqjxu0mt9d65A" outgoingEdges="_EQ9EABKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SkaohKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SkaoBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/h2k.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQVY8RKdEeqjxu0mt9d65A" outgoingEdges="_EQ9EBRKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SlowRKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SlBsRKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/schalke04.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQbfkhKdEeqjxu0mt9d65A" outgoingEdges="_EQ9EChKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SmP0hKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SmP0BKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/HELLO.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQg_IhKdEeqjxu0mt9d65A" outgoingEdges="_EQ9rFBKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3Snd8hKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3Snd8BKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/g2esports.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQo68hKdEeqjxu0mt9d65A" outgoingEdges="_EQ9rGRKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SosEhKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SosEBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/roccat.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQtMYRKdEeqjxu0mt9d65A" outgoingEdges="_EQ-5MhKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SpTIhKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SpTIBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/fnatic.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EQ0hIRKdEeqjxu0mt9d65A" outgoingEdges="_EQ_gQBKdEeqjxu0mt9d65A" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <semanticElements xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3SqhQhKfEeqpQPxXhIXsLg" labelSize="6" showIcon="false" description="_3SqhQBKfEeqpQPxXhIXsLg" labelPosition="node" workspacePath="/Leagueoflegends.project/Teams/misfits.png"/>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ7O0BKdEeqjxu0mt9d65A" sourceNode="_EP-zoBKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ7O0RKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ7O0hKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ714hKdEeqjxu0mt9d65A" sourceNode="_EQETMRKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ714xKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ715BKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ8c8hKdEeqjxu0mt9d65A" sourceNode="_EQMPARKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ8c8xKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ8c9BKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ9EABKdEeqjxu0mt9d65A" sourceNode="_EQP5YhKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ9EARKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ9EAhKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ9EBRKdEeqjxu0mt9d65A" sourceNode="_EQVY8RKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ9EBhKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ9EBxKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ9EChKdEeqjxu0mt9d65A" sourceNode="_EQbfkhKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ9rEBKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ9rERKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ9rFBKdEeqjxu0mt9d65A" sourceNode="_EQg_IhKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ9rFRKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ9rFhKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ9rGRKdEeqjxu0mt9d65A" sourceNode="_EQo68hKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ-SIBKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ-SIRKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ-5MhKdEeqjxu0mt9d65A" sourceNode="_EQtMYRKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ-5MxKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ-5NBKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EQ_gQBKdEeqjxu0mt9d65A" sourceNode="_EQ0hIRKdEeqjxu0mt9d65A" targetNode="_EP5UEBKdEeqjxu0mt9d65A">
+      <target xmi:type="tdt4250.project.leagueOfLegends:Team" href="league.leagueoflegends#//@teams.9"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EQ_gQRKdEeqjxu0mt9d65A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EQ_gQhKdEeqjxu0mt9d65A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@edgeMappings[name='Teams_In_League']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_EPqqkBKdEeqjxu0mt9d65A"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/Leagueoflegends.project/description/project.odesign#//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer"/>
+    <target xmi:type="tdt4250.project.leagueOfLegends:League" href="league.leagueoflegends#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

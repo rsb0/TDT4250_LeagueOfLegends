@@ -7,6 +7,7 @@ import java.util.Collection;
 import leagueOfLegends.Champion;
 import leagueOfLegends.League;
 import leagueOfLegends.LeagueOfLegendsPackage;
+import leagueOfLegends.LeagueStats;
 import leagueOfLegends.Season;
 import leagueOfLegends.Team;
 
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getName <em>Name</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.LeagueImpl#getLeagueStats <em>League Stats</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getSeasons <em>Seasons</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueImpl#getChampions <em>Champions</em>}</li>
@@ -61,6 +63,16 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getLeagueStats() <em>League Stats</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLeagueStats()
+	 * @generated
+	 * @ordered
+	 */
+	protected LeagueStats leagueStats;
 
 	/**
 	 * The cached value of the '{@link #getTeams() <em>Teams</em>}' containment reference list.
@@ -178,10 +190,59 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public LeagueStats getLeagueStats() {
+		return leagueStats;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetLeagueStats(LeagueStats newLeagueStats, NotificationChain msgs) {
+		LeagueStats oldLeagueStats = leagueStats;
+		leagueStats = newLeagueStats;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS, oldLeagueStats, newLeagueStats);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLeagueStats(LeagueStats newLeagueStats) {
+		if (newLeagueStats != leagueStats) {
+			NotificationChain msgs = null;
+			if (leagueStats != null)
+				msgs = ((InternalEObject)leagueStats).eInverseRemove(this, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, LeagueStats.class, msgs);
+			if (newLeagueStats != null)
+				msgs = ((InternalEObject)newLeagueStats).eInverseAdd(this, LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE, LeagueStats.class, msgs);
+			msgs = basicSetLeagueStats(newLeagueStats, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS, newLeagueStats, newLeagueStats));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				if (leagueStats != null)
+					msgs = ((InternalEObject)leagueStats).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS, null, msgs);
+				return basicSetLeagueStats((LeagueStats)otherEnd, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getTeams()).basicAdd(otherEnd, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__SEASONS:
@@ -198,6 +259,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				return basicSetLeagueStats(null, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return ((InternalEList<?>)getTeams()).basicRemove(otherEnd, msgs);
 			case LeagueOfLegendsPackage.LEAGUE__SEASONS:
@@ -218,6 +281,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE__NAME:
 				return getName();
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				return getLeagueStats();
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return getTeams();
 			case LeagueOfLegendsPackage.LEAGUE__SEASONS:
@@ -239,6 +304,9 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE__NAME:
 				setName((String)newValue);
+				return;
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				setLeagueStats((LeagueStats)newValue);
 				return;
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				getTeams().clear();
@@ -267,6 +335,9 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 			case LeagueOfLegendsPackage.LEAGUE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				setLeagueStats((LeagueStats)null);
+				return;
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				getTeams().clear();
 				return;
@@ -290,6 +361,8 @@ public class LeagueImpl extends MinimalEObjectImpl.Container implements League {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
+				return leagueStats != null;
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 				return teams != null && !teams.isEmpty();
 			case LeagueOfLegendsPackage.LEAGUE__SEASONS:

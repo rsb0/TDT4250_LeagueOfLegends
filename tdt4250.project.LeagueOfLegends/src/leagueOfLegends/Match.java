@@ -23,21 +23,24 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.Match#getTeams <em>Teams</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getWeek <em>Week</em>}</li>
  *   <li>{@link leagueOfLegends.Match#getWinner <em>Winner</em>}</li>
+ *   <li>{@link leagueOfLegends.Match#getSeason <em>Season</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='seasonNotNull validNumberOfTeams winnerNotNull validNumberOfGames validWinnerTeam'"
  * @generated
  */
 public interface Match extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Games</b></em>' containment reference list.
 	 * The list contents are of type {@link leagueOfLegends.Game}.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Game#getMatch <em>Match</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Games</em>' containment reference list.
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Games()
-	 * @model containment="true"
+	 * @see leagueOfLegends.Game#getMatch
+	 * @model opposite="match" containment="true" required="true"
 	 * @generated
 	 */
 	EList<Game> getGames();
@@ -188,5 +191,29 @@ public interface Match extends EObject {
 	 * @generated
 	 */
 	void setWinner(Team value);
+
+	/**
+	 * Returns the value of the '<em><b>Season</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Season#getMatches <em>Matches</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Season</em>' container reference.
+	 * @see #setSeason(Season)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Season()
+	 * @see leagueOfLegends.Season#getMatches
+	 * @model opposite="matches" transient="false"
+	 * @generated
+	 */
+	Season getSeason();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.Match#getSeason <em>Season</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Season</em>' container reference.
+	 * @see #getSeason()
+	 * @generated
+	 */
+	void setSeason(Season value);
 
 } // Match

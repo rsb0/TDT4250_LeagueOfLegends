@@ -69,6 +69,7 @@ public class Services {
 		if (imageURL != null) {
 			return "/Leagueoflegends.project/" + imagePath.toString();
 		}
+		System.out.println(imageURL);
 		return "/Leagueoflegends.project/Leagues/EULCS.png";
 	}
 	

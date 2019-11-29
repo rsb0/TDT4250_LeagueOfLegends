@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getTeam()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions'"
  * @generated
  */
 public interface Team extends EObject {

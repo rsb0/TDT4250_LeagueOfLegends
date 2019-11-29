@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validSplitName leagueNotNull atleastOneMatchPerSeason'"
  * @generated
  */
 public interface Season extends EObject {
@@ -51,11 +51,13 @@ public interface Season extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Matches</b></em>' containment reference list.
 	 * The list contents are of type {@link leagueOfLegends.Match}.
+	 * It is bidirectional and its opposite is '{@link leagueOfLegends.Match#getSeason <em>Season</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Matches</em>' containment reference list.
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getSeason_Matches()
-	 * @model containment="true"
+	 * @see leagueOfLegends.Match#getSeason
+	 * @model opposite="season" containment="true" required="true"
 	 * @generated
 	 */
 	EList<Match> getMatches();
