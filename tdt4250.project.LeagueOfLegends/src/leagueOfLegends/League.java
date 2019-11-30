@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getLeague()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions'"
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions uniqueTeamNames uniqueChampionNames'"
  * @generated
  */
 public interface League extends EObject {

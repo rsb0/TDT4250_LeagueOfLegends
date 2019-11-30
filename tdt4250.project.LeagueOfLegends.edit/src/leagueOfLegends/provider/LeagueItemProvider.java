@@ -125,6 +125,7 @@ public class LeagueItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__LEAGUE_STATS);
 			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__TEAMS);
 			childrenFeatures.add(LeagueOfLegendsPackage.Literals.LEAGUE__CHAMPIONS);
 		}
@@ -185,6 +186,7 @@ public class LeagueItemProvider
 			case LeagueOfLegendsPackage.LEAGUE__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case LeagueOfLegendsPackage.LEAGUE__LEAGUE_STATS:
 			case LeagueOfLegendsPackage.LEAGUE__TEAMS:
 			case LeagueOfLegendsPackage.LEAGUE__CHAMPIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -203,6 +205,11 @@ public class LeagueItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LeagueOfLegendsPackage.Literals.LEAGUE__LEAGUE_STATS,
+				 LeagueOfLegendsFactory.eINSTANCE.createLeagueStats()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -158,6 +158,8 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validateLeague_validNumberOfSeasons(league, diagnostics, context);
 		if (result || diagnostics != null) result &= validateLeague_validNumberOfTeams(league, diagnostics, context);
 		if (result || diagnostics != null) result &= validateLeague_validNumberOfChampions(league, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLeague_uniqueTeamNames(league, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLeague_uniqueChampionNames(league, diagnostics, context);
 		return result;
 	}
 
@@ -274,6 +276,84 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the uniqueTeamNames constraint of '<em>League</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean validateLeague_uniqueTeamNames(League league, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (! teamNamesAreUnique(league)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "uniqueTeamNames", getObjectLabel(league, context) },
+						 new Object[] { league },
+						 context));
+			}
+			return false;
+		}
+		return true;
+	}
+	
+	private boolean teamNamesAreUnique(League league) {
+		for (int i = 0 ; i < league.getTeams().size() - 1 ; i++) {
+			for (int j = i+1 ; j < league.getTeams().size() ; j++) {
+				if (league.getTeams().get(i).getName().equals(league.getTeams().get(j).getName())) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	/**
+	 * Validates the uniqueChampionNames constraint of '<em>League</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean validateLeague_uniqueChampionNames(League league, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (! championNamesAreUnique(league)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "uniqueChampionNames", getObjectLabel(league, context) },
+						 new Object[] { league },
+						 context));
+			}
+			return false;
+		}
+		return true;
+	}
+	
+	private boolean championNamesAreUnique(League league) {
+		for (int i = 0 ; i < league.getChampions().size() - 1 ; i++) {
+			for (int j = i+1 ; j < league.getChampions().size() ; j++) {
+				if (league.getChampions().get(i).getName().equals(league.getChampions().get(j).getName())) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -339,6 +419,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validateTeam_nameNotNull(team, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTeam_leagueNotNull(team, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTeam_filledAllPositions(team, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTeam_uniquePlayerNames(team, diagnostics, context);
 		return result;
 	}
 
@@ -454,6 +535,45 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 		return true;
 	}
 	
+	/**
+	 * Validates the uniquePlayerNames constraint of '<em>Team</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean validateTeam_uniquePlayerNames(Team team, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (! playerNamesAreUnique(team)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "uniquePlayerNames", getObjectLabel(team, context) },
+						 new Object[] { team },
+						 context));
+			}
+			return false;
+		}
+		return true;
+	}
+	
+	private boolean playerNamesAreUnique(Team team) {
+		for (int i = 0 ; i < team.getPlayer().size() - 1 ; i++) {
+			for (int j = i+1 ; j < team.getPlayer().size() ; j++) {
+				if (team.getPlayer().get(i).getName().equals(team.getPlayer().get(j).getName())) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
 	private boolean areAllPositionsFilled(Team team) {
 		
 		for(Position position : Position.VALUES) {

@@ -4,7 +4,7 @@
     nsPrefix="tdt4250.project.leagueOfLegends">
   <eClassifiers xsi:type="ecore:EClass" name="League">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions"/>
+      <details key="constraints" value="nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions uniqueTeamNames uniqueChampionNames"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="leagueStats" eType="#//LeagueStats"
@@ -26,7 +26,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Team">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions"/>
+      <details key="constraints" value="validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions uniquePlayerNames"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="league" lowerBound="1"

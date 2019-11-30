@@ -2074,7 +2074,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		  (leagueEClass,
 		   source,
 		   new String[] {
-			   "constraints", "nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions"
+			   "constraints", "nameNotNull validNumberOfSeasons validNumberOfTeams validNumberOfChampions uniqueTeamNames uniqueChampionNames"
 		   });
 		addAnnotation
 		  (championEClass,
@@ -2086,7 +2086,7 @@ public class LeagueOfLegendsPackageImpl extends EPackageImpl implements LeagueOf
 		  (teamEClass,
 		   source,
 		   new String[] {
-			   "constraints", "validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions"
+			   "constraints", "validNumberOfTeamMembers nameNotNull leagueNotNull filledAllPositions uniquePlayerNames"
 		   });
 		addAnnotation
 		  (playerEClass,
