@@ -122,7 +122,8 @@ public class LeagueOfLegendsCreationUtils {
 	}
 	
 	public static LeagueStats createLeagueStats(int kills, int deaths, int assists, Player playerWithMostKills, Player playerWithMostDeaths,
-			Player playerWithMostAssists, Player playerHighestKda, Champion championWithMostKills, Champion championWithMostDeaths, Champion championWithMostAssists, Champion championWithHighestKda) {
+			Player playerWithMostAssists, Player playerHighestKda, 
+			Champion championWithMostKills, Champion championWithMostDeaths, Champion championWithMostAssists, Champion championWithHighestKda, Champion mostBannedChampion, Champion leastBannedChampion) {
 		LeagueStats leagueStats = LeagueOfLegendsFactory.eINSTANCE.createLeagueStats();
 		System.out.println(championWithMostKills.getName());
 		System.out.println(championWithMostDeaths.getName());

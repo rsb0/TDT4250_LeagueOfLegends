@@ -388,7 +388,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 
 				
 		
-		// Update game and match with winning team, PlayerStats with careerGameWins,carrerMatchWins, and match displayName with team names
+		// Update game and match with match score winning team, PlayerStats with careerGameWins,carrerMatchWins, and match displayName with team names
 		for (Match match : matches.values()) {
 			match.getTeams().add(match.getGames().get(0).getRedTeam());
 			match.getTeams().add(match.getGames().get(0).getBlueTeam());
@@ -414,6 +414,7 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 			}
 			Team matchWinner = (teamOneWins > teamTwoWins) ? teamOne : teamTwo;
 			match.setWinner(matchWinner);
+			match.setScore(teamOne.getName() + "  " + teamOneWins + " - " + teamTwoWins + "  " + teamTwo.getName());
 			match.setDisplayName(match.getDisplayName() + " | " + match.getGames().get(0).getRedTeam().getName() + 
 					"   vs.   " + match.getGames().get(0).getBlueTeam().getName());
 			for (Player player : matchWinner.getPlayer()) {
@@ -497,11 +498,14 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		Champion championWithMostDeaths = league.getChampions().stream().max((a,b) -> a.getChampionStat().getTotalDeaths() - b.getChampionStat().getTotalDeaths()).get();
 		Champion championWithMostAssists = league.getChampions().stream().max((a,b) -> a.getChampionStat().getTotalAssist() - b.getChampionStat().getTotalAssist()).get();
 		Champion championWithHighestKda = league.getChampions().stream().max((a,b) -> (int) ( a.getChampionStat().getKillDeathAssistRatio() - b.getChampionStat().getKillDeathAssistRatio())).get();
+		Champion mostBannedChampion = league.getChampions().stream().max((a,b) -> a.getChampionStat().getBans() - b.getChampionStat().getBans()).get();
+		Champion leastBannedChampion = league.getChampions().stream().min((a,b) -> a.getChampionStat().getBans() - b.getChampionStat().getBans()).get();
 		
-		LeagueStats leagueStats = LeagueOfLegendsCreationUtils.createLeagueStats(leagueKills, leagueAssists, leagueDeaths, playerWithMostKills, playerWithMostDeaths, playerWithMostAssists, playerWithHighestKda, championWithMostKills, championWithMostDeaths, championWithMostAssists, championWithHighestKda);
+		
+		LeagueStats leagueStats = LeagueOfLegendsCreationUtils.createLeagueStats(leagueKills, leagueAssists, leagueDeaths, playerWithMostKills, playerWithMostDeaths, playerWithMostAssists, playerWithHighestKda, championWithMostKills, championWithMostDeaths, championWithMostAssists, championWithHighestKda, mostBannedChampion, leastBannedChampion);
 		leagueStats.setLeague(league);
 		league.setLeagueStats(leagueStats);
-		
+
 		
 		try {
 			File file = new File("assets\\league.xmi");
