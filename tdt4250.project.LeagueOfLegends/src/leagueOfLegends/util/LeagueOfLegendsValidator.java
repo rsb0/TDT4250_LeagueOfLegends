@@ -755,7 +755,7 @@ public class LeagueOfLegendsValidator extends EObjectValidator {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated 
 	 */
 	public boolean validateGame(Game game, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(game, diagnostics, context)) return false;
