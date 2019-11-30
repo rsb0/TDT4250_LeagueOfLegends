@@ -126,6 +126,7 @@ public class TeamItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LeagueOfLegendsPackage.Literals.TEAM__PLAYER);
+			childrenFeatures.add(LeagueOfLegendsPackage.Literals.TEAM__TEAM_STATS);
 		}
 		return childrenFeatures;
 	}
@@ -186,6 +187,7 @@ public class TeamItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case LeagueOfLegendsPackage.TEAM__PLAYER:
+			case LeagueOfLegendsPackage.TEAM__TEAM_STATS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -207,6 +209,11 @@ public class TeamItemProvider
 			(createChildParameter
 				(LeagueOfLegendsPackage.Literals.TEAM__PLAYER,
 				 LeagueOfLegendsFactory.eINSTANCE.createPlayer()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LeagueOfLegendsPackage.Literals.TEAM__TEAM_STATS,
+				 LeagueOfLegendsFactory.eINSTANCE.createTeamStats()));
 	}
 
 	/**

@@ -34,6 +34,7 @@ public class LeagueOfLegendsTests extends TestSuite {
 		suite.addTestSuite(TeamTest.class);
 		suite.addTestSuite(PlayerStatsTest.class);
 		suite.addTestSuite(ChampionsStatsTest.class);
+		suite.addTestSuite(TeamStatsTest.class);
 		return suite;
 	}
 
