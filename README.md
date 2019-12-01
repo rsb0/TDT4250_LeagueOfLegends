@@ -10,6 +10,8 @@ This is a project delivery for the NTNU course TDT4250, created by Henrik Knudse
 
 ## Installation guide
 
+NB: Java runtime environment (Version 8) is required to run the project.
+
 The project can be installed and ran by following these instructions:
 
 1. Download the github repository.
