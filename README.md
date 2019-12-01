@@ -14,7 +14,7 @@ The project can be installed and ran by following these instructions:
 
 1. Download the github repository.
 2. Install your choice of Eclipse IDE.
-3. Install any needed project dependencies:
+3. Install project dependencies:
    1. EMF modelling tools
    2. Sirius
    3. Eclipse Developer tools
