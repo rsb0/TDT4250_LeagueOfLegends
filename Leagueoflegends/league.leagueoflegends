@@ -199,6 +199,7 @@
     </player>
     <teamStats gamesPlayed="34" kills="393" deaths="363" assists="942" killDeathAssistRatio="3.0" winLoseRatio="1.125" gameWins="18" matchWins="12" playerWithMostKills="//@teams.9/@player.1" playerWithMostDeaths="//@teams.9/@player.3" playerWithMostAssists="//@teams.9/@player.3" playerWithHighestKda="//@teams.9/@player.1"/>
   </teams>
+  <teams name="Splyce"/>
   <seasons SplitName="2018-2">
     <matches DisplayName="1 | 1 | Vitality   vs.   Splyce" matchID="1" bestOF="Regular" teams="//@teams.1 //@teams.0" week="1" winner="//@teams.1">
       <games gameID="1002530085" redTeam="//@teams.1" blueTeam="//@teams.0" winningTeam="//@teams.1">
