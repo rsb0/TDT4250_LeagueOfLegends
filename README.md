@@ -1,6 +1,6 @@
 # TDT4250_LeagueOfLegends
 
-<p float="left">
+<p align="center">
    <img src="lol-logo.jpg" width="200" />
    <img src="Emf_logo.png" width="200" />
    <img src="sirius-logo.png" width="200" />
