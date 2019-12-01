@@ -1,8 +1,8 @@
 # TDT4250_LeagueOfLegends
 
 <img src="lol-logo.jpg" width="200" />
-<img src="emf_logo.jpg" width="200" />
-<img src="sirius_logo.jpg" width="200" />
+<img src="Emf_logo.jpg" width="200" />
+<img src="sirius-logo.jpg" width="200" />
 
 ![League of legends logo](lol-logo.jpg = 200x200)
 
