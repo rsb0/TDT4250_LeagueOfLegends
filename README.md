@@ -145,7 +145,7 @@ Navigation between diagrams is done through double clicking graphical elements, 
 
 Sirius allows for the use of Java services, for more complex interactions, unfit for simple AQL queries. This is used when extracting images corresponding to different graphical elements, enabling a better user experience.
 
-**NB**: As the data source is based around competitive tournament data, the overall focus has been on presenting the data to the user, rather than allowing the user to change or create new data themselves. This design decision was made, as we didn't feel individual instances of the model made sense on their own, without the greater context of the League.
+**NB**: As the data source is based around competitive tournament data, the overall focus has been on presenting the data to the user, rather than allowing the user to change or create new data themselves. This design decision was made, as we didn't feel individual instances of the model made sense on their own, without the greater context of the League. This was asked about on [piazza](https://piazza.com/class/jzhh4owu30s5vo?cid=29).
 
 ### League_Diagram
 
