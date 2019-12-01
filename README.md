@@ -169,6 +169,8 @@ The Team_Diagram displays the content of a Team instance. It consist of a TeamSt
 
 The Player_Diagram displays the content of a Player instance. It consist of a PlayerStats container and a set of Champion nodes. The PlayerStats container represent the Player's PlayerStats object and display its information in a list format. The Champion nodes corresponds to a specific Champion instance and navigates to its respective Champion_Diagram.
 
+<img src ="player-diagram.png"/>
+
 ### Champion_Diagram
 
 The Champion_Diagram displays the content of a Champion instance. It contains a ChampionStats node, display the content of its ChampionStats object in a list format.
