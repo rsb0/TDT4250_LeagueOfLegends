@@ -1,5 +1,7 @@
 # TDT4250_LeagueOfLegends
 
+![League of legends logo](lol-logo.jpg)
+
 This is a project delivery for the NTNU course TDT4250, created by Henrik Knudsen, Hallvard EchterMeyer, Stian Mahle and Rune Strøm Brekke.
 
 ## Installation guide
