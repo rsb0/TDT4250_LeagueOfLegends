@@ -67,7 +67,7 @@ League Instances can be created from scratch, using a EMF Model Creation Wizard,
 
 ### Constraints
 
-A set of constraints for each Ecore model has been implemented, ensuring data integrity. The implementation can be found in tdt4250.project.LeagueOfLegends's LeagueOfLegendsValidator.
+A set of constraints for each Ecore model has been implemented, ensuring data integrity. The implementation can be found in tdt4250.project.LeagueOfLegends's LeagueOfLegendsValidator, and have been done through the use of Java, rather than OCL statements.
 
 ### League
 
@@ -137,7 +137,15 @@ ChampionStats represents a champion's stats throughout the league, holding aggre
 
 ## Sirius Editor
 
-The project utilizes Sirius [[2]](https://www.eclipse.org/sirius/overview.html) to create a graphical model workbench, based on the underlying Ecore model.
+The project utilizes Sirius [[2]](https://www.eclipse.org/sirius/overview.html) to create a graphical model workbench, based on the underlying Ecore model. We've created a flexible model view for our model, enabling the user to present statistics regarding League of Legends, via graphical user interfaces. 
+
+Traversing the League instance is done through AQL queries [[3]](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.5/com.ibm.swg.im.infosphere.biginsights.aqlref.doc/doc/aql-overview.html), allowing for simple selects of the instance's attributes and references.
+
+Navigation between diagrams is done through double clicking graphical elements, creating new diagrams based on the instances if needed.
+
+Sirius allows for the use of Java services, for more complex interactions, unfit for simple AQL queries. This is used when extracting images corresponding to different graphical elements, enabling a better user experience.
+
+**NB**: As the data source is based around competitive tournament data, the overall focus has been on presenting the data to the user, rather than allowing the user to change or create new data themselves. This design decision was made, as we didn't feel individual instances of the model made sense on their own, without the greater context of the League.
 
 ### League_Diagram
 
@@ -161,8 +169,6 @@ The TeamStats containers represent the Game's GameTeamStats objects. They contai
 
 The GamePlayerStats container represent the Game's GamePlayerStats objects. They contain a Player node, navigating to its respective Player_Diagram, and display its information in a list format.
 
-<img src ="game-diagram.png"/>
-
 ### Team_Diagram
 
 The Team_Diagram displays the content of a Team instance. It consist of a TeamStats container and a set of Player nodes. The TeamStats container represent the Team's TeamStats object and displays its information in a list format. The Player nodes corresponds to a specific Player instance (ie. A player part of the team) and navigates to its respective Player_Diagram.
@@ -170,8 +176,6 @@ The Team_Diagram displays the content of a Team instance. It consist of a TeamSt
 ### Player_Diagram
 
 The Player_Diagram displays the content of a Player instance. It consist of a PlayerStats container and a set of Champion nodes. The PlayerStats container represent the Player's PlayerStats object and display its information in a list format. The Champion nodes corresponds to a specific Champion instance and navigates to its respective Champion_Diagram.
-
-<img src ="player-diagram.png"/>
 
 ### Champion_Diagram
 
