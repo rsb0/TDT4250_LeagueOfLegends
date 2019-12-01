@@ -151,15 +151,22 @@ Sirius allows for the use of Java services, for more complex interactions, unfit
 
 The League_Diagram corresponds to a League instance and is the top element of our Sirius Model View. It contains a list of Season nodes, a set of Team nodes, a list of champion Nodes and a LeagueStats node. The Season nodes represents a specific Season instance and navigates to a Season_Diagram. The Team nodes represent a specific Team instance and navigates to a Team_Diagram. The Champion nodes represent a specific Champion instance and navigates to a Champion_Diagram. The LeagueStats node represent the League's LeagueStats object, and displays its information in list format.
 
+
+<img src ="league-diagram.png"/>
+
 ### Season_Diagram
 
 The Season_Diagram displays the content of a Season instance, following a list format. Each Match contained by the Season is displayed as a list item, and navigates to a Match_Diagram.
 
-XXX_PICTURE_XXX
+
+<img src ="season-diagram.png"/>
 
 ### Match_Diagram
 
 The Match_Diagram displays the content of a Match instance. It consists of a main Match node, a set of Team nodes and a set of Game nodes. The Team nodes represent the teams participating in the match and navigates to a corresponding Team_Diagram. The Game nodes represent the games of the match and navigates to corresponding Game_Diagrams.
+
+
+<img src ="match-diagram.png"/>
 
 ### Game_Diagram
 
@@ -175,6 +182,9 @@ The GamePlayerStats container represent the Game's GamePlayerStats objects. They
 
 The Team_Diagram displays the content of a Team instance. It consist of a TeamStats container and a set of Player nodes. The TeamStats container represent the Team's TeamStats object and displays its information in a list format. The Player nodes corresponds to a specific Player instance (ie. A player part of the team) and navigates to its respective Player_Diagram.
 
+
+<img src ="team-diagram.png"/>
+
 ### Player_Diagram
 
 The Player_Diagram displays the content of a Player instance. It consist of a PlayerStats container and a set of Champion nodes. The PlayerStats container represent the Player's PlayerStats object and display its information in a list format. The Champion nodes corresponds to a specific Champion instance and navigates to its respective Champion_Diagram.
@@ -186,3 +196,4 @@ The Player_Diagram displays the content of a Player instance. It consist of a Pl
 The Champion_Diagram displays the content of a Champion instance. It contains a ChampionStats node, display the content of its ChampionStats object in a list format.
 
 
+<img src ="champion-diagram.png"/>
