@@ -161,6 +161,8 @@ The TeamStats containers represent the Game's GameTeamStats objects. They contai
 
 The GamePlayerStats container represent the Game's GamePlayerStats objects. They contain a Player node, navigating to its respective Player_Diagram, and display its information in a list format.
 
+<img src ="game-diagram.png"/>
+
 ### Team_Diagram
 
 The Team_Diagram displays the content of a Team instance. It consist of a TeamStats container and a set of Player nodes. The TeamStats container represent the Team's TeamStats object and displays its information in a list format. The Player nodes corresponds to a specific Player instance (ie. A player part of the team) and navigates to its respective Player_Diagram.
