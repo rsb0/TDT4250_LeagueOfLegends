@@ -1550,13 +1550,31 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	int LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA = 11;
 
 	/**
+	 * The feature id for the '<em><b>Most Banned Champion</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEAGUE_STATS__MOST_BANNED_CHAMPION = 12;
+
+	/**
+	 * The feature id for the '<em><b>Least Banned Champion</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEAGUE_STATS__LEAST_BANNED_CHAMPION = 13;
+
+	/**
 	 * The number of structural features of the '<em>League Stats</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LEAGUE_STATS_FEATURE_COUNT = 12;
+	int LEAGUE_STATS_FEATURE_COUNT = 14;
 
 	/**
 	 * The number of operations of the '<em>League Stats</em>' class.
@@ -3114,6 +3132,28 @@ public interface LeagueOfLegendsPackage extends EPackage {
 	EReference getLeagueStats_ChampionWithHighestKda();
 
 	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.LeagueStats#getMostBannedChampion <em>Most Banned Champion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Most Banned Champion</em>'.
+	 * @see leagueOfLegends.LeagueStats#getMostBannedChampion()
+	 * @see #getLeagueStats()
+	 * @generated
+	 */
+	EReference getLeagueStats_MostBannedChampion();
+
+	/**
+	 * Returns the meta object for the reference '{@link leagueOfLegends.LeagueStats#getLeastBannedChampion <em>Least Banned Champion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Least Banned Champion</em>'.
+	 * @see leagueOfLegends.LeagueStats#getLeastBannedChampion()
+	 * @see #getLeagueStats()
+	 * @generated
+	 */
+	EReference getLeagueStats_LeastBannedChampion();
+
+	/**
 	 * Returns the meta object for enum '{@link leagueOfLegends.BestOf <em>Best Of</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4307,6 +4347,22 @@ public interface LeagueOfLegendsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA = eINSTANCE.getLeagueStats_ChampionWithHighestKda();
+
+		/**
+		 * The meta object literal for the '<em><b>Most Banned Champion</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LEAGUE_STATS__MOST_BANNED_CHAMPION = eINSTANCE.getLeagueStats_MostBannedChampion();
+
+		/**
+		 * The meta object literal for the '<em><b>Least Banned Champion</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LEAGUE_STATS__LEAST_BANNED_CHAMPION = eINSTANCE.getLeagueStats_LeastBannedChampion();
 
 		/**
 		 * The meta object literal for the '{@link leagueOfLegends.BestOf <em>Best Of</em>}' enum.

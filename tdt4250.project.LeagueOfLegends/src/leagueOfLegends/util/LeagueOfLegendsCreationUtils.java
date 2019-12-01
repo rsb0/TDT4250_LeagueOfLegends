@@ -135,6 +135,8 @@ public class LeagueOfLegendsCreationUtils {
 		leagueStats.setChampionWithMostDeaths(championWithMostDeaths);
 		leagueStats.setChampionWithMostAssists(championWithMostAssists);
 		leagueStats.setChampionWithHighestKda(championWithHighestKda);
+		leagueStats.setMostBannedChampion(mostBannedChampion);
+		leagueStats.setLeastBannedChampion(leastBannedChampion);
 		return leagueStats;
 	}
 	

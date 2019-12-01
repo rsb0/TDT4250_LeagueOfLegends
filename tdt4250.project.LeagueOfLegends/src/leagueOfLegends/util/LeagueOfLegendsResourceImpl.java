@@ -503,7 +503,10 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 		LeagueStats leagueStats = LeagueOfLegendsCreationUtils.createLeagueStats(leagueKills, leagueAssists, leagueDeaths, playerWithMostKills, playerWithMostDeaths, playerWithMostAssists, playerWithHighestKda, championWithMostKills, championWithMostDeaths, championWithMostAssists, championWithHighestKda, mostBannedChampion, leastBannedChampion);
 		leagueStats.setLeague(league);
 		league.setLeagueStats(leagueStats);
-
+		
+		for (Champion champion : champions.values()) {
+			System.out.println(champion.getName() + champion.getChampionStat().getBans());
+		}
 		
 		try {
 			File file = new File("assets\\league.xmi");

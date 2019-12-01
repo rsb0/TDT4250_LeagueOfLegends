@@ -72,6 +72,8 @@ public class LeagueStatsItemProvider
 			addChampionWithMostDeathsPropertyDescriptor(object);
 			addChampionWithMostAssistsPropertyDescriptor(object);
 			addChampionWithHighestKdaPropertyDescriptor(object);
+			addMostBannedChampionPropertyDescriptor(object);
+			addLeastBannedChampionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -332,6 +334,50 @@ public class LeagueStatsItemProvider
 				 getString("_UI_LeagueStats_championWithHighestKda_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_LeagueStats_championWithHighestKda_feature", "_UI_LeagueStats_type"),
 				 LeagueOfLegendsPackage.Literals.LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Most Banned Champion feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addMostBannedChampionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LeagueStats_mostBannedChampion_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LeagueStats_mostBannedChampion_feature", "_UI_LeagueStats_type"),
+				 LeagueOfLegendsPackage.Literals.LEAGUE_STATS__MOST_BANNED_CHAMPION,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Least Banned Champion feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLeastBannedChampionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LeagueStats_leastBannedChampion_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LeagueStats_leastBannedChampion_feature", "_UI_LeagueStats_type"),
+				 LeagueOfLegendsPackage.Literals.LEAGUE_STATS__LEAST_BANNED_CHAMPION,
 				 true,
 				 false,
 				 true,

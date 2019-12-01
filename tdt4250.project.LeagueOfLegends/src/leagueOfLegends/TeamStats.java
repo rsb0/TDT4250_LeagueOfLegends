@@ -45,7 +45,7 @@ public interface TeamStats extends EObject {
 	 * @see #setTeam(Team)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getTeamStats_Team()
 	 * @see leagueOfLegends.Team#getTeamStats
-	 * @model opposite="teamStats" transient="false"
+	 * @model opposite="teamStats" required="true" transient="false"
 	 * @generated
 	 */
 	Team getTeam();

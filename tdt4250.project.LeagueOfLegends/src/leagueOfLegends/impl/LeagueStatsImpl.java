@@ -39,6 +39,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link leagueOfLegends.impl.LeagueStatsImpl#getChampionWithMostDeaths <em>Champion With Most Deaths</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueStatsImpl#getChampionWithMostAssists <em>Champion With Most Assists</em>}</li>
  *   <li>{@link leagueOfLegends.impl.LeagueStatsImpl#getChampionWithHighestKda <em>Champion With Highest Kda</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.LeagueStatsImpl#getMostBannedChampion <em>Most Banned Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.impl.LeagueStatsImpl#getLeastBannedChampion <em>Least Banned Champion</em>}</li>
  * </ul>
  *
  * @generated
@@ -183,6 +185,26 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 * @ordered
 	 */
 	protected Champion championWithHighestKda;
+
+	/**
+	 * The cached value of the '{@link #getMostBannedChampion() <em>Most Banned Champion</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMostBannedChampion()
+	 * @generated
+	 * @ordered
+	 */
+	protected Champion mostBannedChampion;
+
+	/**
+	 * The cached value of the '{@link #getLeastBannedChampion() <em>Least Banned Champion</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLeastBannedChampion()
+	 * @generated
+	 * @ordered
+	 */
+	protected Champion leastBannedChampion;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -641,6 +663,86 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 	 * @generated
 	 */
 	@Override
+	public Champion getMostBannedChampion() {
+		if (mostBannedChampion != null && mostBannedChampion.eIsProxy()) {
+			InternalEObject oldMostBannedChampion = (InternalEObject)mostBannedChampion;
+			mostBannedChampion = (Champion)eResolveProxy(oldMostBannedChampion);
+			if (mostBannedChampion != oldMostBannedChampion) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION, oldMostBannedChampion, mostBannedChampion));
+			}
+		}
+		return mostBannedChampion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Champion basicGetMostBannedChampion() {
+		return mostBannedChampion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMostBannedChampion(Champion newMostBannedChampion) {
+		Champion oldMostBannedChampion = mostBannedChampion;
+		mostBannedChampion = newMostBannedChampion;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION, oldMostBannedChampion, mostBannedChampion));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Champion getLeastBannedChampion() {
+		if (leastBannedChampion != null && leastBannedChampion.eIsProxy()) {
+			InternalEObject oldLeastBannedChampion = (InternalEObject)leastBannedChampion;
+			leastBannedChampion = (Champion)eResolveProxy(oldLeastBannedChampion);
+			if (leastBannedChampion != oldLeastBannedChampion) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION, oldLeastBannedChampion, leastBannedChampion));
+			}
+		}
+		return leastBannedChampion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Champion basicGetLeastBannedChampion() {
+		return leastBannedChampion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLeastBannedChampion(Champion newLeastBannedChampion) {
+		Champion oldLeastBannedChampion = leastBannedChampion;
+		leastBannedChampion = newLeastBannedChampion;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION, oldLeastBannedChampion, leastBannedChampion));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAGUE:
@@ -719,6 +821,12 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 			case LeagueOfLegendsPackage.LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA:
 				if (resolve) return getChampionWithHighestKda();
 				return basicGetChampionWithHighestKda();
+			case LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION:
+				if (resolve) return getMostBannedChampion();
+				return basicGetMostBannedChampion();
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION:
+				if (resolve) return getLeastBannedChampion();
+				return basicGetLeastBannedChampion();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -766,6 +874,12 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 				return;
 			case LeagueOfLegendsPackage.LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA:
 				setChampionWithHighestKda((Champion)newValue);
+				return;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION:
+				setMostBannedChampion((Champion)newValue);
+				return;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION:
+				setLeastBannedChampion((Champion)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -815,6 +929,12 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 			case LeagueOfLegendsPackage.LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA:
 				setChampionWithHighestKda((Champion)null);
 				return;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION:
+				setMostBannedChampion((Champion)null);
+				return;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION:
+				setLeastBannedChampion((Champion)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -851,6 +971,10 @@ public class LeagueStatsImpl extends MinimalEObjectImpl.Container implements Lea
 				return championWithMostAssists != null;
 			case LeagueOfLegendsPackage.LEAGUE_STATS__CHAMPION_WITH_HIGHEST_KDA:
 				return championWithHighestKda != null;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__MOST_BANNED_CHAMPION:
+				return mostBannedChampion != null;
+			case LeagueOfLegendsPackage.LEAGUE_STATS__LEAST_BANNED_CHAMPION:
+				return leastBannedChampion != null;
 		}
 		return super.eIsSet(featureID);
 	}

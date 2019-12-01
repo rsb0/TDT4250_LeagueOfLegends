@@ -201,7 +201,7 @@ public interface Match extends EObject {
 	 * @see #setSeason(Season)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getMatch_Season()
 	 * @see leagueOfLegends.Season#getMatches
-	 * @model opposite="matches" transient="false"
+	 * @model opposite="matches" required="true" transient="false"
 	 * @generated
 	 */
 	Season getSeason();

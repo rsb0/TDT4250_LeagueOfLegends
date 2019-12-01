@@ -25,6 +25,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link leagueOfLegends.LeagueStats#getChampionWithMostDeaths <em>Champion With Most Deaths</em>}</li>
  *   <li>{@link leagueOfLegends.LeagueStats#getChampionWithMostAssists <em>Champion With Most Assists</em>}</li>
  *   <li>{@link leagueOfLegends.LeagueStats#getChampionWithHighestKda <em>Champion With Highest Kda</em>}</li>
+ *   <li>{@link leagueOfLegends.LeagueStats#getMostBannedChampion <em>Most Banned Champion</em>}</li>
+ *   <li>{@link leagueOfLegends.LeagueStats#getLeastBannedChampion <em>Least Banned Champion</em>}</li>
  * </ul>
  *
  * @see leagueOfLegends.LeagueOfLegendsPackage#getLeagueStats()
@@ -41,7 +43,7 @@ public interface LeagueStats extends EObject {
 	 * @see #setLeague(League)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeagueStats_League()
 	 * @see leagueOfLegends.League#getLeagueStats
-	 * @model opposite="leagueStats" transient="false"
+	 * @model opposite="leagueStats" required="true" transient="false"
 	 * @generated
 	 */
 	League getLeague();
@@ -297,5 +299,49 @@ public interface LeagueStats extends EObject {
 	 * @generated
 	 */
 	void setChampionWithHighestKda(Champion value);
+
+	/**
+	 * Returns the value of the '<em><b>Most Banned Champion</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Most Banned Champion</em>' reference.
+	 * @see #setMostBannedChampion(Champion)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeagueStats_MostBannedChampion()
+	 * @model required="true"
+	 * @generated
+	 */
+	Champion getMostBannedChampion();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.LeagueStats#getMostBannedChampion <em>Most Banned Champion</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Most Banned Champion</em>' reference.
+	 * @see #getMostBannedChampion()
+	 * @generated
+	 */
+	void setMostBannedChampion(Champion value);
+
+	/**
+	 * Returns the value of the '<em><b>Least Banned Champion</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Least Banned Champion</em>' reference.
+	 * @see #setLeastBannedChampion(Champion)
+	 * @see leagueOfLegends.LeagueOfLegendsPackage#getLeagueStats_LeastBannedChampion()
+	 * @model required="true"
+	 * @generated
+	 */
+	Champion getLeastBannedChampion();
+
+	/**
+	 * Sets the value of the '{@link leagueOfLegends.LeagueStats#getLeastBannedChampion <em>Least Banned Champion</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Least Banned Champion</em>' reference.
+	 * @see #getLeastBannedChampion()
+	 * @generated
+	 */
+	void setLeastBannedChampion(Champion value);
 
 } // LeagueStats

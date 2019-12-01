@@ -57,7 +57,7 @@ public interface Player extends EObject {
 	 * @see leagueOfLegends.Position
 	 * @see #setPosition(Position)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getPlayer_Position()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Position getPosition();

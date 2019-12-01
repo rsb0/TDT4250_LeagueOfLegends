@@ -148,7 +148,7 @@ public interface ChampionsStats extends EObject {
 	 * @see #setChampion(Champion)
 	 * @see leagueOfLegends.LeagueOfLegendsPackage#getChampionsStats_Champion()
 	 * @see leagueOfLegends.Champion#getChampionStat
-	 * @model opposite="championStat" transient="false"
+	 * @model opposite="championStat" required="true" transient="false"
 	 * @generated
 	 */
 	Champion getChampion();
