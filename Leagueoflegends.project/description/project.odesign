@@ -1,256 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
   <ownedViewpoints name="Leagueoflegends" modelFileExtension="leagueoflegends">
-    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="Matches" domainClass="leagueOfLegends::League">
-      <metamodel href="file:/C:/Users/Bruker/git/TDT4250_LeagueOfLegends/tdt4250.project.LeagueOfLegends/model/tdt4250.project.LeagueOfLegends.ecore#/"/>
-      <ownedLineMappings name="Meathces" domainClass="leagueOfLegends::Match" headerLabelExpression="aql:self"/>
-      <ownedColumnMappings name="MatchID" headerLabelExpression="MatchID" featureName="matchID" labelExpression="aql:self.matchID"/>
-      <ownedColumnMappings name="Team_One" headerLabelExpression="Teams" featureName="teams" labelExpression="aql:self.teams.name"/>
-      <ownedColumnMappings name="Winner" headerLabelExpression="Winner" featureName="winner" labelExpression="aql:self.winner.name"/>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Team_Diagram" titleExpression="aql:self.name" initialisation="true" domainClass="leagueOfLegends::Team" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="Team" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Team" childrenPresentation="List">
-          <subNodeMappings name="players" semanticCandidatesExpression="feature:player" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Player']" domainClass="leagueOfLegends::Player">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <toolSections name="Creation Tools">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Click_Player_Diagram" containerMappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']/@defaultLayer/@containerMappings[name='PlayerContainer']/@subContainerMappings[name='Player']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Player_Diagram" referenceName="instructions"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Player" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']/@subNodeMappings[name='players']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Player_Diagram" titleExpression="aql:self.name" initialisation="true" domainClass="leagueOfLegends::Player" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="PlayerContainer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Player" childrenPresentation="VerticalStack">
-          <subContainerMappings name="Player" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Player" childrenPresentation="List">
-            <subNodeMappings name="Player_Team" semanticCandidatesExpression="aql:self.team" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Team_In_Player']" domainClass="leagueOfLegends::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Team: ' + self.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Player_Position" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Player">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Position: ' + self.position" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" hideLabelByDefault="true">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <subContainerMappings name="PlayerChampionPool" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::Player" childrenPresentation="List">
-            <subNodeMappings name="Player_Champion" semanticCandidatesExpression="aql:self.championPool" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Champion_In_Player']" domainClass="leagueOfLegends::Champion">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Champion pool'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <subContainerMappings name="PlayerStats" semanticCandidatesExpression="aql:self.playerStats" domainClass="leagueOfLegends::PlayerStats" childrenPresentation="List">
-            <subNodeMappings name="CareerKills" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career kills: ' + self.careerKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="CareerDeaths" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career deaths: ' + self.careerDeaths" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="CareerAssists" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career assists: ' + self.careerAssist" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="K/D" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'K/D/A ratio:  ' + self.killDeathAssistRatio" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="CareerWins" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career Games Won: ' + self.careerGameWins" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="CareerMatchesWin" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career Matches Won: ' + self.careerMatchWins" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="CareerWL" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::PlayerStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Career Win Loss ratio: ' + self.winLoseRatio" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Stats'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql: self.name">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <toolSections name="Navigation Tools">
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Team_In_Player" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']/@defaultLayer/@containerMappings[name='PlayerContainer']/@subContainerMappings[name='Player']/@subNodeMappings[name='Player_Team']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Champion_In_Player" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Player_Diagram']/@defaultLayer/@containerMappings[name='PlayerContainer']/@subContainerMappings[name='PlayerChampionPool']/@subNodeMappings[name='Player_Champion']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Champion_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Champion_Diagram" titleExpression="aql:self.name" initialisation="true" domainClass="leagueOfLegends::Champion" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="Champion" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::Champion" childrenPresentation="HorizontalStack">
-          <subContainerMappings name="ChampionStats" semanticCandidatesExpression="aql:self.championStat" domainClass="leagueOfLegends::ChampionsStats" childrenPresentation="List">
-            <subNodeMappings name="Champion_Games_Played" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total games played: ' + self.gamesPlayed" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_Kills" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total kills: ' + self.totalKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_Deaths" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total deaths: ' + self.totalDeaths" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_Assists" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total assists: ' + self.totalAssist" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_KDA" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'K/D/A ratio: ' + self.killDeathAssistRatio" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_Bans" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Number of bans: ' + self.bans" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_Wins" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Number of wins: ' + self.wins" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Champion_WL" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Win/Loss ratio: ' + self.winLoseRatio" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Stats'" hideLabelByDefault="true">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" labelExpression="aql: 'Champion: ' + self.name">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Season_Diagram" titleExpression="aql: 'Season: ' + self.SplitName" initialisation="true" domainClass="leagueOfLegends::Season" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Season_Diagram" titleExpression="aql: if self.SplitName.endsWith('2') then self.SplitName.replace('\\-\\d*',' split ' + self.SplitName.substring(6)) + ' ' + self.splitType + ' season' else if self.SplitName.endsWith('p') then self.SplitName.replace('\\-\\d[a-z]',' split ') + self.SplitName.substring(6).replace('[a-z]',' ') + self.splitType else self.SplitName.replace('\\-\\d[a-z]+', ' split ') + self.SplitName.substring(6).replace('[a-z]+', ' ') + self.splitType endif endif" initialisation="true" domainClass="leagueOfLegends::Season" enablePopupBars="true">
       <defaultLayer name="Default">
         <containerMappings name="Season" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Season" childrenPresentation="List">
           <subNodeMappings name="Matches" semanticCandidatesExpression="aql: self.matches" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Season_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Match']" domainClass="leagueOfLegends::Match">
@@ -279,326 +30,9 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Match_Diagram" titleExpression="aql: self.DisplayName" initialisation="true" domainClass="leagueOfLegends::Match" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_Team" titleExpression="aql:self.name" domainClass="leagueOfLegends::Team" enablePopupBars="true">
+      <layout xsi:type="description_1:CompositeLayout" padding="50"/>
       <defaultLayer name="Default">
-        <containerMappings name="MatchContainer" navigationDescriptions="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Match_Navigation']" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::Match" childrenPresentation="VerticalStack">
-          <subContainerMappings name="Match" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Match" childrenPresentation="List">
-            <subNodeMappings name="Games" semanticCandidatesExpression="aql: self.games" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Match_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Game']" domainClass="leagueOfLegends::Game">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self. gameID" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Games'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql: self.DisplayName">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <toolSections name="Creation Tools">
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Game" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Match_Diagram']/@defaultLayer/@containerMappings[name='MatchContainer']/@subContainerMappings[name='Match']/@subNodeMappings[name='Games']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Game_Diagram" titleExpression="aql: 'Game: ' + self.gameID" initialisation="true" domainClass="leagueOfLegends::Game" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="GameContainer" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::Game" childrenPresentation="VerticalStack">
-          <subContainerMappings name="Game" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Game" childrenPresentation="List">
-            <subNodeMappings name="Game_Red_Team" semanticCandidatesExpression="aql:self.redTeam" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Team_In_Game']" domainClass="leagueOfLegends::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Red team: ' + self.name " labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Game_Blue_Team" semanticCandidatesExpression="aql:self.blueTeam" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Team_In_Game']" domainClass="leagueOfLegends::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Blue team: ' + self.name " labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="Game_Winner" semanticCandidatesExpression="aql:self.winningTeam" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Team_In_Game']" domainClass="leagueOfLegends::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Winner: ' + self.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Games'" hideLabelByDefault="true">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <subContainerMappings name="GameStats" semanticCandidatesExpression="aql: self.gameStats" domainClass="leagueOfLegends::GameStats" childrenPresentation="List">
-            <subNodeMappings name="GameStats_Duration" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Game duration: ' + self.duration" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Kills" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Kills: ' + self.totalKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Deaths" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Deaths: ' + self.totalDeaths" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Assists" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Assists: ' + self.totalAssist" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Golds" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Gold aquired: ' + self.totalGolds" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Kills" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Kills: ' + self.totalKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Wards" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Wards: ' + self.totalWards" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Vision_Wards" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Vision Wards: ' + self.totalVisionWards" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Wards_Killed" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Wards Killed: ' + self.totalWardsKilled" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Minions" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Monsters Killed: ' + self. totalMonsterKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Barons" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Barons Killed: ' + self.teamBaronKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subNodeMappings name="GameStats_Total_Minions" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::GameStats">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Minions Killed: ' + self.totalMinionKills" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Stats'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql: 'Game: ' + self.gameID">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <toolSections name="Creation Tools">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Click_Team_Diagram" containerMappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Team_Diagram" referenceName="instructions"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Team_In_Game" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Blue_Team'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Red_Team'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Game_Diagram']/@defaultLayer/@containerMappings[name='GameContainer']/@subContainerMappings[name='Game']/@subNodeMappings[name='Game_Winner']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="Testing" domainClass="leagueOfLegends::League" enablePopupBars="true">
-      <metamodel href="file:/C:/Users/Bruker/git/TDT4250_LeagueOfLegends/tdt4250.project.LeagueOfLegends/model/tdt4250.project.LeagueOfLegends.ecore#/"/>
-      <defaultLayer name="Default">
-        <nodeMappings name="Teams" domainClass="leagueOfLegends::Team">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-          </style>
-        </nodeMappings>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="League" initialisation="true" domainClass="leagueOfLegends::League" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <containerMappings name="LeagueContainer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="HorizontalStack">
-          <subContainerMappings name="SeasonList" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="List">
-            <subNodeMappings name="Season" semanticCandidatesExpression="aql: self.seasons" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Season']" domainClass="leagueOfLegends::Season">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self.SplitName" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Season List'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <subContainerMappings name="TeamList" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="List">
-            <subNodeMappings name="Team" semanticCandidatesExpression="aql:self.teams" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Team']" domainClass="leagueOfLegends::Team">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelAlignment="LEFT" tooltipExpression="self.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <subContainerMappings name="TeamList" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="List">
-              <subNodeMappings name="Team" semanticCandidatesExpression="aql:self.teams" domainClass="leagueOfLegends::Team">
-                <style xsi:type="style:SquareDescription" labelSize="12" labelAlignment="LEFT" tooltipExpression="self.name" labelPosition="node" resizeKind="NSEW">
-                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-                </style>
-              </subNodeMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Team List'">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-              </style>
-            </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Team List'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <subContainerMappings name="ChampionList" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="List">
-            <subNodeMappings name="Champion" semanticCandidatesExpression="aql: self.champions" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Champion']" domainClass="leagueOfLegends::Champion">
-              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self.name" labelPosition="node" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Champion List'">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelFormat>bold</labelFormat>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            </style>
-          </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql: 'League'">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <toolSections name="Creation Tools">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Click_Team_Diagram" containerMappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']/@defaultLayer/@containerMappings[name='Team']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Team_Diagram" referenceName="instructions"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Team" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@containerMappings[name='LeagueContainer']/@subContainerMappings[name='TeamList']/@subNodeMappings[name='Team']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Team_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Champion" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@containerMappings[name='LeagueContainer']/@subContainerMappings[name='ChampionList']/@subNodeMappings[name='Champion']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Champion_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Doubleclick_Season" forceRefresh="true" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='League']/@defaultLayer/@containerMappings[name='LeagueContainer']/@subContainerMappings[name='SeasonList']/@subNodeMappings[name='Season']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Season_Diagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="The_Visual_Team" titleExpression="aql:self.name" domainClass="leagueOfLegends::Team" enablePopupBars="true">
-      <defaultLayer name="Default">
-        <nodeMappings name="The_Team" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Team">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </style>
-        </nodeMappings>
         <nodeMappings name="Players" semanticCandidatesExpression="aql:self.player" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
           <borderedNodeMappings name="Possition_border" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Player">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="3" showIcon="false" labelExpression="" labelPosition="node" resizeKind="NSEW" workspacePath="PossitionImage_VisualTeam">
@@ -614,7 +48,15 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='The_Team']" targetFinderExpression="feature:team">
+        <edgeMappings name="Team" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamStats']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players']" targetFinderExpression="aql:self.team.player">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="TeamStatsRelation" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamVisualStats']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamStats']" targetFinderExpression="aql:self">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -623,6 +65,15 @@
           </style>
         </edgeMappings>
         <containerMappings name="TeamStats" semanticCandidatesExpression="aql: self.teamStats" domainClass="leagueOfLegends::TeamStats" childrenPresentation="List">
+          <borderedNodeMappings name="TheTeam" semanticCandidatesExpression="aql:self.team" domainClass="leagueOfLegends::Team">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" labelAlignment="LEFT" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW" workspacePath="TeamImageBorder">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+            </style>
+          </borderedNodeMappings>
           <subNodeMappings name="GameStats_Total_Match_Wins" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
             <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total Match Wins: ' + self.matchWins" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -679,55 +130,6 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
           </subNodeMappings>
-          <subNodeMappings name="GameStats_Tournement_Wins" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Tournement Wins: ' + self.tournamentWins" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Tournement_2nd_Places" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Tournement Second Places: ' + self.tournamentSecondPlaces" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Tournement_3rd_Places" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Tournement Third Places: ' + self.tournamentThridPlaces" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Player_With_Most_Kills" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Player With Most Kills: ' + self.playerWithMostKills.name" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Player_With_Most_Deaths" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Player With Most Deaths: ' + self.playerWithMostDeaths.name" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Player_With_Most_Assist" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Player With Most Assists: ' + self.playerWithMostAssists.name" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
-          <subNodeMappings name="GameStats_Player_With_Highest_Kda" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::TeamStats">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Player With Highest KDA: ' + self.playerWithHighestKda.name" labelPosition="node" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-          </subNodeMappings>
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Stats'">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
@@ -736,8 +138,48 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
+        <containerMappings name="TeamVisualStats" semanticCandidatesExpression="aql:self.teamStats" domainClass="leagueOfLegends::TeamStats">
+          <subNodeMappings name="HighestKDA" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::TeamStats">
+            <borderedNodeMappings name="PlayerKDA" semanticCandidatesExpression="aql:self.playerWithHighestKda" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="PlayerKDA">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="6" labelExpression="aql: 'Player With Highest KDA: ' + self.playerWithHighestKda.name" labelPosition="node" resizeKind="NSEW" width="25" height="6">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Highest Kills" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::TeamStats">
+            <borderedNodeMappings name="Playerkills" semanticCandidatesExpression="aql:self.playerWithMostKills" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="Playerkills">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="6" labelExpression="aql: 'Player With Highest kills: ' + self.playerWithMostKills.name" labelPosition="node" resizeKind="NSEW" width="25" height="6">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: 'Distinctions: best performing players '  " widthComputationExpression="40">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Players" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players']">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Players" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamVisualStats']/@subNodeMappings[name='HighestKDA']/@borderedNodeMappings[name='PlayerKDA'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamVisualStats']/@subNodeMappings[name='Highest%20Kills']/@borderedNodeMappings[name='Playerkills']">
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
@@ -747,14 +189,16 @@
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='The_Team']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" attributeName="workspacePath" value="service:getTeamImage()"/>
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players']/@style" attributeName="workspacePath" value="service:getPlayerImage()"/>
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@nodeMappings[name='Players']/@borderedNodeMappings[name='Possition_border']/@style" attributeName="workspacePath" value="service:getPositionImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamStats']/@borderedNodeMappings[name='TheTeam']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamVisualStats']/@subNodeMappings[name='HighestKDA']/@borderedNodeMappings[name='PlayerKDA']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']/@defaultLayer/@containerMappings[name='TeamVisualStats']/@subNodeMappings[name='Highest%20Kills']/@borderedNodeMappings[name='Playerkills']/@style" attributeName="workspacePath" value="service:getPlayerImage()"/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="The_Visual_Player" titleExpression="aql:self.name" initialisation="true" domainClass="leagueOfLegends::Player" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_Player" titleExpression="aql:self.name" initialisation="true" domainClass="leagueOfLegends::Player" enablePopupBars="true">
       <defaultLayer name="Default">
         <nodeMappings name="Player" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Player">
           <borderedNodeMappings name="Team_border" semanticCandidatesExpression="feature:team" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']/@defaultLayer/@toolSections.0/@ownedTools[name='Teams']" domainClass="leagueOfLegends::Team">
@@ -800,7 +244,7 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Championpool" semanticCandidatesExpression="aql:self.championPool" domainClass="leagueOfLegends::Champion">
+        <nodeMappings name="Championpool" semanticCandidatesExpression="aql:self.championPool" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']/@defaultLayer/@toolSections.0/@ownedTools[name='Champion']" domainClass="leagueOfLegends::Champion">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="4" showIcon="false" labelExpression="" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW" workspacePath="ChampionImage_VisualPlayer">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -822,6 +266,13 @@
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Champion" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']/@defaultLayer/@nodeMappings[name='Championpool']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Champion']"/>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
@@ -833,21 +284,24 @@
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="The_Visual_League" domainClass="leagueOfLegends::League" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_League" titleExpression="aql:self.    name" domainClass="leagueOfLegends::League" enablePopupBars="true">
+      <layout xsi:type="description_1:CompositeLayout" padding="80"/>
       <defaultLayer name="Default">
-        <nodeMappings name="League" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="League_image">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </style>
-        </nodeMappings>
         <nodeMappings name="Teams" semanticCandidatesExpression="feature:teams" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Team']" domainClass="leagueOfLegends::Team">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="6" showIcon="false" labelExpression="" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW" workspacePath="Teams_VisualLeague">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="Teams_In_League" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='League']" targetFinderExpression="feature:league">
+        <edgeMappings name="Teams_In_League" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='SeasonList']/@borderedNodeMappings[name='League%20Image']" targetFinderExpression="feature:league">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Inforelation" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='SeasonList']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='Banns']" targetFinderExpression="aql:self.leagueStats">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -856,8 +310,17 @@
           </style>
         </edgeMappings>
         <containerMappings name="SeasonList" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League" childrenPresentation="List">
+          <borderedNodeMappings name="League Image" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::League">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="12" labelPosition="node" resizeKind="NSEW" workspacePath="The Visual League">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+            </style>
+          </borderedNodeMappings>
           <subNodeMappings name="Season" semanticCandidatesExpression="aql: self.seasons" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Duble%20Click%20Season']" domainClass="leagueOfLegends::Season">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self.SplitName" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: if self.SplitName.endsWith('2') then self.SplitName.replace('\\-\\d*',' split ' + self.SplitName.substring(6)) + ' ' + self.splitType + ' season' else if self.SplitName.endsWith('p') then self.SplitName.replace('\\-\\d[a-z]',' split ') + self.SplitName.substring(6).replace('[a-z]',' ') + self.splitType else self.SplitName.replace('\\-\\d[a-z]+', ' split ') + self.SplitName.substring(6).replace('[a-z]+', ' ') + self.splitType endif endif" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -866,6 +329,190 @@
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Season List'">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="LeaguePlayers" semanticCandidatesExpression="aql:self.leagueStats" domainClass="leagueOfLegends::LeagueStats">
+          <subNodeMappings name="BestKDAPlayer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="KDAP" semanticCandidatesExpression="aql:self.playerWithHighestKda" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestKDAPlayer">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The best performing player:  ' + self.playerWithHighestKda.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="BestkillsPlayer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="KillsP" semanticCandidatesExpression="aql:self.playerWithMostKills" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestkillPlayer">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The player with most kills:  ' + self.playerWithMostKills.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="BestAssistPlayer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="AssistsP" semanticCandidatesExpression="aql:self.playerWithMostAssists" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestAssistPlayer">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The player with most assists:  ' + self.playerWithMostAssists.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="WorstPlayer" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="WorstP" semanticCandidatesExpression="aql:self.playerWithMostDeaths" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Players']" domainClass="leagueOfLegends::Player">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestDeathPlayer">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The worst player:  ' + self. playerWithMostDeaths.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:'Noteworthy champions'" widthComputationExpression="60">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="LeagueChampions" semanticCandidatesExpression="aql:self.leagueStats" domainClass="leagueOfLegends::LeagueStats">
+          <subNodeMappings name="BestKDAChamp" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="KDAC" semanticCandidatesExpression="aql:self.championWithHighestKda" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestKDAChamp">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The best performing champion:  ' + self.championWithHighestKda.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="BestkillsChamp" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="KillsC" semanticCandidatesExpression="aql:self.championWithMostKills" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestkillChamp">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The champion with most kills:  ' + self.championWithMostKills.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="BestAssistChamp" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="AssistC" semanticCandidatesExpression="aql:self.championWithMostAssists" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestAssistChamp">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The champion with most assists:  ' + self.championWithMostAssists.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="WorstChamp" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="WorstC" semanticCandidatesExpression="aql:self.championWithMostDeaths" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="HighestDeathChamp">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The worst champion:  ' + self. championWithMostDeaths.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:'Noteworthy champions'" widthComputationExpression="60">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Banns" semanticCandidatesExpression="aql:self.leagueStats" domainClass="leagueOfLegends::LeagueStats">
+          <subNodeMappings name="MostBanned" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="MB" semanticCandidatesExpression="aql:self.mostBannedChampion" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="MostBannedChampion">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The most banned champion:  ' + self.mostBannedChampion.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="leastBanned" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::LeagueStats">
+            <borderedNodeMappings name="LB" semanticCandidatesExpression="aql:self.leastBannedChampion" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Champions']" domainClass="leagueOfLegends::Champion">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="LeastBannedChamp">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql: 'The worst champion:  ' + self. leastBannedChampion.name" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: 'Bans'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -891,58 +538,75 @@
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Players" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestKDAPlayer']/@borderedNodeMappings[name='KDAP'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestkillsPlayer']/@borderedNodeMappings[name='KillsP'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestAssistPlayer']/@borderedNodeMappings[name='AssistsP'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='WorstPlayer']/@borderedNodeMappings[name='WorstP']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Champions" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='WorstChamp']/@borderedNodeMappings[name='WorstC'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestKDAChamp']/@borderedNodeMappings[name='KDAC'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestkillsChamp']/@borderedNodeMappings[name='KillsC'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestAssistChamp']/@borderedNodeMappings[name='AssistC'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='Banns']/@subNodeMappings[name='MostBanned']/@borderedNodeMappings[name='MB'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='Banns']/@subNodeMappings[name='leastBanned']/@borderedNodeMappings[name='LB']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Champion']"/>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='League']/@style" attributeName="workspacePath" value="service:getLeagueImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='SeasonList']/@borderedNodeMappings[name='League%20Image']/@style" attributeName="workspacePath" value="service:getLeagueImage()"/>
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@nodeMappings[name='Teams']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestKDAChamp']/@borderedNodeMappings[name='KDAC']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestkillsChamp']/@borderedNodeMappings[name='KillsC']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='BestAssistChamp']/@borderedNodeMappings[name='AssistC']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeagueChampions']/@subNodeMappings[name='WorstChamp']/@borderedNodeMappings[name='WorstC']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='Banns']/@subNodeMappings[name='MostBanned']/@borderedNodeMappings[name='MB']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='Banns']/@subNodeMappings[name='leastBanned']/@borderedNodeMappings[name='LB']/@style" attributeName="workspacePath" value="service:getChampionImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestAssistPlayer']/@borderedNodeMappings[name='AssistsP']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestKDAPlayer']/@borderedNodeMappings[name='KDAP']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='BestkillsPlayer']/@borderedNodeMappings[name='KillsP']/@style //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@containerMappings[name='LeaguePlayers']/@subNodeMappings[name='WorstPlayer']/@borderedNodeMappings[name='WorstP']/@style" attributeName="workspacePath" value="service:getPlayerImage()"/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="The_Visual_Match" domainClass="leagueOfLegends::Match" enablePopupBars="true">
-      <layout xsi:type="description_2:CompositeLayout"/>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_Match" titleExpression="aql: self.DisplayName" domainClass="leagueOfLegends::Match" enablePopupBars="true">
+      <layout xsi:type="description_1:CompositeLayout" padding="50" direction="LeftToRight"/>
       <defaultLayer name="Default">
-        <nodeMappings name="TeamsInMatch" semanticCandidatesExpression="feature:teams" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@toolSections.0/@ownedTools[name='Team']" domainClass="leagueOfLegends::Team">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="TeamInMatch">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="MatchScore" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Match">
-          <borderedNodeMappings name="Games" semanticCandidatesExpression="feature:games" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@toolSections.0/@ownedTools[name='Game']" domainClass="leagueOfLegends::Game">
-            <style xsi:type="style:SquareDescription" borderLineStyle="dot" labelSize="5" labelExpression="aql:'Game winner:  ' + self. winningTeam.name" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" width="30" height="5">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        <containerMappings name="Games" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Match">
+          <borderedNodeMappings name="Teams" semanticCandidatesExpression="aql:self.teams" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@toolSections.0/@ownedTools[name='Team']" domainClass="leagueOfLegends::Team">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="TeamImages">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <forbiddenSides>WEST</forbiddenSides>
               <forbiddenSides>SOUTH</forbiddenSides>
               <forbiddenSides>NORTH</forbiddenSides>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
             </style>
           </borderedNodeMappings>
-          <style xsi:type="style:SquareDescription" labelSize="15" showIcon="false" labelExpression="aql:'Match winner:  ' + self. winner. name" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW" width="30" height="20">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
-          </style>
-        </nodeMappings>
-        <edgeMappings name="Linesandstuff" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@nodeMappings[name='MatchScore']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@nodeMappings[name='TeamsInMatch']" targetFinderExpression="feature:teams">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
+          <subNodeMappings name="Games" semanticCandidatesExpression="aql:self.games" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@toolSections.0/@ownedTools[name='Game']" domainClass="leagueOfLegends::Game">
+            <borderedNodeMappings name="WinningTeam" semanticCandidatesExpression="aql:self.winningTeam" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@toolSections.0/@ownedTools[name='Team']" domainClass="leagueOfLegends::Team">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW" workspacePath="WinningTeam">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <forbiddenSides>WEST</forbiddenSides>
+                <forbiddenSides>SOUTH</forbiddenSides>
+                <forbiddenSides>NORTH</forbiddenSides>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" labelSize="7" labelExpression="aql:'The winner of the game is:  '  + self.winningTeam.name" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW" width="30" height="7">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="3" labelSize="12" labelExpression="aql:'The winning team of this match:  ' + self.winner.name" widthComputationExpression="50">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
-        </edgeMappings>
+        </containerMappings>
         <toolSections name="Navigation Tool">
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Game" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@nodeMappings[name='MatchScore']/@borderedNodeMappings[name='Games']">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Game" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@containerMappings[name='Games']/@subNodeMappings[name='Games']">
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="Team" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@nodeMappings[name='TeamsInMatch']">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Team" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@containerMappings[name='Games']/@borderedNodeMappings[name='Teams'] //@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@containerMappings[name='Games']/@subNodeMappings[name='Games']/@borderedNodeMappings[name='WinningTeam']">
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
@@ -952,12 +616,14 @@
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@nodeMappings[name='TeamsInMatch']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@containerMappings[name='Games']/@borderedNodeMappings[name='Teams']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Match']/@defaultLayer/@containerMappings[name='Games']/@subNodeMappings[name='Games']/@borderedNodeMappings[name='WinningTeam']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="The_Visual_Game" domainClass="leagueOfLegends::Game" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_Game" titleExpression="aql: self.gameID" domainClass="leagueOfLegends::Game" enablePopupBars="true">
       <defaultLayer name="Default">
         <edgeMappings name="GameStatisticsToTeamStatistics" sourceMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='THE_GAME']" targetMapping="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='StatisticosTemos']" targetFinderExpression="aql:self.gameTeamStat">
           <style sizeComputationExpression="2">
@@ -976,7 +642,7 @@
           </style>
         </edgeMappings>
         <containerMappings name="StatisticosTemos" semanticCandidatesExpression="feature:gameTeamStat" domainClass="leagueOfLegends::GameTeamStats" childrenPresentation="List">
-          <borderedNodeMappings name="TeamIcon" semanticCandidatesExpression="aql:self.team" domainClass="leagueOfLegends::Team">
+          <borderedNodeMappings name="TeamIcon" semanticCandidatesExpression="aql:self.team" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@toolSections.0/@ownedTools[name='TeamImages']" domainClass="leagueOfLegends::Team">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="TeamIconImage">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1044,13 +710,13 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
-          <subNodeMappings name="lolx2" semanticCandidatesExpression="aql:self.champion" domainClass="leagueOfLegends::Champion">
-            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="lolx2" semanticCandidatesExpression="aql:self.champion" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@toolSections.0/@ownedTools[name='ChampionImages']" domainClass="leagueOfLegends::Champion">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </subNodeMappings>
-          <subNodeMappings name="ThePlayer" semanticCandidatesExpression="aql:self.player" domainClass="leagueOfLegends::Player">
+          <subNodeMappings name="ThePlayer" semanticCandidatesExpression="aql:self.player" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@toolSections.0/@ownedTools[name='PlayerImages']" domainClass="leagueOfLegends::Player">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="PlayerStats.Player">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1172,6 +838,29 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="PlayerImages" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='ThePlayer']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="ChampionImages" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='lolx2']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Champion']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="TeamImages" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='StatisticosTemos']/@borderedNodeMappings[name='TeamIcon']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Team']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
             <featureCustomizations xsi:type="description:EAttributeCustomization" attributeName="workspacePath" value="service:getTeamImage()"/>
@@ -1181,6 +870,98 @@
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='lolx2']/@style" attributeName="workspacePath" value="service:getChampionImage()"/>
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='ThePlayer']/@style" attributeName="workspacePath" value="service:getPlayerImage()"/>
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='StatisticosTemos']/@borderedNodeMappings[name='TeamIcon']/@style" attributeName="workspacePath" value="service:getTeamImage()"/>
+          </vsmElementCustomizations>
+        </customization>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="The_Visual_Champion" titleExpression="aql: self.name" domainClass="leagueOfLegends::Champion" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="Champion" semanticCandidatesExpression="aql: self" domainClass="leagueOfLegends::Champion" childrenPresentation="HorizontalStack">
+          <borderedNodeMappings name="ChampionImage" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Champion">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="Champion Image">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+            </style>
+          </borderedNodeMappings>
+          <subContainerMappings name="ChampionStats" semanticCandidatesExpression="aql:self.championStat" domainClass="leagueOfLegends::ChampionsStats" childrenPresentation="List">
+            <subNodeMappings name="Champion_Games_Played" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total games played: ' + self.gamesPlayed" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_Kills" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total kills: ' + self.totalKills" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_Deaths" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total deaths: ' + self.totalDeaths" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_Assists" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Total assists: ' + self.totalAssist" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_KDA" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'K/D/A ratio: ' + self.killDeathAssistRatio" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_Bans" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Number of bans: ' + self.bans" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_Wins" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Number of wins: ' + self.wins" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Champion_WL" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::ChampionsStats">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: 'Win/Loss ratio: ' + self.winLoseRatio" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Stats'" hideLabelByDefault="true">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="aql: 'Champion: ' + self.name">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Champion']/@defaultLayer/@containerMappings[name='Champion']/@borderedNodeMappings[name='ChampionImage']/@style" attributeName="workspacePath" value="service:getChampionImage()"/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>
