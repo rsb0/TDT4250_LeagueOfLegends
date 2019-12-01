@@ -10,7 +10,7 @@ This is a project delivery for the NTNU course TDT4250, created by Henrik Knudse
 
 ## Installation guide
 
-NB: Java runtime environment (Version 8) is required to run the project.
+**NB**: Java runtime environment (Version 8) is required to run the project.
 
 The project can be installed and ran by following these instructions:
 
@@ -39,9 +39,35 @@ We chose to model matchup data for the popular game League of Legends (LOL), uti
 
  The data was gathered from [Oracle Elixir's Database](https://oracleselixir.com/match-data/.) and focuses on LOL's european division (EULCS). The data has been read from available CSV files and serialized to a XMI format. It contains data from the 2018 regular season, playoffs and regional qualifiers for the LOL world cup.
 
+## File structure
+
+This section describes the different eclipse projects comprising the application.
+
+### Leagueoflegends
+
+Contains League instance used in Sirius Model View and application's representations.aird file.
+
+### Leagueoflegends.project
+
+Contains the application's Viewpoint Specification.
+
+### tdt4250.project.leagueOfLegends
+
+Contains the application's Ecore Model and its generated src code. Its assets folder also contains a copy of the data source used for the project, in the form of a CSV file.
+
+The project's corresponding .edit, .editor and .tests projects are also included, as separate projects.
+
 ## Ecore Model
 
 The project's Ecore model follows a hierarchical structure, with League as its top element, containing data related to a single competitive division. The model has a set of related constraints, to ensure the integrity of its data source.
+
+### Creation of League Instances
+
+League Instances can be created from scratch, using a EMF Model Creation Wizard, or by reading from a CSV file. tdt4250.project.LeagueOfLegends's LeagueOfLegendsResourceImpl contains functionality for looping through such a CSV file and builds a League instance from its content, placed in the local folder *assets*.
+
+### Constraints
+
+A set of constraints for each Ecore model has been implemented, ensuring data integrity. The implementation can be found in tdt4250.project.LeagueOfLegends's LeagueOfLegendsValidator.
 
 ### League
 
@@ -112,4 +138,39 @@ ChampionStats represents a champion's stats throughout the league, holding aggre
 ## Sirius Editor
 
 The project utilizes Sirius [[2]](https://www.eclipse.org/sirius/overview.html) to create a graphical model workbench, based on the underlying Ecore model.
+
+### League_Diagram
+
+The League_Diagram corresponds to a League instance and is the top element of our Sirius Model View. It contains a list of Season nodes, a set of Team nodes, a list of champion Nodes and a LeagueStats node. The Season nodes represents a specific Season instance and navigates to a Season_Diagram. The Team nodes represent a specific Team instance and navigates to a Team_Diagram. The Champion nodes represent a specific Champion instance and navigates to a Champion_Diagram. The LeagueStats node represent the League's LeagueStats object, and displays its information in list format.
+
+### Season_Diagram
+
+The Season_Diagram displays the content of a Season instance, following a list format. Each Match contained by the Season is displayed as a list item, and navigates to a Match_Diagram.
+
+XXX_PICTURE_XXX
+
+### Match_Diagram
+
+The Match_Diagram displays the content of a Match instance. It consists of a main Match node, a set of Team nodes and a set of Game nodes. The Team nodes represent the teams participating in the match and navigates to a corresponding Team_Diagram. The Game nodes represent the games of the match and navigates to corresponding Game_Diagrams.
+
+### Game_Diagram
+
+The Game_Diagram displays the content of a Game instance. It consist of a GameStats container, two GameTeamStats containers and a set of GamePlayerStats containers. The GameStats container represent the Game's GameStats object and display its information in a list format.
+
+The TeamStats containers represent the Game's GameTeamStats objects. They contain a Team node, navigating to its respective Team_Diagram, and displays its information in a list format.
+
+The GamePlayerStats container represent the Game's GamePlayerStats objects. They contain a Player node, navigating to its respective Player_Diagram, and display its information in a list format.
+
+### Team_Diagram
+
+The Team_Diagram displays the content of a Team instance. It consist of a TeamStats container and a set of Player nodes. The TeamStats container represent the Team's TeamStats object and displays its information in a list format. The Player nodes corresponds to a specific Player instance (ie. A player part of the team) and navigates to its respective Player_Diagram.
+
+### Player_Diagram
+
+The Player_Diagram displays the content of a Player instance. It consist of a PlayerStats container and a set of Champion nodes. The PlayerStats container represent the Player's PlayerStats object and display its information in a list format. The Champion nodes corresponds to a specific Champion instance and navigates to its respective Champion_Diagram.
+
+### Champion_Diagram
+
+The Champion_Diagram displays the content of a Champion instance. It contains a ChampionStats node, display the content of its ChampionStats object in a list format.
+
 
