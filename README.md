@@ -1,8 +1,10 @@
 # TDT4250_LeagueOfLegends
 
-<img src="lol-logo.jpg" width="200" />
-<img src="Emf_logo.png" width="200" />
-<img src="sirius-logo.png" width="200" />
+<p float="left">
+   <img src="lol-logo.jpg" width="200" />
+   <img src="Emf_logo.png" width="200" />
+   <img src="sirius-logo.png" width="200" />
+ </p>
 
 This is a project delivery for the NTNU course TDT4250, created by Henrik Knudsen, Hallvard EchterMeyer, Stian Mahle and Rune Strøm Brekke.
 
