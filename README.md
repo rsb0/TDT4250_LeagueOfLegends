@@ -1,14 +1,22 @@
 # TDT4250_LeagueOfLegends
 
+<p align="center">
+   <img src="lol-logo.jpg" width="200" />
+   <img src="Emf_logo.png" width="300" />
+   <img src="sirius-logo.png" width="300" />
+ </p>
+
 This is a project delivery for the NTNU course TDT4250, created by Henrik Knudsen, Hallvard EchterMeyer, Stian Mahle and Rune Strøm Brekke.
 
 ## Installation guide
+
+NB: Java runtime environment (Version 8) is required to run the project.
 
 The project can be installed and ran by following these instructions:
 
 1. Download the github repository.
 2. Install your choice of Eclipse IDE.
-3. Install any needed project dependencies:
+3. Install project dependencies:
    1. EMF modelling tools
    2. Sirius
    3. Eclipse Developer tools
