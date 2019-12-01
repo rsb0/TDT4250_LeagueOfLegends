@@ -158,15 +158,18 @@ The League_Diagram corresponds to a League instance and is the top element of ou
 
 The Season_Diagram displays the content of a Season instance, following a list format. Each Match contained by the Season is displayed as a list item, and navigates to a Match_Diagram.
 
-
-<img src ="season-diagram.png"/>
+<p align="center">
+  <img src ="season-diagram.png"/>
+</p>
 
 ### Match_Diagram
 
 The Match_Diagram displays the content of a Match instance. It consists of a main Match node, a set of Team nodes and a set of Game nodes. The Team nodes represent the teams participating in the match and navigates to a corresponding Team_Diagram. The Game nodes represent the games of the match and navigates to corresponding Game_Diagrams.
 
+<p align="center">
+  <img src ="match-diagram.png"/>
+</p>
 
-<img src ="match-diagram.png"/>
 
 ### Game_Diagram
 
@@ -183,7 +186,9 @@ The GamePlayerStats container represent the Game's GamePlayerStats objects. They
 The Team_Diagram displays the content of a Team instance. It consist of a TeamStats container and a set of Player nodes. The TeamStats container represent the Team's TeamStats object and displays its information in a list format. The Player nodes corresponds to a specific Player instance (ie. A player part of the team) and navigates to its respective Player_Diagram.
 
 
-<img src ="team-diagram.png"/>
+<p align="center">
+  <img src ="team-diagram.png"/>
+</p>
 
 ### Player_Diagram
 
@@ -196,4 +201,6 @@ The Player_Diagram displays the content of a Player instance. It consist of a Pl
 The Champion_Diagram displays the content of a Champion instance. It contains a ChampionStats node, display the content of its ChampionStats object in a list format.
 
 
-<img src ="champion-diagram.png"/>
+<p align="center">
+  <img src ="champion-diagram.png"/>
+</p>
