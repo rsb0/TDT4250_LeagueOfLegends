@@ -154,13 +154,11 @@ public class LeagueOfLegendsResourceImpl extends XMIResourceImpl {
 						if(Integer.parseInt(cellData[18]) == 1) {
 							winner = Side.get(cellData[7].toLowerCase());
 							if (cellData[4].equals("R2")) {
-								System.out.println(winner + "   " + cellData[10] + "   " + cellData[7] + "   " + cellData[0]);
 							}
 						}
 						else {
 							winner = Side.get((Side.get(cellData[7].toLowerCase()).getValue() + 1) % 2);
 							if (cellData[4].equals("R2")) {								
-								System.out.println(winner + "   " + cellData[10] + "   " + cellData[7] + "   " + cellData[0]);
 							}
 						}
 						games.put(cellData[0], LeagueOfLegendsCreationUtils.createGame(cellData[0], winner));

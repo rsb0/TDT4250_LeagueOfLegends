@@ -27,9 +27,7 @@ public class LeagueOfLegendsCreationUtils {
 	public static Player createPlayer(String name, String position) {
 		Player player = LeagueOfLegendsFactory.eINSTANCE.createPlayer();
 		player.setName(name);
-		System.out.println("Pos:" + position);
 		for(Position pos : Position.VALUES) {
-			System.out.println(pos.getLiteral());
 			if(pos.getLiteral().equals(position.toLowerCase())) {
 				player.setPosition(pos);
 				break;
@@ -125,10 +123,6 @@ public class LeagueOfLegendsCreationUtils {
 			Player playerWithMostAssists, Player playerHighestKda, 
 			Champion championWithMostKills, Champion championWithMostDeaths, Champion championWithMostAssists, Champion championWithHighestKda, Champion mostBannedChampion, Champion leastBannedChampion) {
 		LeagueStats leagueStats = LeagueOfLegendsFactory.eINSTANCE.createLeagueStats();
-		System.out.println(championWithMostKills.getName());
-		System.out.println(championWithMostDeaths.getName());
-		System.out.println(championWithMostAssists.getName());
-		System.out.println(championWithHighestKda.getName());
 		
 		leagueStats.setKills(kills);
 		leagueStats.setAssists(assists);
