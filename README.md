@@ -26,7 +26,7 @@ The project can be installed and ran by following these instructions:
 
 The application should now be ready to be tried out:
 1. The provided model instance (leagueoflegends.leagueoflegends) can now be inspected within the LeagueOfLegends project.
-2. Any new representations can be created through using the Aird editor with representations.aird, within the LeagueOfLegends project (A representation of the League is already provided, found just under the top level League object in leagueoflegends.leagueoflegends, called "league").
+2. Any new representations can be created through using the Aird editor with representations.aird, within the LeagueOfLegends project (A representation of the League is already provided, found just under the top level League object in leagueoflegends.leagueoflegends, called "EULCS").
 3. The ViewPoint specification can be inspected, through utilizing the ViewPoint Specification Editor on project.odesign, found in LeagueOfLegends.project/description.
 
 ## Description
