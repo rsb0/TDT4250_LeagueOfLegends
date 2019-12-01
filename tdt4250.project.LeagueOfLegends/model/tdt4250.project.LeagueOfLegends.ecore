@@ -243,9 +243,5 @@
         eType="#//Champion"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="championWithHighestKda"
         eType="#//Champion"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="mostBannedChampion" lowerBound="1"
-        eType="#//Champion"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leastBannedChampion" lowerBound="1"
-        eType="#//Champion"/>
   </eClassifiers>
 </ecore:EPackage>

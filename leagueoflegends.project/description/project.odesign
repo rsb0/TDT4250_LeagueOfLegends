@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
   <ownedViewpoints name="Leagueoflegends" modelFileExtension="leagueoflegends">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Season_Diagram" titleExpression="aql: 'Season: ' + self.SplitName" initialisation="true" domainClass="leagueOfLegends::Season" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Season_Diagram" titleExpression="aql: if self.SplitName.endsWith('2') then self.SplitName.replace('\\-\\d*',' split ' + self.SplitName.substring(6)) + ' ' + self.splitType + ' season' else if self.SplitName.endsWith('p') then self.SplitName.replace('\\-\\d[a-z]',' split ') + self.SplitName.substring(6).replace('[a-z]',' ') + self.splitType else self.SplitName.replace('\\-\\d[a-z]+', ' split ') + self.SplitName.substring(6).replace('[a-z]+', ' ') + self.splitType endif endif" initialisation="true" domainClass="leagueOfLegends::Season" enablePopupBars="true">
       <defaultLayer name="Default">
         <containerMappings name="Season" semanticCandidatesExpression="aql:self" domainClass="leagueOfLegends::Season" childrenPresentation="List">
           <subNodeMappings name="Matches" semanticCandidatesExpression="aql: self.matches" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='Season_Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Doubleclick_Match']" domainClass="leagueOfLegends::Match">
@@ -320,7 +320,7 @@
             </style>
           </borderedNodeMappings>
           <subNodeMappings name="Season" semanticCandidatesExpression="aql: self.seasons" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_League']/@defaultLayer/@toolSections.0/@ownedTools[name='Duble%20Click%20Season']" domainClass="leagueOfLegends::Season">
-            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: self.SplitName" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql: if self.SplitName.endsWith('2') then self.SplitName.replace('\\-\\d*',' split ' + self.SplitName.substring(6)) + ' ' + self.splitType + ' season' else if self.SplitName.endsWith('p') then self.SplitName.replace('\\-\\d[a-z]',' split ') + self.SplitName.substring(6).replace('[a-z]',' ') + self.splitType else self.SplitName.replace('\\-\\d[a-z]+', ' split ') + self.SplitName.substring(6).replace('[a-z]+', ' ') + self.splitType endif endif" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -670,13 +670,13 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
-          <subNodeMappings name="lolx2" semanticCandidatesExpression="aql:self.champion" domainClass="leagueOfLegends::Champion">
-            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="lolx2" semanticCandidatesExpression="aql:self.champion" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@toolSections.0/@ownedTools[name='ChampionImages']" domainClass="leagueOfLegends::Champion">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </subNodeMappings>
-          <subNodeMappings name="ThePlayer" semanticCandidatesExpression="aql:self.player" domainClass="leagueOfLegends::Player">
+          <subNodeMappings name="ThePlayer" semanticCandidatesExpression="aql:self.player" doubleClickDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@toolSections.0/@ownedTools[name='PlayerImages']" domainClass="leagueOfLegends::Player">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="PlayerStats.Player">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -798,6 +798,22 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="PlayerImages" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='ThePlayer']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Player']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="ChampionImages" mappings="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Game']/@defaultLayer/@containerMappings[name='PlayersStats_VisualGame']/@subNodeMappings[name='lolx2']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Leagueoflegends']/@ownedRepresentations[name='The_Visual_Champion']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
             <featureCustomizations xsi:type="description:EAttributeCustomization" attributeName="workspacePath" value="service:getTeamImage()"/>
