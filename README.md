@@ -2,7 +2,7 @@
 
 <p align="center">
    <img src="lol-logo.jpg" width="200" />
-   <img src="Emf_logo.png" width="200" />
+   <img src="Emf_logo.png" width="300" />
    <img src="sirius-logo.png" width="200" />
  </p>
 
