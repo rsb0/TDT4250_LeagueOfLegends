@@ -4,8 +4,6 @@
 <img src="Emf_logo.png" width="200" />
 <img src="sirius-logo.png" width="200" />
 
-![League of legends logo](lol-logo.jpg = 200x200)
-
 This is a project delivery for the NTNU course TDT4250, created by Henrik Knudsen, Hallvard EchterMeyer, Stian Mahle and Rune Strøm Brekke.
 
 ## Installation guide
